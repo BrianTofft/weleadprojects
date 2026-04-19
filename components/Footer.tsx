@@ -62,10 +62,12 @@ export default function Footer() {
               {[...Array(2)].map((_, set) => (
                 <div key={set} className="flex flex-col gap-6">
                   {[
-                    { src: "/partner-microsoft.png", alt: "Microsoft Partner" },
-                    { src: "/partner-dansk-erhverv.png", alt: "Dansk Erhverv" },
-                    { src: "/partner-dansk-it.png", alt: "dansk·it" },
-                    { src: "/partner-erhvervsforum.png", alt: "Erhvervsforum Roskilde" },
+                    { src: "/footer/MSP1.webp", alt: "Microsoft Partner" },
+                    { src: "/footer/DANSKERHVERV_20202.webp", alt: "Dansk Erhverv" },
+                    { src: "/footer/dit_Logo_G.webp", alt: "dansk·it" },
+                    { src: "/footer/Erhvervsforum-roskilde-retina-01.webp", alt: "Erhvervsforum Roskilde" },
+                    { src: "/footer/ITB_logo_01_hvid_RGB.webp", alt: "ITB" },
+                    { src: "/footer/leverandoer_logo_RGB.webp", alt: "Leverandør" },
                   ].map((logo) => (
                     <div key={logo.alt} className="bg-white rounded-lg p-2 flex items-center justify-center" style={{ height: "64px" }}>
                       <Image src={logo.src} alt={logo.alt} width={120} height={48} className="object-contain max-h-full" />
