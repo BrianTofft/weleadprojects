@@ -3,6 +3,7 @@
 import { useState } from "react";
 import React from "react";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 const services = [
   {
@@ -434,22 +435,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-white border-t py-8 px-6 text-center text-sm" style={{ borderColor: BORDER, color: DARK }}>
-        <div className="flex justify-center mb-4">
-          <Image src="/logo.png" alt="We Lead Projects" width={40} height={40} className="object-contain opacity-80" />
-        </div>
-        <p className="text-gray-400">© 2025 We Lead Projects ApS · CVR-nr.: 44934655 · Industrivej 21, 4000 Roskilde</p>
-        <p className="mt-1 text-gray-400">
-          <a href="mailto:hello@weleadprojects.com" className="hover:underline">
-            hello@weleadprojects.com
-          </a>
-          {" · "}
-          <a href="tel:+4552400088" className="hover:underline">
-            +45 5240 0088
-          </a>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }
