@@ -126,13 +126,13 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover object-top"
           style={{
             transform: "scaleX(-1)",
-            animation: "heroZoom 8s ease-out forwards",
+            animation: "heroZoom 4s ease-out forwards",
           }}
         />
         {/* Gradient: solid on left (text), fades to nearly transparent on right */}
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to right, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.05) 100%)" }}
+          style={{ background: "linear-gradient(to right, rgba(255,255,255,0.82) 30%, rgba(255,255,255,0.25) 55%, rgba(255,255,255,0.0) 100%)" }}
         />
         {/* Text — left aligned */}
         <div className="relative max-w-6xl mx-auto w-full">
