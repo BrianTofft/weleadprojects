@@ -99,7 +99,7 @@ export default function Home() {
           <a href="#top">
             <Image src="/logo.png" alt="We Lead Projects" width={360} height={92} className="object-contain" />
           </a>
-          <div className="hidden md:flex gap-8 text-sm" style={{ color: DARK }}>
+          <div className="hidden md:flex gap-8 text-base font-medium" style={{ color: DARK }}>
             <a href="#om-os" className="hover:opacity-60 transition-opacity">Om os</a>
             <a href="#ydelser" className="hover:opacity-60 transition-opacity">Ydelser</a>
             <a href="#faq" className="hover:opacity-60 transition-opacity">FAQ</a>
