@@ -96,9 +96,8 @@ export default function Home() {
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b" style={{ borderColor: BORDER }}>
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-          <a href="#top" className="flex items-center gap-3">
-            <Image src="/logo.png" alt="We Lead Projects" width={36} height={36} className="object-contain" />
-            <span className="font-semibold text-base hidden sm:block" style={{ color: DARK }}>We Lead Projects</span>
+          <a href="#top">
+            <Image src="/logo.png" alt="We Lead Projects" width={140} height={40} className="object-contain" />
           </a>
           <div className="hidden md:flex gap-8 text-sm" style={{ color: DARK }}>
             <a href="#om-os" className="hover:opacity-60 transition-opacity">Om os</a>
