@@ -68,12 +68,14 @@ export default function Footer() {
           </div>
 
           {/* Kolonne 4: Partner logoer — 3 synlige, centreret i kolonnen */}
-          <div className="overflow-hidden" style={{ width: "360px", height: "80px" }}>
-            <div className="logo-scroll flex items-center h-full" style={{ gap: "20px", width: "max-content" }}>
+          {/* 3 logos visible: 3×140 + 2×24 = 468px */}
+          <div className="overflow-hidden" style={{ width: "468px", height: "90px" }}>
+            {/* 2 sets × (6×140 + 5×24) = 2×1020 = 2040px total → translateX(-50%) = -1020px */}
+            <div className="logo-scroll flex items-center h-full" style={{ gap: "24px", width: "2040px" }}>
               {[...Array(2)].flatMap((_, set) =>
                 logos.map((logo) => (
-                  <div key={`${set}-${logo.alt}`} className="flex-shrink-0 flex items-center justify-center" style={{ width: "106px", height: "72px" }}>
-                    <Image src={logo.src} alt={logo.alt} width={100} height={64} className="object-contain max-h-full" />
+                  <div key={`${set}-${logo.alt}`} className="flex-shrink-0 flex items-center justify-center" style={{ width: "140px", height: "86px" }}>
+                    <Image src={logo.src} alt={logo.alt} width={136} height={80} className="object-contain max-h-full" />
                   </div>
                 ))
               )}
