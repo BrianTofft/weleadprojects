@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const RED = "#cc2222";
-const BG = "#2d1a1a";
+const BG = "#1C2544";
 const BORDER = "rgba(255,255,255,0.1)";
 
 export default function Footer() {
