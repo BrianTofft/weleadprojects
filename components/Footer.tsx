@@ -7,7 +7,7 @@ const BORDER = "rgba(255,255,255,0.1)";
 export default function Footer() {
   return (
     <footer style={{ background: BG }} className="text-white">
-      <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
 
         {/* Kolonne 1: Logo */}
         <div className="flex flex-col items-center text-center">
@@ -69,7 +69,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div style={{ borderColor: BORDER }} className="border-t px-6 py-4 text-center text-xs text-white/40">
-        © 2025 We Lead Projects ApS — Alle rettigheder forbeholdes
+        © 2026 We Lead Projects ApS — Alle rettigheder forbeholdes
       </div>
     </footer>
   );
