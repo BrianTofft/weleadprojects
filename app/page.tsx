@@ -117,44 +117,50 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section
-        id="top"
-        className="relative pt-36 pb-28 px-6"
-        style={{
-          backgroundImage: "url('/hero.JPEG')",
-          backgroundSize: "cover",
-          backgroundPosition: "center top",
-        }}
-      >
-        {/* Light overlay so text stays readable */}
-        <div className="absolute inset-0 bg-white/70" />
-        <div className="relative max-w-4xl mx-auto text-center">
-          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4">
-            Plan Well, Lead Better
-          </p>
-          <h1 style={{ color: DARK }} className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Lad os sikre dit projekt
-            <br />
-            <span style={{ color: RED }}>bliver en succes</span>
-          </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-10">
-            Uanset om det er et mindre IT-projekt, et større anlægsprojekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#kontakt"
-              style={{ background: RED }}
-              className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
-            >
-              Kom i gang
-            </a>
-            <a
-              href="#ydelser"
-              style={{ color: DARK, borderColor: DARK }}
-              className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity"
-            >
-              Se vores ydelser
-            </a>
+      <section id="top" className="relative overflow-hidden pt-36 pb-28 px-6 min-h-[560px] flex items-center">
+        {/* Flipped image — person ends up on the right */}
+        <img
+          src="/hero.JPEG"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-top"
+          style={{ transform: "scaleX(-1)" }}
+        />
+        {/* Gradient: opaque on left (text area), fades to transparent on right */}
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(to right, rgba(255,255,255,0.97) 45%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0.1) 100%)" }}
+        />
+        {/* Text — left aligned */}
+        <div className="relative max-w-6xl mx-auto w-full">
+          <div className="max-w-lg">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4">
+              Plan Well, Lead Better
+            </p>
+            <h1 style={{ color: DARK }} className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+              Lad os sikre dit projekt
+              <br />
+              <span style={{ color: RED }}>bliver en succes</span>
+            </h1>
+            <p className="text-gray-600 text-lg mb-10">
+              Uanset om det er et mindre IT-projekt, et større anlægsprojekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#kontakt"
+                style={{ background: RED }}
+                className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
+              >
+                Kom i gang
+              </a>
+              <a
+                href="#ydelser"
+                style={{ color: DARK, borderColor: DARK }}
+                className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity"
+              >
+                Se vores ydelser
+              </a>
+            </div>
           </div>
         </div>
       </section>
