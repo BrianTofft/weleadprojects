@@ -102,7 +102,7 @@ export default function Home() {
           <div className="hidden md:flex gap-8 text-base font-medium" style={{ color: DARK }}>
             <a href="#om-os" className="hover:opacity-60 transition-opacity">Om os</a>
             <a href="#ydelser" className="hover:opacity-60 transition-opacity">Ydelser</a>
-            <a href="#news" className="hover:opacity-60 transition-opacity">News</a>
+            <a href="/news" className="hover:opacity-60 transition-opacity">News</a>
             <a href="#faq" className="hover:opacity-60 transition-opacity">FAQ</a>
             <a href="#kontakt" className="hover:opacity-60 transition-opacity">Kontakt</a>
           </div>
