@@ -33,13 +33,13 @@ html {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
-@keyframes scrollLeft {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+@keyframes scrollUp {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
 }
 
 .logo-scroll {
-  animation: scrollLeft 14s linear infinite;
+  animation: scrollUp 18s linear infinite;
 }
 
 .logo-scroll:hover {

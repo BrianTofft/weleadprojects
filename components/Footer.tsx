@@ -53,38 +53,29 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Kolonne 4: Ring nu */}
+        {/* Kolonne 4: Partner logoer karussel */}
         <div>
-          <h4 className="font-bold text-sm uppercase tracking-widest mb-4 text-white">Ring nu</h4>
-          <p className="text-sm text-white/60 mb-4">Du er altid velkommen til at ringe direkte til os.</p>
-          <a
-            href="tel:+4552400088"
-            style={{ background: RED }}
-            className="inline-block hover:opacity-90 text-white font-semibold px-6 py-2.5 rounded-full text-sm transition-opacity"
-          >
-            📞 Ring nu
-          </a>
-        </div>
-      </div>
-
-      {/* Partner logo karussel — fuld bredde */}
-      <div style={{ borderColor: BORDER }} className="border-t py-8 overflow-hidden">
-        <p className="text-center text-xs font-bold uppercase tracking-widest text-white/40 mb-6">Partnere &amp; medlemskaber</p>
-        <div className="logo-scroll flex gap-12 w-max">
-          {[...Array(2)].flatMap((_, set) =>
-            [
-              { src: "/footer/MSP1.webp", alt: "Microsoft Partner" },
-              { src: "/footer/DANSKERHVERV_20202.webp", alt: "Dansk Erhverv" },
-              { src: "/footer/dit_Logo_G.webp", alt: "dansk·it" },
-              { src: "/footer/Erhvervsforum-roskilde-retina-01.webp", alt: "Erhvervsforum Roskilde" },
-              { src: "/footer/ITB_logo_01_hvid_RGB.webp", alt: "ITB" },
-              { src: "/footer/leverandoer_logo_RGB.webp", alt: "Leverandør" },
-            ].map((logo) => (
-              <div key={`${set}-${logo.alt}`} className="flex items-center justify-center flex-shrink-0" style={{ height: "72px", width: "160px" }}>
-                <Image src={logo.src} alt={logo.alt} width={150} height={68} className="object-contain max-h-full" />
-              </div>
-            ))
-          )}
+          <h4 className="font-bold text-sm uppercase tracking-widest mb-4 text-white">Partnere</h4>
+          <div className="overflow-hidden" style={{ height: "180px" }}>
+            <div className="logo-scroll flex flex-col gap-4">
+              {[...Array(2)].map((_, set) => (
+                <div key={set} className="flex flex-col gap-4">
+                  {[
+                    { src: "/footer/MSP1.webp", alt: "Microsoft Partner" },
+                    { src: "/footer/DANSKERHVERV_20202.webp", alt: "Dansk Erhverv" },
+                    { src: "/footer/dit_Logo_G.webp", alt: "dansk·it" },
+                    { src: "/footer/Erhvervsforum-roskilde-retina-01.webp", alt: "Erhvervsforum Roskilde" },
+                    { src: "/footer/ITB_logo_01_hvid_RGB.webp", alt: "ITB" },
+                    { src: "/footer/leverandoer_logo_RGB.webp", alt: "Leverandør" },
+                  ].map((logo) => (
+                    <div key={logo.alt} className="flex items-center" style={{ height: "52px" }}>
+                      <Image src={logo.src} alt={logo.alt} width={130} height={50} className="object-contain object-left max-h-full" />
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
