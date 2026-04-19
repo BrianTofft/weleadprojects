@@ -10,8 +10,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
         {/* Kolonne 1: Logo */}
-        <div className="flex flex-col items-start gap-4">
-          <Image src="/logo3.png" alt="We Lead Projects" width={180} height={50} className="object-contain" />
+        <div className="flex flex-col items-start">
+          <div style={{ marginTop: "-16px", marginBottom: "-12px" }}>
+            <Image src="/logo3.png" alt="We Lead Projects" width={180} height={50} className="object-contain" />
+          </div>
           <p className="text-sm text-white/60 leading-relaxed">
             Professionel projektledelse og konsulentassistance siden 2018.
           </p>
