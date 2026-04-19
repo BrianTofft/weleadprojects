@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "We Lead Projects leverer erfarne projektledere og specialister til IT-projekter, anlægsprojekter og transformationer. Kontakt os i dag.",
   metadataBase: new URL("https://www.weleadprojects.com"),
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({

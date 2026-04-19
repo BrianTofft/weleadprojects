@@ -117,8 +117,18 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section id="top" style={{ background: OFFWHITE }} className="pt-36 pb-28 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+      <section
+        id="top"
+        className="relative pt-36 pb-28 px-6"
+        style={{
+          backgroundImage: "url('/hero.JPEG')",
+          backgroundSize: "cover",
+          backgroundPosition: "center top",
+        }}
+      >
+        {/* Light overlay so text stays readable */}
+        <div className="absolute inset-0 bg-white/70" />
+        <div className="relative max-w-4xl mx-auto text-center">
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4">
             Plan Well, Lead Better
           </p>
@@ -127,7 +137,7 @@ export default function Home() {
             <br />
             <span style={{ color: RED }}>bliver en succes</span>
           </h1>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-10">
             Uanset om det er et mindre IT-projekt, et større anlægsprojekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
