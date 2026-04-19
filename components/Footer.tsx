@@ -24,8 +24,8 @@ const logos = [
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
-const LOGO_W = 180;
-const LOGO_GAP = 4;
+const LOGO_W = 120;
+const LOGO_GAP = 6;
 const STEP = LOGO_W + LOGO_GAP;
 
 function PhoneIcon() {
@@ -87,7 +87,7 @@ export default function Footer() {
   return (
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[160px_180px_240px_548px] gap-x-6 gap-y-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[160px_180px_220px_372px] gap-x-4 gap-y-10 items-center">
 
           {/* Kolonne 1: Logo */}
           <div>
