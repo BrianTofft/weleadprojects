@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 const services = [
@@ -69,8 +70,34 @@ const RED = "#cc2222";
 const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
+const heroSlides = [
+  {
+    label: "Plan Well, Lead Better",
+    heading: "Lad os sikre dit projekt",
+    headingRed: "bliver en succes",
+    body: "Uanset om det er et mindre IT-projekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.",
+  },
+  {
+    label: "Projekter er vores DNA",
+    heading: "Intet projekt er",
+    headingRed: "for stort eller for småt",
+    body: "Vi påtager os ansvaret for alt fra mindre IT-projekter til større IT-transformationer og Cloud-implementeringer — altid med fokus på fremdrift og succesfuld leverance.",
+  },
+];
+
 export default function Home() {
+  const [slide, setSlide] = useState(0);
+  const [animKey, setAnimKey] = useState(0);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  // Auto-advance slides
+  React.useEffect(() => {
+    const t = setInterval(() => {
+      setSlide((s) => (s + 1) % heroSlides.length);
+      setAnimKey((k) => k + 1);
+    }, 6000);
+    return () => clearInterval(t);
+  }, []);
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
@@ -116,67 +143,58 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO */}
-      <section id="top" className="relative overflow-hidden pt-36 pb-28 px-6 min-h-[560px] flex items-center">
-        {/* Flipped image — person ends up on the right */}
+      {/* HERO SLIDER */}
+      <section id="top" className="relative overflow-hidden min-h-[580px] flex items-center">
+        {/* Background image with zoom — resets on each slide */}
         <img
+          key={animKey}
           src="/hero.JPEG"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover object-top"
-          style={{
-            transform: "scaleX(-1)",
-            animation: "heroZoom 4s ease-out forwards",
-          }}
+          style={{ transform: "scaleX(-1)", animation: "heroZoom 6s ease-out forwards" }}
         />
-        {/* Gradient: solid on left (text), fades to nearly transparent on right */}
+        {/* Gradient overlay */}
         <div
           className="absolute inset-0"
           style={{ background: "linear-gradient(to right, rgba(255,255,255,0.82) 30%, rgba(255,255,255,0.25) 55%, rgba(255,255,255,0.0) 100%)" }}
         />
-        {/* Text — left aligned */}
-        <div className="relative max-w-6xl mx-auto w-full">
+
+        {/* Slide content */}
+        <div className="relative max-w-6xl mx-auto w-full px-6 pt-36 pb-28">
           <div className="max-w-lg">
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4">
-              Plan Well, Lead Better
+            <p key={`label-${slide}`} style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4 animate-fade">
+              {heroSlides[slide].label}
             </p>
-            <h1 style={{ color: DARK }} className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Lad os sikre dit projekt
+            <h1 key={`h-${slide}`} style={{ color: DARK }} className="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fade">
+              {heroSlides[slide].heading}
               <br />
-              <span style={{ color: RED }}>bliver en succes</span>
+              <span style={{ color: RED }}>{heroSlides[slide].headingRed}</span>
             </h1>
-            <p className="text-gray-600 text-lg mb-10">
-              Uanset om det er et mindre IT-projekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.
+            <p key={`b-${slide}`} className="text-gray-600 text-lg mb-10 animate-fade">
+              {heroSlides[slide].body}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#kontakt"
-                style={{ background: RED }}
-                className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
-              >
+              <a href="#kontakt" style={{ background: RED }} className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity">
                 Kom i gang
               </a>
-              <a
-                href="#ydelser"
-                style={{ color: DARK, borderColor: DARK }}
-                className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity"
-              >
+              <a href="#ydelser" style={{ color: DARK, borderColor: DARK }} className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity">
                 Se vores ydelser
               </a>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* SECONDARY BANNER */}
-      <section className="bg-white py-14 px-6 border-y" style={{ borderColor: BORDER }}>
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 style={{ color: DARK }} className="text-2xl md:text-3xl font-bold mb-3">
-            Intet projekt er for stort eller for småt
-          </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
-            Vi påtager os ansvaret for alt fra mindre IT-projekter til større IT-transformationer og Cloud-implementeringer.
-          </p>
+        {/* Slide indicators */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+          {heroSlides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => { setSlide(i); setAnimKey((k) => k + 1); }}
+              className="w-2 h-2 rounded-full transition-all"
+              style={{ background: i === slide ? RED : BORDER }}
+            />
+          ))}
         </div>
       </section>
 
