@@ -21,7 +21,7 @@ html {
 
 @keyframes heroZoom {
   from { transform: scaleX(-1) scale(1); }
-  to   { transform: scaleX(-1) scale(1.08); }
+  to   { transform: scaleX(-1) scale(1.12); }
 }
 
 @keyframes fadeIn {

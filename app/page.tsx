@@ -72,12 +72,14 @@ const BORDER = "#e8e0e0";
 
 const heroSlides = [
   {
+    image: "/hero.JPEG",
     label: "Plan Well, Lead Better",
     heading: "Lad os sikre dit projekt",
     headingRed: "bliver en succes",
     body: "Uanset om det er et mindre IT-projekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.",
   },
   {
+    image: "/hero2.JPEG",
     label: "Projekter er vores DNA",
     heading: "Intet projekt er",
     headingRed: "for stort eller for småt",
@@ -145,15 +147,22 @@ export default function Home() {
 
       {/* HERO SLIDER */}
       <section id="top" className="relative overflow-hidden min-h-[580px] flex items-center">
-        {/* Background image with zoom — resets on each slide */}
-        <img
-          key={animKey}
-          src="/hero.JPEG"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-top"
-          style={{ transform: "scaleX(-1)", animation: "heroZoom 6s ease-out forwards" }}
-        />
+        {/* All slide images stacked — active one fades in */}
+        {heroSlides.map((s, i) => (
+          <img
+            key={s.image}
+            src={s.image}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover object-top"
+            style={{
+              transform: "scaleX(-1)",
+              animation: slide === i ? "heroZoom 6s ease-out forwards" : "none",
+              opacity: slide === i ? 1 : 0,
+              transition: "opacity 1.2s ease-in-out",
+            }}
+          />
+        ))}
         {/* Gradient overlay */}
         <div
           className="absolute inset-0"
