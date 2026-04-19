@@ -30,7 +30,7 @@ export default function NewsPage() {
             <Image src="/logo.png" alt="We Lead Projects" width={360} height={92} className="object-contain" />
           </Link>
           <div className="hidden md:flex gap-8 text-base font-medium" style={{ color: DARK }}>
-            <Link href="/#om-os" className="hover:opacity-60 transition-opacity">Om os</Link>
+            <Link href="/om-os" className="hover:opacity-60 transition-opacity">Om os</Link>
             <Link href="/#ydelser" className="hover:opacity-60 transition-opacity">Ydelser</Link>
             <Link href="/news" style={{ color: RED }}>News</Link>
             <Link href="/#faq" className="hover:opacity-60 transition-opacity">FAQ</Link>

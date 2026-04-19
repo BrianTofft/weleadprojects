@@ -1,0 +1,144 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Om os",
+  description: "Vi leverer professionel konsulentassistance inden for projektledelse, Enterprise Architecture og IT-transformationer. Læs mere om We Lead Projects.",
+};
+
+const DARK = "#2d1a1a";
+const RED = "#cc2222";
+const OFFWHITE = "#f7f5f5";
+const BORDER = "#e8e0e0";
+
+const values = [
+  { icon: "🤝", title: "Samarbejde og kommunikation", body: "Vi prioriterer tæt dialog med alle interessenter og sikrer, at alle parter er informeret og engageret gennem hele projektet." },
+  { icon: "📚", title: "Kontinuerlig læring og tilpasning", body: "Vi holder os konstant opdateret med de nyeste metoder og trends inden for projektledelse og IT, og deler viden på tværs af vores team." },
+  { icon: "🌟", title: "Begunstigelse og tillid", body: "Vi opbygger langvarige relationer baseret på gensidig tillid, ærlighed og en fælles forståelse af de forretningsmæssige mål." },
+  { icon: "💡", title: "Innovation og fleksibilitet", body: "Vi er ikke bundet af én model — vi finder den tilgang der passer bedst til det konkrete projekt og tilpasser os løbende undervejs." },
+  { icon: "🎓", title: "Mentor programmer og sidemandsoplæring", body: "Vores konsulenter vokser ved at lære af hinanden. Intern vidensdeling og mentoring er en integreret del af måden vi arbejder på." },
+];
+
+export default function OmOs() {
+  return (
+    <>
+      {/* NAV */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b" style={{ borderColor: BORDER }}>
+        <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
+          <Link href="/">
+            <Image src="/logo.png" alt="We Lead Projects" width={360} height={92} className="object-contain" />
+          </Link>
+          <div className="hidden md:flex gap-8 text-base font-medium" style={{ color: DARK }}>
+            <Link href="/om-os" style={{ color: RED }}>Om os</Link>
+            <Link href="/#ydelser" className="hover:opacity-60 transition-opacity">Ydelser</Link>
+            <Link href="/news" className="hover:opacity-60 transition-opacity">News</Link>
+            <Link href="/#faq" className="hover:opacity-60 transition-opacity">FAQ</Link>
+            <Link href="/#kontakt" className="hover:opacity-60 transition-opacity">Kontakt</Link>
+          </div>
+          <Link
+            href="/#kontakt"
+            style={{ background: RED }}
+            className="hover:opacity-90 text-white text-sm font-semibold px-5 py-2 rounded-full transition-opacity"
+          >
+            Kontakt os
+          </Link>
+        </div>
+      </nav>
+
+      {/* HEADER */}
+      <section style={{ background: OFFWHITE }} className="pt-36 pb-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Om os</p>
+          <h1 style={{ color: DARK }} className="text-4xl md:text-5xl font-bold mb-4">Professionel konsulent assistance</h1>
+          <p className="text-gray-500 text-lg max-w-2xl">
+            Vi trækker på mangeårig erfaring for at håndtere projekter af enhver kompleksitet — fra mindre IT-projekter til store digitale transformationer.
+          </p>
+        </div>
+      </section>
+
+      {/* COMPANY + BRIAN */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores tilgang</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Vi startede i 2018 med en vision</h2>
+            <p className="text-gray-600 mb-4">
+              Fra begyndelsen har vi prioriteret koordinering og kommunikation højt for at sikre en vellykket projektleverance. Vores konsulenter besidder ekspertise inden for projektledelse kombineret med specialiseret viden inden for bl.a. Enterprise Architecture, infrastrukturprojekter og Solution Architecture.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Gennem ansvar og erfaringsmodeller, backup fra kollegaer og nyeste viden om projektstyring, navigerer vi projektlandskabet. Vi kalder det 1+1=3 metoden — vores interne vidensdeling sikrer at alle konsulenter løbende lærer og vokser på tværs af projekterne.
+            </p>
+            <p className="text-gray-600">
+              Vores fokus på interessentstyring har givet os mulighed for at vokse til et betroet navn i branchen — og sikret succesfulde leverancer for kunder i mange forskellige brancher og domæner.
+            </p>
+          </div>
+
+          {/* Brian */}
+          <div className="rounded-2xl border p-8 text-center" style={{ borderColor: BORDER, background: OFFWHITE }}>
+            <div
+              className="w-24 h-24 rounded-full mx-auto mb-5 flex items-center justify-center text-4xl"
+              style={{ background: BORDER }}
+            >
+              👤
+            </div>
+            <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">Brian P.N. Tofft</h3>
+            <p style={{ color: RED }} className="font-semibold text-sm mb-4">Managing Partner</p>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Brian har mere end 30 års erfaring med at levere projekter af høj kvalitet — med fokus på etisk praksis og kontinuerlig vidensopbygning. Han er daglig leder og tovholder for We Lead Projects.
+            </p>
+            <div className="mt-6 pt-6 border-t text-sm space-y-1" style={{ borderColor: BORDER }}>
+              <p className="text-gray-500"><a href="tel:+4552400088" className="hover:underline">+45 5240 0088</a></p>
+              <p className="text-gray-500"><a href="mailto:hello@weleadprojects.com" className="hover:underline">hello@weleadprojects.com</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CORE VALUES */}
+      <section style={{ background: OFFWHITE }} className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad vi står for</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold">Kerneværdier og principper</h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {values.map((v) => (
+              <div key={v.title} className="bg-white rounded-xl border p-7" style={{ borderColor: BORDER }}>
+                <div className="text-3xl mb-4">{v.icon}</div>
+                <h3 style={{ color: DARK }} className="font-bold mb-2">{v.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{v.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 px-6 bg-white text-center">
+        <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Klar til at samarbejde?</h2>
+        <p className="text-gray-500 mb-8 max-w-xl mx-auto">Kontakt os og hør hvordan vi kan hjælpe med at sikre fremdrift og succes i dit næste projekt.</p>
+        <Link
+          href="/#kontakt"
+          style={{ background: RED }}
+          className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
+        >
+          Kontakt os
+        </Link>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-white border-t py-8 px-6 text-center text-sm" style={{ borderColor: BORDER }}>
+        <div className="flex justify-center mb-4">
+          <Image src="/logo.png" alt="We Lead Projects" width={40} height={40} className="object-contain opacity-80" />
+        </div>
+        <p className="text-gray-400">© 2025 We Lead Projects ApS · CVR-nr.: 44934655 · Industrivej 21, 4000 Roskilde</p>
+        <p className="mt-1 text-gray-400">
+          <a href="mailto:hello@weleadprojects.com" className="hover:underline">hello@weleadprojects.com</a>
+          {" · "}
+          <a href="tel:+4552400088" className="hover:underline">+45 5240 0088</a>
+        </p>
+      </footer>
+    </>
+  );
+}
