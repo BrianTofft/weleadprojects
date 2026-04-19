@@ -53,17 +53,28 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Kolonne 4: Ring nu */}
+        {/* Kolonne 4: Partner logoer karussel */}
         <div>
-          <h4 className="font-bold text-sm uppercase tracking-widest mb-4 text-white">Ring nu</h4>
-          <p className="text-sm text-white/60 mb-4">Du er altid velkommen til at ringe direkte til os.</p>
-          <a
-            href="tel:+4552400088"
-            style={{ background: RED }}
-            className="inline-block hover:opacity-90 text-white font-semibold px-6 py-2.5 rounded-full text-sm transition-opacity"
-          >
-            📞 Ring nu
-          </a>
+          <h4 className="font-bold text-sm uppercase tracking-widest mb-4 text-white">Partnere</h4>
+          <div className="overflow-hidden" style={{ height: "200px" }}>
+            <div className="logo-scroll flex flex-col gap-6">
+              {/* Logos x2 for seamless loop */}
+              {[...Array(2)].map((_, set) => (
+                <div key={set} className="flex flex-col gap-6">
+                  {[
+                    { src: "/partner-microsoft.png", alt: "Microsoft Partner" },
+                    { src: "/partner-dansk-erhverv.png", alt: "Dansk Erhverv" },
+                    { src: "/partner-dansk-it.png", alt: "dansk·it" },
+                    { src: "/partner-erhvervsforum.png", alt: "Erhvervsforum Roskilde" },
+                  ].map((logo) => (
+                    <div key={logo.alt} className="bg-white rounded-lg p-2 flex items-center justify-center" style={{ height: "64px" }}>
+                      <Image src={logo.src} alt={logo.alt} width={120} height={48} className="object-contain max-h-full" />
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
