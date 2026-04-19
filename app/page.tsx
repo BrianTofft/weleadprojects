@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "Kan I levere kunde cases eller kundeudtalelser?",
-    a: "Ja. Vi har bl.a. cases inden for implementering af ejendomsadministrationssoftware, forretningsudviklingsplanlægning i telecom-sektoren samt oprettelse af HR-systemer til nonprofitorganisationer.",
+    a: "Ja. Vi har bl.a. cases inden for forretningsudviklingsplanlægning i telecom-sektoren, implementering af IT-systemer samt digitale transformationer på tværs af brancher.",
   },
   {
     q: "Hvad gør jeres virksomhed speciel?",
@@ -146,7 +146,7 @@ export default function Home() {
               <span style={{ color: RED }}>bliver en succes</span>
             </h1>
             <p className="text-gray-600 text-lg mb-10">
-              Uanset om det er et mindre IT-projekt, et større anlægsprojekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.
+              Uanset om det er et mindre IT-projekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -175,7 +175,7 @@ export default function Home() {
             Intet projekt er for stort eller for småt
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Vi tager gerne ledelsen af et mindre byggeri (privat eller offentligt), ligesom vi gerne påtager os ansvaret for større IT-transformationer og f.eks. Cloud-implementeringer.
+            Vi påtager os ansvaret for alt fra mindre IT-projekter til større IT-transformationer og Cloud-implementeringer.
           </p>
         </div>
       </section>
