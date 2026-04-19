@@ -87,11 +87,11 @@ export default function Footer() {
   return (
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[160px_180px_220px_372px] gap-x-4 gap-y-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[180px_200px_230px_372px] gap-x-8 gap-y-10 items-center">
 
           {/* Kolonne 1: Logo */}
           <div>
-            <Image src="/logo3.png" alt="We Lead Projects" width={200} height={100} className="object-contain object-left" />
+            <Image src="/logo3.png" alt="We Lead Projects" width={240} height={120} className="object-contain object-left" />
           </div>
 
           {/* Kolonne 2: Åbningstider */}
