@@ -18,3 +18,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes heroZoom {
+  from { transform: scaleX(-1) scale(1); }
+  to   { transform: scaleX(-1) scale(1.08); }
+}
