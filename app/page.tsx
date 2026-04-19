@@ -66,7 +66,6 @@ const faqs = [
 // Brand colors
 const DARK = "#2d1a1a";
 const RED = "#cc2222";
-const RED_HOVER = "#b01c1c";
 const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
@@ -95,17 +94,17 @@ export default function Home() {
   return (
     <>
       {/* NAV */}
-      <nav style={{ background: DARK }} className="fixed top-0 left-0 right-0 z-50 shadow-md">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b" style={{ borderColor: BORDER }}>
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
           <a href="#top" className="flex items-center gap-3">
             <Image src="/logo.png" alt="We Lead Projects" width={36} height={36} className="object-contain" />
-            <span className="text-white font-semibold text-base hidden sm:block">We Lead Projects</span>
+            <span className="font-semibold text-base hidden sm:block" style={{ color: DARK }}>We Lead Projects</span>
           </a>
-          <div className="hidden md:flex gap-8 text-sm text-white/80">
-            <a href="#om-os" className="hover:text-white transition-colors">Om os</a>
-            <a href="#ydelser" className="hover:text-white transition-colors">Ydelser</a>
-            <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
-            <a href="#kontakt" className="hover:text-white transition-colors">Kontakt</a>
+          <div className="hidden md:flex gap-8 text-sm" style={{ color: DARK }}>
+            <a href="#om-os" className="hover:opacity-60 transition-opacity">Om os</a>
+            <a href="#ydelser" className="hover:opacity-60 transition-opacity">Ydelser</a>
+            <a href="#faq" className="hover:opacity-60 transition-opacity">FAQ</a>
+            <a href="#kontakt" className="hover:opacity-60 transition-opacity">Kontakt</a>
           </div>
           <a
             href="#kontakt"
@@ -118,17 +117,17 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section id="top" style={{ background: DARK }} className="text-white pt-36 pb-28 px-6">
+      <section id="top" style={{ background: OFFWHITE }} className="pt-36 pb-28 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4">
             Plan Well, Lead Better
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          <h1 style={{ color: DARK }} className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             Lad os sikre dit projekt
             <br />
             <span style={{ color: RED }}>bliver en succes</span>
           </h1>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto mb-10">
             Uanset om det er et mindre IT-projekt, et større anlægsprojekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -141,7 +140,8 @@ export default function Home() {
             </a>
             <a
               href="#ydelser"
-              className="border border-white/30 hover:border-white text-white font-semibold px-8 py-3 rounded-full transition-colors"
+              style={{ color: DARK, borderColor: DARK }}
+              className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity"
             >
               Se vores ydelser
             </a>
@@ -150,12 +150,12 @@ export default function Home() {
       </section>
 
       {/* SECONDARY BANNER */}
-      <section style={{ background: RED }} className="py-14 px-6">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">
+      <section className="bg-white py-14 px-6 border-y" style={{ borderColor: BORDER }}>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 style={{ color: DARK }} className="text-2xl md:text-3xl font-bold mb-3">
             Intet projekt er for stort eller for småt
           </h2>
-          <p className="text-white/85 max-w-2xl mx-auto">
+          <p className="text-gray-500 max-w-2xl mx-auto">
             Vi tager gerne ledelsen af et mindre byggeri (privat eller offentligt), ligesom vi gerne påtager os ansvaret for større IT-transformationer og f.eks. Cloud-implementeringer.
           </p>
         </div>
@@ -174,10 +174,10 @@ export default function Home() {
               Gennem ansvar og erfaringsmodeller, backup fra kollegaer og nyeste viden om projektstyring, navigerer vi projektlandskabet. Vores fokus på interessentstyring har givet os mulighed for at vokse til et betroet navn i branchen.
             </p>
           </div>
-          <div style={{ background: DARK }} className="rounded-2xl p-10 text-white text-center">
+          <div className="bg-white rounded-2xl p-10 text-center border" style={{ borderColor: BORDER }}>
             <div className="text-5xl mb-4">🎯</div>
-            <h3 className="text-xl font-bold mb-2">1+1=3 Metoden</h3>
-            <p className="text-white/70 text-sm">
+            <h3 className="text-xl font-bold mb-2" style={{ color: DARK }}>1+1=3 Metoden</h3>
+            <p className="text-gray-500 text-sm">
               Vores interne vidensdeling sikrer, at alle konsulenter lærer og vokser på tværs af projekterne — til gavn for dig som kunde.
             </p>
           </div>
@@ -213,10 +213,10 @@ export default function Home() {
       </section>
 
       {/* TRUST */}
-      <section style={{ background: DARK }} className="py-20 px-6 text-white">
+      <section style={{ background: OFFWHITE }} className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Vi hjælper med at sikre fremdrift og succes</h2>
-          <p className="text-white/70 max-w-3xl mx-auto text-lg">
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Vi hjælper med at sikre fremdrift og succes</h2>
+          <p className="text-gray-500 max-w-3xl mx-auto text-lg">
             Uanset om det er kompetent projektledelse, innovativ tilgang til fornyet fremdrift eller blot bidrag i form af rådgivning og ekspertbistand, er We Lead Projects altid klar til at se på udfordringen og bringe nye perspektiver og metoder i spil.
           </p>
           <a
@@ -389,17 +389,17 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer style={{ background: DARK }} className="text-white/60 py-8 px-6 text-center text-sm">
+      <footer className="bg-white border-t py-8 px-6 text-center text-sm" style={{ borderColor: BORDER, color: DARK }}>
         <div className="flex justify-center mb-4">
-          <Image src="/logo.png" alt="We Lead Projects" width={40} height={40} className="object-contain opacity-60" />
+          <Image src="/logo.png" alt="We Lead Projects" width={40} height={40} className="object-contain opacity-80" />
         </div>
-        <p>© 2025 We Lead Projects ApS · CVR-nr.: 44934655 · Industrivej 21, 4000 Roskilde</p>
-        <p className="mt-1">
-          <a href="mailto:hello@weleadprojects.com" className="hover:text-white transition-colors">
+        <p className="text-gray-400">© 2025 We Lead Projects ApS · CVR-nr.: 44934655 · Industrivej 21, 4000 Roskilde</p>
+        <p className="mt-1 text-gray-400">
+          <a href="mailto:hello@weleadprojects.com" className="hover:underline">
             hello@weleadprojects.com
           </a>
           {" · "}
-          <a href="tel:+4552400088" className="hover:text-white transition-colors">
+          <a href="tel:+4552400088" className="hover:underline">
             +45 5240 0088
           </a>
         </p>
