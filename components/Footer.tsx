@@ -24,8 +24,8 @@ const logos = [
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
-const LOGO_W = 140;
-const LOGO_GAP = 24;
+const LOGO_W = 160;
+const LOGO_GAP = 12;
 const STEP = LOGO_W + LOGO_GAP;
 
 function PhoneIcon() {
@@ -99,7 +99,7 @@ export default function Footer() {
             <h4 className="font-bold text-base mb-4 text-white">Åbningstider</h4>
             <ul className="space-y-1.5">
               {hours.map((h) => (
-                <li key={h.day} className="flex justify-between gap-6 text-sm text-white/70">
+                <li key={h.day} className="flex justify-between gap-3 text-sm text-white/70">
                   <span>{h.day}</span>
                   <span className="text-white">{h.time}</span>
                 </li>
