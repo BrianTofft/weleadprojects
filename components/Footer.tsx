@@ -27,9 +27,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-[200px_200px_260px_1fr] gap-10 items-start">
 
           {/* Kolonne 1: Logo */}
-          <div className="flex flex-col gap-2">
-            <Image src="/logo3.png" alt="We Lead Projects" width={160} height={80} className="object-contain object-left" />
-            <p className="text-white/50 text-xs mt-1">Plan Well, Lead Better</p>
+          <div>
+            <Image src="/logo3.png" alt="We Lead Projects" width={200} height={100} className="object-contain object-left" />
           </div>
 
           {/* Kolonne 2: Åbningstider */}
