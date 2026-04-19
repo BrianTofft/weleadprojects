@@ -24,7 +24,7 @@ export default function Footer() {
   return (
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[200px_200px_260px_1fr] gap-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[200px_220px_300px_1fr] gap-x-16 gap-y-10 items-start">
 
           {/* Kolonne 1: Logo */}
           <div>
@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
 
           {/* Kolonne 4: Partner logoer karussel, 3 synlige ad gangen */}
-          <div className="overflow-hidden" style={{ height: "80px" }}>
+          <div className="overflow-hidden flex items-center" style={{ height: "80px" }}>
             <div className="logo-scroll flex gap-6 w-max items-center h-full">
               {[...Array(2)].flatMap((_, set) =>
                 logos.map((logo) => (
