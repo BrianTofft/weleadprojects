@@ -79,7 +79,7 @@ const heroSlides = [
     body: "Uanset om det er et mindre IT-projekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.",
   },
   {
-    image: "/hero2.JPEG",
+    image: "/hero2.png",
     label: "Projekter er vores DNA",
     heading: "Intet projekt er",
     headingRed: "for stort eller for småt",
