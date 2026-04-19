@@ -69,7 +69,7 @@ export default function Footer() {
                     { src: "/footer/ITB_logo_01_hvid_RGB.webp", alt: "ITB" },
                     { src: "/footer/leverandoer_logo_RGB.webp", alt: "Leverandør" },
                   ].map((logo) => (
-                    <div key={logo.alt} className="bg-white rounded-lg p-2 flex items-center justify-center" style={{ height: "64px" }}>
+                    <div key={logo.alt} className="flex items-center justify-center" style={{ height: "64px" }}>
                       <Image src={logo.src} alt={logo.alt} width={120} height={48} className="object-contain max-h-full" />
                     </div>
                   ))}
