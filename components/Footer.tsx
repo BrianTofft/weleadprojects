@@ -68,17 +68,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolonne 4: Partner logoer i hvide bokse */}
-          <div className="flex flex-wrap gap-3 items-center">
-            {logos.map((logo) => (
-              <div
-                key={logo.alt}
-                className="bg-white rounded-lg flex items-center justify-center p-2"
-                style={{ width: "110px", height: "72px" }}
-              >
-                <Image src={logo.src} alt={logo.alt} width={100} height={60} className="object-contain max-h-full" />
-              </div>
-            ))}
+          {/* Kolonne 4: Partner logoer karussel, 3 synlige ad gangen */}
+          <div className="overflow-hidden" style={{ height: "80px" }}>
+            <div className="logo-scroll flex gap-6 w-max items-center h-full">
+              {[...Array(2)].flatMap((_, set) =>
+                logos.map((logo) => (
+                  <div key={`${set}-${logo.alt}`} className="flex-shrink-0 flex items-center justify-center" style={{ width: "110px", height: "72px" }}>
+                    <Image src={logo.src} alt={logo.alt} width={100} height={64} className="object-contain max-h-full" />
+                  </div>
+                ))
+              )}
+            </div>
           </div>
 
         </div>
