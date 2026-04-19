@@ -11,8 +11,8 @@ export default function Footer() {
 
         {/* Kolonne 1: Logo */}
         <div className="flex flex-col items-start">
-          <div style={{ marginTop: "-16px", marginBottom: "-12px" }}>
-            <Image src="/logo3.png" alt="We Lead Projects" width={180} height={50} className="object-contain" />
+          <div style={{ marginTop: "-36px", marginBottom: "-20px" }}>
+            <Image src="/logo3.png" alt="We Lead Projects" width={240} height={70} className="object-contain" />
           </div>
           <p className="text-sm text-white/60 leading-relaxed">
             Professionel projektledelse og konsulentassistance siden 2018.
