@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const services = [
   {
@@ -62,6 +63,13 @@ const faqs = [
   },
 ];
 
+// Brand colors
+const DARK = "#2d1a1a";
+const RED = "#cc2222";
+const RED_HOVER = "#b01c1c";
+const OFFWHITE = "#f7f5f5";
+const BORDER = "#e8e0e0";
+
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
@@ -87,10 +95,11 @@ export default function Home() {
   return (
     <>
       {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f2a4a] shadow-md">
+      <nav style={{ background: DARK }} className="fixed top-0 left-0 right-0 z-50 shadow-md">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-          <a href="#top" className="text-white font-bold text-lg tracking-wide">
-            We Lead Projects
+          <a href="#top" className="flex items-center gap-3">
+            <Image src="/logo.png" alt="We Lead Projects" width={36} height={36} className="object-contain" />
+            <span className="text-white font-semibold text-base hidden sm:block">We Lead Projects</span>
           </a>
           <div className="hidden md:flex gap-8 text-sm text-white/80">
             <a href="#om-os" className="hover:text-white transition-colors">Om os</a>
@@ -100,7 +109,8 @@ export default function Home() {
           </div>
           <a
             href="#kontakt"
-            className="bg-[#1a56a0] hover:bg-[#2e7dd1] text-white text-sm font-medium px-5 py-2 rounded-full transition-colors"
+            style={{ background: RED }}
+            className="hover:opacity-90 text-white text-sm font-semibold px-5 py-2 rounded-full transition-opacity"
           >
             Kontakt os
           </a>
@@ -108,15 +118,15 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section id="top" className="bg-[#0f2a4a] text-white pt-32 pb-24 px-6">
+      <section id="top" style={{ background: DARK }} className="text-white pt-36 pb-28 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#2e7dd1] font-semibold uppercase tracking-widest text-sm mb-4">
-            Vi elsker projekter
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4">
+            Plan Well, Lead Better
           </p>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             Lad os sikre dit projekt
             <br />
-            <span className="text-[#2e7dd1]">bliver en succes</span>
+            <span style={{ color: RED }}>bliver en succes</span>
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto mb-10">
             Uanset om det er et mindre IT-projekt, et større anlægsprojekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.
@@ -124,7 +134,8 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#kontakt"
-              className="bg-[#1a56a0] hover:bg-[#2e7dd1] text-white font-semibold px-8 py-3 rounded-full transition-colors"
+              style={{ background: RED }}
+              className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
             >
               Kom i gang
             </a>
@@ -138,24 +149,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECONDARY HERO BANNER */}
-      <section className="bg-[#1a56a0] py-14 px-6">
+      {/* SECONDARY BANNER */}
+      <section style={{ background: RED }} className="py-14 px-6">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Intet projekt er for stort eller for småt
           </h2>
-          <p className="text-white/80 max-w-2xl mx-auto">
+          <p className="text-white/85 max-w-2xl mx-auto">
             Vi tager gerne ledelsen af et mindre byggeri (privat eller offentligt), ligesom vi gerne påtager os ansvaret for større IT-transformationer og f.eks. Cloud-implementeringer.
           </p>
         </div>
       </section>
 
       {/* OM OS */}
-      <section id="om-os" className="py-20 px-6 bg-[#f5f7fa]">
+      <section id="om-os" style={{ background: OFFWHITE }} className="py-20 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#1a56a0] font-semibold uppercase tracking-widest text-sm mb-3">Om os</p>
-            <h2 className="text-3xl font-bold text-[#0f2a4a] mb-5">Din betroede projektpartner</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Om os</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-5">Din betroede projektpartner</h2>
             <p className="text-gray-600 mb-5">
               Vi startede vores projektledelsesrejse i 2018, med en vision om at gøre tingene på den rigtige måde. Fra begyndelsen har vi prioriteret koordinering og kommunikation højt for at sikre en vellykket projektleverance.
             </p>
@@ -163,7 +174,7 @@ export default function Home() {
               Gennem ansvar og erfaringsmodeller, backup fra kollegaer og nyeste viden om projektstyring, navigerer vi projektlandskabet. Vores fokus på interessentstyring har givet os mulighed for at vokse til et betroet navn i branchen.
             </p>
           </div>
-          <div className="bg-[#0f2a4a] rounded-2xl p-10 text-white text-center">
+          <div style={{ background: DARK }} className="rounded-2xl p-10 text-white text-center">
             <div className="text-5xl mb-4">🎯</div>
             <h3 className="text-xl font-bold mb-2">1+1=3 Metoden</h3>
             <p className="text-white/70 text-sm">
@@ -177,8 +188,8 @@ export default function Home() {
       <section id="ydelser" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-[#1a56a0] font-semibold uppercase tracking-widest text-sm mb-3">Ydelser</p>
-            <h2 className="text-3xl font-bold text-[#0f2a4a] mb-4">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Ydelser</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">
               Professionelle leverancer som sikrer succes i projekter
             </h2>
             <p className="text-gray-500 max-w-3xl mx-auto text-sm">
@@ -189,10 +200,11 @@ export default function Home() {
             {services.map((s) => (
               <div
                 key={s.title}
-                className="border border-[#dde3ed] rounded-xl p-7 hover:shadow-md hover:border-[#1a56a0] transition-all"
+                style={{ borderColor: BORDER }}
+                className="border rounded-xl p-7 hover:shadow-md transition-all group"
               >
                 <div className="text-3xl mb-4">{s.icon}</div>
-                <h3 className="font-bold text-[#0f2a4a] mb-2">{s.title}</h3>
+                <h3 style={{ color: DARK }} className="font-bold mb-2">{s.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{s.body}</p>
               </div>
             ))}
@@ -200,40 +212,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUST / PROMISE */}
-      <section className="bg-[#0f2a4a] py-20 px-6 text-white">
+      {/* TRUST */}
+      <section style={{ background: DARK }} className="py-20 px-6 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Vi hjælper med at sikre fremdrift og succes</h2>
           <p className="text-white/70 max-w-3xl mx-auto text-lg">
             Uanset om det er kompetent projektledelse, innovativ tilgang til fornyet fremdrift eller blot bidrag i form af rådgivning og ekspertbistand, er We Lead Projects altid klar til at se på udfordringen og bringe nye perspektiver og metoder i spil.
           </p>
+          <a
+            href="#kontakt"
+            style={{ background: RED }}
+            className="inline-block mt-8 hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
+          >
+            Tag kontakt
+          </a>
         </div>
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-20 px-6 bg-[#f5f7fa]">
+      <section id="faq" style={{ background: OFFWHITE }} className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#1a56a0] font-semibold uppercase tracking-widest text-sm mb-3">FAQ</p>
-            <h2 className="text-3xl font-bold text-[#0f2a4a]">Ofte stillede spørgsmål</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">FAQ</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold">Ofte stillede spørgsmål</h2>
           </div>
           <div className="space-y-3">
             {faqs.map((faq, i) => (
               <div
                 key={i}
-                className="bg-white border border-[#dde3ed] rounded-xl overflow-hidden"
+                style={{ borderColor: BORDER }}
+                className="bg-white border rounded-xl overflow-hidden"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full text-left px-6 py-5 font-semibold text-[#0f2a4a] flex justify-between items-center hover:bg-gray-50 transition-colors"
+                  style={{ color: DARK }}
+                  className="w-full text-left px-6 py-5 font-semibold flex justify-between items-center hover:bg-gray-50 transition-colors"
                 >
                   {faq.q}
-                  <span className="text-[#1a56a0] text-xl ml-4 flex-shrink-0">
+                  <span style={{ color: RED }} className="text-xl ml-4 flex-shrink-0">
                     {openFaq === i ? "−" : "+"}
                   </span>
                 </button>
                 {openFaq === i && (
-                  <div className="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-[#dde3ed] pt-4">
+                  <div style={{ borderColor: BORDER }} className="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t pt-4">
                     {faq.a}
                   </div>
                 )}
@@ -246,114 +267,118 @@ export default function Home() {
       {/* KONTAKT */}
       <section id="kontakt" className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-          {/* Info */}
           <div>
-            <p className="text-[#1a56a0] font-semibold uppercase tracking-widest text-sm mb-3">Kontakt</p>
-            <h2 className="text-3xl font-bold text-[#0f2a4a] mb-4">Kontakt os døgnet rundt</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Kontakt</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Kontakt os døgnet rundt</h2>
             <p className="text-gray-500 mb-8">
               Du kan altid kontakte os — og hvis telefonerne ikke er åbne, sender du en besked, så ringer vi tilbage senest den næste hverdag.
             </p>
             <div className="space-y-4 text-sm">
               <div className="flex items-start gap-3">
-                <span className="text-[#1a56a0] text-lg">📞</span>
+                <span style={{ color: RED }} className="text-lg">📞</span>
                 <div>
-                  <p className="font-semibold text-[#0f2a4a]">Telefon</p>
-                  <a href="tel:+4552400088" className="text-gray-600 hover:text-[#1a56a0]">+45 5240 0088</a>
+                  <p style={{ color: DARK }} className="font-semibold">Telefon</p>
+                  <a href="tel:+4552400088" className="text-gray-600 hover:underline">+45 5240 0088</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-[#1a56a0] text-lg">✉️</span>
+                <span style={{ color: RED }} className="text-lg">✉️</span>
                 <div>
-                  <p className="font-semibold text-[#0f2a4a]">Email</p>
-                  <a href="mailto:hello@weleadprojects.com" className="text-gray-600 hover:text-[#1a56a0]">
+                  <p style={{ color: DARK }} className="font-semibold">Email</p>
+                  <a href="mailto:hello@weleadprojects.com" className="text-gray-600 hover:underline">
                     hello@weleadprojects.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-[#1a56a0] text-lg">📍</span>
+                <span style={{ color: RED }} className="text-lg">📍</span>
                 <div>
-                  <p className="font-semibold text-[#0f2a4a]">Adresse</p>
+                  <p style={{ color: DARK }} className="font-semibold">Adresse</p>
                   <p className="text-gray-600">Industrivej 21, 4000 Roskilde</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-[#1a56a0] text-lg">🕐</span>
+                <span style={{ color: RED }} className="text-lg">🕐</span>
                 <div>
-                  <p className="font-semibold text-[#0f2a4a]">Åbningstider</p>
+                  <p style={{ color: DARK }} className="font-semibold">Åbningstider</p>
                   <p className="text-gray-600">Man–tor: 9.00–16.00</p>
                   <p className="text-gray-600">Fre: 9.00–15.00</p>
                 </div>
               </div>
             </div>
-            <div className="mt-6 pt-6 border-t border-[#dde3ed] text-sm text-gray-400">
-              <p className="font-semibold text-[#0f2a4a]">Brian P.N. Tofft</p>
+            <div style={{ borderColor: BORDER }} className="mt-6 pt-6 border-t text-sm text-gray-400">
+              <p style={{ color: DARK }} className="font-semibold">Brian P.N. Tofft</p>
               <p>Managing Partner</p>
               <p className="text-xs mt-1">CVR-nr.: 44934655</p>
             </div>
           </div>
 
           {/* Form */}
-          <div className="bg-[#f5f7fa] rounded-2xl p-8">
-            <h3 className="font-bold text-[#0f2a4a] text-lg mb-6">Send os en besked</h3>
+          <div style={{ background: OFFWHITE }} className="rounded-2xl p-8">
+            <h3 style={{ color: DARK }} className="font-bold text-lg mb-6">Send os en besked</h3>
             {status === "sent" ? (
               <div className="text-center py-10">
                 <div className="text-5xl mb-4">✅</div>
-                <p className="font-semibold text-[#0f2a4a]">Tak for din besked!</p>
+                <p style={{ color: DARK }} className="font-semibold">Tak for din besked!</p>
                 <p className="text-gray-500 text-sm mt-2">Vi vender tilbage hurtigst muligt.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-[#0f2a4a] mb-1">Navn *</label>
+                  <label style={{ color: DARK }} className="block text-sm font-medium mb-1">Navn *</label>
                   <input
                     type="text"
                     required
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="w-full border border-[#dde3ed] rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#1a56a0] bg-white"
+                    style={{ borderColor: BORDER }}
+                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none bg-white"
                     placeholder="Dit fulde navn"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-[#0f2a4a] mb-1">Email *</label>
+                  <label style={{ color: DARK }} className="block text-sm font-medium mb-1">Email *</label>
                   <input
                     type="email"
                     required
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full border border-[#dde3ed] rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#1a56a0] bg-white"
+                    style={{ borderColor: BORDER }}
+                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none bg-white"
                     placeholder="din@email.dk"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-[#0f2a4a] mb-1">Telefon</label>
+                  <label style={{ color: DARK }} className="block text-sm font-medium mb-1">Telefon</label>
                   <input
                     type="tel"
                     value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    className="w-full border border-[#dde3ed] rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#1a56a0] bg-white"
+                    style={{ borderColor: BORDER }}
+                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none bg-white"
                     placeholder="+45 __ __ __ __"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-[#0f2a4a] mb-1">Besked *</label>
+                  <label style={{ color: DARK }} className="block text-sm font-medium mb-1">Besked *</label>
                   <textarea
                     required
                     rows={4}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full border border-[#dde3ed] rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#1a56a0] bg-white resize-none"
+                    style={{ borderColor: BORDER }}
+                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none bg-white resize-none"
                     placeholder="Beskriv dit projekt eller din forespørgsel..."
                   />
                 </div>
                 {status === "error" && (
-                  <p className="text-red-500 text-sm">Noget gik galt. Prøv igen eller ring til os.</p>
+                  <p className="text-red-600 text-sm">Noget gik galt. Prøv igen eller ring til os.</p>
                 )}
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="w-full bg-[#1a56a0] hover:bg-[#0f2a4a] text-white font-semibold py-3 rounded-full transition-colors disabled:opacity-60"
+                  style={{ background: status === "sending" ? "#999" : RED }}
+                  className="w-full text-white font-semibold py-3 rounded-full transition-opacity hover:opacity-90 disabled:cursor-not-allowed"
                 >
                   {status === "sending" ? "Sender..." : "Send besked"}
                 </button>
@@ -364,7 +389,10 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#0f2a4a] text-white/60 py-8 px-6 text-center text-sm">
+      <footer style={{ background: DARK }} className="text-white/60 py-8 px-6 text-center text-sm">
+        <div className="flex justify-center mb-4">
+          <Image src="/logo.png" alt="We Lead Projects" width={40} height={40} className="object-contain opacity-60" />
+        </div>
         <p>© 2025 We Lead Projects ApS · CVR-nr.: 44934655 · Industrivej 21, 4000 Roskilde</p>
         <p className="mt-1">
           <a href="mailto:hello@weleadprojects.com" className="hover:text-white transition-colors">
