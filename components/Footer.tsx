@@ -24,7 +24,7 @@ export default function Footer() {
   return (
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[200px_220px_300px_1fr] gap-x-16 gap-y-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[200px_220px_300px_1fr] gap-x-16 gap-y-10 items-center">
 
           {/* Kolonne 1: Logo */}
           <div>
@@ -67,12 +67,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolonne 4: Partner logoer karussel, 3 synlige ad gangen */}
-          <div className="overflow-hidden flex items-center" style={{ height: "80px" }}>
-            <div className="logo-scroll flex gap-6 w-max items-center h-full">
+          {/* Kolonne 4: Partner logoer — 3 synlige, centreret i kolonnen */}
+          <div className="overflow-hidden" style={{ width: "360px", height: "80px" }}>
+            <div className="logo-scroll flex items-center h-full" style={{ gap: "20px", width: "max-content" }}>
               {[...Array(2)].flatMap((_, set) =>
                 logos.map((logo) => (
-                  <div key={`${set}-${logo.alt}`} className="flex-shrink-0 flex items-center justify-center" style={{ width: "110px", height: "72px" }}>
+                  <div key={`${set}-${logo.alt}`} className="flex-shrink-0 flex items-center justify-center" style={{ width: "106px", height: "72px" }}>
                     <Image src={logo.src} alt={logo.alt} width={100} height={64} className="object-contain max-h-full" />
                   </div>
                 ))
