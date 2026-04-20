@@ -248,25 +248,37 @@ export default function Home() {
       </section>
 
       {/* KUNDER */}
-      <section className="py-12 border-y" style={{ background: OFFWHITE, borderColor: BORDER }}>
-        <p className="text-center text-xs font-semibold uppercase tracking-widest mb-8 opacity-40" style={{ color: DARK }}>
-          Kunder vi har arbejdet med
-        </p>
-        <div className="overflow-hidden">
-          <div className="flex logo-scroll" style={{ gap: "1.5rem", width: "max-content" }}>
-            {[...kundeLogos, ...kundeLogos].map((logo, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-center shrink-0 rounded-xl"
-                style={{ width: 140, height: 72, background: "#2d1a1a" }}
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="max-h-12 max-w-[110px] object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
-                />
-              </div>
-            ))}
+      <section className="relative py-14 overflow-hidden">
+        {/* Background image with dark overlay */}
+        <img
+          src="/hero.JPEG"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          style={{ transform: "scaleX(-1)", filter: "brightness(0.28)" }}
+        />
+        <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.45)" }} />
+
+        {/* Content */}
+        <div className="relative">
+          <p className="text-center text-xs font-semibold uppercase tracking-widest mb-8 text-white/50">
+            Kunder vi har arbejdet med
+          </p>
+          <div className="overflow-hidden">
+            <div className="flex logo-scroll" style={{ gap: "2.5rem", width: "max-content" }}>
+              {[...kundeLogos, ...kundeLogos].map((logo, i) => (
+                <div key={i} className="flex items-center justify-center shrink-0" style={{ width: 130, height: 60 }}>
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="max-h-10 max-w-[110px] object-contain transition-all duration-300"
+                    style={{ filter: "brightness(0) invert(1)", opacity: 0.6 }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLImageElement).style.filter = "brightness(0) invert(1)"; (e.currentTarget as HTMLImageElement).style.opacity = "1"; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLImageElement).style.filter = "brightness(0) invert(1)"; (e.currentTarget as HTMLImageElement).style.opacity = "0.6"; }}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
