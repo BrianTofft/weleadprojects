@@ -68,17 +68,18 @@ const faqs = [
 const kundeLogos = [
   { src: "/kunde1.webp",  alt: "Kunde" },
   { src: "/kunde2.webp",  alt: "Kunde" },
-  // kunde3 mangler mørk version — erstat filen med en dark/colored udgave
+  { src: "/kunde3.png",   alt: "Kunde" },
   { src: "/kunde4.webp",  alt: "Kunde" },
   { src: "/kunde5.webp",  alt: "Kunde" },
-  { src: "/kunde6.webp",  alt: "Kunde" },
-  // kunde7 mangler mørk version — erstat filen med en dark/colored udgave
+  { src: "/kunde6.svg",   alt: "Kunde" },
+  { src: "/kunde7.svg",   alt: "Kunde" },
   { src: "/kunde8.webp",  alt: "Kunde" },
   { src: "/kunde9.webp",  alt: "Kunde" },
   { src: "/kunde10.webp", alt: "Kunde" },
   { src: "/kunde11.webp", alt: "Kunde" },
   { src: "/kunde12.webp", alt: "Kunde" },
   { src: "/kunde13.webp", alt: "Kunde" },
+  { src: "/kunde14.png",  alt: "Kunde" },
 ];
 
 // Brand colors
