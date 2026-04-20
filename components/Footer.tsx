@@ -111,8 +111,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div style={{ borderColor: BORDER }} className="border-t px-6 py-5 text-center text-sm text-white/40">
-        © 2026 We Lead Projects ApS
+      <div className="px-6 pb-6">
+        <div className="max-w-7xl mx-auto border-t pt-5 text-center text-sm text-white/40" style={{ borderColor: BORDER }}>
+          © 2026 We Lead Projects ApS
+        </div>
       </div>
     </footer>
   );
