@@ -65,6 +65,22 @@ const faqs = [
   },
 ];
 
+const kundeLogos = [
+  { src: "/kunde1.webp",  alt: "Kunde" },
+  { src: "/kunde2.webp",  alt: "Kunde" },
+  { src: "/kunde3.png",   alt: "Kunde" },
+  { src: "/kunde4.webp",  alt: "Kunde" },
+  { src: "/kunde5.webp",  alt: "Kunde" },
+  { src: "/kunde6.webp",  alt: "Kunde" },
+  { src: "/kunde7.webp",  alt: "Kunde" },
+  { src: "/kunde8.webp",  alt: "Kunde" },
+  { src: "/kunde9.webp",  alt: "Kunde" },
+  { src: "/kunde10.webp", alt: "Kunde" },
+  { src: "/kunde11.webp", alt: "Kunde" },
+  { src: "/kunde12.webp", alt: "Kunde" },
+  { src: "/kunde13.webp", alt: "Kunde" },
+];
+
 // Brand colors
 const DARK = "#2d1a1a";
 const RED = "#cc2222";
@@ -227,6 +243,26 @@ export default function Home() {
             <p className="text-gray-500 text-sm">
               Vores interne vidensdeling sikrer, at alle konsulenter lærer og vokser på tværs af projekterne — til gavn for dig som kunde.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* KUNDER */}
+      <section className="py-12 bg-white border-y" style={{ borderColor: BORDER }}>
+        <p className="text-center text-xs font-semibold uppercase tracking-widest mb-8 opacity-40" style={{ color: DARK }}>
+          Kunder vi har arbejdet med
+        </p>
+        <div className="overflow-hidden">
+          <div className="flex logo-scroll" style={{ gap: "3rem", width: "max-content" }}>
+            {[...kundeLogos, ...kundeLogos].map((logo, i) => (
+              <div key={i} className="flex items-center justify-center shrink-0" style={{ width: 130, height: 64 }}>
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-h-full max-w-full object-contain grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
