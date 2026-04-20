@@ -24,11 +24,11 @@ const logos = [
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
-// 2 logoer synlige ad gangen, hver 275px — passer præcist i max-w-7xl
-const LOGO_W = 275;
+// 3 logoer synlige ad gangen, hver 250px — kræver max-w-screen-2xl
+const LOGO_W = 250;
 const LOGO_GAP = 0;
 const STEP = LOGO_W + LOGO_GAP;
-const VISIBLE = 2;
+const VISIBLE = 3;
 
 function PhoneIcon() {
   return (
@@ -89,12 +89,12 @@ export default function Footer() {
 
   return (
     <footer style={{ background: BG }} className="text-white">
-      <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[300px_140px_200px_550px] gap-x-2 gap-y-10 items-center">
+      <div className="max-w-screen-2xl mx-auto px-8 py-14">
+        <div className="grid grid-cols-1 lg:grid-cols-[250px_165px_210px_750px] gap-x-6 gap-y-10 items-center">
 
           {/* Kolonne 1: Logo */}
           <div>
-            <Image src="/logo3.png" alt="We Lead Projects" width={300} height={150} className="object-contain object-left" />
+            <Image src="/logo3.png" alt="We Lead Projects" width={250} height={125} className="object-contain object-left" />
           </div>
 
           {/* Kolonne 2: Åbningstider */}
@@ -102,8 +102,8 @@ export default function Footer() {
             <h4 className="font-bold text-base mb-4 text-white">Åbningstider</h4>
             <ul className="space-y-1.5">
               {hours.map((h) => (
-                <li key={h.day} className="flex gap-2 text-sm text-white/70">
-                  <span className="w-[52px]">{h.day}</span>
+                <li key={h.day} className="flex gap-3 text-sm text-white/70">
+                  <span className="w-16">{h.day}</span>
                   <span className="text-white">{h.time}</span>
                 </li>
               ))}
