@@ -12,7 +12,7 @@ const BORDER = "#e8e0e0";
 const links = [
   { label: "Om os",   href: "/om-os" },
   { label: "Ydelser", href: "/ydelser" },
-  { label: "News",    href: "/news" },
+  { label: "Indsigt", href: "/indsigt" },
   { label: "FAQ",     href: "/faq" },
   { label: "Kontakt", href: "/#kontakt" },
 ];
