@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -27,13 +28,13 @@ export default function NewsPage() {
     <>
       <Nav />
 
-      {/* HEADER */}
-      <section style={{ background: OFFWHITE }} className="pt-36 pb-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">News</p>
-          <h1 style={{ color: DARK }} className="text-4xl font-bold">Seneste nyheder</h1>
-        </div>
-      </section>
+      <PageHeader
+        label="News"
+        title="Seneste nyheder"
+        subtitle="Opdateringer og indsigter fra We Lead Projects."
+        image="/hero.JPEG"
+        flip
+      />
 
       {/* ARTICLES */}
       <section className="py-16 px-6 bg-white min-h-[40vh]">

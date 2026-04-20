@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -95,18 +96,12 @@ export default function YdelserPage() {
     <>
       <Nav />
 
-      {/* HEADER */}
-      <section style={{ background: OFFWHITE }} className="pt-36 pb-16 px-6">
-        <div className="max-w-5xl mx-auto">
-          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Ydelser</p>
-          <h1 style={{ color: DARK }} className="text-4xl md:text-5xl font-bold mb-4">
-            Professionelle leverancer som sikrer succes
-          </h1>
-          <p className="text-gray-500 text-lg max-w-2xl">
-            Vi trækker på mangeårig erfaring og vores 1+1=3 metode til at levere projekter af enhver størrelse — fra målrettede rådgivningsforløb til store digitale transformationer.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        label="Ydelser"
+        title="Professionelle leverancer som sikrer succes"
+        subtitle="Vi trækker på mangeårig erfaring og vores 1+1=3 metode til at levere projekter af enhver størrelse — fra målrettede rådgivningsforløb til store digitale transformationer."
+        image="/Hero2.webp"
+      />
 
       {/* SERVICE CARDS */}
       <section className="py-20 px-6 bg-white">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -27,16 +28,13 @@ export default function OmOs() {
     <>
       <Nav />
 
-      {/* HEADER */}
-      <section style={{ background: OFFWHITE }} className="pt-36 pb-16 px-6">
-        <div className="max-w-5xl mx-auto">
-          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Om os</p>
-          <h1 style={{ color: DARK }} className="text-4xl md:text-5xl font-bold mb-4">Professionel konsulent assistance</h1>
-          <p className="text-gray-500 text-lg max-w-2xl">
-            Vi trækker på mangeårig erfaring for at håndtere projekter af enhver kompleksitet — fra mindre IT-projekter til store digitale transformationer.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        label="Om os"
+        title="Professionel konsulent assistance"
+        subtitle="Vi trækker på mangeårig erfaring for at håndtere projekter af enhver kompleksitet — fra mindre IT-projekter til store digitale transformationer."
+        image="/hero.JPEG"
+        flip
+      />
 
       {/* COMPANY + BRIAN */}
       <section className="py-20 px-6 bg-white">
