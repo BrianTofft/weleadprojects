@@ -164,20 +164,26 @@ export default function Home() {
       <section id="top" className="relative overflow-hidden h-[580px] flex items-center">
         {/* All slide images stacked — active one fades in */}
         {heroSlides.map((s, i) => (
-          <img
+          <div
             key={s.image}
-            src={s.image}
-            alt=""
-            aria-hidden="true"
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="absolute inset-0"
             style={{
               transform: s.flip ? "scaleX(-1)" : "none",
-              filter: s.brightness ? `brightness(${s.brightness})` : undefined,
-              animation: (slide === i || prevSlide === i) ? "heroZoom 6s ease-out forwards" : "none",
               opacity: slide === i ? 1 : 0,
               transition: "opacity 1.2s ease-in-out",
             }}
-          />
+          >
+            <img
+              src={s.image}
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 w-full h-full object-cover object-top"
+              style={{
+                filter: s.brightness ? `brightness(${s.brightness})` : undefined,
+                animation: (slide === i || prevSlide === i) ? "heroZoom 6s ease-out forwards" : "none",
+              }}
+            />
+          </div>
         ))}
         {/* Gradient overlay */}
         <div
