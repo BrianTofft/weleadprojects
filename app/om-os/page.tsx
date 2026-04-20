@@ -32,7 +32,7 @@ export default function OmOs() {
           </Link>
           <div className="hidden md:flex gap-8 text-base font-medium" style={{ color: DARK }}>
             <Link href="/om-os" style={{ color: RED }}>Om os</Link>
-            <Link href="/#ydelser" className="hover:opacity-60 transition-opacity">Ydelser</Link>
+            <Link href="/ydelser" className="hover:opacity-60 transition-opacity">Ydelser</Link>
             <Link href="/news" className="hover:opacity-60 transition-opacity">News</Link>
             <Link href="/#faq" className="hover:opacity-60 transition-opacity">FAQ</Link>
             <Link href="/#kontakt" className="hover:opacity-60 transition-opacity">Kontakt</Link>
