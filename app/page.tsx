@@ -350,23 +350,13 @@ export default function Home() {
       </section>
 
       {/* KONTAKT */}
-      <section id="kontakt" className="relative overflow-hidden" style={{ background: "#1C2544" }}>
-        {/* Background image */}
-        <img
-          src="/Graphics/project-manager-with-team.webp"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          style={{ filter: "brightness(0.12)", opacity: 0.8 }}
-        />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(28,37,68,0.95) 50%, rgba(28,37,68,0.7) 100%)" }} />
-
-        <div className="relative max-w-5xl mx-auto grid md:grid-cols-2 gap-12 px-6 py-20">
+      <section id="kontakt" className="py-20 px-6" style={{ background: OFFWHITE }}>
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Left: contact info */}
           <div>
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Kontakt</p>
-            <h2 className="text-3xl font-bold mb-4 text-white">Lad os tage en snak</h2>
-            <p className="text-white/60 mb-10 leading-relaxed">
+            <h2 className="text-3xl font-bold mb-4" style={{ color: DARK }}>Lad os tage en snak</h2>
+            <p className="text-gray-500 mb-10 leading-relaxed">
               Du kan altid kontakte os — og hvis telefonerne ikke er åbne, sender du en besked, så ringer vi tilbage senest den næste hverdag.
             </p>
 
@@ -377,8 +367,8 @@ export default function Home() {
                   style={{ background: RED }}
                 >📞</div>
                 <div>
-                  <p className="font-semibold text-white mb-0.5">Telefon</p>
-                  <a href="tel:+4552400088" className="text-white/60 hover:text-white transition-colors">+45 5240 0088</a>
+                  <p className="font-semibold mb-0.5" style={{ color: DARK }}>Telefon</p>
+                  <a href="tel:+4552400088" className="text-gray-500 hover:text-gray-800 transition-colors">+45 5240 0088</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -387,8 +377,8 @@ export default function Home() {
                   style={{ background: RED }}
                 >✉️</div>
                 <div>
-                  <p className="font-semibold text-white mb-0.5">Email</p>
-                  <a href="mailto:hello@weleadprojects.com" className="text-white/60 hover:text-white transition-colors">
+                  <p className="font-semibold mb-0.5" style={{ color: DARK }}>Email</p>
+                  <a href="mailto:hello@weleadprojects.com" className="text-gray-500 hover:text-gray-800 transition-colors">
                     hello@weleadprojects.com
                   </a>
                 </div>
@@ -399,12 +389,12 @@ export default function Home() {
                   style={{ background: RED }}
                 >📍</div>
                 <div>
-                  <p className="font-semibold text-white mb-0.5">Adresse</p>
+                  <p className="font-semibold mb-0.5" style={{ color: DARK }}>Adresse</p>
                   <a
                     href="https://maps.google.com/?q=Industrivej+21,+4000+Roskilde"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/60 hover:text-white transition-colors"
+                    className="text-gray-500 hover:text-gray-800 transition-colors"
                   >
                     Industrivej 21, 4000 Roskilde
                   </a>
@@ -416,16 +406,16 @@ export default function Home() {
                   style={{ background: RED }}
                 >🕐</div>
                 <div>
-                  <p className="font-semibold text-white mb-0.5">Åbningstider</p>
-                  <p className="text-white/60">Man–tor: 9.00–16.00</p>
-                  <p className="text-white/60">Fre: 9.00–15.00</p>
+                  <p className="font-semibold mb-0.5" style={{ color: DARK }}>Åbningstider</p>
+                  <p className="text-gray-500">Man–tor: 9.00–16.00</p>
+                  <p className="text-gray-500">Fre: 9.00–15.00</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Right: form */}
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border" style={{ borderColor: BORDER }}>
             <h3 style={{ color: DARK }} className="font-bold text-lg mb-6">Send os en besked</h3>
             {status === "sent" ? (
               <div className="text-center py-10">
