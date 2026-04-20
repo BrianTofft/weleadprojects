@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const BG = "#1C2544";
 const BORDER = "rgba(255,255,255,0.15)";
@@ -24,9 +24,11 @@ const logos = [
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
-const LOGO_W = 120;
-const LOGO_GAP = 6;
+// 2 logoer synlige ad gangen, hver 275px — passer præcist i max-w-7xl
+const LOGO_W = 275;
+const LOGO_GAP = 0;
 const STEP = LOGO_W + LOGO_GAP;
+const VISIBLE = 2;
 
 function PhoneIcon() {
   return (
@@ -73,25 +75,26 @@ export default function Footer() {
     return () => clearInterval(t);
   }, []);
 
-  // Seamless reset: when we've moved past all originals, jump back without transition
   useEffect(() => {
     if (step >= total) {
       const timeout = setTimeout(() => {
         setTransition(false);
         setStep(0);
-      }, 500); // wait for transition to finish
+      }, 500);
       return () => clearTimeout(timeout);
     }
   }, [step, total]);
 
+  const containerW = VISIBLE * LOGO_W + (VISIBLE - 1) * LOGO_GAP;
+
   return (
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[180px_200px_230px_372px] gap-x-8 gap-y-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[300px_140px_200px_550px] gap-x-2 gap-y-10 items-center">
 
           {/* Kolonne 1: Logo */}
           <div>
-            <Image src="/logo3.png" alt="We Lead Projects" width={240} height={120} className="object-contain object-left" />
+            <Image src="/logo3.png" alt="We Lead Projects" width={300} height={150} className="object-contain object-left" />
           </div>
 
           {/* Kolonne 2: Åbningstider */}
@@ -99,8 +102,8 @@ export default function Footer() {
             <h4 className="font-bold text-base mb-4 text-white">Åbningstider</h4>
             <ul className="space-y-1.5">
               {hours.map((h) => (
-                <li key={h.day} className="flex gap-4 text-sm text-white/70">
-                  <span className="w-16">{h.day}</span>
+                <li key={h.day} className="flex gap-2 text-sm text-white/70">
+                  <span className="w-[52px]">{h.day}</span>
                   <span className="text-white">{h.time}</span>
                 </li>
               ))}
@@ -130,20 +133,20 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolonne 4: Logo karussel — 3 synlige, skifter 1 ad gangen hvert 3. sek */}
-          <div className="overflow-hidden" style={{ width: `${3 * LOGO_W + 2 * LOGO_GAP}px`, height: "90px" }}>
+          {/* Kolonne 4: Logo karussel — 2 synlige, skifter 1 ad gangen hvert 3. sek */}
+          <div className="overflow-hidden" style={{ width: `${containerW}px`, height: "120px" }}>
             <div
               className="flex items-center h-full"
               style={{
                 gap: `${LOGO_GAP}px`,
                 transform: `translateX(-${step * STEP}px)`,
                 transition: transition ? "transform 0.5s ease-in-out" : "none",
-                width: `${(total * 2) * STEP}px`,
+                width: `${total * 2 * STEP}px`,
               }}
             >
               {[...logos, ...logos].map((logo, i) => (
-                <div key={i} className="flex-shrink-0 flex items-center justify-center" style={{ width: `${LOGO_W}px`, height: "80px" }}>
-                  <Image src={logo.src} alt={logo.alt} width={LOGO_W} height={76} className="object-contain max-h-full" />
+                <div key={i} className="flex-shrink-0 flex items-center justify-center" style={{ width: `${LOGO_W}px`, height: "110px" }}>
+                  <Image src={logo.src} alt={logo.alt} width={LOGO_W} height={110} className="object-contain max-h-full" />
                 </div>
               ))}
             </div>
