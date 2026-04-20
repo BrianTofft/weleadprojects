@@ -93,17 +93,28 @@ const heroSlides = [
 
 export default function Home() {
   const [slide, setSlide] = useState(0);
+  const [prevSlide, setPrevSlide] = useState<number | null>(null);
   const [animKey, setAnimKey] = useState(0);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // Auto-advance slides
   React.useEffect(() => {
     const t = setInterval(() => {
-      setSlide((s) => (s + 1) % heroSlides.length);
+      setSlide((s) => {
+        setPrevSlide(s);
+        return (s + 1) % heroSlides.length;
+      });
       setAnimKey((k) => k + 1);
     }, 6000);
     return () => clearInterval(t);
   }, []);
+
+  // Clear prevSlide after fade-out completes
+  React.useEffect(() => {
+    if (prevSlide === null) return;
+    const t = setTimeout(() => setPrevSlide(null), 1400);
+    return () => clearTimeout(t);
+  }, [prevSlide]);
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
@@ -162,7 +173,7 @@ export default function Home() {
             style={{
               transform: s.flip ? "scaleX(-1)" : "none",
               filter: s.brightness ? `brightness(${s.brightness})` : undefined,
-              animation: slide === i ? "heroZoom 6s ease-out forwards" : "none",
+              animation: (slide === i || prevSlide === i) ? "heroZoom 6s ease-out forwards" : "none",
               opacity: slide === i ? 1 : 0,
               transition: "opacity 1.2s ease-in-out",
             }}
