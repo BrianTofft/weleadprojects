@@ -24,9 +24,8 @@ const logos = [
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
-// 3 logoer synlige ad gangen, maks størrelse inden for max-w-7xl
-const LOGO_W = 210;
-const LOGO_GAP = 0;
+const LOGO_W = 170;
+const LOGO_GAP = 10;
 const STEP = LOGO_W + LOGO_GAP;
 const VISIBLE = 3;
 
@@ -90,11 +89,11 @@ export default function Footer() {
   return (
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[210px_150px_185px_630px] gap-x-3 gap-y-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[200px_165px_190px_530px] gap-x-10 gap-y-10 items-center">
 
           {/* Kolonne 1: Logo */}
           <div>
-            <Image src="/logo3.png" alt="We Lead Projects" width={210} height={105} className="object-contain object-left" />
+            <Image src="/logo3.png" alt="We Lead Projects" width={200} height={100} className="object-contain object-left" />
           </div>
 
           {/* Kolonne 2: Åbningstider */}
@@ -126,11 +125,15 @@ export default function Footer() {
                 <PinIcon />
                 <span>Industrivej 21, 4000 Roskilde</span>
               </li>
+              <li className="flex items-center gap-3">
+                <BuildingIcon />
+                <span>CVR-nr.: 44934655</span>
+              </li>
             </ul>
           </div>
 
           {/* Kolonne 4: Logo karussel — 3 synlige, skifter 1 ad gangen hvert 3. sek */}
-          <div className="overflow-hidden" style={{ width: `${containerW}px`, height: "205px" }}>
+          <div className="overflow-hidden" style={{ width: `${containerW}px`, height: "90px" }}>
             <div
               className="flex items-center h-full"
               style={{
@@ -141,8 +144,8 @@ export default function Footer() {
               }}
             >
               {[...logos, ...logos].map((logo, i) => (
-                <div key={i} className="flex-shrink-0 flex items-center justify-center" style={{ width: `${LOGO_W}px`, height: "200px" }}>
-                  <Image src={logo.src} alt={logo.alt} width={LOGO_W} height={200} className="object-contain max-h-full" />
+                <div key={i} className="flex-shrink-0 flex items-center justify-center" style={{ width: `${LOGO_W}px`, height: "80px" }}>
+                  <Image src={logo.src} alt={logo.alt} width={LOGO_W} height={80} className="object-contain max-h-full" />
                 </div>
               ))}
             </div>
