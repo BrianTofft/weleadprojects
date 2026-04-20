@@ -246,9 +246,9 @@ export default function Home() {
       </section>
 
       {/* KUNDER */}
-      <section className="py-12 border-y" style={{ background: OFFWHITE, borderColor: BORDER }}>
-        <p className="text-center text-xs font-semibold uppercase tracking-widest mb-8 opacity-40" style={{ color: DARK }}>
-          Kunder vi har arbejdet med
+      <section className="py-12 border-y" style={{ background: "#fff", borderColor: BORDER }}>
+        <p className="text-center text-xs font-semibold uppercase tracking-widest mb-8" style={{ color: RED }}>
+          Kundeudvalg som vi har arbejdet for
         </p>
         <div className="overflow-hidden">
           <div className="flex logo-scroll" style={{ gap: "1.5rem", width: "max-content" }}>
