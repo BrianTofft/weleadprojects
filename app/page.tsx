@@ -106,7 +106,7 @@ export default function Home() {
     const t = setTimeout(() => setPrevSlide(null), 1400);
     return () => clearTimeout(t);
   }, [prevSlide]);
-  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent) {
@@ -120,7 +120,7 @@ export default function Home() {
       });
       if (!res.ok) throw new Error();
       setStatus("sent");
-      setForm({ name: "", email: "", phone: "", message: "" });
+      setForm({ name: "", email: "", phone: "", company: "", message: "" });
     } catch {
       setStatus("error");
     }
@@ -350,71 +350,115 @@ export default function Home() {
       </section>
 
       {/* KONTAKT */}
-      <section id="kontakt" className="py-20 px-6 bg-white">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+      <section id="kontakt" className="relative overflow-hidden" style={{ background: "#1C2544" }}>
+        {/* Background image */}
+        <img
+          src="/Graphics/project-manager-with-team.webp"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          style={{ filter: "brightness(0.12)", opacity: 0.8 }}
+        />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(28,37,68,0.95) 50%, rgba(28,37,68,0.7) 100%)" }} />
+
+        <div className="relative max-w-5xl mx-auto grid md:grid-cols-2 gap-12 px-6 py-20">
+          {/* Left: contact info */}
           <div>
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Kontakt</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Kontakt os døgnet rundt</h2>
-            <p className="text-gray-500 mb-8">
+            <h2 className="text-3xl font-bold mb-4 text-white">Lad os tage en snak</h2>
+            <p className="text-white/60 mb-10 leading-relaxed">
               Du kan altid kontakte os — og hvis telefonerne ikke er åbne, sender du en besked, så ringer vi tilbage senest den næste hverdag.
             </p>
-            <div className="space-y-4 text-sm">
-              <div className="flex items-start gap-3">
-                <span style={{ color: RED }} className="text-lg">📞</span>
+
+            <div className="space-y-6 text-sm">
+              <div className="flex items-start gap-4">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 text-white text-base"
+                  style={{ background: RED }}
+                >📞</div>
                 <div>
-                  <p style={{ color: DARK }} className="font-semibold">Telefon</p>
-                  <a href="tel:+4552400088" className="text-gray-600 hover:underline">+45 5240 0088</a>
+                  <p className="font-semibold text-white mb-0.5">Telefon</p>
+                  <a href="tel:+4552400088" className="text-white/60 hover:text-white transition-colors">+45 5240 0088</a>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span style={{ color: RED }} className="text-lg">✉️</span>
+              <div className="flex items-start gap-4">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 text-white text-base"
+                  style={{ background: RED }}
+                >✉️</div>
                 <div>
-                  <p style={{ color: DARK }} className="font-semibold">Email</p>
-                  <a href="mailto:hello@weleadprojects.com" className="text-gray-600 hover:underline">
+                  <p className="font-semibold text-white mb-0.5">Email</p>
+                  <a href="mailto:hello@weleadprojects.com" className="text-white/60 hover:text-white transition-colors">
                     hello@weleadprojects.com
                   </a>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span style={{ color: RED }} className="text-lg">📍</span>
+              <div className="flex items-start gap-4">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 text-white text-base"
+                  style={{ background: RED }}
+                >📍</div>
                 <div>
-                  <p style={{ color: DARK }} className="font-semibold">Adresse</p>
-                  <p className="text-gray-600">Industrivej 21, 4000 Roskilde</p>
+                  <p className="font-semibold text-white mb-0.5">Adresse</p>
+                  <a
+                    href="https://maps.google.com/?q=Industrivej+21,+4000+Roskilde"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 hover:text-white transition-colors"
+                  >
+                    Industrivej 21, 4000 Roskilde
+                  </a>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span style={{ color: RED }} className="text-lg">🕐</span>
+              <div className="flex items-start gap-4">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 text-white text-base"
+                  style={{ background: RED }}
+                >🕐</div>
                 <div>
-                  <p style={{ color: DARK }} className="font-semibold">Åbningstider</p>
-                  <p className="text-gray-600">Man–tor: 9.00–16.00</p>
-                  <p className="text-gray-600">Fre: 9.00–15.00</p>
+                  <p className="font-semibold text-white mb-0.5">Åbningstider</p>
+                  <p className="text-white/60">Man–tor: 9.00–16.00</p>
+                  <p className="text-white/60">Fre: 9.00–15.00</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Form */}
-          <div style={{ background: OFFWHITE }} className="rounded-2xl p-8">
+          {/* Right: form */}
+          <div className="bg-white rounded-2xl p-8 shadow-xl">
             <h3 style={{ color: DARK }} className="font-bold text-lg mb-6">Send os en besked</h3>
             {status === "sent" ? (
               <div className="text-center py-10">
                 <div className="text-5xl mb-4">✅</div>
-                <p style={{ color: DARK }} className="font-semibold">Tak for din besked!</p>
-                <p className="text-gray-500 text-sm mt-2">Vi vender tilbage hurtigst muligt.</p>
+                <p style={{ color: DARK }} className="font-semibold text-lg">Tak for din besked!</p>
+                <p className="text-gray-500 text-sm mt-2">Vi vender tilbage hurtigst muligt — du har fået en bekræftelse på email.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label style={{ color: DARK }} className="block text-sm font-medium mb-1">Navn *</label>
-                  <input
-                    type="text"
-                    required
-                    value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    style={{ borderColor: BORDER }}
-                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none bg-white"
-                    placeholder="Dit fulde navn"
-                  />
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label style={{ color: DARK }} className="block text-sm font-medium mb-1">Navn *</label>
+                    <input
+                      type="text"
+                      required
+                      value={form.name}
+                      onChange={(e) => setForm({ ...form, name: e.target.value })}
+                      style={{ borderColor: BORDER }}
+                      className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 bg-white"
+                      placeholder="Dit fulde navn"
+                    />
+                  </div>
+                  <div>
+                    <label style={{ color: DARK }} className="block text-sm font-medium mb-1">Virksomhed</label>
+                    <input
+                      type="text"
+                      value={form.company}
+                      onChange={(e) => setForm({ ...form, company: e.target.value })}
+                      style={{ borderColor: BORDER }}
+                      className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 bg-white"
+                      placeholder="Firmanavn"
+                    />
+                  </div>
                 </div>
                 <div>
                   <label style={{ color: DARK }} className="block text-sm font-medium mb-1">Email *</label>
@@ -424,8 +468,8 @@ export default function Home() {
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                     style={{ borderColor: BORDER }}
-                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none bg-white"
-                    placeholder="din@email.dk"
+                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 bg-white"
+                    placeholder="din@firma.dk"
                   />
                 </div>
                 <div>
@@ -435,7 +479,7 @@ export default function Home() {
                     value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     style={{ borderColor: BORDER }}
-                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none bg-white"
+                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 bg-white"
                     placeholder="+45 __ __ __ __"
                   />
                 </div>
@@ -447,12 +491,12 @@ export default function Home() {
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     style={{ borderColor: BORDER }}
-                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none bg-white resize-none"
+                    className="w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 bg-white resize-none"
                     placeholder="Beskriv dit projekt eller din forespørgsel..."
                   />
                 </div>
                 {status === "error" && (
-                  <p className="text-red-600 text-sm">Noget gik galt. Prøv igen eller ring til os.</p>
+                  <p className="text-red-600 text-sm">Noget gik galt — prøv igen eller ring til os.</p>
                 )}
                 <button
                   type="submit"
@@ -460,8 +504,9 @@ export default function Home() {
                   style={{ background: status === "sending" ? "#999" : RED }}
                   className="w-full text-white font-semibold py-3 rounded-full transition-opacity hover:opacity-90 disabled:cursor-not-allowed"
                 >
-                  {status === "sending" ? "Sender..." : "Send besked"}
+                  {status === "sending" ? "Sender..." : "Send besked →"}
                 </button>
+                <p className="text-gray-400 text-xs text-center">Du modtager en bekræftelse på din email</p>
               </form>
             )}
           </div>
