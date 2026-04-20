@@ -6,7 +6,6 @@ import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 
-export const metadata = undefined; // client component — set via generateMetadata if needed
 
 const DARK = "#2d1a1a";
 const RED = "#cc2222";

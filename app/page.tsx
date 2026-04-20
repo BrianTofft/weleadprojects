@@ -112,8 +112,6 @@ export default function Home() {
   const [slide, setSlide] = useState(0);
   const [prevSlide, setPrevSlide] = useState<number | null>(null);
   const [animKey, setAnimKey] = useState(0);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
   // Auto-advance slides
   React.useEffect(() => {
     const t = setInterval(() => {
