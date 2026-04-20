@@ -31,7 +31,16 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
 
         {/* Logo */}
-        <Link href="/" onClick={() => { setOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+        <Link
+          href="/"
+          onClick={(e) => {
+            setOpen(false);
+            if (pathname === "/") {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+        >
           <Image src="/logo.png" alt="We Lead Projects" width={300} height={76} className="object-contain" />
         </Link>
 
