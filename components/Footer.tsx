@@ -25,8 +25,8 @@ const logos = [
 ];
 
 // Næsten kvadratiske containere → kvadratiske logoer fylder ~97% af bredden → max ~6px synlig gap
-const LOGO_W   = 150;
-const LOGO_H   = 150;
+const LOGO_W   = 200;
+const LOGO_H   = 200;
 const LOGO_GAP = 10;
 const STEP     = LOGO_W + LOGO_GAP;
 const VISIBLE  = 3;
@@ -92,27 +92,14 @@ export default function Footer() {
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
         {/* grid: [logo][åbningstider][kontakt][karussel] — gap-x-8 giver luft, alt passer i 1216px */}
-        <div className="grid grid-cols-1 lg:grid-cols-[200px_165px_250px_470px] gap-x-10 gap-y-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[240px_276px_620px] gap-x-10 gap-y-10 items-start">
 
           {/* Kolonne 1: Logo */}
           <div>
-            <Image src="/logo3.png" alt="We Lead Projects" width={200} height={100} className="object-contain object-left" />
+            <Image src="/logo3.png" alt="We Lead Projects" width={240} height={120} className="object-contain object-left" />
           </div>
 
-          {/* Kolonne 2: Åbningstider */}
-          <div>
-            <h4 className="font-bold text-base mb-4 text-white">Åbningstider</h4>
-            <ul className="space-y-1.5">
-              {hours.map((h) => (
-                <li key={h.day} className="flex gap-3 text-sm text-white/70">
-                  <span className="w-16">{h.day}</span>
-                  <span className="text-white">{h.time}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Kolonne 3: Kontakt info */}
+          {/* Kolonne 2: Kontakt info */}
           <div>
             <h4 className="font-bold text-base mb-4 text-white">Kontakt info</h4>
             <ul className="space-y-2.5 text-sm text-white/70">
