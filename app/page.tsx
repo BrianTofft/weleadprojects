@@ -74,6 +74,7 @@ const BORDER = "#e8e0e0";
 const heroSlides = [
   {
     image: "/hero.JPEG",
+    flip: true,
     label: "Plan Well, Lead Better",
     heading: "Lad os sikre dit projekt",
     headingRed: "bliver en succes",
@@ -81,6 +82,7 @@ const heroSlides = [
   },
   {
     image: "/Hero2.webp",
+    flip: false,
     label: "Projekter er vores DNA",
     heading: "Intet projekt er",
     headingRed: "for stort eller for småt",
@@ -157,7 +159,7 @@ export default function Home() {
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover object-top"
             style={{
-              transform: "scaleX(-1)",
+              transform: s.flip ? "scaleX(-1)" : "none",
               animation: slide === i ? "heroZoom 6s ease-out forwards" : "none",
               opacity: slide === i ? 1 : 0,
               transition: "opacity 1.2s ease-in-out",
