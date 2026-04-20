@@ -248,18 +248,22 @@ export default function Home() {
       </section>
 
       {/* KUNDER */}
-      <section className="py-12 bg-white border-y" style={{ borderColor: BORDER }}>
+      <section className="py-12 border-y" style={{ background: OFFWHITE, borderColor: BORDER }}>
         <p className="text-center text-xs font-semibold uppercase tracking-widest mb-8 opacity-40" style={{ color: DARK }}>
           Kunder vi har arbejdet med
         </p>
         <div className="overflow-hidden">
-          <div className="flex logo-scroll" style={{ gap: "3rem", width: "max-content" }}>
+          <div className="flex logo-scroll" style={{ gap: "1.5rem", width: "max-content" }}>
             {[...kundeLogos, ...kundeLogos].map((logo, i) => (
-              <div key={i} className="flex items-center justify-center shrink-0" style={{ width: 130, height: 64 }}>
+              <div
+                key={i}
+                className="flex items-center justify-center shrink-0 rounded-xl"
+                style={{ width: 140, height: 72, background: "#fff", border: `1px solid ${BORDER}` }}
+              >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-full max-w-full object-contain grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  className="max-h-12 max-w-[110px] object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             ))}
