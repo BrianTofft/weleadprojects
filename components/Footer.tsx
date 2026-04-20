@@ -51,8 +51,8 @@ export default function Footer() {
             <Label>Åbningstider</Label>
             <ul className="space-y-1">
               {hours.map((h) => (
-                <li key={h.day} className="flex justify-between text-sm">
-                  <span className="text-white/55">{h.day}</span>
+                <li key={h.day} className="flex gap-3 text-sm">
+                  <span className="text-white/55 w-16 shrink-0">{h.day}</span>
                   <span className="text-white tabular-nums">{h.time}</span>
                 </li>
               ))}
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           {/* Kolonne 3: Kontakt */}
-          <div>
+          <div className="lg:pl-6">
             <Label>Kontakt</Label>
             <ul className="space-y-3 text-sm text-white/70">
               <li>
