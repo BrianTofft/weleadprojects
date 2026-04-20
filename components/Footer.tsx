@@ -36,23 +36,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-10">
 
           {/* Kolonne 1: Logo */}
-          <div className="flex flex-col gap-3">
+          <div>
             <Image
               src="/logo3.png"
               alt="We Lead Projects"
-              width={200}
-              height={100}
+              width={260}
+              height={130}
               className="object-contain object-left"
             />
-            <p className="text-sm text-white/50 leading-relaxed max-w-[180px]">
-              Professionel konsulentassistance inden for IT og projektledelse.
-            </p>
           </div>
 
           {/* Kolonne 2: Åbningstider */}
           <div>
             <Label>Åbningstider</Label>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {hours.map((h) => (
                 <li key={h.day} className="flex justify-between text-sm">
                   <span className="text-white/55">{h.day}</span>
