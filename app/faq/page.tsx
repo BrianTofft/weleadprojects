@@ -55,7 +55,7 @@ export default function FaqPage() {
         label="FAQ"
         title="Ofte stillede spørgsmål"
         subtitle="Find svar på de mest stillede spørgsmål om vores arbejdsproces, samarbejde og priser."
-        image="/Hero2.webp"
+        image="/Graphics/Roadmap-1.webp"
       />
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">

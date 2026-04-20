@@ -35,8 +35,7 @@ export default function IndsightPage() {
         label="Indsigt"
         title="Viden der skaber fremdrift"
         subtitle="Artikler om projektledelse, Enterprise Architecture og IT-transformationer — på dansk og engelsk."
-        image="/hero.JPEG"
-        flip
+        image="/Graphics/Blog-3.webp"
       />
 
       {/* DANISH ARTICLES */}

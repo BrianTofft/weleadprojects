@@ -6,36 +6,12 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 const services = [
-  {
-    icon: "📋",
-    title: "Planlægning og Styring",
-    body: "Vi leverer detaljeret planlægning, der er skræddersyet til dit projekts specifikke behov for en problemfri eksekveringsproces — også inden opstart.",
-  },
-  {
-    icon: "🛡️",
-    title: "Koordinering og risiko reduktion",
-    body: "Vi udmærker os ved at identificere og afbøde potentielle risici tidligt i processen for at sikre, at dit projekt forbliver på sporet og inden for budgettet.",
-  },
-  {
-    icon: "💬",
-    title: "Kommunikationshjælp",
-    body: "Vi holder ALTID relevante deltagere og interessenter informeret med vores effektive kommunikationsstøtte, der forbedrer samarbejdet mellem alle projektinteressenter.",
-  },
-  {
-    icon: "⚡",
-    title: "Effektivt Workflow",
-    body: "Vi leverer projektledelsesopgaver for at opnå bedre produktivitet og holder dig på sporet med projekttidslinjer ved hjælp af vores effektive workflow-strategier.",
-  },
-  {
-    icon: "🤝",
-    title: "Det effektive Team",
-    body: "Udnyt styrken i teamwork ved at forbedre kommunikationen mellem teammedlemmerne for et mere inkluderende og effektiviseret projektmål.",
-  },
-  {
-    icon: "💡",
-    title: "Innovative Løsninger",
-    body: "Vi implementerer kreative og innovative løsninger i processen for at overvinde projektudfordringer og levere exceptionelle resultater ud over kundens forventninger.",
-  },
+  { icon: "/Graphics/Services-3.png",  title: "Planlægning og Styring",         body: "Vi leverer detaljeret planlægning, der er skræddersyet til dit projekts specifikke behov for en problemfri eksekveringsproces — også inden opstart." },
+  { icon: "/Graphics/Services-8.png",  title: "Koordinering og risiko reduktion", body: "Vi udmærker os ved at identificere og afbøde potentielle risici tidligt i processen for at sikre, at dit projekt forbliver på sporet og inden for budgettet." },
+  { icon: "/Graphics/Services-7.png",  title: "Kommunikationshjælp",             body: "Vi holder ALTID relevante deltagere og interessenter informeret med vores effektive kommunikationsstøtte, der forbedrer samarbejdet mellem alle projektinteressenter." },
+  { icon: "/Graphics/Services-4.png",  title: "Effektivt Workflow",              body: "Vi leverer projektledelsesopgaver for at opnå bedre produktivitet og holder dig på sporet med projekttidslinjer ved hjælp af vores effektive workflow-strategier." },
+  { icon: "/Graphics/Services-6.png",  title: "Det effektive Team",              body: "Udnyt styrken i teamwork ved at forbedre kommunikationen mellem teammedlemmerne for et mere inkluderende og effektiviseret projektmål." },
+  { icon: "/Graphics/Services-5.png",  title: "Innovative Løsninger",            body: "Vi implementerer kreative og innovative løsninger i processen for at overvinde projektudfordringer og levere exceptionelle resultater ud over kundens forventninger." },
 ];
 
 const faqs = [
@@ -229,11 +205,11 @@ export default function Home() {
           {/* Left: photo */}
           <div className="relative hidden md:block">
             <img
-              src="/hero.JPEG"
+              src="/Graphics/Project-manager.webp"
               alt=""
               aria-hidden="true"
               className="absolute inset-0 w-full h-full object-cover object-center"
-              style={{ transform: "scaleX(-1)", filter: "brightness(0.55)" }}
+              style={{ filter: "brightness(0.5)" }}
             />
             {/* Fade to dark on right edge */}
             <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(28,37,68,0) 55%, rgba(28,37,68,1) 100%)" }} />
@@ -314,10 +290,10 @@ export default function Home() {
                 style={{ borderColor: BORDER }}
               >
                 <div
-                  className="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform"
-                  style={{ background: "#fff0f0" }}
+                  className="w-14 h-14 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                  style={{ background: "#eef3f9" }}
                 >
-                  {s.icon}
+                  <img src={s.icon} alt="" className="w-8 h-8 object-contain" style={{ mixBlendMode: "multiply" }} />
                 </div>
                 <h3 className="font-bold text-sm leading-snug" style={{ color: DARK }}>{s.title}</h3>
               </a>

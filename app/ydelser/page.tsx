@@ -21,7 +21,7 @@ const BORDER = "#e8e0e0";
 
 const services = [
   {
-    icon: "📋",
+    icon: "/Graphics/Services-3.png",
     title: "Planlægning og Styring",
     intro: "Vi leverer detaljeret planlægning skræddersyet til dit projekts specifikke behov — også inden opstart.",
     bullets: [
@@ -32,7 +32,7 @@ const services = [
     ],
   },
   {
-    icon: "🛡️",
+    icon: "/Graphics/Services-8.png",
     title: "Koordinering og Risikoreduktion",
     intro: "Vi identificerer og afbøder potentielle risici tidligt for at sikre, at dit projekt forbliver på sporet og inden for budgettet.",
     bullets: [
@@ -43,7 +43,7 @@ const services = [
     ],
   },
   {
-    icon: "💬",
+    icon: "/Graphics/Services-7.png",
     title: "Kommunikationshjælp",
     intro: "Vi holder ALTID relevante deltagere og interessenter informeret med effektiv kommunikationsstøtte.",
     bullets: [
@@ -54,7 +54,7 @@ const services = [
     ],
   },
   {
-    icon: "⚡",
+    icon: "/Graphics/Services-4.png",
     title: "Effektivt Workflow",
     intro: "Vi optimerer arbejdsgange og holder projekter på sporet med strukturerede workflow-strategier.",
     bullets: [
@@ -65,7 +65,7 @@ const services = [
     ],
   },
   {
-    icon: "🤝",
+    icon: "/Graphics/Services-6.png",
     title: "Det Effektive Team",
     intro: "Udnyt styrken i teamwork ved at forbedre kommunikationen og samarbejdet mod et fælles projektmål.",
     bullets: [
@@ -76,7 +76,7 @@ const services = [
     ],
   },
   {
-    icon: "💡",
+    icon: "/Graphics/Services-5.png",
     title: "Innovative Løsninger",
     intro: "Vi implementerer kreative løsninger for at overvinde projektudfordringer og levere resultater ud over forventningerne.",
     bullets: [
@@ -105,7 +105,7 @@ export default function YdelserPage() {
         label="Ydelser"
         title="Professionelle leverancer som sikrer succes"
         subtitle="Vi trækker på mangeårig erfaring og vores 1+1=3 metode til at levere projekter af enhver størrelse — fra målrettede rådgivningsforløb til store digitale transformationer."
-        image="/Hero2.webp"
+        image="/Graphics/Project-Management-Consultancy.webp"
       />
 
       {/* SERVICE CARDS */}
@@ -118,7 +118,9 @@ export default function YdelserPage() {
                 className="rounded-2xl border p-8"
                 style={{ borderColor: BORDER, background: OFFWHITE }}
               >
-                <div className="text-4xl mb-4">{s.icon}</div>
+                <div className="w-16 h-16 mb-5 rounded-xl flex items-center justify-center" style={{ background: "#eef3f9" }}>
+                  <img src={s.icon} alt="" className="w-10 h-10 object-contain" style={{ mixBlendMode: "multiply" }} />
+                </div>
                 <h2 style={{ color: DARK }} className="text-xl font-bold mb-2">{s.title}</h2>
                 <p className="text-gray-500 text-sm mb-5 leading-relaxed">{s.intro}</p>
                 <ul className="space-y-2">

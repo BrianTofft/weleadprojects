@@ -37,8 +37,7 @@ export default function OmOs() {
         label="Om os"
         title="Professionel konsulent assistance"
         subtitle="Vi trækker på mangeårig erfaring for at håndtere projekter af enhver kompleksitet — fra mindre IT-projekter til store digitale transformationer."
-        image="/hero.JPEG"
-        flip
+        image="/Graphics/project-manager-with-team.webp"
       />
 
       {/* COMPANY + BRIAN */}
