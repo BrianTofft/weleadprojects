@@ -140,7 +140,7 @@ export default function Home() {
       <Nav />
 
       {/* HERO SLIDER */}
-      <section id="top" className="relative overflow-hidden h-[580px] flex items-center">
+      <section id="top" className="relative overflow-hidden h-[580px] flex items-center mt-20 md:mt-0">
         {/* All slide images stacked — active one fades in */}
         {heroSlides.map((s, i) => (
           <div
@@ -171,7 +171,7 @@ export default function Home() {
         />
 
         {/* Slide content */}
-        <div className="relative max-w-6xl mx-auto w-full px-6 pt-36 pb-28">
+        <div className="relative max-w-6xl mx-auto w-full px-6 pt-8 md:pt-36 pb-28">
           <div className="max-w-lg">
             <p key={`label-${slide}`} style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4 animate-fade">
               {heroSlides[slide].label}
