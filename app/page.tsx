@@ -258,7 +258,7 @@ export default function Home() {
               <div
                 key={i}
                 className="flex items-center justify-center shrink-0 rounded-xl"
-                style={{ width: 140, height: 72, background: "#fff", border: `1px solid ${BORDER}` }}
+                style={{ width: 140, height: 72, background: "#2d1a1a" }}
               >
                 <img
                   src={logo.src}
