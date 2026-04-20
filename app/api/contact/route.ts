@@ -1,12 +1,11 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const NAVY = "#1C2544";
 const RED  = "#cc2222";
 
 export async function POST(req: NextRequest) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const { name, email, phone, company, message } = await req.json();
 
   if (!name || !email || !message) {
