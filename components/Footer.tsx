@@ -157,7 +157,7 @@ export default function Footer() {
                     alt={logo.alt}
                     width={LOGO_W}
                     height={LOGO_H}
-                    className="object-contain w-full h-full"
+                    className="object-cover w-full h-full"
                   />
                 </div>
               ))}
