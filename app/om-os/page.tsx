@@ -55,11 +55,14 @@ export default function OmOs() {
 
           {/* Brian */}
           <div className="rounded-2xl border p-8 text-center" style={{ borderColor: BORDER, background: OFFWHITE }}>
-            <div
-              className="w-24 h-24 rounded-full mx-auto mb-5 flex items-center justify-center text-4xl"
-              style={{ background: BORDER }}
-            >
-              👤
+            <div className="w-28 h-28 rounded-full mx-auto mb-5 overflow-hidden border-2" style={{ borderColor: BORDER }}>
+              <Image
+                src="/profile.png"
+                alt="Brian P.N. Tofft"
+                width={112}
+                height={112}
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">Brian P.N. Tofft</h3>
             <p style={{ color: RED }} className="font-semibold text-sm mb-4">Managing Partner</p>
