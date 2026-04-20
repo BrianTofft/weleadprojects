@@ -24,8 +24,8 @@ const logos = [
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
-// 3 logoer synlige ad gangen, hver 250px — kræver max-w-screen-2xl
-const LOGO_W = 250;
+// 3 logoer synlige ad gangen, maks størrelse inden for max-w-7xl
+const LOGO_W = 210;
 const LOGO_GAP = 0;
 const STEP = LOGO_W + LOGO_GAP;
 const VISIBLE = 3;
@@ -89,12 +89,12 @@ export default function Footer() {
 
   return (
     <footer style={{ background: BG }} className="text-white">
-      <div className="max-w-screen-2xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[250px_165px_210px_750px] gap-x-6 gap-y-10 items-center">
+      <div className="max-w-7xl mx-auto px-8 py-14">
+        <div className="grid grid-cols-1 lg:grid-cols-[210px_150px_195px_630px] gap-x-2 gap-y-10 items-center">
 
           {/* Kolonne 1: Logo */}
           <div>
-            <Image src="/logo3.png" alt="We Lead Projects" width={250} height={125} className="object-contain object-left" />
+            <Image src="/logo3.png" alt="We Lead Projects" width={210} height={105} className="object-contain object-left" />
           </div>
 
           {/* Kolonne 2: Åbningstider */}
