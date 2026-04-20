@@ -82,7 +82,7 @@ const heroSlides = [
   },
   {
     image: "/Hero2.webp",
-    flip: true,
+    flip: false,
     brightness: 0.65,
     label: "Projekter er vores DNA",
     heading: "Intet projekt er",
@@ -150,7 +150,7 @@ export default function Home() {
       </nav>
 
       {/* HERO SLIDER */}
-      <section id="top" className="relative overflow-hidden min-h-[580px] flex items-center">
+      <section id="top" className="relative overflow-hidden h-[580px] flex items-center">
         {/* All slide images stacked — active one fades in */}
         {heroSlides.map((s, i) => (
           <img
