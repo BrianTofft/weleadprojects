@@ -226,24 +226,47 @@ export default function Home() {
       </section>
 
       {/* OM OS */}
-      <section id="om-os" style={{ background: OFFWHITE }} className="py-20 px-6">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Om os</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-5">Din betroede projektpartner</h2>
-            <p className="text-gray-600 mb-5">
-              Vi startede vores projektledelsesrejse i 2018, med en vision om at gøre tingene på den rigtige måde. Fra begyndelsen har vi prioriteret koordinering og kommunikation højt for at sikre en vellykket projektleverance.
-            </p>
-            <p className="text-gray-600">
-              Gennem ansvar og erfaringsmodeller, backup fra kollegaer og nyeste viden om projektstyring, navigerer vi projektlandskabet. Vores fokus på interessentstyring har givet os mulighed for at vokse til et betroet navn i branchen.
-            </p>
+      <section id="om-os" className="relative overflow-hidden" style={{ background: "#1C2544" }}>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2" style={{ minHeight: 460 }}>
+          {/* Left: photo */}
+          <div className="relative hidden md:block">
+            <img
+              src="/hero.JPEG"
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+              style={{ transform: "scaleX(-1)", filter: "brightness(0.55)" }}
+            />
+            {/* Fade to dark on right edge */}
+            <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(28,37,68,0) 55%, rgba(28,37,68,1) 100%)" }} />
           </div>
-          <div className="bg-white rounded-2xl p-10 text-center border" style={{ borderColor: BORDER }}>
-            <div className="text-5xl mb-4">🎯</div>
-            <h3 className="text-xl font-bold mb-2" style={{ color: DARK }}>1+1=3 Metoden</h3>
-            <p className="text-gray-500 text-sm">
-              Vores interne vidensdeling sikrer, at alle konsulenter lærer og vokser på tværs af projekterne — til gavn for dig som kunde.
+
+          {/* Right: content */}
+          <div className="px-10 py-20 flex flex-col justify-center">
+            <p className="font-semibold uppercase tracking-widest text-sm mb-3" style={{ color: RED }}>Om os</p>
+            <h2 className="text-3xl font-bold text-white mb-5 leading-snug">
+              Din betroede<br />projektpartner siden 2018
+            </h2>
+            <p className="text-white/60 mb-10 leading-relaxed">
+              Vi kombinerer mangeårig erfaring med intern vidensdeling for at levere projekter af enhver kompleksitet — altid med fremdrift og succes i fokus.
             </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 mb-10 border-t border-white/10 pt-8">
+              {[["30+", "Års erfaring"], ["50+", "Projekter leveret"], ["2018", "Grundlagt"]].map(([val, lbl]) => (
+                <div key={lbl}>
+                  <p className="text-3xl font-bold" style={{ color: RED }}>{val}</p>
+                  <p className="text-white/40 text-xs mt-1 uppercase tracking-wider">{lbl}</p>
+                </div>
+              ))}
+            </div>
+
+            <a
+              href="/om-os"
+              className="inline-flex items-center gap-2 font-semibold transition-opacity hover:opacity-70 text-white"
+            >
+              Læs mere om os <span>→</span>
+            </a>
           </div>
         </div>
       </section>
@@ -274,80 +297,79 @@ export default function Home() {
       </section>
 
       {/* YDELSER */}
-      <section id="ydelser" className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
+      <section id="ydelser" className="py-20 px-6" style={{ background: OFFWHITE }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Ydelser</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">
-              Professionelle leverancer som sikrer succes i projekter
-            </h2>
-            <p className="text-gray-500 max-w-3xl mx-auto text-sm">
-              Vores erfarne projektledere er dagligt i gang på mange forskelligartede kundeprojekter, hvilket løbende hæver erfaringsniveauet hos den enkelte — det kalder vi 1+1=3 metoden.
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-3">Hvad vi hjælper med</h2>
+            <p className="text-gray-500 max-w-xl mx-auto text-sm">
+              Fra planlægning til afslutning — vi dækker alle aspekter af professionel projektledelse.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
             {services.map((s) => (
-              <div
+              <a
                 key={s.title}
+                href="/ydelser"
+                className="group flex flex-col items-center text-center p-6 rounded-2xl bg-white border hover:shadow-lg hover:border-red-200 transition-all"
                 style={{ borderColor: BORDER }}
-                className="border rounded-xl p-7 hover:shadow-md transition-all group"
               >
-                <div className="text-3xl mb-4">{s.icon}</div>
-                <h3 style={{ color: DARK }} className="font-bold mb-2">{s.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{s.body}</p>
-              </div>
+                <div
+                  className="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform"
+                  style={{ background: "#fff0f0" }}
+                >
+                  {s.icon}
+                </div>
+                <h3 className="font-bold text-sm leading-snug" style={{ color: DARK }}>{s.title}</h3>
+              </a>
             ))}
           </div>
+
+          <div className="text-center">
+            <a
+              href="/ydelser"
+              style={{ background: RED }}
+              className="inline-block hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
+            >
+              Se alle ydelser →
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* TRUST */}
-      <section style={{ background: OFFWHITE }} className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Vi hjælper med at sikre fremdrift og succes</h2>
-          <p className="text-gray-500 max-w-3xl mx-auto text-lg">
-            Uanset om det er kompetent projektledelse, innovativ tilgang til fornyet fremdrift eller blot bidrag i form af rådgivning og ekspertbistand, er We Lead Projects altid klar til at se på udfordringen og bringe nye perspektiver og metoder i spil.
-          </p>
-          <a
-            href="#kontakt"
-            style={{ background: RED }}
-            className="inline-block mt-8 hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
-          >
-            Tag kontakt
-          </a>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section id="faq" style={{ background: OFFWHITE }} className="py-20 px-6">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
+      {/* FAQ PREVIEW */}
+      <section id="faq" className="py-20 px-6 bg-white">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+          <div>
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">FAQ</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold">Ofte stillede spørgsmål</h2>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-5">Har du spørgsmål?</h2>
+            <p className="text-gray-500 mb-8 leading-relaxed">
+              Vi har samlet svar på de mest stillede spørgsmål om vores arbejdsproces, priser og samarbejde.
+            </p>
+            <a
+              href="/faq"
+              style={{ background: RED }}
+              className="inline-block hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
+            >
+              Se alle spørgsmål
+            </a>
           </div>
           <div className="space-y-3">
-            {faqs.map((faq, i) => (
-              <div
+            {faqs.slice(0, 3).map((faq, i) => (
+              <a
                 key={i}
+                href="/faq"
+                className="flex items-center gap-4 p-5 rounded-xl border bg-white hover:shadow-md transition-all group"
                 style={{ borderColor: BORDER }}
-                className="bg-white border rounded-xl overflow-hidden"
               >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ color: DARK }}
-                  className="w-full text-left px-6 py-5 font-semibold flex justify-between items-center hover:bg-gray-50 transition-colors"
-                >
-                  {faq.q}
-                  <span style={{ color: RED }} className="text-xl ml-4 flex-shrink-0">
-                    {openFaq === i ? "−" : "+"}
-                  </span>
-                </button>
-                {openFaq === i && (
-                  <div style={{ borderColor: BORDER }} className="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t pt-4">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
+                <span
+                  className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
+                  style={{ background: RED }}
+                >?</span>
+                <p className="font-medium text-sm flex-1" style={{ color: DARK }}>{faq.q}</p>
+                <span className="text-gray-300 group-hover:text-gray-500 transition-colors shrink-0">→</span>
+              </a>
             ))}
           </div>
         </div>

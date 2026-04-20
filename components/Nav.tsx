@@ -13,7 +13,7 @@ const links = [
   { label: "Om os",   href: "/om-os" },
   { label: "Ydelser", href: "/ydelser" },
   { label: "News",    href: "/news" },
-  { label: "FAQ",     href: "/#faq" },
+  { label: "FAQ",     href: "/faq" },
   { label: "Kontakt", href: "/#kontakt" },
 ];
 
