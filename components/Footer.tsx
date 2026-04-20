@@ -90,7 +90,7 @@ export default function Footer() {
   return (
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[210px_150px_195px_630px] gap-x-2 gap-y-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[210px_150px_185px_630px] gap-x-3 gap-y-10 items-start">
 
           {/* Kolonne 1: Logo */}
           <div>
@@ -126,15 +126,11 @@ export default function Footer() {
                 <PinIcon />
                 <span>Industrivej 21, 4000 Roskilde</span>
               </li>
-              <li className="flex items-center gap-3">
-                <BuildingIcon />
-                <span>CVR-nr.: 44934655</span>
-              </li>
             </ul>
           </div>
 
-          {/* Kolonne 4: Logo karussel — 2 synlige, skifter 1 ad gangen hvert 3. sek */}
-          <div className="overflow-hidden" style={{ width: `${containerW}px`, height: "120px" }}>
+          {/* Kolonne 4: Logo karussel — 3 synlige, skifter 1 ad gangen hvert 3. sek */}
+          <div className="overflow-hidden" style={{ width: `${containerW}px`, height: "205px" }}>
             <div
               className="flex items-center h-full"
               style={{
@@ -145,8 +141,8 @@ export default function Footer() {
               }}
             >
               {[...logos, ...logos].map((logo, i) => (
-                <div key={i} className="flex-shrink-0 flex items-center justify-center" style={{ width: `${LOGO_W}px`, height: "110px" }}>
-                  <Image src={logo.src} alt={logo.alt} width={LOGO_W} height={110} className="object-contain max-h-full" />
+                <div key={i} className="flex-shrink-0 flex items-center justify-center" style={{ width: `${LOGO_W}px`, height: "200px" }}>
+                  <Image src={logo.src} alt={logo.alt} width={LOGO_W} height={200} className="object-contain max-h-full" />
                 </div>
               ))}
             </div>

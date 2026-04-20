@@ -353,11 +353,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div style={{ borderColor: BORDER }} className="mt-6 pt-6 border-t text-sm text-gray-400">
-              <p style={{ color: DARK }} className="font-semibold">Brian P.N. Tofft</p>
-              <p>Managing Partner</p>
-              <p className="text-xs mt-1">CVR-nr.: 44934655</p>
-            </div>
           </div>
 
           {/* Form */}
