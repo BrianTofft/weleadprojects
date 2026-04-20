@@ -83,7 +83,7 @@ const heroSlides = [
   {
     image: "/Hero2.webp",
     flip: false,
-    brightness: 0.65,
+    brightness: 0.5,
     label: "Projekter er vores DNA",
     heading: "Intet projekt er",
     headingRed: "for stort eller for småt",
