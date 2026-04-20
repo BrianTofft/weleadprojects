@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -93,28 +92,7 @@ const process = [
 export default function YdelserPage() {
   return (
     <>
-      {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b" style={{ borderColor: BORDER }}>
-        <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
-          <Link href="/">
-            <Image src="/logo.png" alt="We Lead Projects" width={360} height={92} className="object-contain" />
-          </Link>
-          <div className="hidden md:flex gap-8 text-base font-medium" style={{ color: DARK }}>
-            <Link href="/om-os" className="hover:opacity-60 transition-opacity">Om os</Link>
-            <Link href="/ydelser" style={{ color: RED }}>Ydelser</Link>
-            <Link href="/news" className="hover:opacity-60 transition-opacity">News</Link>
-            <Link href="/#faq" className="hover:opacity-60 transition-opacity">FAQ</Link>
-            <Link href="/#kontakt" className="hover:opacity-60 transition-opacity">Kontakt</Link>
-          </div>
-          <Link
-            href="/#kontakt"
-            style={{ background: RED }}
-            className="hover:opacity-90 text-white text-sm font-semibold px-5 py-2 rounded-full transition-opacity"
-          >
-            Kontakt os
-          </Link>
-        </div>
-      </nav>
+      <Nav />
 
       {/* HEADER */}
       <section style={{ background: OFFWHITE }} className="pt-36 pb-16 px-6">

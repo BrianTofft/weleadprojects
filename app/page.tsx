@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import React from "react";
-import Image from "next/image";
+import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 const services = [
@@ -137,28 +137,7 @@ export default function Home() {
 
   return (
     <>
-      {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b" style={{ borderColor: BORDER }}>
-        <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-          <a href="#top">
-            <Image src="/logo.png" alt="We Lead Projects" width={360} height={92} className="object-contain" />
-          </a>
-          <div className="hidden md:flex gap-8 text-base font-medium" style={{ color: DARK }}>
-            <a href="/om-os" className="hover:opacity-60 transition-opacity">Om os</a>
-            <a href="/ydelser" className="hover:opacity-60 transition-opacity">Ydelser</a>
-            <a href="/news" className="hover:opacity-60 transition-opacity">News</a>
-            <a href="#faq" className="hover:opacity-60 transition-opacity">FAQ</a>
-            <a href="#kontakt" className="hover:opacity-60 transition-opacity">Kontakt</a>
-          </div>
-          <a
-            href="#kontakt"
-            style={{ background: RED }}
-            className="hover:opacity-90 text-white text-sm font-semibold px-5 py-2 rounded-full transition-opacity"
-          >
-            Kontakt os
-          </a>
-        </div>
-      </nav>
+      <Nav />
 
       {/* HERO SLIDER */}
       <section id="top" className="relative overflow-hidden h-[580px] flex items-center">
