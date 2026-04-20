@@ -7,6 +7,11 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Ydelser",
   description: "Vi tilbyder professionel projektledelse, Enterprise Architecture, risikostyring og IT-transformationer. Se alle vores ydelser hos We Lead Projects.",
+  openGraph: {
+    title: "Ydelser | We Lead Projects",
+    description: "Planlægning, risikostyring, kommunikation og innovative løsninger — se alle vores ydelser.",
+    images: [{ url: "/Hero2.webp", width: 1200, height: 630, alt: "We Lead Projects — Ydelser" }],
+  },
 };
 
 const DARK = "#2d1a1a";

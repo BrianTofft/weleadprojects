@@ -8,6 +8,11 @@ import { articles } from "@/lib/articles";
 export const metadata: Metadata = {
   title: "Indsigt",
   description: "Artikler og indsigter om projektledelse, Enterprise Architecture og IT-transformationer fra We Lead Projects.",
+  openGraph: {
+    title: "Indsigt | We Lead Projects",
+    description: "Læs vores artikler om projektledelse, Enterprise Architecture og IT-transformationer — på dansk og engelsk.",
+    images: [{ url: "/hero.JPEG", width: 1200, height: 630, alt: "We Lead Projects — Indsigt" }],
+  },
 };
 
 const DARK = "#2d1a1a";

@@ -8,6 +8,11 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Om os",
   description: "Vi leverer professionel konsulentassistance inden for projektledelse, Enterprise Architecture og IT-transformationer. Læs mere om We Lead Projects.",
+  openGraph: {
+    title: "Om os | We Lead Projects",
+    description: "Grundlagt i 2018 med en vision om at gøre projekter rigtigt. Mød teamet bag We Lead Projects.",
+    images: [{ url: "/hero.JPEG", width: 1200, height: 630, alt: "We Lead Projects — Om os" }],
+  },
 };
 
 const DARK = "#2d1a1a";
