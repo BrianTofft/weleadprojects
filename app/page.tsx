@@ -82,7 +82,8 @@ const heroSlides = [
   },
   {
     image: "/Hero2.webp",
-    flip: false,
+    flip: true,
+    brightness: 0.65,
     label: "Projekter er vores DNA",
     heading: "Intet projekt er",
     headingRed: "for stort eller for småt",
@@ -160,6 +161,7 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover object-top"
             style={{
               transform: s.flip ? "scaleX(-1)" : "none",
+              filter: s.brightness ? `brightness(${s.brightness})` : undefined,
               animation: slide === i ? "heroZoom 6s ease-out forwards" : "none",
               opacity: slide === i ? 1 : 0,
               transition: "opacity 1.2s ease-in-out",
