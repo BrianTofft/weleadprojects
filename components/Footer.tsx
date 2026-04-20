@@ -24,10 +24,12 @@ const logos = [
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
-const LOGO_W = 170;
+// Næsten kvadratiske containere → kvadratiske logoer fylder ~97% af bredden → max ~6px synlig gap
+const LOGO_W   = 168;
+const LOGO_H   = 165;
 const LOGO_GAP = 10;
-const STEP = LOGO_W + LOGO_GAP;
-const VISIBLE = 3;
+const STEP     = LOGO_W + LOGO_GAP;
+const VISIBLE  = 3;
 
 function PhoneIcon() {
   return (
@@ -62,7 +64,7 @@ function BuildingIcon() {
 }
 
 export default function Footer() {
-  const [step, setStep] = useState(0);
+  const [step, setStep]           = useState(0);
   const [transition, setTransition] = useState(true);
   const total = logos.length;
 
@@ -89,7 +91,8 @@ export default function Footer() {
   return (
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-[200px_165px_190px_530px] gap-x-10 gap-y-10 items-center">
+        {/* grid: [logo][åbningstider][kontakt][karussel] — gap-x-8 giver luft, alt passer i 1216px */}
+        <div className="grid grid-cols-1 lg:grid-cols-[200px_165px_250px_524px] gap-x-6 gap-y-10 items-start">
 
           {/* Kolonne 1: Logo */}
           <div>
@@ -132,10 +135,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolonne 4: Logo karussel — 3 synlige, skifter 1 ad gangen hvert 3. sek */}
-          <div className="overflow-hidden" style={{ width: `${containerW}px`, height: "90px" }}>
+          {/* Kolonne 4: Karussel — 3 synlige, næsten kvadratiske containere */}
+          <div className="overflow-hidden" style={{ width: `${containerW}px`, height: `${LOGO_H}px` }}>
             <div
-              className="flex items-center h-full"
+              className="flex h-full"
               style={{
                 gap: `${LOGO_GAP}px`,
                 transform: `translateX(-${step * STEP}px)`,
@@ -144,8 +147,18 @@ export default function Footer() {
               }}
             >
               {[...logos, ...logos].map((logo, i) => (
-                <div key={i} className="flex-shrink-0 flex items-center justify-center" style={{ width: `${LOGO_W}px`, height: "80px" }}>
-                  <Image src={logo.src} alt={logo.alt} width={LOGO_W} height={80} className="object-contain max-h-full" />
+                <div
+                  key={i}
+                  className="flex-shrink-0 flex items-center justify-center"
+                  style={{ width: `${LOGO_W}px`, height: `${LOGO_H}px` }}
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={LOGO_W}
+                    height={LOGO_H}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
               ))}
             </div>
