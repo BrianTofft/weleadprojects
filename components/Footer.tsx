@@ -25,8 +25,8 @@ const logos = [
 ];
 
 // Næsten kvadratiske containere → kvadratiske logoer fylder ~97% af bredden → max ~6px synlig gap
-const LOGO_W   = 168;
-const LOGO_H   = 165;
+const LOGO_W   = 150;
+const LOGO_H   = 150;
 const LOGO_GAP = 10;
 const STEP     = LOGO_W + LOGO_GAP;
 const VISIBLE  = 3;
@@ -92,7 +92,7 @@ export default function Footer() {
     <footer style={{ background: BG }} className="text-white">
       <div className="max-w-7xl mx-auto px-8 py-14">
         {/* grid: [logo][åbningstider][kontakt][karussel] — gap-x-8 giver luft, alt passer i 1216px */}
-        <div className="grid grid-cols-1 lg:grid-cols-[200px_165px_250px_524px] gap-x-6 gap-y-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[200px_165px_250px_470px] gap-x-10 gap-y-10 items-start">
 
           {/* Kolonne 1: Logo */}
           <div>
