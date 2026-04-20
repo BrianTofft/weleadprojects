@@ -82,7 +82,7 @@ const heroSlides = [
   },
   {
     image: "/Hero2.webp",
-    flip: false,
+    flip: true,
     brightness: 0.65,
     label: "Projekter er vores DNA",
     heading: "Intet projekt er",
