@@ -69,7 +69,7 @@ export default function OmOs() {
               />
             </div>
             <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">Brian P.N. Tofft</h3>
-            <p style={{ color: RED }} className="font-semibold text-sm mb-4">Managing Partner</p>
+            <p style={{ color: RED }} className="font-semibold text-sm mb-4">Founder & Managing Partner</p>
             <p className="text-gray-500 text-sm leading-relaxed">
               Brian har mere end 30 års erfaring med at levere projekter af høj kvalitet — med fokus på etisk praksis og kontinuerlig vidensopbygning. Han er daglig leder og tovholder for We Lead Projects.
             </p>
