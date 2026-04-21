@@ -88,6 +88,60 @@ const services = [
   },
 ];
 
+const competencies = [
+  {
+    icon: "/Graphics/planning_1980602.webp",
+    title: "Projekt Planlægning",
+    body: "Projektplanlægningsopgaver er afgørende for at skitsere omfanget, målene og tidsplanen for et projekt — og sikre at alle aktiviteter er velorganiserede og kan eksekveres effektivt.",
+  },
+  {
+    icon: "/Graphics/process_7879828.webp",
+    title: "Projekt Styring",
+    body: "Projektudførelsesopgaver fokuserer på gennemførelsesfasen, hvor de planlagte aktiviteter sættes i værk for at nå projektets mål — typisk med agilmetodiske erfaringsprocesser.",
+  },
+  {
+    icon: "/Graphics/evaluation.webp",
+    title: "Risiko Styring",
+    body: "Risikostyring er planlægningen og styringen til at hjælpe kunden med at forstå og anvende principperne for at identificere, vurdere og afbøde risici i forskellige projektkontekster.",
+  },
+  {
+    icon: "/Graphics/application.webp",
+    title: "IT Arkitektur",
+    body: "IT-arkitektur involverer typisk udarbejdelse af omfattende dokumentation, der skitserer design og struktur af IT-systemer — og dækker alle relevante arkitekturaspekter.",
+  },
+  {
+    icon: "/Graphics/management.webp",
+    title: "Enterprise Arkitektur",
+    body: "Enterprise Architecture-opgaver involverer typisk udvikling af en omfattende ramme, der tilpasser IT-infrastruktur med forretningsprocesser og strategiske mål.",
+  },
+  {
+    icon: "/Graphics/collaboration_11244653.webp",
+    title: "Ledelsesrådgivning",
+    body: "Ledelsesrådgivningsopgaver involverer typisk analyse af forretningsproblemer og levering af strategiske løsninger for at forbedre organisationens præstation.",
+  },
+];
+
+const deliveryMethods = [
+  {
+    label: "Traditionel",
+    tag: "Vandfaldsmetoden",
+    body: "Den traditionelle projektledelsesmodel er en lineær og sekventiel tilgang til styring af projekter. Den er bedst egnet til projekter med veldefinerede krav og stabile miljøer.",
+    color: "#1C2544",
+  },
+  {
+    label: "Agil",
+    tag: "Iterativ tilgang",
+    body: "Den agile projektledelsesmodel er en fleksibel og iterativ tilgang med fokus på løbende forbedringer og kundesamarbejde. Den leverer værdi trinvist gennem hele projektets livscyklus.",
+    color: RED,
+  },
+  {
+    label: "Hybrid",
+    tag: "Kombineret tilgang",
+    body: "Den hybride projektledelsesmodel kombinerer elementer fra både traditionelle og agile metoder og udnytter styrkerne fra begge tilgange til projektspecifikke behov.",
+    color: "#4a6741",
+  },
+];
+
 const process = [
   { step: "01", title: "Indledende konsultation", body: "Vi lytter til jeres udfordringer og mål — helt uforpligtende." },
   { step: "02", title: "Behovsanalyse og tilbud", body: "Vi afdækker scope, ressourcer og tidsplan og sender et konkret tilbud." },
@@ -131,6 +185,52 @@ export default function YdelserPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* KOMPETENCER */}
+      <section style={{ background: OFFWHITE }} className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Faglige kompetencer</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Omfattende rådgivende løsninger</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
+              Vi besidder bred erfaring inden for projektledelse, Enterprise Architecture, byggeledelse og løsningsarkitektur — og kan bistå inden for alle følgende fagområder.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {competencies.map((c) => (
+              <div key={c.title} className="bg-white rounded-2xl border p-7 flex flex-col" style={{ borderColor: BORDER }}>
+                <div className="w-14 h-14 mb-5 rounded-xl flex items-center justify-center" style={{ background: "#eef3f9" }}>
+                  <img src={c.icon} alt="" className="w-9 h-9 object-contain" style={{ mixBlendMode: "multiply" }} />
+                </div>
+                <h3 style={{ color: DARK }} className="font-bold text-base mb-2">{c.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{c.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* LEVERINGSMETODER */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Projektmetoder</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Tre tilgange til projektlevering</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
+              Vi er ikke bundet af én model — vi vælger den tilgang der passer bedst til netop jeres projekt og tilpasser os løbende undervejs.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {deliveryMethods.map((m) => (
+              <div key={m.label} className="rounded-2xl p-8 text-white flex flex-col" style={{ background: m.color }}>
+                <span className="text-xs font-semibold uppercase tracking-widest mb-2 opacity-70">{m.tag}</span>
+                <h3 className="text-xl font-bold mb-4">{m.label}</h3>
+                <p className="text-sm leading-relaxed opacity-80">{m.body}</p>
               </div>
             ))}
           </div>
