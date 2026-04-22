@@ -227,7 +227,7 @@ export default function Home() {
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mb-10 border-t border-white/10 pt-8">
-              {[["30+", "Års erfaring"], ["50+", "Projekter leveret"], ["2018", "Grundlagt"]].map(([val, lbl]) => (
+              {[["125+", "Års samlet erfaring"], ["50+", "Projekter leveret"], ["2018", "Grundlagt"]].map(([val, lbl]) => (
                 <div key={lbl}>
                   <p className="text-3xl font-bold" style={{ color: RED }}>{val}</p>
                   <p className="text-white/40 text-xs mt-1 uppercase tracking-wider">{lbl}</p>
