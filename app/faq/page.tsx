@@ -59,6 +59,14 @@ export default function FaqPage() {
       />
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
+          <div className="mb-12">
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Hos We Lead Projects møder vi mange af de samme spørgsmål fra kunder, der overvejer at arbejde med os — eller som er midt i et projekt og søger sparring. Her har vi samlet de mest hyppige spørgsmål om vores arbejdsmetoder, samarbejdsmodel, priser og hvad der konkret sker fra den første henvendelse til projektets afslutning.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Vi tror på gennemsigtighed. Du bør altid vide, hvad du kan forvente, hvornår du kan forvente det — og hvem du kan kontakte, hvis du har spørgsmål undervejs. Finder du ikke svar på det du leder efter, er du altid velkommen til at ringe eller skrive til os direkte.
+            </p>
+          </div>
           <FaqAccordion faqs={faqs} />
         </div>
       </section>

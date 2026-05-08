@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { articles, getArticle } from "@/lib/articles";
@@ -134,9 +135,11 @@ export default async function ArticlePage({
               className="w-14 h-14 rounded-full overflow-hidden shrink-0 border-2"
               style={{ borderColor: BORDER }}
             >
-              <img
+              <Image
                 src="/profile.png"
                 alt="Brian P.N. Tofft"
+                width={56}
+                height={56}
                 className="w-full h-full object-cover object-top"
               />
             </div>

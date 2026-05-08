@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import React from "react";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -143,11 +144,13 @@ export default function Home() {
               transition: "opacity 1.2s ease-in-out",
             }}
           >
-            <img
+            <Image
               src={s.image}
               alt=""
               aria-hidden="true"
-              className="absolute inset-0 w-full h-full object-cover object-top"
+              fill
+              className="object-cover object-top"
+              priority={i === 0}
               style={{
                 filter: s.brightness ? `brightness(${s.brightness})` : undefined,
                 animation: (slide === i || prevSlide === i) ? "heroZoom 6s ease-out forwards" : "none",

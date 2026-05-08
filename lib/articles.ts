@@ -16,9 +16,9 @@ export const articles: Article[] = [
     slug: "5-advarselstegn-it-projekt-korer-af-sporet",
     lang: "da",
     category: "Projektledelse",
-    title: "5 advarselstegn på at dit IT-projekt er ved at køre af sporet",
+    title: "5 advarselstegn på dit IT-projekt",
     description:
-      "Langt de fleste IT-projekter oplever problemer undervejs — men de starter sjældent som store kriser. Lær at genkende de tidlige signaler og få styr på projektet igen.",
+      "Langt de fleste IT-projekter oplever problemer undervejs. Lær at genkende de tidlige signaler og få styr på dit projekt igen, før det løber af sporet.",
     date: "April 2025",
     readingMinutes: 5,
     intro:
@@ -56,9 +56,9 @@ export const articles: Article[] = [
     slug: "5-warning-signs-it-project-going-off-track",
     lang: "en",
     category: "Project Management",
-    title: "5 Warning Signs Your IT Project Is Going Off Track",
+    title: "5 Warning Signs Your IT Project Is Off Track",
     description:
-      "Most IT projects encounter problems before they fail — but the warning signs are easy to miss. Learn to recognise them early and get your project back on course.",
+      "Most IT projects encounter problems before they fail. Learn to recognise the warning signs early and get your project back on course.",
     date: "April 2025",
     readingMinutes: 5,
     intro:
@@ -96,9 +96,9 @@ export const articles: Article[] = [
     slug: "hvad-er-enterprise-architecture",
     lang: "da",
     category: "Enterprise Architecture",
-    title: "Hvad er Enterprise Architecture — og hvorfor har din virksomhed brug for det?",
+    title: "Hvad er Enterprise Architecture?",
     description:
-      "Enterprise Architecture er bindeledet mellem forretningsstrategi og IT-løsninger. Forstå hvad EA er, hvornår det er relevant og hvad det konkret kan gøre for din organisation.",
+      "Enterprise Architecture er bindeledet mellem strategi og IT. Forstå hvad EA er, hvornår det er relevant og hvad det kan gøre for din organisation.",
     date: "Marts 2025",
     readingMinutes: 6,
     intro:
@@ -132,9 +132,9 @@ export const articles: Article[] = [
     slug: "what-is-enterprise-architecture",
     lang: "en",
     category: "Enterprise Architecture",
-    title: "What Is Enterprise Architecture — and Why Does Your Business Need It?",
+    title: "What Is Enterprise Architecture?",
     description:
-      "Enterprise Architecture bridges business strategy and IT solutions. Understand what EA is, when it matters, and what it can concretely do for your organisation.",
+      "Enterprise Architecture bridges business strategy and IT. Understand what EA is, when it matters, and what it can do for your organisation.",
     date: "March 2025",
     readingMinutes: 6,
     intro:
@@ -168,9 +168,9 @@ export const articles: Article[] = [
     slug: "agile-waterfall-eller-hybrid",
     lang: "da",
     category: "Metoder",
-    title: "Agile, Waterfall eller hybrid? Sådan vælger du den rette projektmodel",
+    title: "Agile, Waterfall eller Hybrid — vælg den rette model",
     description:
-      "Valget af projektmodel er en af de vigtigste beslutninger du træffer inden projektopstart. Her gennemgår vi fordele og ulemper ved de tre tilgange — og hvornår du bør bruge hvilken.",
+      "Valget af projektmodel er en vigtig beslutning. Vi gennemgår fordele og ulemper ved Agile, Waterfall og Hybrid — og hvornår du bør bruge hvilken.",
     date: "Februar 2025",
     readingMinutes: 5,
     intro:
@@ -204,9 +204,9 @@ export const articles: Article[] = [
     slug: "agile-waterfall-or-hybrid",
     lang: "en",
     category: "Methods",
-    title: "Agile, Waterfall, or Hybrid? How to Choose the Right Project Model",
+    title: "Agile, Waterfall or Hybrid — Choose Your Model",
     description:
-      "Choosing a project model is one of the most important decisions you make before a project starts. We break down the pros and cons of all three approaches — and when to use which.",
+      "Choosing the right project model matters. We break down Agile, Waterfall and Hybrid — pros, cons, and when to use each approach.",
     date: "February 2025",
     readingMinutes: 5,
     intro:
