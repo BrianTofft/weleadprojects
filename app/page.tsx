@@ -43,20 +43,20 @@ const faqs = [
 ];
 
 const kundeLogos = [
-  { src: "/kunde1.webp",  alt: "Kunde" },
-  { src: "/kunde2.webp",  alt: "Kunde" },
-  { src: "/kunde3.png",   alt: "Kunde" },
-  { src: "/kunde4.webp",  alt: "Kunde" },
-  { src: "/kunde5.webp",  alt: "Kunde" },
-  { src: "/kunde6.svg",   alt: "Kunde" },
-  { src: "/kunde7.svg",   alt: "Kunde" },
-  { src: "/kunde8.webp",  alt: "Kunde" },
-  { src: "/kunde9.webp",  alt: "Kunde" },
-  { src: "/kunde10.webp", alt: "Kunde" },
-  { src: "/kunde11.webp", alt: "Kunde" },
-  { src: "/kunde12.webp", alt: "Kunde" },
-  { src: "/kunde13.webp", alt: "Kunde" },
-  { src: "/kunde14.png",  alt: "Kunde" },
+  { src: "/kunde1.webp",  alt: "Kunde 1" },
+  { src: "/kunde2.webp",  alt: "Kunde 2" },
+  { src: "/kunde3.png",   alt: "Kunde 3" },
+  { src: "/kunde4.webp",  alt: "Kunde 4" },
+  { src: "/kunde5.webp",  alt: "Kunde 5" },
+  { src: "/kunde6.svg",   alt: "Kunde 6" },
+  { src: "/kunde7.svg",   alt: "Kunde 7" },
+  { src: "/kunde8.webp",  alt: "Kunde 8" },
+  { src: "/kunde9.webp",  alt: "Kunde 9" },
+  { src: "/kunde10.webp", alt: "Kunde 10" },
+  { src: "/kunde11.webp", alt: "Kunde 11" },
+  { src: "/kunde12.webp", alt: "Kunde 12" },
+  { src: "/kunde13.webp", alt: "Kunde 13" },
+  { src: "/kunde14.png",  alt: "Kunde 14" },
 ];
 
 // Brand colors
@@ -211,6 +211,8 @@ export default function Home() {
               src="/Graphics/Project-manager.webp"
               alt=""
               aria-hidden="true"
+              width={800}
+              height={600}
               className="absolute inset-0 w-full h-full object-cover object-center"
               style={{ filter: "brightness(0.5)" }}
             />
@@ -264,6 +266,8 @@ export default function Home() {
                 <img
                   src={logo.src}
                   alt={logo.alt}
+                  width={110}
+                  height={48}
                   className="max-h-12 max-w-[110px] object-contain opacity-75 hover:opacity-100 transition-opacity duration-300"
                   style={{ mixBlendMode: "multiply" }}
                 />
@@ -284,6 +288,9 @@ export default function Home() {
             </p>
           </div>
 
+          <p className="text-gray-500 max-w-2xl mx-auto text-sm text-center mb-8">
+            Vi bistår virksomheder med professionel projektledelse fra idé til aflevering. Vores konsulenter har bred erfaring på tværs af brancher og projekttyper — og arbejder altid tæt på jeres organisation for at sikre fremdrift, kvalitet og succesfuld leverance.
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
             {services.map((s) => (
               <a
@@ -296,7 +303,7 @@ export default function Home() {
                   className="w-14 h-14 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
                   style={{ background: "#eef3f9" }}
                 >
-                  <img src={s.icon} alt="" className="w-8 h-8 object-contain" style={{ mixBlendMode: "multiply" }} />
+                  <img src={s.icon} alt={s.title} width={32} height={32} className="w-8 h-8 object-contain" style={{ mixBlendMode: "multiply" }} />
                 </div>
                 <h3 className="font-bold text-sm leading-snug" style={{ color: DARK }}>{s.title}</h3>
               </a>

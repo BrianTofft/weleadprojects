@@ -61,6 +61,8 @@ export default async function ArticlePage({
           src="/Graphics/Blog-4.webp"
           alt=""
           aria-hidden="true"
+          width={1920}
+          height={600}
           className="absolute inset-0 w-full h-full object-cover object-center"
           style={{ filter: "brightness(0.18)", opacity: 0.6 }}
         />

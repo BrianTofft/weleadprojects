@@ -38,6 +38,21 @@ export default function IndsightPage() {
         image="/Graphics/Blog-3.webp"
       />
 
+      {/* INTRO */}
+      <section className="py-12 px-6 bg-white border-b" style={{ borderColor: "#e8e0e0" }}>
+        <div className="max-w-3xl mx-auto">
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Hos We Lead Projects deler vi løbende viden og perspektiver fra vores arbejde med projektledelse, Enterprise Architecture og IT-transformationer. Vores artikler er skrevet af konsulenter med mere end 30 års praktisk erfaring — og sigter mod at give konkret, anvendelig indsigt frem for generelle råd.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Vi udgiver artikler på både dansk og engelsk, da mange af vores kunder og samarbejdspartnere opererer på tværs af landegrænser. Det faglige indhold er det samme — perspektivet er tilpasset de respektive markeder og projektkulturforskelle.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Find artikler om de fem advarselstegn på et IT-projekt der er ved at løbe af sporet, hvad Enterprise Architecture egentlig betyder i praksis, og hvordan du vælger den rette projektmodel — Agile, Waterfall eller Hybrid — til netop dit projekt og din organisation.
+          </p>
+        </div>
+      </section>
+
       {/* DANISH ARTICLES */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-5xl mx-auto">

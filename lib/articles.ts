@@ -168,7 +168,7 @@ export const articles: Article[] = [
     slug: "agile-waterfall-eller-hybrid",
     lang: "da",
     category: "Metoder",
-    title: "Agile, Waterfall eller Hybrid — vælg den rette model",
+    title: "Agile, Waterfall eller Hybrid — vælg din model",
     description:
       "Valget af projektmodel er en vigtig beslutning. Vi gennemgår fordele og ulemper ved Agile, Waterfall og Hybrid — og hvornår du bør bruge hvilken.",
     date: "Februar 2025",

@@ -63,8 +63,14 @@ export default function FaqPage() {
             <p className="text-gray-600 leading-relaxed mb-4">
               Hos We Lead Projects møder vi mange af de samme spørgsmål fra kunder, der overvejer at arbejde med os — eller som er midt i et projekt og søger sparring. Her har vi samlet de mest hyppige spørgsmål om vores arbejdsmetoder, samarbejdsmodel, priser og hvad der konkret sker fra den første henvendelse til projektets afslutning.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed mb-4">
               Vi tror på gennemsigtighed. Du bør altid vide, hvad du kan forvente, hvornår du kan forvente det — og hvem du kan kontakte, hvis du har spørgsmål undervejs. Finder du ikke svar på det du leder efter, er du altid velkommen til at ringe eller skrive til os direkte.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Vi arbejder med kunder i mange brancher — fra telecom og finans til det offentlige og industri. Det betyder, at vores svar ikke er generiske skabeloner, men bygger på reel erfaring med de udfordringer du sandsynligvis står over for. Uanset om dit projekt er i opstartsfasen, midt i eksekvering eller har løbet ind i problemer, kan vi hjælpe.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Vi har mere end 125 års samlet erfaring i teamet og har leveret over 50 projekter på tværs af domæner. Det giver os et solidt grundlag for at rådgive — og en bred erfaringsbase at trække på, når vi vurderer din specifikke situation. Nedenfor finder du svar på de spørgsmål vi oftest møder.
             </p>
           </div>
           <FaqAccordion faqs={faqs} />

@@ -52,8 +52,14 @@ export default function OmOs() {
             <p className="text-gray-600 mb-4">
               Gennem ansvar og erfaringsmodeller, backup fra kollegaer og nyeste viden om projektstyring, navigerer vi projektlandskabet. Vi kalder det 1+1=3 metoden — vores interne vidensdeling sikrer at alle konsulenter løbende lærer og vokser på tværs af projekterne.
             </p>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-4">
               Vores fokus på interessentstyring har givet os mulighed for at vokse til et betroet navn i branchen — og sikret succesfulde leverancer for kunder i mange forskellige brancher og domæner.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Vi arbejder metodeneutralt og tilpasser vores tilgang til det enkelte projekt. Uanset om det kræver klassisk Waterfall-styring, agile sprints eller en hybrid model, vælger vi altid den fremgangsmåde der skaber størst fremdrift for netop jeres organisation og projekttype.
+            </p>
+            <p className="text-gray-600">
+              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Kombineret med stærk projektledelsesbaggrund giver det os mulighed for at gå ind i projekter på alle niveauer — fra strategisk rådgivning til operationel eksekvering.
             </p>
           </div>
 

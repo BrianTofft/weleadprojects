@@ -27,6 +27,8 @@ export default function PageHeader({
           src={image}
           alt=""
           aria-hidden="true"
+          width={1920}
+          height={600}
           className="w-full h-full object-cover object-center"
           style={{ filter: "brightness(0.32)" }}
         />
