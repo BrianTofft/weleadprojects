@@ -132,7 +132,7 @@ export default function Home() {
       <Nav />
 
       {/* HERO SLIDER */}
-      <section id="top" className="relative overflow-hidden h-[580px] flex items-center mt-20 md:mt-0">
+      <section id="top" className="relative overflow-hidden h-[580px] md:h-screen flex items-center mt-20 md:mt-0">
         {/* All slide images stacked — active one fades in */}
         {heroSlides.map((s, i) => (
           <div
