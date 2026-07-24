@@ -25,8 +25,7 @@ export default function PageHeader({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={image}
-          alt=""
-          aria-hidden="true"
+          alt={title}
           width={1920}
           height={600}
           className="w-full h-full object-cover object-center"

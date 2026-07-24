@@ -146,8 +146,7 @@ export default function Home() {
           >
             <Image
               src={s.image}
-              alt=""
-              aria-hidden="true"
+              alt={s.heading + " " + s.headingRed}
               fill
               className="object-cover object-top"
               priority={i === 0}
@@ -209,8 +208,7 @@ export default function Home() {
           <div className="relative hidden md:block">
             <img
               src="/Graphics/Project-manager.webp"
-              alt=""
-              aria-hidden="true"
+              alt="Professionel projektleder"
               width={800}
               height={600}
               className="absolute inset-0 w-full h-full object-cover object-center"

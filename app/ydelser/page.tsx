@@ -173,7 +173,7 @@ export default function YdelserPage() {
                 style={{ borderColor: BORDER, background: OFFWHITE }}
               >
                 <div className="w-16 h-16 mb-5 rounded-xl flex items-center justify-center" style={{ background: "#eef3f9" }}>
-                  <img src={s.icon} alt="" className="w-10 h-10 object-contain" style={{ mixBlendMode: "multiply" }} />
+                  <img src={s.icon} alt={s.title} width={40} height={40} className="w-10 h-10 object-contain" style={{ mixBlendMode: "multiply" }} />
                 </div>
                 <h2 style={{ color: DARK }} className="text-xl font-bold mb-2">{s.title}</h2>
                 <p className="text-gray-500 text-sm mb-5 leading-relaxed">{s.intro}</p>
@@ -205,7 +205,7 @@ export default function YdelserPage() {
             {competencies.map((c) => (
               <div key={c.title} className="bg-white rounded-2xl border p-7 flex flex-col" style={{ borderColor: BORDER }}>
                 <div className="w-14 h-14 mb-5 rounded-xl flex items-center justify-center" style={{ background: "#eef3f9" }}>
-                  <img src={c.icon} alt="" className="w-9 h-9 object-contain" style={{ mixBlendMode: "multiply" }} />
+                  <img src={c.icon} alt={c.title} width={36} height={36} className="w-9 h-9 object-contain" style={{ mixBlendMode: "multiply" }} />
                 </div>
                 <h3 style={{ color: DARK }} className="font-bold text-base mb-2">{c.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{c.body}</p>

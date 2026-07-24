@@ -59,8 +59,7 @@ export default async function ArticlePage({
         {/* Subtle background image */}
         <img
           src="/Graphics/Blog-4.webp"
-          alt=""
-          aria-hidden="true"
+          alt={article.title}
           width={1920}
           height={600}
           className="absolute inset-0 w-full h-full object-cover object-center"

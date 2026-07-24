@@ -47,8 +47,14 @@ export default function IndsightPage() {
           <p className="text-gray-600 leading-relaxed mb-4">
             Vi udgiver artikler på både dansk og engelsk, da mange af vores kunder og samarbejdspartnere opererer på tværs af landegrænser. Det faglige indhold er det samme — perspektivet er tilpasset de respektive markeder og projektkulturforskelle.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Find artikler om de fem advarselstegn på et IT-projekt der er ved at løbe af sporet, hvad Enterprise Architecture egentlig betyder i praksis, og hvordan du vælger den rette projektmodel — Agile, Waterfall eller Hybrid — til netop dit projekt og din organisation.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Vores artikler henvender sig til projektledere, IT-chefer og beslutningstagere der ønsker at styrke deres projektleverancer, forstå arkitekturmæssige begreber i en forretningsmæssig kontekst, eller få inspiration til at optimere måden deres organisation gennemfører projekter på.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Vi opdaterer løbende med ny viden. Alle artikler er skrevet uden brug af fagligt jargon der kræver specialuddannelse — målet er at give praktisk, handlingsorienteret indsigt som du kan bruge direkte i dit arbejde.
           </p>
         </div>
       </section>
