@@ -198,7 +198,7 @@ export default function YdelserPage() {
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Faglige kompetencer</p>
             <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Omfattende rådgivende løsninger</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-              Vi besidder bred erfaring inden for projektledelse, Enterprise Architecture, byggeledelse og løsningsarkitektur — og kan bistå inden for alle følgende fagområder.
+              Vi besidder bred erfaring inden for projektledelse, Enterprise Architecture og løsningsarkitektur — og kan bistå inden for alle følgende fagområder.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
