@@ -204,9 +204,9 @@ export const articles: Article[] = [
     slug: "ai-i-enterprise-architecture",
     lang: "da",
     category: "Enterprise Architecture",
-    title: "AI i Enterprise Architecture — governance, strategi og roadmap",
+    title: "AI i Enterprise Architecture — governance",
     description:
-      "Kunstig intelligens stiller nye krav til Enterprise Architecture. Lær hvordan du integrerer AI-governance i dit EA-rammeværk og bygger en solid strategi for AI-implementering.",
+      "AI stiller nye krav til Enterprise Architecture. Lær hvordan du integrerer AI-governance i dit EA-rammeværk og bygger en solid strategi for AI-implementering.",
     date: "Juli 2025",
     readingMinutes: 7,
     intro:
@@ -244,9 +244,9 @@ export const articles: Article[] = [
     slug: "ai-in-enterprise-architecture",
     lang: "en",
     category: "Enterprise Architecture",
-    title: "AI in Enterprise Architecture — Governance, Strategy and Roadmap",
+    title: "AI in Enterprise Architecture — Governance",
     description:
-      "Artificial intelligence places new demands on Enterprise Architecture. Learn how to integrate AI governance into your EA framework and build a solid strategy for AI implementation.",
+      "AI places new demands on Enterprise Architecture. Learn how to integrate AI governance into your EA framework and build a solid strategy for AI implementation.",
     date: "July 2025",
     readingMinutes: 7,
     intro:
@@ -284,9 +284,9 @@ export const articles: Article[] = [
     slug: "projektledelse-af-ai-implementeringer",
     lang: "da",
     category: "Projektledelse",
-    title: "Projektledelse af AI-implementeringer — faser, risici og succesfaktorer",
+    title: "Projektledelse af AI-implementeringer",
     description:
-      "AI-projekter er anderledes end traditionelle IT-projekter. Lær hvilke faser der er kritiske, hvilke risici der er specifikke for AI, og hvad der adskiller de projekter der lykkes.",
+      "AI-projekter er anderledes end traditionelle IT-projekter. Lær hvilke faser der er kritiske, og hvad der adskiller de projekter der lykkes fra dem der fejler.",
     date: "Juli 2025",
     readingMinutes: 7,
     intro:
@@ -324,9 +324,9 @@ export const articles: Article[] = [
     slug: "project-management-of-ai-implementations",
     lang: "en",
     category: "Project Management",
-    title: "Project Management of AI Implementations — Phases, Risks and Success Factors",
+    title: "Project Management of AI Implementations",
     description:
-      "AI projects are different from traditional IT projects. Learn which phases are critical, which risks are specific to AI, and what separates the projects that succeed.",
+      "AI projects differ from traditional IT projects. Learn which phases are critical, which risks are AI-specific, and what separates the projects that succeed.",
     date: "July 2025",
     readingMinutes: 7,
     intro:
