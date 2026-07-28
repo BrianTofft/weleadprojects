@@ -275,6 +275,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EKSPERTISE */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores ekspertise</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Erfarne projektledere — baseret i Roskilde</h2>
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              We Lead Projects er et dansk konsulenthus specialiseret i projektledelse, Enterprise Architecture og IT-transformationer. Siden 2018 har vi hjulpet virksomheder i hele Danmark med at planlægge, styre og gennemføre projekter — fra mindre IT-implementeringer til store digitale transformationer på tværs af hele organisationen.
+            </p>
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Det giver os mulighed for at gå ind i projekter på alle niveauer — fra strategisk rådgivning til operationel eksekvering — og altid med den rette kompetence til netop jeres situation.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Vi er ikke bundet af én metodisk model. Uanset om jeres projekt kræver klassisk Waterfall-styring, agile sprints eller en hybrid tilgang, vælger vi den fremgangsmåde der skaber størst fremdrift — og tilpasser os undervejs. Det kalder vi professionel projektstyring i praksis.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* YDELSER */}
       <section id="ydelser" className="py-20 px-6" style={{ background: OFFWHITE }}>
         <div className="max-w-5xl mx-auto">

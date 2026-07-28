@@ -45,6 +45,18 @@ const faqs = [
     q: "Hvad gør jeres virksomhed speciel?",
     a: "Vi skræddersyr løsninger til hvert projekt, har dokumenteret erfaring på tværs af brancher, anvender innovative metoder med de nyeste trends, prioriterer transparent kommunikation og tilbyder omfattende support efter projektafslutning.",
   },
+  {
+    q: "Arbejder I kun med IT-projekter?",
+    a: "Nej. Vi arbejder på tværs af brancher — fra telecom og finans til det offentlige og industrien. Vores konsulenter har erfaring med alt fra infrastrukturprojekter og cloud-transformationer til organisationsændringer og strategiske digitaliseringsforløb.",
+  },
+  {
+    q: "Kan vi hyre én konsulent frem for et helt team?",
+    a: "Ja. Vi kan levere en enkelt senior konsulent til at supplere dit eksisterende team, eller stille et helt projektteam til rådighed — alt efter behov og projektets kompleksitet. Vi tilpasser altid løsningen til jeres situation og budget.",
+  },
+  {
+    q: "Hvad sker der, hvis projektet løber ind i problemer undervejs?",
+    a: "Vi identificerer udfordringer tidligt via løbende risikostyring og eskalerer proaktivt. Opstår der alligevel større problemer, stiller vi ekstra ressourcer og støtte til rådighed — og finder altid en fremadrettet løsning frem for at placere ansvar.",
+  },
 ];
 
 export default function FaqPage() {
@@ -76,6 +88,18 @@ export default function FaqPage() {
           <FaqAccordion faqs={faqs} />
         </div>
       </section>
+      <section className="py-16 px-6 bg-white border-t" style={{ borderColor: "#e8e0e0" }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 style={{ color: "#2d1a1a" }} className="text-2xl font-bold mb-4">Projektledelse med erfaring fra hele Danmark</h2>
+          <p className="text-gray-600 mb-4 leading-relaxed">
+            We Lead Projects er baseret i Roskilde og betjener kunder over hele Danmark. Vi specialiserer os i projektledelse, Enterprise Architecture og IT-transformationer — og har siden 2018 leveret over 50 projekter på tværs af brancher og domæner. Vores team besidder mere end 125 års samlet erfaring og arbejder metodeneutralt, så vi altid kan vælge den tilgang der passer bedst til netop jeres projekt.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Har du et spørgsmål der ikke er besvaret ovenfor, er du altid velkommen til at kontakte os direkte. Vi besvarer alle henvendelser senest næste hverdag — og den første konsultation er altid uforpligtende.
+          </p>
+        </div>
+      </section>
+
       <section style={{ background: OFFWHITE }} className="py-16 px-6 text-center">
         <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">
           Fandt du ikke svar på dit spørgsmål?
