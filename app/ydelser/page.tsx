@@ -82,6 +82,7 @@ const services = [
     bullets: [
       "Enterprise Architecture og solution design",
       "Cloud-transformationer og migrationer",
+      "AI-implementering og AI-governance",
       "IT-strategi og digitaliseringsrådgivning",
       "Proof of Concept og pilotprojekter",
     ],
@@ -112,12 +113,17 @@ const competencies = [
   {
     icon: "/Graphics/management.webp",
     title: "Enterprise Arkitektur",
-    body: "Enterprise Architecture-opgaver involverer typisk udvikling af en omfattende ramme, der tilpasser IT-infrastruktur med forretningsprocesser og strategiske mål.",
+    body: "Enterprise Architecture-opgaver involverer udvikling af en omfattende ramme der tilpasser IT-infrastruktur med forretningsprocesser og strategiske mål — herunder AI-governance og kortlægning af AI-aktiver som en integreret del af EA-rammeværket.",
   },
   {
     icon: "/Graphics/collaboration_11244653.webp",
     title: "Ledelsesrådgivning",
     body: "Ledelsesrådgivningsopgaver involverer typisk analyse af forretningsproblemer og levering af strategiske løsninger for at forbedre organisationens præstation.",
+  },
+  {
+    icon: "/Graphics/application.webp",
+    title: "AI Implementering",
+    body: "Vi bistår med projektledelse af AI-implementeringer i alle faser — fra businesscase og datavurdering til PoC, pilot og fuld skalering. Vi kombinerer teknisk forståelse med stærk projektstyring og erfaring med de særlige risici der er forbundet med AI-projekter.",
   },
 ];
 

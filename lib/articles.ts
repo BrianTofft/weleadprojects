@@ -199,6 +199,166 @@ export const articles: Article[] = [
     ],
   },
 
+  // ─── ARTIKEL 4 — DA ──────────────────────────────────────────────────────
+  {
+    slug: "ai-i-enterprise-architecture",
+    lang: "da",
+    category: "Enterprise Architecture",
+    title: "AI i Enterprise Architecture — governance, strategi og roadmap",
+    description:
+      "Kunstig intelligens stiller nye krav til Enterprise Architecture. Lær hvordan du integrerer AI-governance i dit EA-rammeværk og bygger en solid strategi for AI-implementering.",
+    date: "Juli 2025",
+    readingMinutes: 7,
+    intro:
+      "Kunstig intelligens er ikke blot endnu et IT-system der skal implementeres og driftes. Det er en fundamental ændring af måden organisationer indsamler, behandler og anvender information — og det stiller helt nye krav til Enterprise Architecture. Virksomheder der ikke tager højde for AI i deres EA-rammeværk risikerer at ende med en fragmenteret AI-portefølje, redundante datasiloer og strategiske investeringer der ikke hænger sammen. Hos We Lead Projects har vi bistået virksomheder med netop dette arbejde — her er vores erfaringer.",
+    sections: [
+      {
+        heading: "Hvad AI gør ved din eksisterende arkitektur",
+        body: "Traditionelle EA-frameworks som TOGAF er bygget op om fire arkitekturlag: forretning, data, applikationer og teknologi. AI berører alle fire lag på én gang. På forretningslaget ændrer AI beslutningsprocesser og skaber nye forretningsmodeller. På datalaget stiller AI skærpede krav til datakvalitet, datalineage og adgangsstyring — dårlige data giver dårlige AI-resultater. På applikationslaget introducerer AI nye komponenter som modeller, inference-endpoints og MLOps-pipelines. På teknologilaget kræver AI-workloads ofte specialiseret infrastruktur i form af GPU-kapacitet, cloud-platforme og dataplattforme. En Enterprise Arkitekt der ikke har kortlagt disse sammenhænge skaber blindt rum for fejlinvesteringer.",
+      },
+      {
+        heading: "AI-governance som ny disciplin i EA",
+        body: "AI-governance er den del af EA der sikrer, at AI-systemer udvikles og anvendes på en ansvarlig, reproducerbar og kontrollerbar måde. Det dækker over: modelregistrering og versionsstyring, datarettigheder og compliance (herunder EU AI Act og GDPR), fairness og bias-evaluering, auditbarhed og forklarbarhed samt klare ejerskabsstrukturer for AI-aktiver. Mange organisationer har i dag AI-eksperimenter spredt ud over forretningen — i marketing, økonomi, drift og HR — uden central koordinering eller governancepolitik. En Enterprise Arkitekt der etablerer et AI-governanceframework bringer disse initiativer ind under en fælles struktur, reducerer risiko og øger genanvendeligheden af data og modeller på tværs af organisationen.",
+      },
+      {
+        heading: "Kortlægning og klassifikation af AI-aktiver",
+        body: "Et af de første og vigtigste skridt i AI-EA-arbejdet er at skabe et overblik over eksisterende AI-aktiver: hvilke modeller er i brug, hvem ejer dem, hvilke data er de trænet på, og hvilke systemer er de integreret i? Denne kortlægning afslører typisk tre ting: (1) Mange AI-løsninger er indkøbt som dele af SaaS-produkter og er ikke synlige i den eksisterende IT-portefølje. (2) Der er betydelig redundans — det samme problem løses med forskellige AI-løsninger i forskellige dele af organisationen. (3) Datakvaliteten varierer markant på tværs af de datakilder der bruges til AI. Kortlægningen er grundlaget for en realistisk AI-roadmap.",
+      },
+      {
+        heading: "Fra EA-strategi til AI-roadmap",
+        body: "En AI-roadmap baseret på EA er ikke en liste over AI-projekter man gerne vil lave. Det er en prioriteret plan der tager udgangspunkt i forretningens strategiske mål, kortlægger de arkitekturmæssige forudsætninger og identificerer de kritiske kapabiliteter der skal etableres — typisk dataplattform, governancestrukturer og kompetencer — inden de store AI-investeringer igangsættes. Roadmappen bør skelne mellem tre typer AI-initiativer: (1) Køb — indkøb af AI-funktionalitet som del af eksisterende software. (2) Tilpas — finjustering af eksisterende modeller til organisationens specifikke behov. (3) Byg — udvikling af egne modeller på egne data. De fleste organisationer har brug for alle tre, men i forskellig balance afhængigt af deres datamodenhed og strategiske ambitioner.",
+      },
+      {
+        heading: "Praktiske erfaringer fra AI-implementeringer",
+        body: "Hos We Lead Projects har vi ledt og bistået AI-implementeringsprojekter i flere faser — fra den indledende behovsanalyse og arkitekturvurdering til leverance og driftovergang. Vores erfaring er, at de projekter der lykkes, har tre ting til fælles: For det første et klart forretningsproblem at løse — ikke 'vi vil gerne lave AI', men 'vi vil reducere behandlingstiden for X med Y procent'. For det andet et solidt datafundament etableret inden modeludvikling starter. For det tredje en governance-struktur der er defineret og godkendt af ledelsen inden første model går i produktion. De projekter der fejler, starter typisk med teknologien og arbejder sig baglæns mod forretningsværdien — det er den omvendte rækkefølge.",
+      },
+      {
+        heading: "Næste skridt for din organisation",
+        body: "Uanset hvor din organisation er i AI-rejsen, er en arkitekturvurdering et godt startpunkt. Den afklarer hvad I har, hvad I mangler og hvad der er det rigtige næste skridt — uden at forpligte jer til en bestemt teknologi eller leverandør. Hos We Lead Projects tilbyder vi AI-EA-vurderinger som et afgrænset engagement, typisk 4–8 uger, med en konkret rapport og en prioriteret roadmap som leverance. Kontakt os for at høre mere.",
+      },
+    ],
+  },
+
+  // ─── ARTIKEL 4 — EN ──────────────────────────────────────────────────────
+  {
+    slug: "ai-in-enterprise-architecture",
+    lang: "en",
+    category: "Enterprise Architecture",
+    title: "AI in Enterprise Architecture — Governance, Strategy and Roadmap",
+    description:
+      "Artificial intelligence places new demands on Enterprise Architecture. Learn how to integrate AI governance into your EA framework and build a solid strategy for AI implementation.",
+    date: "July 2025",
+    readingMinutes: 7,
+    intro:
+      "Artificial intelligence is not simply another IT system to implement and operate. It represents a fundamental shift in how organisations collect, process and apply information — and it places entirely new demands on Enterprise Architecture. Organisations that fail to account for AI in their EA framework risk ending up with a fragmented AI portfolio, redundant data silos, and strategic investments that do not cohere. At We Lead Projects, we have helped organisations navigate exactly this challenge — here are our insights.",
+    sections: [
+      {
+        heading: "What AI does to your existing architecture",
+        body: "Traditional EA frameworks such as TOGAF are structured around four architecture layers: business, data, applications, and technology. AI touches all four simultaneously. At the business layer, AI changes decision-making processes and enables new business models. At the data layer, AI places heightened demands on data quality, data lineage, and access management — poor data produces poor AI outcomes. At the application layer, AI introduces new components such as models, inference endpoints, and MLOps pipelines. At the technology layer, AI workloads often require specialised infrastructure including GPU capacity, cloud platforms, and data platforms. An Enterprise Architect who has not mapped these interdependencies creates blind spots that lead to misguided investments.",
+      },
+      {
+        heading: "AI governance as a new discipline in EA",
+        body: "AI governance is the component of EA that ensures AI systems are developed and deployed in a responsible, reproducible, and controllable manner. It encompasses: model registration and version control, data rights and compliance (including the EU AI Act and GDPR), fairness and bias evaluation, auditability and explainability, and clear ownership structures for AI assets. Many organisations today have AI experiments scattered across business units — in marketing, finance, operations, and HR — without central coordination or a governance policy. An Enterprise Architect who establishes an AI governance framework brings these initiatives under a common structure, reduces risk, and increases the reusability of data and models across the organisation.",
+      },
+      {
+        heading: "Mapping and classifying AI assets",
+        body: "One of the first and most important steps in AI-EA work is creating an inventory of existing AI assets: which models are in use, who owns them, what data were they trained on, and which systems are they integrated with? This mapping typically reveals three things: (1) Many AI solutions are purchased as part of SaaS products and are invisible in the existing IT portfolio. (2) There is significant redundancy — the same problem is being solved with different AI solutions in different parts of the organisation. (3) Data quality varies considerably across the data sources used for AI. This inventory forms the foundation for a realistic AI roadmap.",
+      },
+      {
+        heading: "From EA strategy to AI roadmap",
+        body: "An EA-based AI roadmap is not a wish list of AI projects. It is a prioritised plan grounded in the organisation's strategic objectives, mapping the architectural prerequisites and identifying the critical capabilities — typically a data platform, governance structures, and competencies — that must be in place before major AI investments begin. The roadmap should distinguish between three types of AI initiatives: (1) Buy — purchasing AI functionality as part of existing software. (2) Customise — fine-tuning existing models for the organisation's specific needs. (3) Build — developing proprietary models on proprietary data. Most organisations need all three, but in different proportions depending on their data maturity and strategic ambitions.",
+      },
+      {
+        heading: "Practical experience from AI implementations",
+        body: "At We Lead Projects, we have led and supported AI implementation projects across multiple phases — from initial needs analysis and architecture assessment through to delivery and transition to operations. Our experience is that projects which succeed share three characteristics: first, a clearly defined business problem to solve — not 'we want to do AI', but 'we want to reduce the processing time for X by Y per cent'. Second, a solid data foundation established before model development begins. Third, a governance structure defined and approved by leadership before the first model goes into production. Projects that fail typically start with the technology and work backwards towards business value — the wrong order.",
+      },
+      {
+        heading: "Next steps for your organisation",
+        body: "Wherever your organisation is on its AI journey, an architecture assessment is a strong starting point. It clarifies what you have, what you lack, and what the right next step is — without committing you to a specific technology or vendor. At We Lead Projects, we offer AI-EA assessments as a scoped engagement, typically four to eight weeks, delivering a concrete report and a prioritised roadmap. Contact us to learn more.",
+      },
+    ],
+  },
+
+  // ─── ARTIKEL 5 — DA ──────────────────────────────────────────────────────
+  {
+    slug: "projektledelse-af-ai-implementeringer",
+    lang: "da",
+    category: "Projektledelse",
+    title: "Projektledelse af AI-implementeringer — faser, risici og succesfaktorer",
+    description:
+      "AI-projekter er anderledes end traditionelle IT-projekter. Lær hvilke faser der er kritiske, hvilke risici der er specifikke for AI, og hvad der adskiller de projekter der lykkes.",
+    date: "Juli 2025",
+    readingMinutes: 7,
+    intro:
+      "AI-implementeringer fejler oftere end de lykkes — og årsagen er sjældent teknisk. Det er projektledelsen der svigter. AI-projekter stiller særlige krav til styring, interessenthåndtering og risikohåndtering, som adskiller sig markant fra traditionelle IT-projekter. Hos We Lead Projects har vi ledt AI-implementeringer fra idé til drift — her er de vigtigste læringer.",
+    sections: [
+      {
+        heading: "Hvorfor AI-projekter er anderledes end andre IT-projekter",
+        body: "I et traditionelt IT-projekt er leverancen defineret på forhånd: et system der kan X, en funktion der gør Y. I et AI-projekt er leverancen i sagens natur probabilistisk — modellen giver sandsynlige svar, ikke garanterede. Det betyder at succeskriterierne skal defineres anderledes (hvad er et acceptabelt præcisionsniveau?), at test og validering er mere kompleks, og at interessenter skal klædes på til at arbejde med AI-output der ikke altid er deterministisk. En projektleder der ikke forstår denne forskel, risikerer at styre mod et mål der ikke eksisterer.",
+      },
+      {
+        heading: "De kritiske faser i et AI-implementeringsprojekt",
+        body: "Et AI-projekt gennemløber typisk seks faser: (1) Problemdefinition og forretningsmæssig forankring — hvad skal AI'en løse, og hvem ejer gevinsten? (2) Datavurdering og -forberedelse — har vi de data der kræves, i den kvalitet der kræves? Denne fase undervurderes konsekvent og er årsagen til mere end halvdelen af alle forsinkelser. (3) Proof of Concept — teknisk validering af at tilgangen virker på et begrænset datasæt. (4) Pilotimplementering — deployment i kontrolleret miljø med udvalgte brugere og struktureret feedback. (5) Skalering og integration — fuld udrulning med integration til eksisterende systemer og arbejdsgange. (6) Drift og kontinuerlig forbedring — overvågning af modelpræstation, genoptræning og løbende evaluering. Mange projekter forsøger at hoppe fra fase 1 til fase 5 — det er den korteste vej til fiasko.",
+      },
+      {
+        heading: "Risici der er specifikke for AI-projekter",
+        body: "Ud over de klassiske projektrisici (scope creep, budgetoverskridelse, ressourcemangel) har AI-projekter en række specifikke risici: Datakvalitetsrisiko — modellen er kun så god som de data den er trænet på, og datakvalitet viser sig ofte at være langt lavere end antaget. Modelforældelse — modeller forringes over tid efterhånden som data og adfærd ændrer sig, og der skal etableres processer for løbende overvågning og genoptræning. Bias og fairness-risiko — modellen diskriminerer systematisk mod bestemte grupper, med potentielle juridiske og omdømmemæssige konsekvenser. Regulatorisk risiko — EU AI Act klassificerer visse AI-applikationer som høj-risiko med skærpede krav til dokumentation og kontrol. Adoptionsrisiko — brugerne stoler ikke på eller anvender ikke AI-løsningen, og den forretningsmæssige gevinst realiseres aldrig.",
+      },
+      {
+        heading: "Interessenthåndtering i AI-projekter",
+        body: "AI-projekter involverer typisk en bredere og mere heterogen interessentgruppe end traditionelle IT-projekter: forretningsejere der forventer hurtige gevinster, IT-arkitekter der bekymrer sig om integration og governance, jurister og compliance-ansvarlige der håndterer regulatoriske krav, slutbrugere der skal ændre arbejdsgange, og ledelsen der har godkendt en investering og forventer ROI. En kompetent projektleder kortlægger disse interessenter tidligt, forstår deres individuelle bekymringer og succeskriterier, og kommunikerer differentieret til hver gruppe. Særligt vigtigt er det at håndtere de tidlige bekymringer hos slutbrugerne — AI opleves ofte som en trussel mod eksisterende roller, og denne modstand kan torpedere selv teknisk vellykkede implementeringer.",
+      },
+      {
+        heading: "Succesfaktorer — hvad adskiller projekter der lykkes",
+        body: "Baseret på vores erfaring med AI-implementeringsprojekter er der fem faktorer der konsekvent adskiller de projekter der lykkes fra dem der ikke gør: (1) Et klart og afgrænset forretningsproblem som udgangspunkt — ikke AI for AI's skyld. (2) Et solidt og veldokumenteret datafundament etableret inden modeludvikling starter. (3) En stærk sponsor i ledelsen med mandat og interesse i at realisere gevinsten. (4) Et tværfagligt projektteam der kombinerer forretningsforståelse, dataekspertise og teknisk implementeringskraft. (5) En realistisk tidsplan der respekterer at AI-projekter kræver iterationer og eksperimenter — og at data altid tager længere tid end planlagt.",
+      },
+      {
+        heading: "We Lead Projects' erfaring med AI-implementeringer",
+        body: "Vi har bistået virksomheder med AI-implementeringer i alle faser — fra den indledende businesscase og roadmap til leverance og driftovergang. Vores tilgang er at kombinere stærk projektledelsesfaglighed med en praktisk forståelse af hvad AI-projekter kræver: tid til datavalidering, plads til eksperimenter i PoC-fasen, og tæt interessentinvolvering hele vejen igennem. Uanset om I er i gang med at vurdere om AI er den rigtige løsning, eller allerede er i gang med et projekt der har brug for professionel styring, kan vi hjælpe. Kontakt os for en uforpligtende samtale.",
+      },
+    ],
+  },
+
+  // ─── ARTIKEL 5 — EN ──────────────────────────────────────────────────────
+  {
+    slug: "project-management-of-ai-implementations",
+    lang: "en",
+    category: "Project Management",
+    title: "Project Management of AI Implementations — Phases, Risks and Success Factors",
+    description:
+      "AI projects are different from traditional IT projects. Learn which phases are critical, which risks are specific to AI, and what separates the projects that succeed.",
+    date: "July 2025",
+    readingMinutes: 7,
+    intro:
+      "AI implementations fail more often than they succeed — and the reason is rarely technical. It is the project management that falls short. AI projects place particular demands on governance, stakeholder management and risk management that differ significantly from traditional IT projects. At We Lead Projects, we have led AI implementations from concept to operations — here are the key lessons.",
+    sections: [
+      {
+        heading: "Why AI projects are different from other IT projects",
+        body: "In a traditional IT project, the deliverable is defined upfront: a system that does X, a feature that does Y. In an AI project, the deliverable is inherently probabilistic — the model provides likely answers, not guaranteed ones. This means success criteria must be defined differently (what is an acceptable accuracy level?), testing and validation are more complex, and stakeholders must be prepared to work with AI output that is not always deterministic. A project manager who does not understand this difference risks steering towards a goal that does not exist.",
+      },
+      {
+        heading: "The critical phases of an AI implementation project",
+        body: "An AI project typically moves through six phases: (1) Problem definition and business anchoring — what should the AI solve, and who owns the business benefit? (2) Data assessment and preparation — do we have the data required, at the quality required? This phase is consistently underestimated and accounts for more than half of all delays. (3) Proof of Concept — technical validation that the approach works on a limited dataset. (4) Pilot implementation — deployment in a controlled environment with selected users and structured feedback. (5) Scaling and integration — full rollout with integration into existing systems and workflows. (6) Operations and continuous improvement — monitoring model performance, retraining, and ongoing evaluation. Many projects attempt to jump from phase one to phase five — that is the shortest route to failure.",
+      },
+      {
+        heading: "Risks specific to AI projects",
+        body: "Beyond the classic project risks (scope creep, budget overrun, resource shortages), AI projects carry a set of specific risks: Data quality risk — the model is only as good as the data it is trained on, and data quality often proves far lower than assumed. Model degradation — models deteriorate over time as data and behaviours change, requiring processes for continuous monitoring and retraining. Bias and fairness risk — the model systematically discriminates against certain groups, with potential legal and reputational consequences. Regulatory risk — the EU AI Act classifies certain AI applications as high-risk with heightened requirements for documentation and control. Adoption risk — users do not trust or engage with the AI solution, and the business benefit is never realised.",
+      },
+      {
+        heading: "Stakeholder management in AI projects",
+        body: "AI projects typically involve a broader and more heterogeneous stakeholder group than traditional IT projects: business owners expecting rapid returns, IT architects concerned with integration and governance, legal and compliance teams managing regulatory requirements, end users who must change their workflows, and leadership who approved an investment and expect ROI. A competent project manager maps these stakeholders early, understands their individual concerns and success criteria, and communicates differently to each group. Particularly important is managing early concerns among end users — AI is often perceived as a threat to existing roles, and this resistance can torpedo even technically successful implementations.",
+      },
+      {
+        heading: "Success factors — what separates the projects that succeed",
+        body: "Based on our experience with AI implementation projects, five factors consistently separate those that succeed from those that do not: (1) A clear and bounded business problem as the starting point — not AI for AI's sake. (2) A solid and well-documented data foundation established before model development begins. (3) A strong executive sponsor with the mandate and interest to realise the business benefit. (4) A cross-functional project team combining business understanding, data expertise, and technical implementation capability. (5) A realistic timeline that respects the fact that AI projects require iteration and experimentation — and that data always takes longer than planned.",
+      },
+      {
+        heading: "We Lead Projects' experience with AI implementations",
+        body: "We have supported organisations with AI implementations across all phases — from the initial business case and roadmap through to delivery and transition to operations. Our approach combines strong project management expertise with a practical understanding of what AI projects require: time for data validation, space for experimentation in the PoC phase, and close stakeholder involvement throughout. Whether you are assessing whether AI is the right solution, or already have a project in need of professional governance, we can help. Contact us for an informal conversation.",
+      },
+    ],
+  },
+
   // ─── ARTIKEL 3 — EN ──────────────────────────────────────────────────────
   {
     slug: "agile-waterfall-or-hybrid",
