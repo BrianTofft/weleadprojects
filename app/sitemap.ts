@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/indsigt`, priority: 0.8,  changeFrequency: "weekly"  as const },
     { url: `${base}/faq`,     priority: 0.7,  changeFrequency: "monthly" as const },
     { url: `${base}/news`,    priority: 0.6,  changeFrequency: "monthly" as const },
+    { url: `${base}/find-projektleder`, priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
   const articlePages = articles.map((a) => ({
