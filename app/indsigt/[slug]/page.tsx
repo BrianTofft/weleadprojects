@@ -127,6 +127,30 @@ export default async function ArticlePage({
             ))}
           </div>
 
+          {/* Sources */}
+          {article.sources && article.sources.length > 0 && (
+            <div className="mt-10 pt-8 border-t" style={{ borderColor: BORDER }}>
+              <h3 className="text-sm font-bold uppercase tracking-widest mb-4" style={{ color: DARK }}>
+                {article.lang === "da" ? "Kilder" : "Sources"}
+              </h3>
+              <ul className="space-y-2">
+                {article.sources.map((s) => (
+                  <li key={s.url}>
+                    <a
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm hover:underline"
+                      style={{ color: RED }}
+                    >
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Author card */}
           <div
             className="mt-14 pt-10 border-t flex items-start gap-5"

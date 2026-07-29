@@ -8,6 +8,7 @@ export type Article = {
   readingMinutes: number;
   intro: string;
   sections: { heading: string; body: string }[];
+  sources?: { label: string; url: string }[];
 };
 
 export const articles: Article[] = [
@@ -49,6 +50,10 @@ export const articles: Article[] = [
         body: "Det vigtigste er at handle hurtigt og transparent. En struktureret sundhedstjek af projektet — scope, budget, interessenter, risici og teamdynamik — giver et klart billede af situationen. Hos We Lead Projects gennemfører vi projektreviews og bistår med at genoprette fremdrift, uanset om projektet er i sin indledende fase eller allerede under eksekvering.",
       },
     ],
+    sources: [
+      { label: "Standish Group CHAOS Report — IT-projektstatistik", url: "https://www.standishgroup.com/" },
+      { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
+    ],
   },
 
   // ─── ARTIKEL 1 — EN ──────────────────────────────────────────────────────
@@ -89,6 +94,10 @@ export const articles: Article[] = [
         body: "The most important thing is to act quickly and transparently. A structured project health check — covering scope, budget, stakeholders, risks, and team dynamics — gives a clear picture of the situation. At We Lead Projects, we conduct project reviews and help restore momentum, whether the project is in its early phase or already in execution.",
       },
     ],
+    sources: [
+      { label: "Standish Group CHAOS Report — IT project statistics", url: "https://www.standishgroup.com/" },
+      { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
+    ],
   },
 
   // ─── ARTIKEL 2 — DA ──────────────────────────────────────────────────────
@@ -124,6 +133,10 @@ export const articles: Article[] = [
         heading: "Fremtidens arkitektur er fleksibel",
         body: "De virksomheder der klarer sig bedst i det digitale landskab er dem, der har bygget en arkitektur der kan tilpasse sig. Det betyder ikke at genopfinde alt fra bunden — det betyder at sikre, at nye systemer og integrationer bygger på et solidt og veldokumenteret fundament. Cloud-native arkitekturer, API-first tilgange og modulære løsningsdesigns er centrale begreber i dette arbejde.",
       },
+    ],
+    sources: [
+      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "Gartner — Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
     ],
   },
 
@@ -161,6 +174,10 @@ export const articles: Article[] = [
         body: "The businesses that thrive in the digital landscape are those that have built an architecture capable of adapting. This does not mean reinventing everything from scratch — it means ensuring that new systems and integrations are built on a solid, well-documented foundation. Cloud-native architectures, API-first approaches, and modular solution designs are central concepts in this work.",
       },
     ],
+    sources: [
+      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "Gartner — Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
+    ],
   },
 
   // ─── ARTIKEL 3 — DA ──────────────────────────────────────────────────────
@@ -196,6 +213,11 @@ export const articles: Article[] = [
         heading: "We Lead Projects' tilgang",
         body: "Vi er metodeneutrale. Vi vurderer hvert projekt individuelt og anbefaler den tilgang der passer til netop jeres situation. Vores konsulenter har erfaring med alle tre modeller og kan guide jer — uanset om I er i gang med at vælge model, eller har brug for hjælp til at komme ud af en fastlåst projektmetode.",
       },
+    ],
+    sources: [
+      { label: "Agile Manifesto", url: "https://agilemanifesto.org/" },
+      { label: "Scrum.org — Scrum Guide", url: "https://www.scrum.org/resources/scrum-guide" },
+      { label: "PMI — Agile Practice Guide", url: "https://www.pmi.org/pmbok-guide-standards/practice-guides/agile" },
     ],
   },
 
@@ -237,6 +259,11 @@ export const articles: Article[] = [
         body: "Uanset hvor din organisation er i AI-rejsen, er en arkitekturvurdering et godt startpunkt. Den afklarer hvad I har, hvad I mangler og hvad der er det rigtige næste skridt — uden at forpligte jer til en bestemt teknologi eller leverandør. Hos We Lead Projects tilbyder vi AI-EA-vurderinger som et afgrænset engagement, typisk 4–8 uger, med en konkret rapport og en prioriteret roadmap som leverance. Kontakt os for at høre mere.",
       },
     ],
+    sources: [
+      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "EU AI Act — Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "GDPR og databeskyttelse — Datatilsynet", url: "https://www.datatilsynet.dk/" },
+    ],
   },
 
   // ─── ARTIKEL 4 — EN ──────────────────────────────────────────────────────
@@ -276,6 +303,11 @@ export const articles: Article[] = [
         heading: "Next steps for your organisation",
         body: "Wherever your organisation is on its AI journey, an architecture assessment is a strong starting point. It clarifies what you have, what you lack, and what the right next step is — without committing you to a specific technology or vendor. At We Lead Projects, we offer AI-EA assessments as a scoped engagement, typically four to eight weeks, delivering a concrete report and a prioritised roadmap. Contact us to learn more.",
       },
+    ],
+    sources: [
+      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "EU AI Act — European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "Gartner — AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
     ],
   },
 
@@ -317,6 +349,11 @@ export const articles: Article[] = [
         body: "Vi har bistået virksomheder med AI-implementeringer i alle faser — fra den indledende businesscase og roadmap til leverance og driftovergang. Vores tilgang er at kombinere stærk projektledelsesfaglighed med en praktisk forståelse af hvad AI-projekter kræver: tid til datavalidering, plads til eksperimenter i PoC-fasen, og tæt interessentinvolvering hele vejen igennem. Uanset om I er i gang med at vurdere om AI er den rigtige løsning, eller allerede er i gang med et projekt der har brug for professionel styring, kan vi hjælpe. Kontakt os for en uforpligtende samtale.",
       },
     ],
+    sources: [
+      { label: "EU AI Act — Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
+      { label: "GDPR og databeskyttelse — Datatilsynet", url: "https://www.datatilsynet.dk/" },
+    ],
   },
 
   // ─── ARTIKEL 5 — EN ──────────────────────────────────────────────────────
@@ -357,6 +394,10 @@ export const articles: Article[] = [
         body: "We have supported organisations with AI implementations across all phases — from the initial business case and roadmap through to delivery and transition to operations. Our approach combines strong project management expertise with a practical understanding of what AI projects require: time for data validation, space for experimentation in the PoC phase, and close stakeholder involvement throughout. Whether you are assessing whether AI is the right solution, or already have a project in need of professional governance, we can help. Contact us for an informal conversation.",
       },
     ],
+    sources: [
+      { label: "EU AI Act — European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
+    ],
   },
 
   // ─── ARTIKEL 3 — EN ──────────────────────────────────────────────────────
@@ -392,6 +433,11 @@ export const articles: Article[] = [
         heading: "The We Lead Projects approach",
         body: "We are method-neutral. We assess each project individually and recommend the approach that fits your specific situation. Our consultants have experience with all three models and can guide you — whether you are in the process of selecting a methodology or need help breaking free from a rigid project model.",
       },
+    ],
+    sources: [
+      { label: "Agile Manifesto", url: "https://agilemanifesto.org/" },
+      { label: "Scrum.org — Scrum Guide", url: "https://www.scrum.org/resources/scrum-guide" },
+      { label: "PMI — Agile Practice Guide", url: "https://www.pmi.org/pmbok-guide-standards/practice-guides/agile" },
     ],
   },
 ];
