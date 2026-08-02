@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2026-08-03",
+    "type": "Observation",
+    "content": "De fleste virksomheder tror de arbejder med AI.\n\nDe bruger ChatGPT til at skrive emails, opsummere mødereferater og få sparring på beslutninger. Det er nyttigt. Men det er ikke en AI-strategi.\n\nDet jeg ser igen og igen, når jeg kommer ind i virksomheder: ingen har taget stilling til de grundlæggende spørgsmål.\n\nHvilke processer og forretningsområder giver reelt mening at automatisere eller understøtte med AI? Hvem i organisationen ejer ansvaret for at evaluere og prioritere AI-initiativer? Hvordan sikrer vi at de data AI-løsningerne kræver, faktisk er tilgængelige og i orden? Og hvad er governance-rammen når noget går galt?\n\nChatGPT er et værktøj. En AI-strategi er noget andet.\n\nVirksomheder der ikke skelner mellem de to, vil om 2-3 år opdage at de har en samling af ukoordinerede AI-eksperimenter — men ingen reel forretningsværdi.\n\nJeg hjælper virksomheder med at gå fra det første til det andet. Ikke med at implementere teknologi, men med at strukturere tilgangen, definere ejerskab og prioritere indsatsen.\n\nHvad ser du i din organisation — er der en plan, eller mest eksperimenter?"
+  },
+  {
+    "date": "2026-08-05",
+    "type": "Provokation",
+    "content": "Lokummet brænder. Projektet er gået i stå. Deadlines er overskredet.\n\nHvad gør IT-chefen? Ringer til den faste IT-leverandør og beder om en ressource.\n\nOg de får én. Hurtigt. Med et pænt CV.\n\nProblem løst — eller?\n\nDet jeg ser i praksis: virksomheder der er havnet i en projektkrise sjældent mangler folk. De mangler det rigtige folk. Forskellen er enorm.\n\nEn dygtig Java-udvikler løser ikke et projekt der er gået i stå fordi ingen ejer beslutningerne. En erfaren projektleder løser ikke et projekt der mangler en klar arkitektur. Og en enterprise-arkitekt løser ikke et projekt der har et ledelsesproblem.\n\nIT-leverandøren leverer den profil de har tilgængelig. Det er deres job. Men de diagnosticerer ikke hvorfor projektet stagnererede — det er ikke deres problem.\n\nResultatet: projektet får ny bemanding. Og stagnerer igen.\n\nJeg har ryddet op efter den model flere gange end jeg gider tælle.\n\nNår projektet brænder er det første spørgsmål ikke \"hvem kan vi få fat i?\" Det er \"hvad er det egentlig der er galt?\"\n\nSvaret på det spørgsmål bestemmer hvem du har brug for."
+  },
+  {
+    "date": "2026-08-07",
+    "type": "Spørgsmål",
+    "content": "Jeg er nysgerrig på noget.\n\nHvad er den dyreste fejl du har set i et IT-projekt — ikke teknisk, men organisatorisk?\n\nJeg spørger fordi jeg i 30 år har set de samme mønstre gentage sig på tværs af brancher og virksomhedsstørrelser. Og min erfaring er at årsagen næsten aldrig er teknologien.\n\nDet er beslutningsvakuum. Uklar ejerskab. Interessenter der siger ja i mødelokalet og nej bagefter.\n\nMen jeg kan tage fejl. Hvad ser du?"
+  },
+  {
+    "date": "2026-08-10",
+    "type": "Observation",
+    "content": "EA er et af de mest undervurderede ledelsesværktøjer i mellemstore virksomheder.\n\nOg jeg siger det efter år i branchen — også hos virksomheder der faktisk har investeret i Enterprise Architecture.\n\nSelf i organisationer med dedikerede EA-teams ser jeg det samme mønster: arkitekturen handler primært om systemer. Solution designs, integrationer, infrastruktur. Det er vigtigt arbejde.\n\nMen den egentlige styrke ved EA er ikke systemlandskabet — det er koblingen til forretningsstrategien.\n\nHvilke kapabiliteter har vi brug for om tre år? Hvilke processer er fundamentet for vores konkurrencefordel? Og hvordan sikrer vi at vores teknologiinvesteringer understøtter det — i stedet for at drive det?\n\nNår EA kun bruges til at dokumentere det eksisterende, mister virksomheden den strategiske værdi. Arkitekturen bliver en kortlægning af fortiden, ikke et navigationsinstrument for fremtiden.\n\nDet gælder i endnu højere grad når AI skal ind i billedet. Hvem kortlægger AI-aktiverne? Hvem beslutter hvilke processer der må automatiseres — og hvilke der ikke må? Det er EA-spørgsmål. Og de fleste virksomheder har ingen til at besvare dem."
+  },
+  {
+    "date": "2026-08-12",
+    "type": "Provokation",
+    "content": "\"Vi kører Agile.\"\n\nDet hører jeg ofte. Og jeg nikker. Og tænker: nej, det gør I ikke.\n\nI har standups. I har sprints. Måske et Jira-board der ikke er opdateret siden marts.\n\nDet er ikke Agile — det er Agile-æstetik. Og det er faktisk værre end ingenting, fordi det giver en falsk fornemmelse af at have styr på det.\n\nAgile virker når organisationen er gearet til løbende beslutninger, korte feedbackloops og reelt mandat til at ændre retning. De fleste organisationer er ikke det.\n\nVandfaldsmetoden har et dårligt rygte. Men et velstruktureret vandfaldsprojekt leverer oftere til tiden end et dårligt implementeret Agile-projekt.\n\nMetoden er ikke problemet. Disciplinen er."
+  },
+  {
+    "date": "2026-08-14",
+    "type": "Spørgsmål",
+    "content": "Her er et spørgsmål til jer der sidder tæt på ledelsen:\n\nHvad tror jeres direktion AI gør for jeres virksomhed i dag — og hvad sker der faktisk?\n\nJeg spørger fordi jeg oplever et tiltagende gap. Ledelsen har hørt om AI, læst om AI, måske besluttet en AI-strategi. Og ude i organisationen eksperimenterer folk med ChatGPT på egen hånd.\n\nDe to ting mødes sjældent.\n\nEr det genkendeligt i jeres organisation — eller har I fundet en måde at bygge bro?"
+  },
+  {
+    "date": "2026-08-17",
+    "type": "Observation",
+    "content": "Den person der sænker projektet sidder sjældent i projektgruppen.\n\nDet er ham der ikke møder op til styregruppen. Hende der sagde ja til scope i januar og i april ikke kan huske det. Direktøren der godkendte budgettet men aldrig rigtig troede på projektet.\n\nInteressentstyring lyder kedeligt. Det er det ikke.\n\nDet er forskellen på et projekt der lander — og et der stille og roligt mister opbakning, indtil ingen rigtig vil vedkende sig det mere.\n\nJeg bruger mere tid på de mennesker der ikke er i rummet end på dem der er. Det er der hvor projekterne vindes eller tabes."
+  },
+  {
+    "date": "2026-08-19",
+    "type": "Provokation",
+    "content": "\"Best practice\" er en af de farligste sætninger i IT-branchen.\n\nIkke fordi best practice ikke eksisterer. Men fordi det bruges som argument for ikke at tænke selv.\n\nLeverandøren anbefaler best practice. Konsulenthuset implementerer best practice. Og ingen spørger: best practice for hvem? Under hvilke forudsætninger? Med hvilken organisation og hvilken datamodel?\n\nDet der virkede for en global logistikvirksomhed virker ikke nødvendigvis for en dansk mellemstor producent.\n\nJeg er ikke imod standarder. Jeg er imod at bruge dem som erstatning for analyse.\n\nDen bedste praksis er den der passer til din virksomhed. Den kræver nogen der forstår begge dele."
+  },
+  {
+    "date": "2026-08-21",
+    "type": "Spørgsmål",
+    "content": "Jeg spørger tit virksomheder: \"Hvad er jeres AI-governance?\"\n\nDe fleste kigger lidt forvirrede.\n\nSå spørger jeg: \"Hvem beslutter hvilke AI-løsninger I må implementere? Hvem vurderer risikoen? Hvem sikrer at I overholder EU AI Act?\"\n\nEndnu mere forvirring.\n\nDet er ikke et angreb — det er en reel observation. De færreste mellemstore virksomheder har taget stilling til det endnu.\n\nMen EU AI Act er ikke fremtid. Det er nu.\n\nHvordan er det hos jer — har nogen ejerskabet på AI-governance, eller er det stadig \"noget IT tager sig af\"?"
+  },
+  {
+    "date": "2026-08-24",
+    "type": "Observation",
+    "content": "Systemlandskabet i de fleste mellemstore virksomheder er ikke bygget. Det er vokset.\n\nEt CRM her. Et ERP der. Et par Excel-ark der i sin tid var midlertidige. En integration ingen rigtig ved hvordan virker men ingen tør røre.\n\nDet sker ikke fordi folk er uansvarlige. Det sker fordi hver beslutning gav mening der og da. Det er først når man ser det samlet at man forstår problemet.\n\nEnterprise Architecture handler grundlæggende om at undgå den situation — eller komme ud af den.\n\nDet er ikke et IT-projekt. Det er en ledelsesdisciplin.\n\nOg det er derfor det sjældent prioriteres, indtil det gør ondt nok."
+  },
+  {
+    "date": "2026-08-26",
+    "type": "Provokation",
+    "content": "\"Digital transformation\" er blevet en undskyldning for at undgå de svære beslutninger.\n\nJeg har set det mange gange: virksomheden sætter gang i en stor transformation. Ny teknologi, nyt setup, nyt navn på projektet. Og så fortsætter de gamle processer — bare med nye systemer ovenpå.\n\nDet er ikke transformation. Det er digitaliseringslak.\n\nReel transformation kræver at nogen beslutter hvad der skal stoppe. Hvilke processer der ikke skal med videre. Hvilke produkter der ikke længere giver mening. Det er ubehagelige samtaler.\n\nTeknologien er den lette del. Organisationen er den svære.\n\nDet ved alle der har prøvet det. Men det siges sjældent højt inden projektet starter."
+  },
+  {
+    "date": "2026-08-28",
+    "type": "Spørgsmål",
+    "content": "Hvem bestemmer hvad succes er i jeres IT-projekter?\n\nJeg spørger fordi det er mere kompliceret end det lyder.\n\nI mine år har jeg set projekter der leverede til tiden og inden for budget — og som alligevel blev betragtet som fiaskoer. Og projekter der var forsinkede og dyre, men som organisationen elskede.\n\nForskellen var næsten altid om succeskriteriet var defineret i IT-afdelingen eller i forretningen.\n\nHvad er jeres erfaring — er der enighed om hvad succes betyder, inden projektet starter?"
+  },
+  {
+    "date": "2026-08-31",
+    "type": "Observation",
+    "content": "Virksomheder ansætter projektlederen for sent.\n\nDet sker næsten altid. Strategien er besluttet, leverandøren er valgt, kontrakten er underskrevet — og så ringer nogen og spørger om jeg kan \"komme ind og styre det.\"\n\nPå det tidspunkt er de vigtigste beslutninger allerede truffet. Ofte de forkerte.\n\nEn erfaren projektleder tidligt i processen stiller de ubehagelige spørgsmål: Er scope realistisk? Er der budget til det der uundgåeligt går galt? Er de rigtige interessenter om bord — eller bare de venligste?\n\nDet er billigere at få de svar i fase 1 end i fase 3.\n\nMen det kræver at man inviterer nogen ind der tør stille dem."
+  },
+  {
+    "date": "2026-09-02",
+    "type": "Observation",
+    "content": "Efter 30 år i branchen har jeg stadig ikke fundet en god jobtitel til det jeg laver.\n\nProjektleder? For snævert.\nEnterprise Arkitekt? Halvt rigtigt.\nAI-rådgiver? Alle kalder sig det nu.\n\nDet jeg reelt gør: jeg sørger for at komplekse projekter bliver leveret, at teknologivalg hænger sammen med forretningsstrategien — og at AI-entusiasme møder virkelighed, inden det koster for meget.\n\nDe tre ting hænger uløseligt sammen. Alligevel ansætter de fleste virksomheder tre forskellige folk til at løse dem. Tre siloer, tre agendaer og ingen der har det samlede overblik.\n\nJeg har set det gå galt. Mange gange.\n\nMåske er den rigtige titel bare: en der har prøvet det."
+  }
+]
