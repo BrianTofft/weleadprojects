@@ -84,7 +84,7 @@ const heroSlides = [
     body: "Vi påtager os ansvaret for alt fra mindre IT-projekter til større IT-transformationer og Cloud-implementeringer — altid med fokus på fremdrift og succesfuld leverance.",
   },
   {
-    image: "/Graphics/AdobeStock_828719609.webp",
+    image: "/Graphics/GettyImages-517041045_optimized.webp",
     flip: true,
     brightness: 0.65,
     label: "EA + AI Governance",
