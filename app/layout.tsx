@@ -17,10 +17,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "We Lead Projects ApS" }],
   creator: "We Lead Projects ApS",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
+  icons: { icon: "/favicon.ico" },
   appleWebApp: {
     title: "We Lead Projects",
   },
