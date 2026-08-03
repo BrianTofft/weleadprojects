@@ -17,7 +17,13 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "We Lead Projects ApS" }],
   creator: "We Lead Projects ApS",
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  appleWebApp: {
+    title: "We Lead Projects",
+  },
   openGraph: {
     type: "website",
     locale: "da_DK",
