@@ -19,7 +19,14 @@ if (!post) {
   process.exit(0);
 }
 
-console.log(`Sender: ${post.type} — ${today}`);
+const postIndex = posts.indexOf(post) + 1;
+console.log(`Sender: ${post.type} — ${today} (#${postIndex})`);
+
+// Vedhæft billedet hvis det findes
+const imagePath = path.join(__dirname, '..', 'public', `linkedin-post-${postIndex}.png`);
+const imageAttachment = fs.existsSync(imagePath)
+  ? [{ filename: `linkedin-post-${postIndex}.png`, content: fs.readFileSync(imagePath).toString('base64') }]
+  : [];
 
 const html = `
 <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
@@ -37,6 +44,7 @@ const payload = JSON.stringify({
   subject: `LinkedIn ${post.type} — ${today}`,
   text: post.content,
   html,
+  attachments: imageAttachment,
 });
 
 const req = https.request({
