@@ -12,7 +12,7 @@ const services = [
   { icon: "/Graphics/Services-7.png",  title: "Kommunikationshjælp",             body: "Vi holder ALTID relevante deltagere og interessenter informeret med vores effektive kommunikationsstøtte, der forbedrer samarbejdet mellem alle projektinteressenter." },
   { icon: "/Graphics/Services-4.png",  title: "Effektivt Workflow",              body: "Vi leverer projektledelsesopgaver for at opnå bedre produktivitet og holder dig på sporet med projekttidslinjer ved hjælp af vores effektive workflow-strategier." },
   { icon: "/Graphics/Services-6.png",  title: "Det effektive Team",              body: "Udnyt styrken i teamwork ved at forbedre kommunikationen mellem teammedlemmerne for et mere inkluderende og effektiviseret projektmål." },
-  { icon: "/Graphics/Services-5.png",  title: "Innovative Løsninger",            body: "Vi implementerer kreative og innovative løsninger i processen for at overvinde projektudfordringer og levere exceptionelle resultater ud over kundens forventninger." },
+  { icon: "/Graphics/Services-5.png",  title: "AI & Enterprise Architecture",    body: "Vi rådgiver om AI governance, EU AI Act compliance og Enterprise Architecture — og sikrer at teknologiinvesteringer understøtter din forretningsstrategi frem for at drive den." },
 ];
 
 const faqs = [
@@ -82,6 +82,15 @@ const heroSlides = [
     heading: "Intet projekt er",
     headingRed: "for stort eller for småt",
     body: "Vi påtager os ansvaret for alt fra mindre IT-projekter til større IT-transformationer og Cloud-implementeringer — altid med fokus på fremdrift og succesfuld leverance.",
+  },
+  {
+    image: "/hero.JPEG",
+    flip: false,
+    brightness: 0.45,
+    label: "EA + AI Governance",
+    heading: "Fra strategi til",
+    headingRed: "kontrolleret AI-adoption",
+    body: "Vi hjælper virksomheder med at kortlægge systemlandskabet, etablere governance-rammer og navigere EU AI Act — så AI-initiativer skaber forretningsværdi frem for compliance-risiko.",
   },
 ];
 
@@ -269,6 +278,44 @@ export default function Home() {
                   className="max-h-12 max-w-[110px] object-contain opacity-75 hover:opacity-100 transition-opacity duration-300"
                   style={{ mixBlendMode: "multiply" }}
                 />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TRE KERNEKOMPETENCER */}
+      <section className="py-20 px-6" style={{ background: OFFWHITE }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Tre kernekompetencer</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Projektledelse. Enterprise Architecture. AI Governance.</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
+              Tre discipliner der hænger uløseligt sammen — og som vi som regel leverer i kombination.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: "🎯",
+                title: "Projektledelse",
+                body: "Erfarne projektledere der tager ansvar for leverance — fra behovsafklaring til afslutning. Uanset metode: Waterfall, Agile eller hybrid.",
+              },
+              {
+                icon: "🏗️",
+                title: "Enterprise Architecture",
+                body: "Vi kobler systemlandskabet til forretningsstrategien. Kortlægning, prioritering og arkitektur der understøtter vækst frem for at hæmme den.",
+              },
+              {
+                icon: "⚖️",
+                title: "AI Governance",
+                body: "Governance-rammer, EU AI Act compliance og struktureret tilgang til AI-adoption — så AI-initiativer skaber reel forretningsværdi og ikke compliance-risiko.",
+              },
+            ].map((k) => (
+              <div key={k.title} className="bg-white rounded-2xl p-8 border" style={{ borderColor: BORDER }}>
+                <div className="text-3xl mb-4">{k.icon}</div>
+                <h3 className="font-bold text-lg mb-3" style={{ color: DARK }}>{k.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{k.body}</p>
               </div>
             ))}
           </div>
