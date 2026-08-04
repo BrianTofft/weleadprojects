@@ -62,7 +62,7 @@ export default function KanbanBoard({ initialLeads }: { initialLeads: Lead[] }) 
       <div style={{ background: '#1C2544', color: 'white', padding: '18px 28px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>
           <div style={{ fontSize: 10, opacity: 0.4, letterSpacing: 3, textTransform: 'uppercase', marginBottom: 3 }}>We Lead Projects</div>
-          <h1 style={{ margin: 0, fontSize: 20, fontWeight: 700, letterSpacing: -0.5 }}>Pipeline</h1>
+          <h1 style={{ margin: 0, fontSize: 20, fontWeight: 700, letterSpacing: -0.5, color: '#cc2222' }}>Pipeline</h1>
         </div>
         <div style={{ display: 'flex', gap: 28, alignItems: 'center' }}>
           {totalAktiv > 0 && (
