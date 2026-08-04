@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
-import { supabase } from '@/lib/supabase'
+import { getSupabase } from '@/lib/supabase'
 
 export async function GET() {
-  const { data, error } = await supabase
+  const { data, error } = await getSupabase()
     .from('leads')
     .select('*')
     .order('created_at', { ascending: false })
@@ -13,7 +13,7 @@ export async function GET() {
 
 export async function POST(request: Request) {
   const body = await request.json()
-  const { data, error } = await supabase
+  const { data, error } = await getSupabase()
     .from('leads')
     .insert([{ ...body, vaerdi: Number(body.vaerdi ?? 0) }])
     .select()
