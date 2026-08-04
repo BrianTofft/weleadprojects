@@ -1,14 +1,9 @@
-import { createClient, SupabaseClient } from '@supabase/supabase-js'
-
-let client: SupabaseClient | null = null
+import { createClient } from '@supabase/supabase-js'
 
 export function getSupabase() {
-  if (!client) {
-    client = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.SUPABASE_SERVICE_ROLE_KEY!,
-      { auth: { persistSession: false } }
-    )
-  }
-  return client
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    { auth: { persistSession: false } }
+  )
 }
