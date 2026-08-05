@@ -172,6 +172,49 @@ export default function FindProjectForm() {
         </div>
       </section>
 
+      {/* HVORFOR EKSTERN PROJEKTLEDER */}
+      <section className="py-16 px-6" style={{ background: OFFWHITE }}>
+        <div className="max-w-3xl mx-auto">
+          <p
+            className="text-sm font-semibold uppercase tracking-widest mb-3"
+            style={{ color: RED }}
+          >
+            Hvorfor os
+          </p>
+          <h2 className="text-2xl font-bold mb-5" style={{ color: DARK }}>
+            Hvorfor vælge en ekstern projektleder?
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Mange virksomheder oplever, at interne ressourcer allerede er fuldt booket når et nyt
+            projekt skal i gang — eller at den nødvendige specialviden simpelthen ikke findes i
+            organisationen. En erfaren, ekstern projektleder kan træde ind hurtigt, uden den
+            oplæringstid en fastansættelse kræver, og bringe et objektivt blik med sig, som ofte
+            er svært at opnå internt.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Vores konsulenter har i gennemsnit mere end 15 års erfaring og er vant til at navigere
+            komplekse organisationer, modstridende interessenter og stramme deadlines. Flere er
+            certificerede efter internationale standarder som{" "}
+            <a
+              href="https://www.pmi.org/certifications"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-75"
+              style={{ color: RED }}
+            >
+              PMI
+            </a>
+            , og alle arbejder metodeneutralt — de vælger den tilgang, der passer bedst til jeres
+            konkrete situation, uanset om det er klassisk Waterfall, Agile eller en hybrid model.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Vi matcher ikke bare på CV. Vi lægger vægt på, at profilen passer til jeres
+            virksomhedskultur, projektets kompleksitet og de udfordringer I står overfor lige nu —
+            så I får en projektleder, der kan skabe fremdrift fra dag ét.
+          </p>
+        </div>
+      </section>
+
       {/* CALENDLY */}
       <section id="book-mode" className="py-20 px-6" style={{ background: OFFWHITE }}>
         <div className="max-w-4xl mx-auto">

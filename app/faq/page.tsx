@@ -97,6 +97,19 @@ export default function FaqPage() {
           <p className="text-gray-600 leading-relaxed">
             Har du et spørgsmål der ikke er besvaret ovenfor, er du altid velkommen til at kontakte os direkte. Vi besvarer alle henvendelser senest næste hverdag — og den første konsultation er altid uforpligtende.
           </p>
+          <p className="text-gray-600 leading-relaxed mt-4">
+            Arbejder du med AI-governance, kan du læse mere om de regulatoriske rammer i{" "}
+            <a
+              href="https://artificialintelligenceact.eu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-75"
+              style={{ color: RED }}
+            >
+              EU AI Act
+            </a>{" "}
+            — noget vi løbende rådgiver kunder om.
+          </p>
         </div>
       </section>
 

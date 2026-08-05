@@ -61,6 +61,18 @@ export default function OmOs() {
             <p className="text-gray-600">
               Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Kombineret med stærk projektledelsesbaggrund giver det os mulighed for at gå ind i projekter på alle niveauer — fra strategisk rådgivning til operationel eksekvering.
             </p>
+            <p className="text-gray-600 mt-4">
+              We Lead Projects ApS er registreret under CVR-nr. 44934655 — du kan se virksomhedens fulde selskabsoplysninger på{" "}
+              <a
+                href="https://datacvr.virk.dk/enhed/virksomhed/44934655"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:opacity-75"
+                style={{ color: RED }}
+              >
+                CVR-registret
+              </a>.
+            </p>
           </div>
 
           {/* Brian */}

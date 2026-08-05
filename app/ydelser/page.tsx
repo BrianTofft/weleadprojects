@@ -288,6 +288,19 @@ export default function YdelserPage() {
             <p className="text-gray-600">
               Vi kalder det 1+1=3 — fordi to konsulenter i samspil leverer mere end dobbelt så meget værdi.
             </p>
+            <p className="text-gray-600 mt-4">
+              Vores Enterprise Architecture-arbejde tager udgangspunkt i anerkendte industristandarder som{" "}
+              <a
+                href="https://www.opengroup.org/togaf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:opacity-75"
+                style={{ color: RED }}
+              >
+                TOGAF
+              </a>{" "}
+              — tilpasset den konkrete organisations modenhed og behov.
+            </p>
           </div>
           <div
             className="rounded-2xl border p-10 text-center"

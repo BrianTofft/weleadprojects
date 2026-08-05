@@ -156,8 +156,9 @@ export default function Home() {
             <Image
               src={s.image}
               alt={s.heading + " " + s.headingRed}
-              fill
-              className="object-cover object-top"
+              width={1920}
+              height={1080}
+              className="object-cover object-top w-full h-full"
               priority={i === 0}
               style={{
                 filter: s.brightness ? `brightness(${s.brightness})` : undefined,

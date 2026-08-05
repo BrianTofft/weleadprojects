@@ -56,6 +56,19 @@ export default function IndsightPage() {
           <p className="text-gray-600 leading-relaxed">
             Vi opdaterer løbende med ny viden. Alle artikler er skrevet uden brug af fagligt jargon der kræver specialuddannelse — målet er at give praktisk, handlingsorienteret indsigt som du kan bruge direkte i dit arbejde.
           </p>
+          <p className="text-gray-600 leading-relaxed mt-4">
+            Vores tilgang til projektledelse trækker bl.a. på principperne fra{" "}
+            <a
+              href="https://www.pmi.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-75"
+              style={{ color: RED }}
+            >
+              PMI
+            </a>{" "}
+            (Project Management Institute) — kombineret med vores egen praktiske erfaring fra danske og internationale projekter.
+          </p>
         </div>
       </section>
 
