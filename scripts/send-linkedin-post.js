@@ -40,7 +40,7 @@ const html = `
 
 const payload = JSON.stringify({
   from: 'We Lead Projects <noreply@weleadprojects.com>',
-  to: ['brian@tofft.info'],
+  to: ['bt@weleadprojects.com'],
   subject: `LinkedIn ${post.type} — ${today}`,
   text: post.content,
   html,
