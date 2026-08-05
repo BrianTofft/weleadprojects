@@ -207,10 +207,22 @@ export default function FindProjectForm() {
             , og alle arbejder metodeneutralt — de vælger den tilgang, der passer bedst til jeres
             konkrete situation, uanset om det er klassisk Waterfall, Agile eller en hybrid model.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Vi matcher ikke bare på CV. Vi lægger vægt på, at profilen passer til jeres
             virksomhedskultur, projektets kompleksitet og de udfordringer I står overfor lige nu —
             så I får en projektleder, der kan skabe fremdrift fra dag ét.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Modsat en fast rekrutteringsproces, der ofte tager flere måneder, kan vi typisk have en
+            kvalificeret konsulent klar til opstart inden for få dage. Det gør en ekstern
+            projektleder til en oplagt løsning, når et projekt skal skydes i gang hurtigt, eller
+            når en nøgleperson pludselig forlader organisationen midt i en kritisk fase.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Samarbejdet stopper ikke ved opstart. Vores konsulenter trækker løbende på hinandens
+            erfaring gennem vores interne vidensdeling — så du ikke kun får én persons kompetencer,
+            men adgang til hele teamets samlede erfaring, når projektet støder på uforudsete
+            udfordringer undervejs.
           </p>
         </div>
       </section>
