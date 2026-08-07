@@ -7,11 +7,11 @@ const posts = JSON.parse(fs.readFileSync("content/linkedin-posts.json", "utf8"))
 // Key quote lines for each post (last line shown in red)
 const quotes = [
   ["ChatGPT er et værktøj.", "En AI-strategi", "er noget andet."],
-  ["Lokummet brænder.", "Men det er ikke folk", "der mangler — det er de rigtige."],
-  ["Hvad er den dyreste fejl", "du har set i et IT-projekt —", "ikke teknisk, men organisatorisk?"],
+  ["Lokummet brænder.", "Men det er ikke folk", "der mangler. Det er de rigtige."],
+  ["Hvad er den dyreste fejl", "du har set i et IT-projekt,", "ikke teknisk, men organisatorisk?"],
   ["EA er et af de mest", "undervurderede", "ledelsesvirkemidler."],
   ["“Vi kører Agile.”", "Det gør I ikke.", "I har Agile-æstetik."],
-  ["Hvad tror jeres direktion", "AI gør for jer —", "og hvad sker der faktisk?"],
+  ["Hvad tror jeres direktion", "AI gør for jer,", "og hvad sker der faktisk?"],
   ["Den person der sænker projektet", "sidder sjældent", "i projektgruppen."],
   ["“Best practice”", "bruges som erstatning", "for analyse."],
   ["Hvem ejer ansvaret", "for AI-governance", "i jeres virksomhed?"],
