@@ -440,6 +440,51 @@ export const articles: Article[] = [
       { label: "PMI — Agile Practice Guide", url: "https://www.pmi.org/pmbok-guide-standards/practice-guides/agile" },
     ],
   },
+
+  // ─── ARTIKEL 6 — DA ──────────────────────────────────────────────────────
+  {
+    slug: "ai-governance-vs-ea-governance",
+    lang: "da",
+    category: "Enterprise Architecture",
+    title: "AI-governance vs. EA-governance",
+    description:
+      "De fleste virksomheder behandler AI-governance som en ny disciplin adskilt fra Enterprise Architecture. Det er en dyr fejl. Se hvorfor, og hvordan de to bør hænge sammen.",
+    date: "August 2026",
+    readingMinutes: 7,
+    intro:
+      "De fleste virksomheder taler om AI-governance og Enterprise Architecture-governance som om det er to forskellige projekter. Det ene ligger hos jura og compliance. Det andet ligger hos IT og arkitektur. Problemet er, at AI-systemer er arkitektur. De har grænseflader, afhængigheder og datalinje ligesom alt andet i systemlandskabet. Når de to discipliner ikke taler sammen, ender virksomheden enten med en juridisk vandtæt strategi der er teknisk usammenhængende, eller en teknisk solid løsning der aldrig består en compliance-gennemgang.",
+    sections: [
+      {
+        heading: "AI-governance er ikke en ny disciplin",
+        body: "De fleste virksomheder behandler AI-governance som noget der skal bygges fra bunden af jura og compliance. Men risikoklassificering, dataejerskab og afhængighedskortlægning er præcis det Enterprise Architecture allerede skulle have styr på. Problemet er ikke, at AI kræver en helt ny form for governance. Det er, at EA-governance i mange virksomheder aldrig blev taget alvorligt nok til at kunne udvides til det. Når AI-governance opstår som et selvstændigt initiativ i stedet for en udvidelse af eksisterende EA-governance, genopfinder virksomheden en proces der delvist allerede findes, blot med et nyt navn og et nyt team.",
+      },
+      {
+        heading: "Statiske systemer versus systemer der ændrer sig selv",
+        body: "Et ERP-system opfører sig som det blev bygget til, indtil nogen aktivt ændrer koden. En AI-model kan ændre adfærd uden at nogen rørte den, gennem retraining, model drift eller simpelthen mere data over tid. Traditionel EA-governance er punktbaseret: en arkitektur bliver godkendt ved et review, og derefter går man videre til næste initiativ. AI kræver kontinuerlig governance, fordi modellens output i dag ikke nødvendigvis afspejler modellens output om seks måneder. De fleste virksomheders governance-model, inklusive deres EA-praksis, er slet ikke bygget til at håndtere den forskel.",
+      },
+      {
+        heading: "To siloer, ingen ejer",
+        body: "AI-governance-diskussionen foregår typisk i bestyrelseslokalet sammen med jura og compliance. Enterprise Architecture sidder under CTO eller IT-direktøren og forstår det faktiske systemlandskab, dataflowene og de tekniske afhængigheder. De to grupper taler sjældent sammen med nogen fast kadence. Resultatet er en AI-strategi der enten er juridisk vandtæt og teknisk usammenhængende, eller teknisk solid og juridisk sårbar. Ingen af delene holder i praksis, og begge dele koster dyrt at rette bagefter.",
+      },
+      {
+        heading: "Governance der kommer for sent",
+        body: "Governance skal i sin natur være fremadskuende: vurdér før du bygger, ikke bagefter. Men i de fleste virksomheder opstår AI-governance først, efter nogen allerede har koblet en sprogmodel på et internt system eller en kundevendt løsning. Det er den omvendte rækkefølge af hvordan Enterprise Architecture altid har arbejdet. Symptomet på at AI-governance ikke er en integreret del af EA fra start, er at den konsekvent kommer for sent til at forhindre noget, og i stedet bruges til at oprydde efter beslutninger der allerede er truffet.",
+      },
+      {
+        heading: "Data governance er ikke en ny opdagelse",
+        body: "Mange AI-governance-frameworks taler om datakvalitet, datalineage og adgangsstyring som om det er nye indsigter født med AI-bølgen. Det er det ikke. Det er data governance, en kernedisciplin i Enterprise Architecture i årevis, som mange virksomheder aldrig prioriterede højt nok, fordi konsekvenserne af dårlig datakvalitet ofte var usynlige eller diffuse. Med AI bliver konsekvenserne synlige med det samme, fordi modellen bogstaveligt talt gentager rodet tilbage til dig, ofte i en form der ser overbevisende og autoritativ ud.",
+      },
+      {
+        heading: "Sådan samler du de to",
+        body: "Løsningen er sjældent endnu et governance-dokument eller et nyt udvalg. Det er at placere AI-governance som en udvidelse af den eksisterende EA-funktion, ikke som et parallelt spor. Det betyder konkret: samme risikoklassificeringsmodel for AI-systemer som for øvrige IT-systemer, samme dataejerskabsstruktur, og en Enterprise Arkitekt med reelt mandat til at sige nej, både til nye systemer og til nye AI-initiativer der ikke kan dokumentere deres dataforudsætninger. Hos We Lead Projects hjælper vi virksomheder med præcis den øvelse: at bygge AI-governance ind i det EA-fundament der allerede findes, eller etablere det fra bunden hvis det ikke gør. Kontakt os for en uforpligtende samtale om, hvor jeres organisation står i dag.",
+      },
+    ],
+    sources: [
+      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "EU AI Act — Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "Gartner — AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
