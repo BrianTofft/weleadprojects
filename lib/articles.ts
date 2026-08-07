@@ -485,6 +485,51 @@ export const articles: Article[] = [
       { label: "Gartner — AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
     ],
   },
+
+  // ─── ARTIKEL 6 — EN ──────────────────────────────────────────────────────
+  {
+    slug: "ai-governance-versus-ea-governance",
+    lang: "en",
+    category: "Enterprise Architecture",
+    title: "AI Governance vs. EA Governance",
+    description:
+      "Most organisations treat AI governance as a new discipline separate from Enterprise Architecture. That is a costly mistake. Here is why, and how the two should connect.",
+    date: "August 2026",
+    readingMinutes: 7,
+    intro:
+      "Most organisations talk about AI governance and Enterprise Architecture governance as if they were two separate initiatives. One sits with legal and compliance. The other sits with IT and architecture. The problem is that AI systems are architecture. They have interfaces, dependencies, and data lineage just like everything else in the system landscape. When the two disciplines do not talk to each other, the organisation ends up with either a legally watertight strategy that is technically incoherent, or a technically solid solution that never survives a compliance review.",
+    sections: [
+      {
+        heading: "AI governance is not a new discipline",
+        body: "Most organisations treat AI governance as something that must be built from scratch by legal and compliance. But risk classification, data ownership, and dependency mapping are exactly what Enterprise Architecture should already have in place. The problem is not that AI requires an entirely new form of governance. It is that EA governance in many organisations was never taken seriously enough to be extended to cover it. When AI governance emerges as a standalone initiative instead of an extension of existing EA governance, the organisation reinvents a process that partly already exists, just under a new name with a new team.",
+      },
+      {
+        heading: "Static systems versus systems that change themselves",
+        body: "An ERP system behaves the way it was built to, until someone actively changes the code. An AI model can change behaviour without anyone touching it, through retraining, model drift, or simply more data over time. Traditional EA governance is checkpoint-based: an architecture gets approved at a review, and everyone moves on to the next initiative. AI requires continuous governance, because the model's output today does not necessarily reflect its output six months from now. Most organisations' governance model, including their EA practice, is simply not built to handle that difference.",
+      },
+      {
+        heading: "Two silos, no owner",
+        body: "The AI governance conversation typically happens in the boardroom alongside legal and compliance. Enterprise Architecture sits under the CTO or IT director and understands the actual system landscape, the data flows, and the technical dependencies. The two groups rarely talk to each other on any fixed cadence. The result is an AI strategy that is either legally watertight and technically incoherent, or technically solid and legally exposed. Neither holds up in practice, and both are expensive to fix afterwards.",
+      },
+      {
+        heading: "Governance that arrives too late",
+        body: "Governance is by nature forward looking: assess before you build, not after. But in most organisations, AI governance only emerges after someone has already connected a language model to an internal system or a customer-facing product. That is the reverse of how Enterprise Architecture has always worked. The symptom of AI governance not being an integrated part of EA from the start is that it consistently arrives too late to prevent anything, and is instead used to clean up after decisions that have already been made.",
+      },
+      {
+        heading: "Data governance is not a new discovery",
+        body: "Many AI governance frameworks talk about data quality, data lineage, and access control as if these were new insights born from the AI wave. They are not. This is data governance, a core EA discipline for years, which many organisations never prioritised highly enough because the consequences of poor data quality were often invisible or diffuse. With AI, the consequences become visible immediately, because the model literally reflects the mess straight back at you, often in a form that looks convincing and authoritative.",
+      },
+      {
+        heading: "How to bring the two together",
+        body: "The solution is rarely another governance document or a new committee. It is placing AI governance as an extension of the existing EA function, not as a parallel track. Concretely, that means: the same risk classification model for AI systems as for other IT systems, the same data ownership structure, and an Enterprise Architect with real authority to say no, both to new systems and to new AI initiatives that cannot document their data prerequisites. At We Lead Projects, we help organisations do exactly this: build AI governance into the EA foundation that already exists, or establish it from scratch if it does not. Contact us for an informal conversation about where your organisation stands today.",
+      },
+    ],
+    sources: [
+      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "EU AI Act — European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "Gartner — AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
