@@ -168,9 +168,61 @@ export default function YdelserPage() {
         image="/Graphics/Project-Management-Consultancy.webp"
       />
 
+      {/* KERNEYDELSER — links til dedikerede undersider */}
+      <section style={{ background: OFFWHITE }} className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores kerneydelser</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold">Tre discipliner, ét samlet tilbud</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link
+              href="/ydelser/projektledelse"
+              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
+              style={{ borderColor: BORDER }}
+            >
+              <div className="text-3xl mb-4">🎯</div>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">Projektledelse</h3>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed">Erfarne projektledere der tager ansvar for leverance, fra behovsafklaring til afslutning.</p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
+            <Link
+              href="/ydelser/enterprise-architecture"
+              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
+              style={{ borderColor: BORDER }}
+            >
+              <div className="text-3xl mb-4">🏗️</div>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">Enterprise Architecture</h3>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed">Vi kobler systemlandskabet til forretningsstrategien, så teknologi understøtter vækst.</p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
+            <Link
+              href="/ydelser/ai-governance"
+              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
+              style={{ borderColor: BORDER }}
+            >
+              <div className="text-3xl mb-4">⚖️</div>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI-governance</h3>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed">Governance-rammer og EU AI Act-compliance til struktureret AI-adoption.</p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICE CARDS */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Alle ydelser</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold">Detaljeret overblik</h2>
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
               <div

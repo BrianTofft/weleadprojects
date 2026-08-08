@@ -17,14 +17,24 @@ const links = [
   { label: "Kontakt", href: "/#kontakt" },
 ];
 
+const ydelserSubmenu = [
+  { label: "Projektledelse",           href: "/ydelser/projektledelse" },
+  { label: "Enterprise Architecture",  href: "/ydelser/enterprise-architecture" },
+  { label: "AI-governance",            href: "/ydelser/ai-governance" },
+];
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [ydelserOpen, setYdelserOpen] = useState(false);
+  const [mobileYdelserOpen, setMobileYdelserOpen] = useState(false);
   const pathname = usePathname();
 
   function isActive(href: string) {
     if (href.startsWith("/#")) return false;
     return pathname === href;
   }
+
+  const ydelserActive = pathname === "/ydelser" || pathname.startsWith("/ydelser/");
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b" style={{ borderColor: BORDER }}>
@@ -46,16 +56,57 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className="hidden md:flex gap-8 text-base font-medium" style={{ color: DARK }}>
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              style={isActive(l.href) ? { color: RED } : undefined}
-              className="hover:opacity-60 transition-opacity"
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) =>
+            l.href === "/ydelser" ? (
+              <div
+                key={l.href}
+                className="relative"
+                onMouseEnter={() => setYdelserOpen(true)}
+                onMouseLeave={() => setYdelserOpen(false)}
+              >
+                <Link
+                  href={l.href}
+                  style={ydelserActive ? { color: RED } : undefined}
+                  className="hover:opacity-60 transition-opacity flex items-center gap-1"
+                >
+                  {l.label}
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className="mt-0.5">
+                    <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+                {ydelserOpen && (
+                  <div
+                    className="absolute top-full left-0 pt-3 -ml-2"
+                  >
+                    <div
+                      className="bg-white rounded-xl border shadow-lg py-2 min-w-[220px]"
+                      style={{ borderColor: BORDER }}
+                    >
+                      {ydelserSubmenu.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          style={pathname === s.href ? { color: RED } : { color: DARK }}
+                          className="block px-5 py-2.5 text-sm hover:opacity-60 transition-opacity whitespace-nowrap"
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={l.href}
+                href={l.href}
+                style={isActive(l.href) ? { color: RED } : undefined}
+                className="hover:opacity-60 transition-opacity"
+              >
+                {l.label}
+              </Link>
+            )
+          )}
         </div>
 
         {/* Desktop CTA + Mobile hamburger */}
@@ -102,20 +153,62 @@ export default function Nav() {
       {/* Mobile dropdown */}
       {open && (
         <div className="md:hidden bg-white border-t px-6 py-4 flex flex-col gap-1" style={{ borderColor: BORDER }}>
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="py-3 text-base font-medium border-b last:border-0"
-              style={{
-                color: isActive(l.href) ? RED : DARK,
-                borderColor: BORDER,
-              }}
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) =>
+            l.href === "/ydelser" ? (
+              <div key={l.href} className="border-b last:border-0" style={{ borderColor: BORDER }}>
+                <div className="flex items-center justify-between">
+                  <Link
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    className="py-3 text-base font-medium flex-1"
+                    style={{ color: ydelserActive ? RED : DARK }}
+                  >
+                    {l.label}
+                  </Link>
+                  <button
+                    onClick={() => setMobileYdelserOpen(!mobileYdelserOpen)}
+                    aria-label="Vis ydelser"
+                    className="p-3"
+                  >
+                    <svg
+                      width="12" height="8" viewBox="0 0 10 6" fill="none"
+                      style={{ transform: mobileYdelserOpen ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}
+                    >
+                      <path d="M1 1L5 5L9 1" stroke={DARK} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                {mobileYdelserOpen && (
+                  <div className="pb-3 flex flex-col gap-1 pl-4">
+                    {ydelserSubmenu.map((s) => (
+                      <Link
+                        key={s.href}
+                        href={s.href}
+                        onClick={() => setOpen(false)}
+                        className="py-2 text-sm"
+                        style={{ color: pathname === s.href ? RED : "#6b7280" }}
+                      >
+                        {s.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="py-3 text-base font-medium border-b last:border-0"
+                style={{
+                  color: isActive(l.href) ? RED : DARK,
+                  borderColor: BORDER,
+                }}
+              >
+                {l.label}
+              </Link>
+            )
+          )}
           <Link
             href="/#kontakt"
             onClick={() => setOpen(false)}
