@@ -167,9 +167,13 @@ export default function Home() {
             />
           </div>
         ))}
-        {/* Gradient overlay */}
+        {/* Gradient overlay — dark scrim on mobile so white text stays legible, light gradient on desktop for dark text */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 md:hidden"
+          style={{ background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6))" }}
+        />
+        <div
+          className="absolute inset-0 hidden md:block"
           style={{ background: "linear-gradient(to right, rgba(255,255,255,0.82) 30%, rgba(255,255,255,0.25) 55%, rgba(255,255,255,0.0) 100%)" }}
         />
 
@@ -179,19 +183,19 @@ export default function Home() {
             <p key={`label-${slide}`} style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4 animate-fade">
               {heroSlides[slide].label}
             </p>
-            <h1 key={`h-${slide}`} style={{ color: DARK }} className="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fade">
+            <h1 key={`h-${slide}`} className="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fade text-white md:text-[#2d1a1a]">
               {heroSlides[slide].heading}
               <br />
               <span style={{ color: RED }}>{heroSlides[slide].headingRed}</span>
             </h1>
-            <p key={`b-${slide}`} className="text-gray-600 text-lg mb-10 animate-fade">
+            <p key={`b-${slide}`} className="text-white md:text-gray-600 text-lg mb-10 animate-fade">
               {heroSlides[slide].body}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#kontakt" style={{ background: RED }} className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity">
                 Kom i gang
               </a>
-              <a href="#ydelser" style={{ color: DARK, borderColor: DARK }} className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity">
+              <a href="#ydelser" className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity text-white border-white md:text-[#2d1a1a] md:border-[#2d1a1a]">
                 Se vores ydelser
               </a>
             </div>
@@ -263,7 +267,7 @@ export default function Home() {
         <p className="text-center text-xs font-semibold uppercase tracking-widest mb-8" style={{ color: RED }}>
           Kundeudvalg som vi har arbejdet for
         </p>
-        <div className="overflow-hidden">
+        <div className="max-w-5xl mx-auto px-6 overflow-hidden">
           <div className="flex logo-scroll" style={{ gap: "1.5rem", width: "max-content" }}>
             {[...kundeLogos, ...kundeLogos].map((logo, i) => (
               <div
