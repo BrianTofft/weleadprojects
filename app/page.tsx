@@ -7,18 +7,18 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 const services = [
-  { icon: "/Graphics/Services-3.png",  title: "Planlægning og Styring",         body: "Vi leverer detaljeret planlægning, der er skræddersyet til dit projekts specifikke behov for en problemfri eksekveringsproces — også inden opstart." },
+  { icon: "/Graphics/Services-3.png",  title: "Planlægning og Styring",         body: "Vi leverer detaljeret planlægning, der er skræddersyet til dit projekts specifikke behov for en problemfri eksekveringsproces, også inden opstart." },
   { icon: "/Graphics/Services-8.png",  title: "Koordinering og risiko reduktion", body: "Vi udmærker os ved at identificere og afbøde potentielle risici tidligt i processen for at sikre, at dit projekt forbliver på sporet og inden for budgettet." },
   { icon: "/Graphics/Services-7.png",  title: "Kommunikationshjælp",             body: "Vi holder ALTID relevante deltagere og interessenter informeret med vores effektive kommunikationsstøtte, der forbedrer samarbejdet mellem alle projektinteressenter." },
   { icon: "/Graphics/Services-4.png",  title: "Effektivt Workflow",              body: "Vi leverer projektledelsesopgaver for at opnå bedre produktivitet og holder dig på sporet med projekttidslinjer ved hjælp af vores effektive workflow-strategier." },
   { icon: "/Graphics/Services-6.png",  title: "Det effektive Team",              body: "Udnyt styrken i teamwork ved at forbedre kommunikationen mellem teammedlemmerne for et mere inkluderende og effektiviseret projektmål." },
-  { icon: "/Graphics/Services-5.png",  title: "AI & Enterprise Architecture",    body: "Vi rådgiver om AI governance, EU AI Act compliance og Enterprise Architecture — og sikrer at teknologiinvesteringer understøtter din forretningsstrategi frem for at drive den." },
+  { icon: "/Graphics/Services-5.png",  title: "AI & Enterprise Architecture",    body: "Vi rådgiver om AI governance, EU AI Act compliance og Enterprise Architecture, og sikrer at teknologiinvesteringer understøtter din forretningsstrategi frem for at drive den." },
 ];
 
 const faqs = [
   {
     q: "Hvordan kan I hjælpe min forretning?",
-    a: "Vi tilbyder ekspertise og strategisk vejledning tilpasset dine forretningsmål, effektiv projektplanlægning og udførelse samt tidlig risikostyring og reduktion — så dit projekt lykkes.",
+    a: "Vi tilbyder ekspertise og strategisk vejledning tilpasset dine forretningsmål, effektiv projektplanlægning og udførelse samt tidlig risikostyring og reduktion, så dit projekt lykkes.",
   },
   {
     q: "Hvordan ser processen ud for jeres ydelser?",
@@ -81,7 +81,7 @@ const heroSlides = [
     label: "Projekter er vores DNA",
     heading: "Intet projekt er",
     headingRed: "for stort eller for småt",
-    body: "Vi påtager os ansvaret for alt fra mindre IT-projekter til større IT-transformationer og Cloud-implementeringer — altid med fokus på fremdrift og succesfuld leverance.",
+    body: "Vi påtager os ansvaret for alt fra mindre IT-projekter til større IT-transformationer og Cloud-implementeringer, altid med fokus på fremdrift og succesfuld leverance.",
   },
   {
     image: "/Graphics/GettyImages-517041045_optimized.webp",
@@ -90,7 +90,7 @@ const heroSlides = [
     label: "EA + AI Governance",
     heading: "Fra strategi til",
     headingRed: "kontrolleret AI-adoption",
-    body: "Vi hjælper virksomheder med at kortlægge systemlandskabet, etablere governance-rammer og navigere EU AI Act — så AI-initiativer skaber forretningsværdi frem for compliance-risiko.",
+    body: "Vi hjælper virksomheder med at kortlægge systemlandskabet, etablere governance-rammer og navigere EU AI Act, så AI-initiativer skaber forretningsværdi frem for compliance-risiko.",
   },
 ];
 
@@ -235,7 +235,7 @@ export default function Home() {
               Din betroede<br />projektpartner siden 2018
             </h2>
             <p className="text-white/60 mb-10 leading-relaxed">
-              Vi kombinerer mangeårig erfaring med intern vidensdeling for at levere projekter af enhver kompleksitet — altid med fremdrift og succes i fokus.
+              Vi kombinerer mangeårig erfaring med intern vidensdeling for at levere projekter af enhver kompleksitet, altid med fremdrift og succes i fokus.
             </p>
 
             {/* Stats */}
@@ -292,7 +292,7 @@ export default function Home() {
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Tre kernekompetencer</p>
             <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Projektledelse. Enterprise Architecture. AI Governance.</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-              Tre discipliner der hænger uløseligt sammen — og som vi som regel leverer i kombination.
+              Tre discipliner der hænger uløseligt sammen, og som vi som regel leverer i kombination.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -300,7 +300,7 @@ export default function Home() {
               {
                 icon: "🎯",
                 title: "Projektledelse",
-                body: "Erfarne projektledere der tager ansvar for leverance — fra behovsafklaring til afslutning. Uanset metode: Waterfall, Agile eller hybrid.",
+                body: "Erfarne projektledere der tager ansvar for leverance, fra behovsafklaring til afslutning. Uanset metode: Waterfall, Agile eller hybrid.",
               },
               {
                 icon: "🏗️",
@@ -310,7 +310,7 @@ export default function Home() {
               {
                 icon: "⚖️",
                 title: "AI Governance",
-                body: "Governance-rammer, EU AI Act compliance og struktureret tilgang til AI-adoption — så AI-initiativer skaber reel forretningsværdi og ikke compliance-risiko.",
+                body: "Governance-rammer, EU AI Act compliance og struktureret tilgang til AI-adoption, så AI-initiativer skaber reel forretningsværdi og ikke compliance-risiko.",
               },
             ].map((k) => (
               <div key={k.title} className="bg-white rounded-2xl p-8 border" style={{ borderColor: BORDER }}>
@@ -328,15 +328,15 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores ekspertise</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Erfarne projektledere — baseret i Roskilde</h2>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Erfarne projektledere, baseret i Roskilde</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              We Lead Projects er et dansk konsulenthus specialiseret i projektledelse, Enterprise Architecture og IT-transformationer. Siden 2018 har vi hjulpet virksomheder i hele Danmark med at planlægge, styre og gennemføre projekter — fra mindre IT-implementeringer til store digitale transformationer på tværs af hele organisationen.
+              We Lead Projects er et dansk konsulenthus specialiseret i projektledelse, Enterprise Architecture og IT-transformationer. Siden 2018 har vi hjulpet virksomheder i hele Danmark med at planlægge, styre og gennemføre projekter, fra mindre IT-implementeringer til store digitale transformationer på tværs af hele organisationen.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Det giver os mulighed for at gå ind i projekter på alle niveauer — fra strategisk rådgivning til operationel eksekvering — og altid med den rette kompetence til netop jeres situation.
+              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Det giver os mulighed for at gå ind i projekter på alle niveauer, fra strategisk rådgivning til operationel eksekvering, og altid med den rette kompetence til netop jeres situation.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Vi er ikke bundet af én metodisk model. Uanset om jeres projekt kræver klassisk Waterfall-styring, agile sprints eller en hybrid tilgang, vælger vi den fremgangsmåde der skaber størst fremdrift — og tilpasser os undervejs. Det kalder vi professionel projektstyring i praksis.
+              Vi er ikke bundet af én metodisk model. Uanset om jeres projekt kræver klassisk Waterfall-styring, agile sprints eller en hybrid tilgang, vælger vi den fremgangsmåde der skaber størst fremdrift, og tilpasser os undervejs. Det kalder vi professionel projektstyring i praksis.
             </p>
           </div>
         </div>
@@ -349,12 +349,12 @@ export default function Home() {
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Ydelser</p>
             <h2 style={{ color: DARK }} className="text-3xl font-bold mb-3">Hvad vi hjælper med</h2>
             <p className="text-gray-500 max-w-xl mx-auto text-sm">
-              Fra planlægning til afslutning — vi dækker alle aspekter af professionel projektledelse.
+              Fra planlægning til afslutning. Vi dækker alle aspekter af professionel projektledelse.
             </p>
           </div>
 
           <p className="text-gray-500 max-w-2xl mx-auto text-sm text-center mb-8">
-            Vi bistår virksomheder med professionel projektledelse fra idé til aflevering. Vores konsulenter har bred erfaring på tværs af brancher og projekttyper — og arbejder altid tæt på jeres organisation for at sikre fremdrift, kvalitet og succesfuld leverance.
+            Vi bistår virksomheder med professionel projektledelse fra idé til aflevering. Vores konsulenter har bred erfaring på tværs af brancher og projekttyper, og arbejder altid tæt på jeres organisation for at sikre fremdrift, kvalitet og succesfuld leverance.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
             {services.map((s) => (
@@ -432,7 +432,7 @@ export default function Home() {
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Kontakt</p>
             <h2 className="text-3xl font-bold mb-4" style={{ color: DARK }}>Lad os tage en snak</h2>
             <p className="text-gray-500 mb-10 leading-relaxed">
-              Du kan altid kontakte os — og hvis telefonerne ikke er åbne, sender du en besked, så ringer vi tilbage senest den næste hverdag.
+              Du kan altid kontakte os, og hvis telefonerne ikke er åbne, sender du en besked, så ringer vi tilbage senest den næste hverdag.
             </p>
 
             <div className="space-y-6 text-sm">
@@ -492,7 +492,7 @@ export default function Home() {
               <div className="text-center py-10">
                 <div className="text-5xl mb-4">✅</div>
                 <p style={{ color: DARK }} className="font-semibold text-lg">Tak for din besked!</p>
-                <p className="text-gray-500 text-sm mt-2">Vi vender tilbage hurtigst muligt — du har fået en bekræftelse på email.</p>
+                <p className="text-gray-500 text-sm mt-2">Vi vender tilbage hurtigst muligt. Du har fået en bekræftelse på email.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -557,7 +557,7 @@ export default function Home() {
                   />
                 </div>
                 {status === "error" && (
-                  <p className="text-red-600 text-sm">Noget gik galt — prøv igen eller ring til os.</p>
+                  <p className="text-red-600 text-sm">Noget gik galt. Prøv igen eller ring til os.</p>
                 )}
                 <button
                   type="submit"

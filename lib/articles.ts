@@ -23,15 +23,15 @@ export const articles: Article[] = [
     date: "April 2025",
     readingMinutes: 5,
     intro:
-      "Statistikkerne er ikke opmuntrende: op mod 70 % af alle IT-projekter overskrider budget eller tidsplan — og mange bliver aldrig gennemført som planlagt. Det sker sjældent pludseligt. Det starter med små signaler, der ignoreres lidt for længe. Her er de fem advarselstegn du bør handle på med det samme.",
+      "Statistikkerne er ikke opmuntrende: op mod 70 % af alle IT-projekter overskrider budget eller tidsplan, og mange bliver aldrig gennemført som planlagt. Det sker sjældent pludseligt. Det starter med små signaler, der ignoreres lidt for længe. Her er de fem advarselstegn du bør handle på med det samme.",
     sections: [
       {
-        heading: "1. Scope creep — opgaverne vokser uden kontrol",
-        body: "Scope creep er den stille projektkiller. Det begynder med en lille ekstra funktion her, et udvidet krav der — og pludselig er projektet dobbelt så stort som det var planlagt til. Tegnet er klart: opgaver tilføjes løbende uden at påvirke budget, tidsplan eller ressourceallokering. Løsningen er en formel change request-proces og et stramt scope-register, der revideres ved hver milepæl.",
+        heading: "1. Scope creep: opgaverne vokser uden kontrol",
+        body: "Scope creep er den stille projektkiller. Det begynder med en lille ekstra funktion her, et udvidet krav der, og pludselig er projektet dobbelt så stort som det var planlagt til. Tegnet er klart: opgaver tilføjes løbende uden at påvirke budget, tidsplan eller ressourceallokering. Løsningen er en formel change request-proces og et stramt scope-register, der revideres ved hver milepæl.",
       },
       {
         heading: "2. Interessenter der forsvinder fra møderne",
-        body: "Når nøgleinteressenter begynder at melde afbud til statusmøder, er det et signal om, at projektet har mistet deres engagement — eller tillid. Interessentstyring er ikke en engangsøvelse ved projektets start. Det kræver løbende kommunikation, synlige resultater og en klar fortælling om værdien af projektet. Identifikér de kritiske stemmer tidligt og hold dem tæt.",
+        body: "Når nøgleinteressenter begynder at melde afbud til statusmøder, er det et signal om, at projektet har mistet deres engagement, eller tillid. Interessentstyring er ikke en engangsøvelse ved projektets start. Det kræver løbende kommunikation, synlige resultater og en klar fortælling om værdien af projektet. Identifikér de kritiske stemmer tidligt og hold dem tæt.",
       },
       {
         heading: "3. Beslutningerne hober sig op",
@@ -39,19 +39,19 @@ export const articles: Article[] = [
       },
       {
         heading: "4. Budgetadvarsler der starter som 'uvæsentlige'",
-        body: "En budgetoverskridelse på 5 % virker lille — men det er sjældent det forbliver. Erfaringen viser, at tidlige budgetsignaler ofte er symptomer på dybere problemer: underestimerede opgaver, skjult scope creep eller ressourcer der bruges mindre effektivt end planlagt. Indfør en fast budgetopfølgning ved hver milepæl og lav en konsekvensanalyse ved enhver afvigelse.",
+        body: "En budgetoverskridelse på 5 % virker lille. Men det er sjældent det forbliver. Erfaringen viser, at tidlige budgetsignaler ofte er symptomer på dybere problemer: underestimerede opgaver, skjult scope creep eller ressourcer der bruges mindre effektivt end planlagt. Indfør en fast budgetopfølgning ved hver milepæl og lav en konsekvensanalyse ved enhver afvigelse.",
       },
       {
         heading: "5. Teamet mangler fælles forståelse af målet",
-        body: "Spørg tre tilfældige teammedlemmer hvad projektets primære succeskriterium er. Får du tre forskellige svar, har projektet et grundlæggende problem. Et veldefineret projektcharter med klare mål, succeskriterier og gevinstrealiseringsplan er ikke bureaukrati — det er det fundament alt andet hviler på.",
+        body: "Spørg tre tilfældige teammedlemmer hvad projektets primære succeskriterium er. Får du tre forskellige svar, har projektet et grundlæggende problem. Et veldefineret projektcharter med klare mål, succeskriterier og gevinstrealiseringsplan er ikke bureaukrati. Det er det fundament alt andet hviler på.",
       },
       {
         heading: "Hvad gør man, når man ser tegnene?",
-        body: "Det vigtigste er at handle hurtigt og transparent. En struktureret sundhedstjek af projektet — scope, budget, interessenter, risici og teamdynamik — giver et klart billede af situationen. Hos We Lead Projects gennemfører vi projektreviews og bistår med at genoprette fremdrift, uanset om projektet er i sin indledende fase eller allerede under eksekvering.",
+        body: "Det vigtigste er at handle hurtigt og transparent. En struktureret sundhedstjek af projektet, scope, budget, interessenter, risici og teamdynamik, giver et klart billede af situationen. Hos We Lead Projects gennemfører vi projektreviews og bistår med at genoprette fremdrift, uanset om projektet er i sin indledende fase eller allerede under eksekvering.",
       },
     ],
     sources: [
-      { label: "Standish Group CHAOS Report — IT-projektstatistik", url: "https://www.standishgroup.com/" },
+      { label: "Standish Group CHAOS Report: IT-projektstatistik", url: "https://www.standishgroup.com/" },
       { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
     ],
   },
@@ -67,15 +67,15 @@ export const articles: Article[] = [
     date: "April 2025",
     readingMinutes: 5,
     intro:
-      "The statistics are sobering: up to 70% of all IT projects exceed budget or schedule — and many are never completed as planned. This rarely happens suddenly. It starts with small signals that are ignored a little too long. Here are five warning signs you should act on immediately.",
+      "The statistics are sobering: up to 70% of all IT projects exceed budget or schedule, and many are never completed as planned. This rarely happens suddenly. It starts with small signals that are ignored a little too long. Here are five warning signs you should act on immediately.",
     sections: [
       {
-        heading: "1. Scope creep — requirements keep growing",
-        body: "Scope creep is the silent project killer. It starts with a small extra feature here, an extended requirement there — and suddenly the project is twice the size originally planned. The sign is clear: tasks are continuously added without affecting budget, timeline, or resource allocation. The solution is a formal change request process and a tightly managed scope register reviewed at every milestone.",
+        heading: "1. Scope creep: requirements keep growing",
+        body: "Scope creep is the silent project killer. It starts with a small extra feature here, an extended requirement there, and suddenly the project is twice the size originally planned. The sign is clear: tasks are continuously added without affecting budget, timeline, or resource allocation. The solution is a formal change request process and a tightly managed scope register reviewed at every milestone.",
       },
       {
         heading: "2. Stakeholders disappearing from meetings",
-        body: "When key stakeholders start skipping status meetings, it signals a loss of engagement — or trust — in the project. Stakeholder management is not a one-time exercise at project kickoff. It requires ongoing communication, visible results, and a clear narrative about the project's value. Identify critical voices early and keep them close.",
+        body: "When key stakeholders start skipping status meetings, it signals a loss of engagement, or trust, in the project. Stakeholder management is not a one-time exercise at project kickoff. It requires ongoing communication, visible results, and a clear narrative about the project's value. Identify critical voices early and keep them close.",
       },
       {
         heading: "3. Decisions piling up",
@@ -83,19 +83,19 @@ export const articles: Article[] = [
       },
       {
         heading: "4. Budget warnings that start as 'minor'",
-        body: "A 5% budget overrun seems small — but it rarely stays that way. Experience shows that early budget signals are often symptoms of deeper issues: underestimated tasks, hidden scope creep, or resources being used less efficiently than planned. Implement fixed budget reviews at each milestone and conduct an impact analysis for any variance.",
+        body: "A 5% budget overrun seems small. But it rarely stays that way. Experience shows that early budget signals are often symptoms of deeper issues: underestimated tasks, hidden scope creep, or resources being used less efficiently than planned. Implement fixed budget reviews at each milestone and conduct an impact analysis for any variance.",
       },
       {
         heading: "5. The team lacks a shared understanding of the goal",
-        body: "Ask three random team members what the project's primary success criterion is. If you get three different answers, the project has a fundamental problem. A well-defined project charter with clear objectives, success criteria, and a benefits realisation plan is not bureaucracy — it is the foundation on which everything else rests.",
+        body: "Ask three random team members what the project's primary success criterion is. If you get three different answers, the project has a fundamental problem. A well-defined project charter with clear objectives, success criteria, and a benefits realisation plan is not bureaucracy. It is the foundation on which everything else rests.",
       },
       {
         heading: "What to do when you see the signs",
-        body: "The most important thing is to act quickly and transparently. A structured project health check — covering scope, budget, stakeholders, risks, and team dynamics — gives a clear picture of the situation. At We Lead Projects, we conduct project reviews and help restore momentum, whether the project is in its early phase or already in execution.",
+        body: "The most important thing is to act quickly and transparently. A structured project health check, covering scope, budget, stakeholders, risks, and team dynamics, gives a clear picture of the situation. At We Lead Projects, we conduct project reviews and help restore momentum, whether the project is in its early phase or already in execution.",
       },
     ],
     sources: [
-      { label: "Standish Group CHAOS Report — IT project statistics", url: "https://www.standishgroup.com/" },
+      { label: "Standish Group CHAOS Report: IT project statistics", url: "https://www.standishgroup.com/" },
       { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
     ],
   },
@@ -111,32 +111,32 @@ export const articles: Article[] = [
     date: "Marts 2025",
     readingMinutes: 6,
     intro:
-      "Mange virksomheder oplever det samme problem: IT-systemer der ikke taler godt sammen, digitale initiativer der kører parallelt uden koordinering, og strategiske beslutninger der tages uden et klart billede af den eksisterende IT-arkitektur. Enterprise Architecture (EA) er disciplinen der løser netop dette — og det er langt mere praktisk end det lyder.",
+      "Mange virksomheder oplever det samme problem: IT-systemer der ikke taler godt sammen, digitale initiativer der kører parallelt uden koordinering, og strategiske beslutninger der tages uden et klart billede af den eksisterende IT-arkitektur. Enterprise Architecture (EA) er disciplinen der løser netop dette. Og det er langt mere praktisk end det lyder.",
     sections: [
       {
         heading: "Hvad er Enterprise Architecture?",
-        body: "Enterprise Architecture er en struktureret tilgang til at kortlægge og styre sammenhængen mellem en virksomheds forretningsprocesser, data, applikationer og teknisk infrastruktur. Det handler ikke om at tegne flotte diagrammer — det handler om at skabe et fælles sprog og en fælles forståelse, der gør det muligt at træffe bedre beslutninger om IT-investeringer og forandringer.",
+        body: "Enterprise Architecture er en struktureret tilgang til at kortlægge og styre sammenhængen mellem en virksomheds forretningsprocesser, data, applikationer og teknisk infrastruktur. Det handler ikke om at tegne flotte diagrammer. Det handler om at skabe et fælles sprog og en fælles forståelse, der gør det muligt at træffe bedre beslutninger om IT-investeringer og forandringer.",
       },
       {
-        heading: "Fra strategi til IT — og tilbage igen",
-        body: "Den vigtigste rolle for EA er at sikre, at IT-initiativer understøtter virksomhedens strategiske mål. Uden denne kobling sker det let, at IT-afdelingen investerer i løsninger der løser tekniske problemer, men ikke forretningsmæssige behov — eller omvendt, at forretningssiden bestiller IT uden at forstå de arkitekturmæssige konsekvenser. En Enterprise Arkitekt fungerer som brobygger mellem de to verdener.",
+        heading: "Fra strategi til IT og tilbage igen",
+        body: "Den vigtigste rolle for EA er at sikre, at IT-initiativer understøtter virksomhedens strategiske mål. Uden denne kobling sker det let, at IT-afdelingen investerer i løsninger der løser tekniske problemer, men ikke forretningsmæssige behov, eller omvendt, at forretningssiden bestiller IT uden at forstå de arkitekturmæssige konsekvenser. En Enterprise Arkitekt fungerer som brobygger mellem de to verdener.",
       },
       {
         heading: "Hvornår har din virksomhed brug for EA?",
         body: "EA er særligt relevant i fire situationer: (1) Du gennemgår en digital transformation eller cloud-migrering. (2) Din IT-portefølje er vokset organisk og er svær at overskue. (3) Du integrerer systemer efter en fusion eller opkøb. (4) Du oplever, at nye IT-projekter regelmæssigt støder på uventede afhængigheder og kompleksiteter. I alle disse tilfælde kan en klar arkitekturvision reducere risiko, omkostninger og tid til markedet markant.",
       },
       {
-        heading: "EA i praksis — ikke kun på papir",
-        body: "En EA-indsats behøver ikke starte stort. Det vigtigste første skridt er at skabe et overblik: hvilke systemer har vi, hvad bruges de til, hvem ejer dem, og hvordan hænger de sammen? Fra dette udgangspunkt kan man prioritere initiativer, identificere risici og lægge en realistisk teknisk roadmap. Hos We Lead Projects kombinerer vi EA-ekspertise med praktisk projektledelsesbaggrund — fordi arkitektur kun skaber værdi når den kan omsættes til handling.",
+        heading: "EA i praksis, ikke kun på papir",
+        body: "En EA-indsats behøver ikke starte stort. Det vigtigste første skridt er at skabe et overblik: hvilke systemer har vi, hvad bruges de til, hvem ejer dem, og hvordan hænger de sammen? Fra dette udgangspunkt kan man prioritere initiativer, identificere risici og lægge en realistisk teknisk roadmap. Hos We Lead Projects kombinerer vi EA-ekspertise med praktisk projektledelsesbaggrund, fordi arkitektur kun skaber værdi når den kan omsættes til handling.",
       },
       {
         heading: "Fremtidens arkitektur er fleksibel",
-        body: "De virksomheder der klarer sig bedst i det digitale landskab er dem, der har bygget en arkitektur der kan tilpasse sig. Det betyder ikke at genopfinde alt fra bunden — det betyder at sikre, at nye systemer og integrationer bygger på et solidt og veldokumenteret fundament. Cloud-native arkitekturer, API-first tilgange og modulære løsningsdesigns er centrale begreber i dette arbejde.",
+        body: "De virksomheder der klarer sig bedst i det digitale landskab er dem, der har bygget en arkitektur der kan tilpasse sig. Det betyder ikke at genopfinde alt fra bunden. Det betyder at sikre, at nye systemer og integrationer bygger på et solidt og veldokumenteret fundament. Cloud-native arkitekturer, API-first tilgange og modulære løsningsdesigns er centrale begreber i dette arbejde.",
       },
     ],
     sources: [
-      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
-      { label: "Gartner — Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "Gartner: Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
     ],
   },
 
@@ -151,32 +151,32 @@ export const articles: Article[] = [
     date: "March 2025",
     readingMinutes: 6,
     intro:
-      "Many organisations face the same challenge: IT systems that don't communicate well, digital initiatives running in parallel without coordination, and strategic decisions made without a clear picture of the existing IT landscape. Enterprise Architecture (EA) is the discipline that addresses exactly this — and it is far more practical than it sounds.",
+      "Many organisations face the same challenge: IT systems that don't communicate well, digital initiatives running in parallel without coordination, and strategic decisions made without a clear picture of the existing IT landscape. Enterprise Architecture (EA) is the discipline that addresses exactly this. And it is far more practical than it sounds.",
     sections: [
       {
         heading: "What is Enterprise Architecture?",
-        body: "Enterprise Architecture is a structured approach to mapping and managing the relationships between a company's business processes, data, applications, and technical infrastructure. It is not about drawing elaborate diagrams — it is about creating a shared language and a common understanding that enables better decisions about IT investments and organisational change.",
+        body: "Enterprise Architecture is a structured approach to mapping and managing the relationships between a company's business processes, data, applications, and technical infrastructure. It is not about drawing elaborate diagrams. It is about creating a shared language and a common understanding that enables better decisions about IT investments and organisational change.",
       },
       {
-        heading: "From strategy to IT — and back again",
-        body: "The most important role of EA is to ensure that IT initiatives support the company's strategic objectives. Without this alignment, IT departments easily invest in solutions that solve technical problems but not business needs — or conversely, the business side commissions IT without understanding the architectural implications. An Enterprise Architect acts as a bridge between the two worlds.",
+        heading: "From strategy to IT and back again",
+        body: "The most important role of EA is to ensure that IT initiatives support the company's strategic objectives. Without this alignment, IT departments easily invest in solutions that solve technical problems but not business needs, or conversely, the business side commissions IT without understanding the architectural implications. An Enterprise Architect acts as a bridge between the two worlds.",
       },
       {
         heading: "When does your business need EA?",
         body: "EA is particularly relevant in four situations: (1) You are undergoing a digital transformation or cloud migration. (2) Your IT portfolio has grown organically and is difficult to oversee. (3) You are integrating systems after a merger or acquisition. (4) You regularly find that new IT projects run into unexpected dependencies and complexities. In all these cases, a clear architectural vision can significantly reduce risk, cost, and time to market.",
       },
       {
-        heading: "EA in practice — not just on paper",
-        body: "An EA initiative does not need to start large. The most important first step is to create an overview: what systems do we have, what are they used for, who owns them, and how do they connect? From this foundation, you can prioritise initiatives, identify risks, and develop a realistic technical roadmap. At We Lead Projects, we combine EA expertise with hands-on project management experience — because architecture only creates value when it can be translated into action.",
+        heading: "EA in practice, not just on paper",
+        body: "An EA initiative does not need to start large. The most important first step is to create an overview: what systems do we have, what are they used for, who owns them, and how do they connect? From this foundation, you can prioritise initiatives, identify risks, and develop a realistic technical roadmap. At We Lead Projects, we combine EA expertise with hands-on project management experience, because architecture only creates value when it can be translated into action.",
       },
       {
         heading: "The architecture of the future is flexible",
-        body: "The businesses that thrive in the digital landscape are those that have built an architecture capable of adapting. This does not mean reinventing everything from scratch — it means ensuring that new systems and integrations are built on a solid, well-documented foundation. Cloud-native architectures, API-first approaches, and modular solution designs are central concepts in this work.",
+        body: "The businesses that thrive in the digital landscape are those that have built an architecture capable of adapting. This does not mean reinventing everything from scratch. It means ensuring that new systems and integrations are built on a solid, well-documented foundation. Cloud-native architectures, API-first approaches, and modular solution designs are central concepts in this work.",
       },
     ],
     sources: [
-      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
-      { label: "Gartner — Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "Gartner: Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
     ],
   },
 
@@ -185,13 +185,13 @@ export const articles: Article[] = [
     slug: "agile-waterfall-eller-hybrid",
     lang: "da",
     category: "Metoder",
-    title: "Agile, Waterfall eller Hybrid — vælg din model",
+    title: "Agile, Waterfall eller Hybrid: vælg din model",
     description:
-      "Valget af projektmodel er en vigtig beslutning. Vi gennemgår fordele og ulemper ved Agile, Waterfall og Hybrid — og hvornår du bør bruge hvilken.",
+      "Valget af projektmodel er en vigtig beslutning. Vi gennemgår fordele og ulemper ved Agile, Waterfall og Hybrid, og hvornår du bør bruge hvilken.",
     date: "Februar 2025",
     readingMinutes: 5,
     intro:
-      "\"Vi kører Agile\" er en sætning man hører ofte i dag — men Agile er ikke et universalværktøj. Ligesom en erfaren håndværker vælger det rigtige redskab til opgaven, bør en kompetent projektleder vælge den metode der passer til projektets natur, organisation og risikoniveau.",
+      "\"Vi kører Agile\" er en sætning man hører ofte i dag. Men Agile er ikke et universalværktøj. Ligesom en erfaren håndværker vælger det rigtige redskab til opgaven, bør en kompetent projektleder vælge den metode der passer til projektets natur, organisation og risikoniveau.",
     sections: [
       {
         heading: "Waterfall: Struktur og forudsigelighed",
@@ -199,7 +199,7 @@ export const articles: Article[] = [
       },
       {
         heading: "Agile: Fleksibilitet og hurtig feedback",
-        body: "Agile-metoder — herunder Scrum og SAFe — arbejder i korte iterationer (sprints) og prioriterer løbende feedback og tilpasning. Det er ideelt til projekter hvor kravene ikke er fuldt kendte fra start, hvor brugerinddragelse er central, eller hvor markedet bevæger sig hurtigt. Agile kræver dog aktive og engagerede interessenter samt en organisation der er parat til løbende forandringer.",
+        body: "Agile-metoder, herunder Scrum og SAFe, arbejder i korte iterationer (sprints) og prioriterer løbende feedback og tilpasning. Det er ideelt til projekter hvor kravene ikke er fuldt kendte fra start, hvor brugerinddragelse er central, eller hvor markedet bevæger sig hurtigt. Agile kræver dog aktive og engagerede interessenter samt en organisation der er parat til løbende forandringer.",
       },
       {
         heading: "Hybrid: Det bedste fra begge verdener",
@@ -207,17 +207,17 @@ export const articles: Article[] = [
       },
       {
         heading: "Sådan vælger du",
-        body: "Tre spørgsmål hjælper dig til det rigtige valg: (1) Er kravene stabile og veldefinerede? Ja → Waterfall eller hybrid. Nej → Agile. (2) Kan organisationen håndtere løbende ændringer? Ja → Agile. Nej → Waterfall. (3) Er der strenge krav til dokumentation og sporbarhed? Ja → Waterfall som minimum for styringslaget. Husk: metoden er et middel, ikke et mål. Det vigtigste er at den tjener projektet — ikke omvendt.",
+        body: "Tre spørgsmål hjælper dig til det rigtige valg: (1) Er kravene stabile og veldefinerede? Ja → Waterfall eller hybrid. Nej → Agile. (2) Kan organisationen håndtere løbende ændringer? Ja → Agile. Nej → Waterfall. (3) Er der strenge krav til dokumentation og sporbarhed? Ja → Waterfall som minimum for styringslaget. Husk: metoden er et middel, ikke et mål. Det vigtigste er at den tjener projektet, ikke omvendt.",
       },
       {
         heading: "We Lead Projects' tilgang",
-        body: "Vi er metodeneutrale. Vi vurderer hvert projekt individuelt og anbefaler den tilgang der passer til netop jeres situation. Vores konsulenter har erfaring med alle tre modeller og kan guide jer — uanset om I er i gang med at vælge model, eller har brug for hjælp til at komme ud af en fastlåst projektmetode.",
+        body: "Vi er metodeneutrale. Vi vurderer hvert projekt individuelt og anbefaler den tilgang der passer til netop jeres situation. Vores konsulenter har erfaring med alle tre modeller og kan guide jer, uanset om I er i gang med at vælge model, eller har brug for hjælp til at komme ud af en fastlåst projektmetode.",
       },
     ],
     sources: [
       { label: "Agile Manifesto", url: "https://agilemanifesto.org/" },
-      { label: "Scrum.org — Scrum Guide", url: "https://www.scrum.org/resources/scrum-guide" },
-      { label: "PMI — Agile Practice Guide", url: "https://www.pmi.org/pmbok-guide-standards/practice-guides/agile" },
+      { label: "Scrum.org: Scrum Guide", url: "https://www.scrum.org/resources/scrum-guide" },
+      { label: "PMI: Agile Practice Guide", url: "https://www.pmi.org/pmbok-guide-standards/practice-guides/agile" },
     ],
   },
 
@@ -226,43 +226,43 @@ export const articles: Article[] = [
     slug: "ai-i-enterprise-architecture",
     lang: "da",
     category: "Enterprise Architecture",
-    title: "AI i Enterprise Architecture — governance",
+    title: "AI i Enterprise Architecture: governance",
     description:
       "AI stiller nye krav til Enterprise Architecture. Lær hvordan du integrerer AI-governance i dit EA-rammeværk og bygger en solid strategi for AI-implementering.",
     date: "Juli 2025",
     readingMinutes: 7,
     intro:
-      "Kunstig intelligens er ikke blot endnu et IT-system der skal implementeres og driftes. Det er en fundamental ændring af måden organisationer indsamler, behandler og anvender information — og det stiller helt nye krav til Enterprise Architecture. Virksomheder der ikke tager højde for AI i deres EA-rammeværk risikerer at ende med en fragmenteret AI-portefølje, redundante datasiloer og strategiske investeringer der ikke hænger sammen. Hos We Lead Projects har vi bistået virksomheder med netop dette arbejde — her er vores erfaringer.",
+      "Kunstig intelligens er ikke blot endnu et IT-system der skal implementeres og driftes. Det er en fundamental ændring af måden organisationer indsamler, behandler og anvender information, og det stiller helt nye krav til Enterprise Architecture. Virksomheder der ikke tager højde for AI i deres EA-rammeværk risikerer at ende med en fragmenteret AI-portefølje, redundante datasiloer og strategiske investeringer der ikke hænger sammen. Hos We Lead Projects har vi bistået virksomheder med netop dette arbejde. Her er vores erfaringer.",
     sections: [
       {
         heading: "Hvad AI gør ved din eksisterende arkitektur",
-        body: "Traditionelle EA-frameworks som TOGAF er bygget op om fire arkitekturlag: forretning, data, applikationer og teknologi. AI berører alle fire lag på én gang. På forretningslaget ændrer AI beslutningsprocesser og skaber nye forretningsmodeller. På datalaget stiller AI skærpede krav til datakvalitet, datalineage og adgangsstyring — dårlige data giver dårlige AI-resultater. På applikationslaget introducerer AI nye komponenter som modeller, inference-endpoints og MLOps-pipelines. På teknologilaget kræver AI-workloads ofte specialiseret infrastruktur i form af GPU-kapacitet, cloud-platforme og dataplattforme. En Enterprise Arkitekt der ikke har kortlagt disse sammenhænge skaber blindt rum for fejlinvesteringer.",
+        body: "Traditionelle EA-frameworks som TOGAF er bygget op om fire arkitekturlag: forretning, data, applikationer og teknologi. AI berører alle fire lag på én gang. På forretningslaget ændrer AI beslutningsprocesser og skaber nye forretningsmodeller. På datalaget stiller AI skærpede krav til datakvalitet, datalineage og adgangsstyring. Dårlige data giver dårlige AI-resultater. På applikationslaget introducerer AI nye komponenter som modeller, inference-endpoints og MLOps-pipelines. På teknologilaget kræver AI-workloads ofte specialiseret infrastruktur i form af GPU-kapacitet, cloud-platforme og dataplattforme. En Enterprise Arkitekt der ikke har kortlagt disse sammenhænge skaber blindt rum for fejlinvesteringer.",
       },
       {
         heading: "AI-governance som ny disciplin i EA",
-        body: "AI-governance er den del af EA der sikrer, at AI-systemer udvikles og anvendes på en ansvarlig, reproducerbar og kontrollerbar måde. Det dækker over: modelregistrering og versionsstyring, datarettigheder og compliance (herunder EU AI Act og GDPR), fairness og bias-evaluering, auditbarhed og forklarbarhed samt klare ejerskabsstrukturer for AI-aktiver. Mange organisationer har i dag AI-eksperimenter spredt ud over forretningen — i marketing, økonomi, drift og HR — uden central koordinering eller governancepolitik. En Enterprise Arkitekt der etablerer et AI-governanceframework bringer disse initiativer ind under en fælles struktur, reducerer risiko og øger genanvendeligheden af data og modeller på tværs af organisationen.",
+        body: "AI-governance er den del af EA der sikrer, at AI-systemer udvikles og anvendes på en ansvarlig, reproducerbar og kontrollerbar måde. Det dækker over: modelregistrering og versionsstyring, datarettigheder og compliance (herunder EU AI Act og GDPR), fairness og bias-evaluering, auditbarhed og forklarbarhed samt klare ejerskabsstrukturer for AI-aktiver. Mange organisationer har i dag AI-eksperimenter spredt ud over forretningen, i marketing, økonomi, drift og HR, uden central koordinering eller governancepolitik. En Enterprise Arkitekt der etablerer et AI-governanceframework bringer disse initiativer ind under en fælles struktur, reducerer risiko og øger genanvendeligheden af data og modeller på tværs af organisationen.",
       },
       {
         heading: "Kortlægning og klassifikation af AI-aktiver",
-        body: "Et af de første og vigtigste skridt i AI-EA-arbejdet er at skabe et overblik over eksisterende AI-aktiver: hvilke modeller er i brug, hvem ejer dem, hvilke data er de trænet på, og hvilke systemer er de integreret i? Denne kortlægning afslører typisk tre ting: (1) Mange AI-løsninger er indkøbt som dele af SaaS-produkter og er ikke synlige i den eksisterende IT-portefølje. (2) Der er betydelig redundans — det samme problem løses med forskellige AI-løsninger i forskellige dele af organisationen. (3) Datakvaliteten varierer markant på tværs af de datakilder der bruges til AI. Kortlægningen er grundlaget for en realistisk AI-roadmap.",
+        body: "Et af de første og vigtigste skridt i AI-EA-arbejdet er at skabe et overblik over eksisterende AI-aktiver: hvilke modeller er i brug, hvem ejer dem, hvilke data er de trænet på, og hvilke systemer er de integreret i? Denne kortlægning afslører typisk tre ting: (1) Mange AI-løsninger er indkøbt som dele af SaaS-produkter og er ikke synlige i den eksisterende IT-portefølje. (2) Der er betydelig redundans. Det samme problem løses med forskellige AI-løsninger i forskellige dele af organisationen. (3) Datakvaliteten varierer markant på tværs af de datakilder der bruges til AI. Kortlægningen er grundlaget for en realistisk AI-roadmap.",
       },
       {
         heading: "Fra EA-strategi til AI-roadmap",
-        body: "En AI-roadmap baseret på EA er ikke en liste over AI-projekter man gerne vil lave. Det er en prioriteret plan der tager udgangspunkt i forretningens strategiske mål, kortlægger de arkitekturmæssige forudsætninger og identificerer de kritiske kapabiliteter der skal etableres — typisk dataplattform, governancestrukturer og kompetencer — inden de store AI-investeringer igangsættes. Roadmappen bør skelne mellem tre typer AI-initiativer: (1) Køb — indkøb af AI-funktionalitet som del af eksisterende software. (2) Tilpas — finjustering af eksisterende modeller til organisationens specifikke behov. (3) Byg — udvikling af egne modeller på egne data. De fleste organisationer har brug for alle tre, men i forskellig balance afhængigt af deres datamodenhed og strategiske ambitioner.",
+        body: "En AI-roadmap baseret på EA er ikke en liste over AI-projekter man gerne vil lave. Det er en prioriteret plan der tager udgangspunkt i forretningens strategiske mål, kortlægger de arkitekturmæssige forudsætninger og identificerer de kritiske kapabiliteter der skal etableres, typisk dataplattform, governancestrukturer og kompetencer, inden de store AI-investeringer igangsættes. Roadmappen bør skelne mellem tre typer AI-initiativer: (1) Køb: indkøb af AI-funktionalitet som del af eksisterende software. (2) Tilpas: finjustering af eksisterende modeller til organisationens specifikke behov. (3) Byg: udvikling af egne modeller på egne data. De fleste organisationer har brug for alle tre, men i forskellig balance afhængigt af deres datamodenhed og strategiske ambitioner.",
       },
       {
         heading: "Praktiske erfaringer fra AI-implementeringer",
-        body: "Hos We Lead Projects har vi ledt og bistået AI-implementeringsprojekter i flere faser — fra den indledende behovsanalyse og arkitekturvurdering til leverance og driftovergang. Vores erfaring er, at de projekter der lykkes, har tre ting til fælles: For det første et klart forretningsproblem at løse — ikke 'vi vil gerne lave AI', men 'vi vil reducere behandlingstiden for X med Y procent'. For det andet et solidt datafundament etableret inden modeludvikling starter. For det tredje en governance-struktur der er defineret og godkendt af ledelsen inden første model går i produktion. De projekter der fejler, starter typisk med teknologien og arbejder sig baglæns mod forretningsværdien — det er den omvendte rækkefølge.",
+        body: "Hos We Lead Projects har vi ledt og bistået AI-implementeringsprojekter i flere faser, fra den indledende behovsanalyse og arkitekturvurdering til leverance og driftovergang. Vores erfaring er, at de projekter der lykkes, har tre ting til fælles: For det første et klart forretningsproblem at løse, ikke 'vi vil gerne lave AI', men 'vi vil reducere behandlingstiden for X med Y procent'. For det andet et solidt datafundament etableret inden modeludvikling starter. For det tredje en governance-struktur der er defineret og godkendt af ledelsen inden første model går i produktion. De projekter der fejler, starter typisk med teknologien og arbejder sig baglæns mod forretningsværdien. Det er den omvendte rækkefølge.",
       },
       {
         heading: "Næste skridt for din organisation",
-        body: "Uanset hvor din organisation er i AI-rejsen, er en arkitekturvurdering et godt startpunkt. Den afklarer hvad I har, hvad I mangler og hvad der er det rigtige næste skridt — uden at forpligte jer til en bestemt teknologi eller leverandør. Hos We Lead Projects tilbyder vi AI-EA-vurderinger som et afgrænset engagement, typisk 4–8 uger, med en konkret rapport og en prioriteret roadmap som leverance. Kontakt os for at høre mere.",
+        body: "Uanset hvor din organisation er i AI-rejsen, er en arkitekturvurdering et godt startpunkt. Den afklarer hvad I har, hvad I mangler og hvad der er det rigtige næste skridt, uden at forpligte jer til en bestemt teknologi eller leverandør. Hos We Lead Projects tilbyder vi AI-EA-vurderinger som et afgrænset engagement, typisk 4–8 uger, med en konkret rapport og en prioriteret roadmap som leverance. Kontakt os for at høre mere.",
       },
     ],
     sources: [
-      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
-      { label: "EU AI Act — Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
-      { label: "GDPR og databeskyttelse — Datatilsynet", url: "https://www.datatilsynet.dk/" },
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "EU AI Act: Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "GDPR og databeskyttelse: Datatilsynet", url: "https://www.datatilsynet.dk/" },
     ],
   },
 
@@ -271,43 +271,43 @@ export const articles: Article[] = [
     slug: "ai-in-enterprise-architecture",
     lang: "en",
     category: "Enterprise Architecture",
-    title: "AI in Enterprise Architecture — Governance",
+    title: "AI in Enterprise Architecture: Governance",
     description:
       "AI places new demands on Enterprise Architecture. Learn how to integrate AI governance into your EA framework and build a solid strategy for AI implementation.",
     date: "July 2025",
     readingMinutes: 7,
     intro:
-      "Artificial intelligence is not simply another IT system to implement and operate. It represents a fundamental shift in how organisations collect, process and apply information — and it places entirely new demands on Enterprise Architecture. Organisations that fail to account for AI in their EA framework risk ending up with a fragmented AI portfolio, redundant data silos, and strategic investments that do not cohere. At We Lead Projects, we have helped organisations navigate exactly this challenge — here are our insights.",
+      "Artificial intelligence is not simply another IT system to implement and operate. It represents a fundamental shift in how organisations collect, process and apply information, and it places entirely new demands on Enterprise Architecture. Organisations that fail to account for AI in their EA framework risk ending up with a fragmented AI portfolio, redundant data silos, and strategic investments that do not cohere. At We Lead Projects, we have helped organisations navigate exactly this challenge. Here are our insights.",
     sections: [
       {
         heading: "What AI does to your existing architecture",
-        body: "Traditional EA frameworks such as TOGAF are structured around four architecture layers: business, data, applications, and technology. AI touches all four simultaneously. At the business layer, AI changes decision-making processes and enables new business models. At the data layer, AI places heightened demands on data quality, data lineage, and access management — poor data produces poor AI outcomes. At the application layer, AI introduces new components such as models, inference endpoints, and MLOps pipelines. At the technology layer, AI workloads often require specialised infrastructure including GPU capacity, cloud platforms, and data platforms. An Enterprise Architect who has not mapped these interdependencies creates blind spots that lead to misguided investments.",
+        body: "Traditional EA frameworks such as TOGAF are structured around four architecture layers: business, data, applications, and technology. AI touches all four simultaneously. At the business layer, AI changes decision-making processes and enables new business models. At the data layer, AI places heightened demands on data quality, data lineage, and access management. Poor data produces poor AI outcomes. At the application layer, AI introduces new components such as models, inference endpoints, and MLOps pipelines. At the technology layer, AI workloads often require specialised infrastructure including GPU capacity, cloud platforms, and data platforms. An Enterprise Architect who has not mapped these interdependencies creates blind spots that lead to misguided investments.",
       },
       {
         heading: "AI governance as a new discipline in EA",
-        body: "AI governance is the component of EA that ensures AI systems are developed and deployed in a responsible, reproducible, and controllable manner. It encompasses: model registration and version control, data rights and compliance (including the EU AI Act and GDPR), fairness and bias evaluation, auditability and explainability, and clear ownership structures for AI assets. Many organisations today have AI experiments scattered across business units — in marketing, finance, operations, and HR — without central coordination or a governance policy. An Enterprise Architect who establishes an AI governance framework brings these initiatives under a common structure, reduces risk, and increases the reusability of data and models across the organisation.",
+        body: "AI governance is the component of EA that ensures AI systems are developed and deployed in a responsible, reproducible, and controllable manner. It encompasses: model registration and version control, data rights and compliance (including the EU AI Act and GDPR), fairness and bias evaluation, auditability and explainability, and clear ownership structures for AI assets. Many organisations today have AI experiments scattered across business units, in marketing, finance, operations, and HR, without central coordination or a governance policy. An Enterprise Architect who establishes an AI governance framework brings these initiatives under a common structure, reduces risk, and increases the reusability of data and models across the organisation.",
       },
       {
         heading: "Mapping and classifying AI assets",
-        body: "One of the first and most important steps in AI-EA work is creating an inventory of existing AI assets: which models are in use, who owns them, what data were they trained on, and which systems are they integrated with? This mapping typically reveals three things: (1) Many AI solutions are purchased as part of SaaS products and are invisible in the existing IT portfolio. (2) There is significant redundancy — the same problem is being solved with different AI solutions in different parts of the organisation. (3) Data quality varies considerably across the data sources used for AI. This inventory forms the foundation for a realistic AI roadmap.",
+        body: "One of the first and most important steps in AI-EA work is creating an inventory of existing AI assets: which models are in use, who owns them, what data were they trained on, and which systems are they integrated with? This mapping typically reveals three things: (1) Many AI solutions are purchased as part of SaaS products and are invisible in the existing IT portfolio. (2) There is significant redundancy. The same problem is being solved with different AI solutions in different parts of the organisation. (3) Data quality varies considerably across the data sources used for AI. This inventory forms the foundation for a realistic AI roadmap.",
       },
       {
         heading: "From EA strategy to AI roadmap",
-        body: "An EA-based AI roadmap is not a wish list of AI projects. It is a prioritised plan grounded in the organisation's strategic objectives, mapping the architectural prerequisites and identifying the critical capabilities — typically a data platform, governance structures, and competencies — that must be in place before major AI investments begin. The roadmap should distinguish between three types of AI initiatives: (1) Buy — purchasing AI functionality as part of existing software. (2) Customise — fine-tuning existing models for the organisation's specific needs. (3) Build — developing proprietary models on proprietary data. Most organisations need all three, but in different proportions depending on their data maturity and strategic ambitions.",
+        body: "An EA-based AI roadmap is not a wish list of AI projects. It is a prioritised plan grounded in the organisation's strategic objectives, mapping the architectural prerequisites and identifying the critical capabilities, typically a data platform, governance structures, and competencies, that must be in place before major AI investments begin. The roadmap should distinguish between three types of AI initiatives: (1) Buy: purchasing AI functionality as part of existing software. (2) Customise: fine-tuning existing models for the organisation's specific needs. (3) Build: developing proprietary models on proprietary data. Most organisations need all three, but in different proportions depending on their data maturity and strategic ambitions.",
       },
       {
         heading: "Practical experience from AI implementations",
-        body: "At We Lead Projects, we have led and supported AI implementation projects across multiple phases — from initial needs analysis and architecture assessment through to delivery and transition to operations. Our experience is that projects which succeed share three characteristics: first, a clearly defined business problem to solve — not 'we want to do AI', but 'we want to reduce the processing time for X by Y per cent'. Second, a solid data foundation established before model development begins. Third, a governance structure defined and approved by leadership before the first model goes into production. Projects that fail typically start with the technology and work backwards towards business value — the wrong order.",
+        body: "At We Lead Projects, we have led and supported AI implementation projects across multiple phases, from initial needs analysis and architecture assessment through to delivery and transition to operations. Our experience is that projects which succeed share three characteristics: first, a clearly defined business problem to solve, not 'we want to do AI', but 'we want to reduce the processing time for X by Y per cent'. Second, a solid data foundation established before model development begins. Third, a governance structure defined and approved by leadership before the first model goes into production. Projects that fail typically start with the technology and work backwards towards business value. The wrong order.",
       },
       {
         heading: "Next steps for your organisation",
-        body: "Wherever your organisation is on its AI journey, an architecture assessment is a strong starting point. It clarifies what you have, what you lack, and what the right next step is — without committing you to a specific technology or vendor. At We Lead Projects, we offer AI-EA assessments as a scoped engagement, typically four to eight weeks, delivering a concrete report and a prioritised roadmap. Contact us to learn more.",
+        body: "Wherever your organisation is on its AI journey, an architecture assessment is a strong starting point. It clarifies what you have, what you lack, and what the right next step is, without committing you to a specific technology or vendor. At We Lead Projects, we offer AI-EA assessments as a scoped engagement, typically four to eight weeks, delivering a concrete report and a prioritised roadmap. Contact us to learn more.",
       },
     ],
     sources: [
-      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
-      { label: "EU AI Act — European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
-      { label: "Gartner — AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "EU AI Act: European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "Gartner: AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
     ],
   },
 
@@ -322,37 +322,37 @@ export const articles: Article[] = [
     date: "Juli 2025",
     readingMinutes: 7,
     intro:
-      "AI-implementeringer fejler oftere end de lykkes — og årsagen er sjældent teknisk. Det er projektledelsen der svigter. AI-projekter stiller særlige krav til styring, interessenthåndtering og risikohåndtering, som adskiller sig markant fra traditionelle IT-projekter. Hos We Lead Projects har vi ledt AI-implementeringer fra idé til drift — her er de vigtigste læringer.",
+      "AI-implementeringer fejler oftere end de lykkes. Og årsagen er sjældent teknisk. Det er projektledelsen der svigter. AI-projekter stiller særlige krav til styring, interessenthåndtering og risikohåndtering, som adskiller sig markant fra traditionelle IT-projekter. Hos We Lead Projects har vi ledt AI-implementeringer fra idé til drift. Her er de vigtigste læringer.",
     sections: [
       {
         heading: "Hvorfor AI-projekter er anderledes end andre IT-projekter",
-        body: "I et traditionelt IT-projekt er leverancen defineret på forhånd: et system der kan X, en funktion der gør Y. I et AI-projekt er leverancen i sagens natur probabilistisk — modellen giver sandsynlige svar, ikke garanterede. Det betyder at succeskriterierne skal defineres anderledes (hvad er et acceptabelt præcisionsniveau?), at test og validering er mere kompleks, og at interessenter skal klædes på til at arbejde med AI-output der ikke altid er deterministisk. En projektleder der ikke forstår denne forskel, risikerer at styre mod et mål der ikke eksisterer.",
+        body: "I et traditionelt IT-projekt er leverancen defineret på forhånd: et system der kan X, en funktion der gør Y. I et AI-projekt er leverancen i sagens natur probabilistisk. Modellen giver sandsynlige svar, ikke garanterede. Det betyder at succeskriterierne skal defineres anderledes (hvad er et acceptabelt præcisionsniveau?), at test og validering er mere kompleks, og at interessenter skal klædes på til at arbejde med AI-output der ikke altid er deterministisk. En projektleder der ikke forstår denne forskel, risikerer at styre mod et mål der ikke eksisterer.",
       },
       {
         heading: "De kritiske faser i et AI-implementeringsprojekt",
-        body: "Et AI-projekt gennemløber typisk seks faser: (1) Problemdefinition og forretningsmæssig forankring — hvad skal AI'en løse, og hvem ejer gevinsten? (2) Datavurdering og -forberedelse — har vi de data der kræves, i den kvalitet der kræves? Denne fase undervurderes konsekvent og er årsagen til mere end halvdelen af alle forsinkelser. (3) Proof of Concept — teknisk validering af at tilgangen virker på et begrænset datasæt. (4) Pilotimplementering — deployment i kontrolleret miljø med udvalgte brugere og struktureret feedback. (5) Skalering og integration — fuld udrulning med integration til eksisterende systemer og arbejdsgange. (6) Drift og kontinuerlig forbedring — overvågning af modelpræstation, genoptræning og løbende evaluering. Mange projekter forsøger at hoppe fra fase 1 til fase 5 — det er den korteste vej til fiasko.",
+        body: "Et AI-projekt gennemløber typisk seks faser: (1) Problemdefinition og forretningsmæssig forankring: hvad skal AI'en løse, og hvem ejer gevinsten? (2) Datavurdering og -forberedelse: har vi de data der kræves, i den kvalitet der kræves? Denne fase undervurderes konsekvent og er årsagen til mere end halvdelen af alle forsinkelser. (3) Proof of Concept: teknisk validering af at tilgangen virker på et begrænset datasæt. (4) Pilotimplementering: deployment i kontrolleret miljø med udvalgte brugere og struktureret feedback. (5) Skalering og integration: fuld udrulning med integration til eksisterende systemer og arbejdsgange. (6) Drift og kontinuerlig forbedring: overvågning af modelpræstation, genoptræning og løbende evaluering. Mange projekter forsøger at hoppe fra fase 1 til fase 5. Det er den korteste vej til fiasko.",
       },
       {
         heading: "Risici der er specifikke for AI-projekter",
-        body: "Ud over de klassiske projektrisici (scope creep, budgetoverskridelse, ressourcemangel) har AI-projekter en række specifikke risici: Datakvalitetsrisiko — modellen er kun så god som de data den er trænet på, og datakvalitet viser sig ofte at være langt lavere end antaget. Modelforældelse — modeller forringes over tid efterhånden som data og adfærd ændrer sig, og der skal etableres processer for løbende overvågning og genoptræning. Bias og fairness-risiko — modellen diskriminerer systematisk mod bestemte grupper, med potentielle juridiske og omdømmemæssige konsekvenser. Regulatorisk risiko — EU AI Act klassificerer visse AI-applikationer som høj-risiko med skærpede krav til dokumentation og kontrol. Adoptionsrisiko — brugerne stoler ikke på eller anvender ikke AI-løsningen, og den forretningsmæssige gevinst realiseres aldrig.",
+        body: "Ud over de klassiske projektrisici (scope creep, budgetoverskridelse, ressourcemangel) har AI-projekter en række specifikke risici: Datakvalitetsrisiko: modellen er kun så god som de data den er trænet på, og datakvalitet viser sig ofte at være langt lavere end antaget. Modelforældelse: modeller forringes over tid efterhånden som data og adfærd ændrer sig, og der skal etableres processer for løbende overvågning og genoptræning. Bias og fairness-risiko: modellen diskriminerer systematisk mod bestemte grupper, med potentielle juridiske og omdømmemæssige konsekvenser. Regulatorisk risiko: EU AI Act klassificerer visse AI-applikationer som høj-risiko med skærpede krav til dokumentation og kontrol. Adoptionsrisiko: brugerne stoler ikke på eller anvender ikke AI-løsningen, og den forretningsmæssige gevinst realiseres aldrig.",
       },
       {
         heading: "Interessenthåndtering i AI-projekter",
-        body: "AI-projekter involverer typisk en bredere og mere heterogen interessentgruppe end traditionelle IT-projekter: forretningsejere der forventer hurtige gevinster, IT-arkitekter der bekymrer sig om integration og governance, jurister og compliance-ansvarlige der håndterer regulatoriske krav, slutbrugere der skal ændre arbejdsgange, og ledelsen der har godkendt en investering og forventer ROI. En kompetent projektleder kortlægger disse interessenter tidligt, forstår deres individuelle bekymringer og succeskriterier, og kommunikerer differentieret til hver gruppe. Særligt vigtigt er det at håndtere de tidlige bekymringer hos slutbrugerne — AI opleves ofte som en trussel mod eksisterende roller, og denne modstand kan torpedere selv teknisk vellykkede implementeringer.",
+        body: "AI-projekter involverer typisk en bredere og mere heterogen interessentgruppe end traditionelle IT-projekter: forretningsejere der forventer hurtige gevinster, IT-arkitekter der bekymrer sig om integration og governance, jurister og compliance-ansvarlige der håndterer regulatoriske krav, slutbrugere der skal ændre arbejdsgange, og ledelsen der har godkendt en investering og forventer ROI. En kompetent projektleder kortlægger disse interessenter tidligt, forstår deres individuelle bekymringer og succeskriterier, og kommunikerer differentieret til hver gruppe. Særligt vigtigt er det at håndtere de tidlige bekymringer hos slutbrugerne. AI opleves ofte som en trussel mod eksisterende roller, og denne modstand kan torpedere selv teknisk vellykkede implementeringer.",
       },
       {
-        heading: "Succesfaktorer — hvad adskiller projekter der lykkes",
-        body: "Baseret på vores erfaring med AI-implementeringsprojekter er der fem faktorer der konsekvent adskiller de projekter der lykkes fra dem der ikke gør: (1) Et klart og afgrænset forretningsproblem som udgangspunkt — ikke AI for AI's skyld. (2) Et solidt og veldokumenteret datafundament etableret inden modeludvikling starter. (3) En stærk sponsor i ledelsen med mandat og interesse i at realisere gevinsten. (4) Et tværfagligt projektteam der kombinerer forretningsforståelse, dataekspertise og teknisk implementeringskraft. (5) En realistisk tidsplan der respekterer at AI-projekter kræver iterationer og eksperimenter — og at data altid tager længere tid end planlagt.",
+        heading: "Succesfaktorer: hvad adskiller projekter der lykkes",
+        body: "Baseret på vores erfaring med AI-implementeringsprojekter er der fem faktorer der konsekvent adskiller de projekter der lykkes fra dem der ikke gør: (1) Et klart og afgrænset forretningsproblem som udgangspunkt, ikke AI for AI's skyld. (2) Et solidt og veldokumenteret datafundament etableret inden modeludvikling starter. (3) En stærk sponsor i ledelsen med mandat og interesse i at realisere gevinsten. (4) Et tværfagligt projektteam der kombinerer forretningsforståelse, dataekspertise og teknisk implementeringskraft. (5) En realistisk tidsplan der respekterer at AI-projekter kræver iterationer og eksperimenter, og at data altid tager længere tid end planlagt.",
       },
       {
         heading: "We Lead Projects' erfaring med AI-implementeringer",
-        body: "Vi har bistået virksomheder med AI-implementeringer i alle faser — fra den indledende businesscase og roadmap til leverance og driftovergang. Vores tilgang er at kombinere stærk projektledelsesfaglighed med en praktisk forståelse af hvad AI-projekter kræver: tid til datavalidering, plads til eksperimenter i PoC-fasen, og tæt interessentinvolvering hele vejen igennem. Uanset om I er i gang med at vurdere om AI er den rigtige løsning, eller allerede er i gang med et projekt der har brug for professionel styring, kan vi hjælpe. Kontakt os for en uforpligtende samtale.",
+        body: "Vi har bistået virksomheder med AI-implementeringer i alle faser, fra den indledende businesscase og roadmap til leverance og driftovergang. Vores tilgang er at kombinere stærk projektledelsesfaglighed med en praktisk forståelse af hvad AI-projekter kræver: tid til datavalidering, plads til eksperimenter i PoC-fasen, og tæt interessentinvolvering hele vejen igennem. Uanset om I er i gang med at vurdere om AI er den rigtige løsning, eller allerede er i gang med et projekt der har brug for professionel styring, kan vi hjælpe. Kontakt os for en uforpligtende samtale.",
       },
     ],
     sources: [
-      { label: "EU AI Act — Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "EU AI Act: Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
       { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
-      { label: "GDPR og databeskyttelse — Datatilsynet", url: "https://www.datatilsynet.dk/" },
+      { label: "GDPR og databeskyttelse: Datatilsynet", url: "https://www.datatilsynet.dk/" },
     ],
   },
 
@@ -367,35 +367,35 @@ export const articles: Article[] = [
     date: "July 2025",
     readingMinutes: 7,
     intro:
-      "AI implementations fail more often than they succeed — and the reason is rarely technical. It is the project management that falls short. AI projects place particular demands on governance, stakeholder management and risk management that differ significantly from traditional IT projects. At We Lead Projects, we have led AI implementations from concept to operations — here are the key lessons.",
+      "AI implementations fail more often than they succeed, and the reason is rarely technical. It is the project management that falls short. AI projects place particular demands on governance, stakeholder management and risk management that differ significantly from traditional IT projects. At We Lead Projects, we have led AI implementations from concept to operations. Here are the key lessons.",
     sections: [
       {
         heading: "Why AI projects are different from other IT projects",
-        body: "In a traditional IT project, the deliverable is defined upfront: a system that does X, a feature that does Y. In an AI project, the deliverable is inherently probabilistic — the model provides likely answers, not guaranteed ones. This means success criteria must be defined differently (what is an acceptable accuracy level?), testing and validation are more complex, and stakeholders must be prepared to work with AI output that is not always deterministic. A project manager who does not understand this difference risks steering towards a goal that does not exist.",
+        body: "In a traditional IT project, the deliverable is defined upfront: a system that does X, a feature that does Y. In an AI project, the deliverable is inherently probabilistic. The model provides likely answers, not guaranteed ones. This means success criteria must be defined differently (what is an acceptable accuracy level?), testing and validation are more complex, and stakeholders must be prepared to work with AI output that is not always deterministic. A project manager who does not understand this difference risks steering towards a goal that does not exist.",
       },
       {
         heading: "The critical phases of an AI implementation project",
-        body: "An AI project typically moves through six phases: (1) Problem definition and business anchoring — what should the AI solve, and who owns the business benefit? (2) Data assessment and preparation — do we have the data required, at the quality required? This phase is consistently underestimated and accounts for more than half of all delays. (3) Proof of Concept — technical validation that the approach works on a limited dataset. (4) Pilot implementation — deployment in a controlled environment with selected users and structured feedback. (5) Scaling and integration — full rollout with integration into existing systems and workflows. (6) Operations and continuous improvement — monitoring model performance, retraining, and ongoing evaluation. Many projects attempt to jump from phase one to phase five — that is the shortest route to failure.",
+        body: "An AI project typically moves through six phases: (1) Problem definition and business anchoring: what should the AI solve, and who owns the business benefit? (2) Data assessment and preparation: do we have the data required, at the quality required? This phase is consistently underestimated and accounts for more than half of all delays. (3) Proof of Concept: technical validation that the approach works on a limited dataset. (4) Pilot implementation: deployment in a controlled environment with selected users and structured feedback. (5) Scaling and integration: full rollout with integration into existing systems and workflows. (6) Operations and continuous improvement: monitoring model performance, retraining, and ongoing evaluation. Many projects attempt to jump from phase one to phase five. That is the shortest route to failure.",
       },
       {
         heading: "Risks specific to AI projects",
-        body: "Beyond the classic project risks (scope creep, budget overrun, resource shortages), AI projects carry a set of specific risks: Data quality risk — the model is only as good as the data it is trained on, and data quality often proves far lower than assumed. Model degradation — models deteriorate over time as data and behaviours change, requiring processes for continuous monitoring and retraining. Bias and fairness risk — the model systematically discriminates against certain groups, with potential legal and reputational consequences. Regulatory risk — the EU AI Act classifies certain AI applications as high-risk with heightened requirements for documentation and control. Adoption risk — users do not trust or engage with the AI solution, and the business benefit is never realised.",
+        body: "Beyond the classic project risks (scope creep, budget overrun, resource shortages), AI projects carry a set of specific risks: Data quality risk: the model is only as good as the data it is trained on, and data quality often proves far lower than assumed. Model degradation: models deteriorate over time as data and behaviours change, requiring processes for continuous monitoring and retraining. Bias and fairness risk: the model systematically discriminates against certain groups, with potential legal and reputational consequences. Regulatory risk: the EU AI Act classifies certain AI applications as high-risk with heightened requirements for documentation and control. Adoption risk: users do not trust or engage with the AI solution, and the business benefit is never realised.",
       },
       {
         heading: "Stakeholder management in AI projects",
-        body: "AI projects typically involve a broader and more heterogeneous stakeholder group than traditional IT projects: business owners expecting rapid returns, IT architects concerned with integration and governance, legal and compliance teams managing regulatory requirements, end users who must change their workflows, and leadership who approved an investment and expect ROI. A competent project manager maps these stakeholders early, understands their individual concerns and success criteria, and communicates differently to each group. Particularly important is managing early concerns among end users — AI is often perceived as a threat to existing roles, and this resistance can torpedo even technically successful implementations.",
+        body: "AI projects typically involve a broader and more heterogeneous stakeholder group than traditional IT projects: business owners expecting rapid returns, IT architects concerned with integration and governance, legal and compliance teams managing regulatory requirements, end users who must change their workflows, and leadership who approved an investment and expect ROI. A competent project manager maps these stakeholders early, understands their individual concerns and success criteria, and communicates differently to each group. Particularly important is managing early concerns among end users. AI is often perceived as a threat to existing roles, and this resistance can torpedo even technically successful implementations.",
       },
       {
-        heading: "Success factors — what separates the projects that succeed",
-        body: "Based on our experience with AI implementation projects, five factors consistently separate those that succeed from those that do not: (1) A clear and bounded business problem as the starting point — not AI for AI's sake. (2) A solid and well-documented data foundation established before model development begins. (3) A strong executive sponsor with the mandate and interest to realise the business benefit. (4) A cross-functional project team combining business understanding, data expertise, and technical implementation capability. (5) A realistic timeline that respects the fact that AI projects require iteration and experimentation — and that data always takes longer than planned.",
+        heading: "Success factors: what separates the projects that succeed",
+        body: "Based on our experience with AI implementation projects, five factors consistently separate those that succeed from those that do not: (1) A clear and bounded business problem as the starting point, not AI for AI's sake. (2) A solid and well-documented data foundation established before model development begins. (3) A strong executive sponsor with the mandate and interest to realise the business benefit. (4) A cross-functional project team combining business understanding, data expertise, and technical implementation capability. (5) A realistic timeline that respects the fact that AI projects require iteration and experimentation, and that data always takes longer than planned.",
       },
       {
         heading: "We Lead Projects' experience with AI implementations",
-        body: "We have supported organisations with AI implementations across all phases — from the initial business case and roadmap through to delivery and transition to operations. Our approach combines strong project management expertise with a practical understanding of what AI projects require: time for data validation, space for experimentation in the PoC phase, and close stakeholder involvement throughout. Whether you are assessing whether AI is the right solution, or already have a project in need of professional governance, we can help. Contact us for an informal conversation.",
+        body: "We have supported organisations with AI implementations across all phases, from the initial business case and roadmap through to delivery and transition to operations. Our approach combines strong project management expertise with a practical understanding of what AI projects require: time for data validation, space for experimentation in the PoC phase, and close stakeholder involvement throughout. Whether you are assessing whether AI is the right solution, or already have a project in need of professional governance, we can help. Contact us for an informal conversation.",
       },
     ],
     sources: [
-      { label: "EU AI Act — European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "EU AI Act: European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
       { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
     ],
   },
@@ -405,13 +405,13 @@ export const articles: Article[] = [
     slug: "agile-waterfall-or-hybrid",
     lang: "en",
     category: "Methods",
-    title: "Agile, Waterfall or Hybrid — Choose Your Model",
+    title: "Agile, Waterfall or Hybrid: Choose Your Model",
     description:
-      "Choosing the right project model matters. We break down Agile, Waterfall and Hybrid — pros, cons, and when to use each approach.",
+      "Choosing the right project model matters. We break down Agile, Waterfall and Hybrid, pros, cons, and when to use each approach.",
     date: "February 2025",
     readingMinutes: 5,
     intro:
-      "\"We run Agile\" is a phrase you hear often today — but Agile is not a universal tool. Just as a skilled craftsman selects the right tool for the job, a competent project manager should choose the method that fits the nature of the project, the organisation, and the risk profile.",
+      "\"We run Agile\" is a phrase you hear often today. But Agile is not a universal tool. Just as a skilled craftsman selects the right tool for the job, a competent project manager should choose the method that fits the nature of the project, the organisation, and the risk profile.",
     sections: [
       {
         heading: "Waterfall: Structure and predictability",
@@ -419,7 +419,7 @@ export const articles: Article[] = [
       },
       {
         heading: "Agile: Flexibility and rapid feedback",
-        body: "Agile methods — including Scrum and SAFe — work in short iterations (sprints) and prioritise continuous feedback and adaptation. They are ideal for projects where requirements are not fully known from the start, where user involvement is central, or where the market moves quickly. However, Agile requires active and engaged stakeholders and an organisation ready for continuous change.",
+        body: "Agile methods, including Scrum and SAFe, work in short iterations (sprints) and prioritise continuous feedback and adaptation. They are ideal for projects where requirements are not fully known from the start, where user involvement is central, or where the market moves quickly. However, Agile requires active and engaged stakeholders and an organisation ready for continuous change.",
       },
       {
         heading: "Hybrid: The best of both worlds",
@@ -427,17 +427,17 @@ export const articles: Article[] = [
       },
       {
         heading: "How to choose",
-        body: "Three questions help you make the right choice: (1) Are requirements stable and well-defined? Yes → Waterfall or hybrid. No → Agile. (2) Can the organisation handle continuous change? Yes → Agile. No → Waterfall. (3) Are there strict requirements for documentation and traceability? Yes → Waterfall as a minimum for the governance layer. Remember: the method is a means, not an end. What matters most is that it serves the project — not the other way around.",
+        body: "Three questions help you make the right choice: (1) Are requirements stable and well-defined? Yes → Waterfall or hybrid. No → Agile. (2) Can the organisation handle continuous change? Yes → Agile. No → Waterfall. (3) Are there strict requirements for documentation and traceability? Yes → Waterfall as a minimum for the governance layer. Remember: the method is a means, not an end. What matters most is that it serves the project, not the other way around.",
       },
       {
         heading: "The We Lead Projects approach",
-        body: "We are method-neutral. We assess each project individually and recommend the approach that fits your specific situation. Our consultants have experience with all three models and can guide you — whether you are in the process of selecting a methodology or need help breaking free from a rigid project model.",
+        body: "We are method-neutral. We assess each project individually and recommend the approach that fits your specific situation. Our consultants have experience with all three models and can guide you, whether you are in the process of selecting a methodology or need help breaking free from a rigid project model.",
       },
     ],
     sources: [
       { label: "Agile Manifesto", url: "https://agilemanifesto.org/" },
-      { label: "Scrum.org — Scrum Guide", url: "https://www.scrum.org/resources/scrum-guide" },
-      { label: "PMI — Agile Practice Guide", url: "https://www.pmi.org/pmbok-guide-standards/practice-guides/agile" },
+      { label: "Scrum.org: Scrum Guide", url: "https://www.scrum.org/resources/scrum-guide" },
+      { label: "PMI: Agile Practice Guide", url: "https://www.pmi.org/pmbok-guide-standards/practice-guides/agile" },
     ],
   },
 
@@ -480,9 +480,9 @@ export const articles: Article[] = [
       },
     ],
     sources: [
-      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
-      { label: "EU AI Act — Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
-      { label: "Gartner — AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "EU AI Act: Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "Gartner: AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
     ],
   },
 
@@ -525,9 +525,9 @@ export const articles: Article[] = [
       },
     ],
     sources: [
-      { label: "The Open Group — TOGAF Standard", url: "https://www.opengroup.org/togaf" },
-      { label: "EU AI Act — European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
-      { label: "Gartner — AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "EU AI Act: European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "Gartner: AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
     ],
   },
 ];

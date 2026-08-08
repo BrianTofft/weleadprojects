@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Om os | We Lead Projects",
     description: "Grundlagt i 2018 med en vision om at gøre projekter rigtigt. Mød teamet bag We Lead Projects.",
-    images: [{ url: "/hero.JPEG", width: 1200, height: 630, alt: "We Lead Projects — Om os" }],
+    images: [{ url: "/hero.JPEG", width: 1200, height: 630, alt: "We Lead Projects Om os" }],
   },
 };
 
@@ -24,7 +24,7 @@ const values = [
   { icon: "🤝", title: "Samarbejde og kommunikation", body: "Vi prioriterer tæt dialog med alle interessenter og sikrer, at alle parter er informeret og engageret gennem hele projektet." },
   { icon: "📚", title: "Kontinuerlig læring og tilpasning", body: "Vi holder os konstant opdateret med de nyeste metoder og trends inden for projektledelse og IT, og deler viden på tværs af vores team." },
   { icon: "🌟", title: "Begunstigelse og tillid", body: "Vi opbygger langvarige relationer baseret på gensidig tillid, ærlighed og en fælles forståelse af de forretningsmæssige mål." },
-  { icon: "💡", title: "Innovation og fleksibilitet", body: "Vi er ikke bundet af én model — vi finder den tilgang der passer bedst til det konkrete projekt og tilpasser os løbende undervejs." },
+  { icon: "💡", title: "Innovation og fleksibilitet", body: "Vi er ikke bundet af én model. Vi finder den tilgang der passer bedst til det konkrete projekt og tilpasser os løbende undervejs." },
   { icon: "🎓", title: "Mentor programmer og sidemandsoplæring", body: "Vores konsulenter vokser ved at lære af hinanden. Intern vidensdeling og mentoring er en integreret del af måden vi arbejder på." },
 ];
 
@@ -36,7 +36,7 @@ export default function OmOs() {
       <PageHeader
         label="Om os"
         title="Professionel konsulent assistance"
-        subtitle="Vi trækker på mangeårig erfaring for at håndtere projekter af enhver kompleksitet — fra mindre IT-projekter til store digitale transformationer."
+        subtitle="Vi trækker på mangeårig erfaring for at håndtere projekter af enhver kompleksitet, fra mindre IT-projekter til store digitale transformationer."
         image="/Graphics/project-manager-with-team.webp"
       />
 
@@ -50,19 +50,19 @@ export default function OmOs() {
               Fra begyndelsen har vi prioriteret koordinering og kommunikation højt for at sikre en vellykket projektleverance. Vores konsulenter besidder ekspertise inden for projektledelse kombineret med specialiseret viden inden for bl.a. Enterprise Architecture, infrastrukturprojekter og Solution Architecture.
             </p>
             <p className="text-gray-600 mb-4">
-              Gennem ansvar og erfaringsmodeller, backup fra kollegaer og nyeste viden om projektstyring, navigerer vi projektlandskabet. Vi kalder det 1+1=3 metoden — vores interne vidensdeling sikrer at alle konsulenter løbende lærer og vokser på tværs af projekterne.
+              Gennem ansvar og erfaringsmodeller, backup fra kollegaer og nyeste viden om projektstyring, navigerer vi projektlandskabet. Vi kalder det 1+1=3 metoden. Vores interne vidensdeling sikrer at alle konsulenter løbende lærer og vokser på tværs af projekterne.
             </p>
             <p className="text-gray-600 mb-4">
-              Vores fokus på interessentstyring har givet os mulighed for at vokse til et betroet navn i branchen — og sikret succesfulde leverancer for kunder i mange forskellige brancher og domæner.
+              Vores fokus på interessentstyring har givet os mulighed for at vokse til et betroet navn i branchen, og sikret succesfulde leverancer for kunder i mange forskellige brancher og domæner.
             </p>
             <p className="text-gray-600 mb-4">
               Vi arbejder metodeneutralt og tilpasser vores tilgang til det enkelte projekt. Uanset om det kræver klassisk Waterfall-styring, agile sprints eller en hybrid model, vælger vi altid den fremgangsmåde der skaber størst fremdrift for netop jeres organisation og projekttype.
             </p>
             <p className="text-gray-600">
-              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Kombineret med stærk projektledelsesbaggrund giver det os mulighed for at gå ind i projekter på alle niveauer — fra strategisk rådgivning til operationel eksekvering.
+              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Kombineret med stærk projektledelsesbaggrund giver det os mulighed for at gå ind i projekter på alle niveauer, fra strategisk rådgivning til operationel eksekvering.
             </p>
             <p className="text-gray-600 mt-4">
-              We Lead Projects ApS er registreret under CVR-nr. 44934655 — du kan se virksomhedens fulde selskabsoplysninger på{" "}
+              We Lead Projects ApS er registreret under CVR-nr. 44934655. Du kan se virksomhedens fulde selskabsoplysninger på{" "}
               <a
                 href="https://datacvr.virk.dk/enhed/virksomhed/44934655"
                 target="_blank"
@@ -89,7 +89,7 @@ export default function OmOs() {
             <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">Brian P.N. Tofft</h3>
             <p style={{ color: RED }} className="font-semibold text-sm mb-4">Founder & Managing Partner</p>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Brian har mere end 30 års erfaring med at levere projekter af høj kvalitet — med fokus på etisk praksis og kontinuerlig vidensopbygning. Han er daglig leder og tovholder for We Lead Projects.
+              Brian har mere end 30 års erfaring med at levere projekter af høj kvalitet, med fokus på etisk praksis og kontinuerlig vidensopbygning. Han er daglig leder og tovholder for We Lead Projects.
             </p>
             <div className="mt-6 pt-6 border-t text-sm space-y-1" style={{ borderColor: BORDER }}>
               <p className="text-gray-500"><a href="tel:+4552400088" className="hover:underline">+45 5240 0088</a></p>

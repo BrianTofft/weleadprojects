@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: "We Lead Projects <noreply@weleadprojects.com>",
       to: [email],
-      subject: "Tak for din henvendelse — We Lead Projects",
+      subject: "Tak for din henvendelse til We Lead Projects",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: ${NAVY}; padding: 28px 32px; border-radius: 8px 8px 0 0; text-align: center;">
@@ -62,10 +62,10 @@ export async function POST(req: NextRequest) {
           </div>
           <div style="background: #f7f5f5; padding: 32px; border-radius: 0 0 8px 8px; border: 1px solid #e8e0e0; border-top: none;">
             <p style="color: #2d1a1a; font-size: 16px; font-weight: 600; margin-top: 0;">Hej ${name},</p>
-            <p style="color: #555; line-height: 1.7; margin: 0 0 16px;">Tak for din henvendelse! Vi har modtaget din besked og vender tilbage hurtigst muligt — senest den næste hverdag.</p>
+            <p style="color: #555; line-height: 1.7; margin: 0 0 16px;">Tak for din henvendelse! Vi har modtaget din besked og vender tilbage hurtigst muligt, senest den næste hverdag.</p>
             <p style="color: #555; line-height: 1.7; margin: 0 0 24px;">Har du et presserende spørgsmål, er du altid velkommen til at ringe direkte til os.</p>
             <div style="background: white; border: 1px solid #e8e0e0; border-radius: 8px; padding: 20px;">
-              <p style="margin: 0 0 8px; color: #2d1a1a; font-weight: 600; font-size: 14px;">Brian P.N. Tofft — Managing Partner</p>
+              <p style="margin: 0 0 8px; color: #2d1a1a; font-weight: 600; font-size: 14px;">Brian P.N. Tofft, Managing Partner</p>
               <p style="margin: 0 0 6px; color: #666; font-size: 14px;">📞 <a href="tel:+4552400088" style="color: ${RED}; text-decoration: none;">+45 5240 0088</a></p>
               <p style="margin: 0; color: #666; font-size: 14px;">✉️ <a href="mailto:hello@weleadprojects.com" style="color: ${RED}; text-decoration: none;">hello@weleadprojects.com</a></p>
             </div>

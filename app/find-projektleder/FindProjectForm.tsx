@@ -31,7 +31,7 @@ const steps = [
   {
     step: "01",
     title: "Beskriv dit projekt",
-    body: "Book et møde eller send en kort forespørgsel — vi behøver kun det vigtigste for at komme i gang.",
+    body: "Book et møde eller send en kort forespørgsel. Vi behøver kun det vigtigste for at komme i gang.",
   },
   {
     step: "02",
@@ -123,7 +123,7 @@ export default function FindProjectForm() {
           </h1>
           <p className="text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
             Vi matcher dig med en erfaren konsulent der passer præcist til dit
-            projekt — uanset branche, størrelse eller tidspres.
+            projekt, uanset branche, størrelse eller tidspres.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a
@@ -186,7 +186,7 @@ export default function FindProjectForm() {
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Mange virksomheder oplever, at interne ressourcer allerede er fuldt booket når et nyt
-            projekt skal i gang — eller at den nødvendige specialviden simpelthen ikke findes i
+            projekt skal i gang, eller at den nødvendige specialviden simpelthen ikke findes i
             organisationen. En erfaren, ekstern projektleder kan træde ind hurtigt, uden den
             oplæringstid en fastansættelse kræver, og bringe et objektivt blik med sig, som ofte
             er svært at opnå internt.
@@ -204,12 +204,12 @@ export default function FindProjectForm() {
             >
               PMI
             </a>
-            , og alle arbejder metodeneutralt — de vælger den tilgang, der passer bedst til jeres
+            , og alle arbejder metodeneutralt. De vælger den tilgang, der passer bedst til jeres
             konkrete situation, uanset om det er klassisk Waterfall, Agile eller en hybrid model.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Vi matcher ikke bare på CV. Vi lægger vægt på, at profilen passer til jeres
-            virksomhedskultur, projektets kompleksitet og de udfordringer I står overfor lige nu —
+            virksomhedskultur, projektets kompleksitet og de udfordringer I står overfor lige nu,
             så I får en projektleder, der kan skabe fremdrift fra dag ét.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -220,7 +220,7 @@ export default function FindProjectForm() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             Samarbejdet stopper ikke ved opstart. Vores konsulenter trækker løbende på hinandens
-            erfaring gennem vores interne vidensdeling — så du ikke kun får én persons kompetencer,
+            erfaring gennem vores interne vidensdeling, så du ikke kun får én persons kompetencer,
             men adgang til hele teamets samlede erfaring, når projektet støder på uforudsete
             udfordringer undervejs.
           </p>
@@ -242,7 +242,7 @@ export default function FindProjectForm() {
             </h2>
             <p className="text-gray-500 max-w-lg mx-auto text-sm leading-relaxed">
               15–20 minutter hvor vi lytter til dit projekt og vurderer hvad der
-              skal til — ingen forpligtelse, ingen salgspres.
+              skal til. Ingen forpligtelse, ingen salgspres.
             </p>
           </div>
           <div
@@ -438,7 +438,7 @@ export default function FindProjectForm() {
 
               {status === "error" && (
                 <p className="text-sm text-red-600">
-                  Noget gik galt — prøv igen eller ring til os på +45 5240 0088.
+                  Noget gik galt. Prøv igen eller ring til os på +45 5240 0088.
                 </p>
               )}
 

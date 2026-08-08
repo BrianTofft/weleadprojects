@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | We Lead Projects",
   },
   description:
-    "Erfarne projektledere, Enterprise Arkitekter og AI Governance-rådgivere til komplekse IT-transformationer. We Lead Projects — grundlagt 2018, Roskilde.",
+    "Erfarne projektledere, Enterprise Arkitekter og AI Governance-rådgivere til komplekse IT-transformationer. We Lead Projects, grundlagt 2018, Roskilde.",
   keywords: [
     "projektledelse", "IT-projekter", "Enterprise Architecture",
     "digital transformation", "konsulent", "projektleder", "Roskilde",
