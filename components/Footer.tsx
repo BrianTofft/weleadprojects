@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 
 const BG     = "#1C2544";
 const BORDER = "rgba(255,255,255,0.12)";
@@ -111,11 +112,34 @@ export default function Footer() {
         </div>
       </div>
 
+      <div className="px-6 pb-8">
+        <div className="max-w-xs mx-auto">
+          <div
+            className="trustpilot-widget"
+            data-locale="da-DK"
+            data-template-id="56278e9abfbbba0bdcd568bc"
+            data-businessunit-id="6a76c8cd06172e18ffc2acd7"
+            data-style-height="52px"
+            data-style-width="100%"
+            data-token="a1d696db-8e18-42ec-84a9-81deb69ac87e"
+          >
+            <a href="https://dk.trustpilot.com/review/weleadprojects.com" target="_blank" rel="noopener noreferrer">
+              Trustpilot
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="px-6 pb-6">
         <div className="max-w-7xl mx-auto border-t pt-5 text-center text-sm text-white/40" style={{ borderColor: BORDER }}>
           © 2026 We Lead Projects ApS
         </div>
       </div>
+
+      <Script
+        src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+        strategy="afterInteractive"
+      />
     </footer>
   );
 }
