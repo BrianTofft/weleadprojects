@@ -20,6 +20,18 @@ const RED = "#cc2222";
 const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Projektledelse",
+  name: "Projektledelse",
+  provider: { "@type": "Organization", name: "We Lead Projects", url: "https://www.weleadprojects.com" },
+  areaServed: "DK",
+  description:
+    "Erfarne projektledere til komplekse IT-projekter og transformationer. Vi tager ansvar for leverance, uanset om I kører Waterfall, Agile eller hybrid.",
+  url: "https://www.weleadprojects.com/ydelser/projektledelse",
+};
+
 const leverancer = [
   { title: "Planlægning og milepælsstruktur", body: "Detaljeret projektplan tilpasset jeres kompleksitet, med realistiske milepæle og ressourceallokering fastlagt inden opstart." },
   { title: "Risikostyring", body: "Løbende identifikation og afbødning af risici, så projektet forbliver på sporet og inden for budget, i stedet for at reagere når skaden er sket." },
@@ -38,6 +50,10 @@ const naarDetGiverMening = [
 export default function ProjektledelsePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Nav />
 
       <PageHeader

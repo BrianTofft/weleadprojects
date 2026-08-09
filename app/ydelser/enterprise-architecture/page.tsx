@@ -20,6 +20,18 @@ const RED = "#cc2222";
 const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Enterprise Architecture",
+  name: "Enterprise Architecture",
+  provider: { "@type": "Organization", name: "We Lead Projects", url: "https://www.weleadprojects.com" },
+  areaServed: "DK",
+  description:
+    "Enterprise Architecture der kobler systemlandskabet til forretningsstrategien. Kortlægning, prioritering og en arkitektur der understøtter vækst.",
+  url: "https://www.weleadprojects.com/ydelser/enterprise-architecture",
+};
+
 const leverancer = [
   { title: "Kortlægning af systemlandskabet", body: "Overblik over hvilke systemer I har, hvad de bruges til, hvem der ejer dem, og hvordan de hænger sammen. Grundlaget for enhver arkitekturbeslutning." },
   { title: "Strategisk kobling", body: "Sikring af at teknologiinvesteringer understøtter forretningsstrategien, i stedet for at drive den i en tilfældig retning bestemt af den seneste leverandørsamtale." },
@@ -38,6 +50,10 @@ const naarDetGiverMening = [
 export default function EnterpriseArchitecturePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Nav />
 
       <PageHeader

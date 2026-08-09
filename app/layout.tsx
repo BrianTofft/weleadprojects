@@ -55,6 +55,30 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "We Lead Projects",
+  legalName: "We Lead Projects ApS",
+  url: BASE,
+  logo: `${BASE}/logo.png`,
+  telephone: "+45 52400088",
+  email: "hello@weleadprojects.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Industrivej 21",
+    postalCode: "4000",
+    addressLocality: "Roskilde",
+    addressCountry: "DK",
+  },
+  vatID: "DK44934655",
+  foundingDate: "2018",
+  founder: {
+    "@type": "Person",
+    name: "Brian P.N. Tofft",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -62,7 +86,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="da">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

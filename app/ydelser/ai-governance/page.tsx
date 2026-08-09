@@ -20,6 +20,18 @@ const RED = "#cc2222";
 const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "AI-governance",
+  name: "AI-governance",
+  provider: { "@type": "Organization", name: "We Lead Projects", url: "https://www.weleadprojects.com" },
+  areaServed: "DK",
+  description:
+    "Governance-rammer og EU AI Act-compliance til AI-adoption. Vi bygger AI-governance ind i jeres eksisterende Enterprise Architecture, ikke ved siden af.",
+  url: "https://www.weleadprojects.com/ydelser/ai-governance",
+};
+
 const leverancer = [
   { title: "Kortlægning af AI-aktiver", body: "Overblik over hvilke modeller og AI-funktioner der allerede er i brug, ofte skjult i SaaS-produkter, uden at nogen har set det samlet." },
   { title: "Risikoklassificering", body: "Vurdering af jeres AI-initiativer efter samme model som øvrige IT-systemer, herunder klassificering iht. EU AI Act." },
@@ -38,6 +50,10 @@ const naarDetGiverMening = [
 export default function AiGovernancePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Nav />
 
       <PageHeader
