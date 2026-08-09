@@ -530,6 +530,91 @@ export const articles: Article[] = [
       { label: "Gartner: AI Governance", url: "https://www.gartner.com/en/information-technology/glossary/ai-governance" },
     ],
   },
+
+  // ─── ARTIKEL 7 — DA ──────────────────────────────────────────────────────
+  {
+    slug: "enterprise-arkitektur-guide",
+    lang: "da",
+    category: "Enterprise Architecture",
+    title: "Hvad er enterprise arkitektur? Fra strategi til it-eksekvering",
+    description:
+      "Lær hvordan enterprise arkitektur bygger bro mellem forretningsstrategi og it. Få en trin-for-trin guide, indsigt i TOGAF og AI-governance fra We Lead Projects.",
+    date: "August 2026",
+    readingMinutes: 10,
+    intro:
+      "Mange it-projekter fejler, fordi der mangler en rød tråd mellem ledelsens visioner og den tekniske virkelighed. Her træder en veldefineret enterprise arkitektur ind som løsningen, idet den skaber en struktureret plan for organisationens nuværende og fremtidige it-landskab. Frem for blot at fokusere på servere og software sikrer arkitekturen, at alle teknologiske investeringer understøtter forretningens overordnede mål direkte.",
+    sections: [
+      {
+        heading: "Hvad enterprise arkitektur betyder i praksis",
+        body: "Hos We Lead Projects arbejder vi dagligt med at bygge bro mellem strategi og drift, når virksomheder har brug for hjælp til at navigere i komplekse it-transformationer. Man kan betragte enterprise arkitektur som byggeplanen for hele virksomhedens digitale fundament. Jonkers (2006) definerer disciplinen som en plan for systematisk at kortlægge en organisations nuværende eller fremtidige miljø, hvilket styrer it-investeringer og oversætter forretningsstrategier til konkrete teknologiske løsninger. Moderne krav til kunstig intelligens og agil udvikling ændrer konstant måden, vi arbejder med it-strukturer på. Derfor har organisationer brug for praktiske, håndgribelige trin til at implementere en succesfuld arkitektur i hverdagen.",
+      },
+      {
+        heading: "Forstå fundamentet i enterprise arkitektur",
+        body: "Kernen i disciplinen er at skabe et klart overblik. Ifølge Wikipedia bygger arbejdet på fire centrale søjler: strategiforståelse, forretningsforståelse (processer og information), teknologiforståelse (infrastruktur) og forandringsforståelse (it-governance). Når disse fire elementer spiller sammen, får ledelsen det nødvendige grundlag for at træffe informerede beslutninger om fremtidige investeringer. Gartner-analytikerne Brian Burke og Betsy Burton argumenterer for, at arkitekturarbejdet primært skal producere materiale til forretningens beslutningstagere for at drive organisatorisk forandring. Arkitekter bør undgå et ensidigt fokus på it-omkostningsreduktion og i stedet vise, hvordan ny teknologi skaber forretningsmuligheder eller forbedrer kundeoplevelsen. Succes kræver, at organisationen har de rette kompetencer og den rette styring på plads.",
+      },
+      {
+        heading: "Forskelle mellem offentlig og privat sektor",
+        body: "Implementeringen afhænger i høj grad af branchen. Forskning fra Kristian Hjort-Madsen, tidligere kontorchef i Finansministeriet, viser tydelige forskelle i motivationen bag arkitekturarbejdet. Kommercielle organisationer bruger primært strukturen til at tilpasse sig skiftende markedsforhold og opnå konkurrencefordele hurtigt. Offentlige myndigheder bruger derimod arkitekturen til at understøtte borgernes behov og imødekomme kravene til en digitaliseret økonomi. Her ligger fokus ofte på lovkrav, datasikkerhed og tværgående integration mellem forskellige offentlige systemer. Uanset sektoren er målet at skabe sammenhæng. Vores erfaring viser, at både tele-, finans- og den offentlige sektor har brug for en klar struktur for at forhindre spildte ressourcer og fejlslagne projekter.",
+      },
+      {
+        heading: "De mest anvendte frameworks til enterprise arkitektur",
+        body: "Et framework giver arkitekten et fælles sprog og en standardiseret metode til at beskrive virksomheden. Der findes flere anerkendte modeller på markedet, og valget afhænger af organisationens modenhed samt specifikke behov. Forskning viser, at brugen af standardiserede modelleringspraksisser varierer massivt i kompleksitet. Nogle virksomheder klarer sig med simple diagrammer, mens andre bygger omfattende modeller med tusindvis af elementer.",
+      },
+      {
+        heading: "TOGAF: The Open Group Architecture Framework",
+        body: "TOGAF er det mest udbredte framework globalt, primært fordi det tilbyder en detaljeret metode kaldet Architecture Development Method (ADM). Denne metode guider arkitekten trin for trin gennem processen med at bygge, vedligeholde og ændre en arkitektur, så den altid stemmer overens med forretningens overordnede mål.",
+      },
+      {
+        heading: "Zachman Framework",
+        body: "I modsætning til procesmodeller er Zachman Framework et ontologisk skema, der fungerer som et matrix-system til at organisere arkitektoniske artefakter som dokumenter, modeller og diagrammer. Systemet tvinger organisationen til at overveje alle perspektiver og dækker alt fra direktørens overordnede vision til programmørens detaljerede kode.",
+      },
+      {
+        heading: "ArchiMate",
+        body: "ArchiMate er et visuelt modelleringssprog, som arkitekter ofte bruger i kombination med TOGAF. Det giver et standardiseret sæt af symboler til at beskrive forretningsprocesser, applikationer og teknologiinfrastruktur. Ved at bruge ArchiMate bliver det markant nemmere at kommunikere komplekse sammenhænge til interessenter uden teknisk baggrund.",
+      },
+      {
+        heading: "Forbindelsen mellem traditionelle frameworks og agile metoder",
+        body: "Moderne it-ledelse skal ofte forene den planlægningsdrevne enterprise arkitektur med agile udviklingsmetoder som Scrum og SAFe. Traditionelle frameworks som TOGAF kan virke langsomme i en verden, hvor software opdateres flere gange om dagen via DevOps-pipelines. Løsningen er at tilpasse arkitekturen, så arkitekten går fra at være en rigid kontrolinstans til at agere rådgiver. Denne rådgiver udstikker retningslinjer og principper, som de agile teams arbejder indenfor. Denne tilgang kaldes agil arkitektur. Den definerer de faste rammer for sikkerhedskrav og integrationer, samtidig med at den lader de enkelte teams træffe de lokale teknologiske valg. Hos We Lead Projects er vi metodeneutrale. Vi ved, at valget mellem agile, waterfall eller hybrid altid afhænger af projektets specifikke risikoprofil.",
+      },
+      {
+        heading: "Mål organisationens modenhed med ACMM",
+        body: "For at forbedre din it-struktur skal du først kende din nuværende tilstand. Architecture Capability Maturity Model (ACMM), som er udviklet af det amerikanske handelsministerium, er et fremragende værktøj til at evaluere en organisations modenhed inden for it-arkitektur. ACMM vurderer modenheden på en skala fra 0 (ingen arkitektur) til 5 (optimeret og kontinuerligt forbedret arkitektur) ved at kigge på elementer som ledelsesopbakning, dokumentation, processer og integration. En grundig ACMM-vurdering hjælper virksomheden med at identificere svage punkter og lægge en realistisk plan for fremtidige forbedringer. Manglende modenhed forårsager ofte fejlslagne projekter.",
+      },
+      {
+        heading: "Trin-for-trin guide: start et enterprise arkitektur-program",
+        body: "Mange virksomheder kæmper med at omsætte teori til praksis. At bygge en arkitekturfunktion fra bunden kræver en struktureret tilgang, der flytter organisationen fra dens nuværende tilstand (as-is) til den ønskede fremtidige tilstand (to-be). Første trin er at definere forretningens mål, da arkitekturprogrammet skal løse konkrete problemer som at reducere time-to-market eller forbedre datasikkerheden. Næste trin er at kortlægge det nuværende it-landskab for at få et præcist overblik over eksisterende systemer, integrationer og dataflow. Tredje trin er at designe målbilledet, hvor du definerer den fremtidige arkitektur, som understøtter forretningens strategi. Fjerde trin er at udarbejde et roadmap, der beskriver de specifikke projekter og ændringer, der skal implementeres for at nå målbilledet. Det sidste trin er at etablere governance ved at opsætte klare regler og processer for, hvordan nye it-løsninger godkendes og integreres i fremtiden.",
+      },
+      {
+        heading: "Kunstig intelligens kræver en stærk enterprise arkitektur",
+        body: "Implementeringen af kunstig intelligens er en massiv teknologisk forandring, der kræver høj datakvalitet, klar governance og en solid infrastruktur. Her skaber enterprise arkitektur det nødvendige fundament for at indfri disse krav. Hos We Lead Projects tilbyder vi specialiserede AI-EA Assessments, der varer 4 til 8 uger. Vi kortlægger virksomhedens AI-aktiver og etablerer governance-rammer for at sikre overholdelse af EU AI Act og GDPR, hvorefter vi udvikler realistiske roadmaps. Ved at integrere AI i de eksisterende TOGAF-baserede arkitekturlag sikrer vi, at teknologien løser konkrete forretningsproblemer frem for blot at være et prestigeprojekt.",
+      },
+      {
+        heading: "Uddannelse og certificering som arkitekt i Danmark",
+        body: "Efterspørgslen på dygtige enterprise arkitekter er høj i Danmark, og mange it-professionelle tager en formel certificering eller videreuddannelse for at sikre et højt fagligt niveau. De tre mest anerkendte udbydere i Danmark er Teknologisk Institut, Aarhus BSS og Dansk IT. Teknologisk Institut tilbyder en Enterprise Architect Master-certificering med fokus på praktisk anvendelse af arkitekturprincipper i danske virksomheder. Aarhus BSS udbyder en Master i IT med specialisering i Enterprise Architecture Management, som kombinerer akademisk tyngde med forretningsforståelse. Dansk IT tilbyder anerkendte certificeringer, der validerer arkitektens kompetencer nationalt. Priser, varighed og det forventede afkast varierer betydeligt mellem uddannelserne. En kort certificering kan ofte gennemføres på få uger, mens en fuld master strækker sig over flere år som deltidsstudie. Afkastet for virksomheden viser sig gennem færre fejlslagne it-projekter og en hurtigere eksekvering af forretningsstrategien. Vores eget team har over 125 års samlet erfaring, og vores Managing Partner, Brian P.N. Tofft, har mere end 30 års erfaring i branchen.",
+      },
+      {
+        heading: "Hvad er forskellen på en it-arkitekt og en enterprise arkitekt?",
+        body: "Mens en it-arkitekt fokuserer på specifikke systemer, softwareløsninger eller infrastruktur, har en enterprise arkitekt et bredere fokus på hele organisationen. Enterprise arkitekten sikrer, at it-strategien understøtter forretningsstrategien, så alle systemer arbejder sammen mod et fælles mål.",
+      },
+      {
+        heading: "Hvor lang tid tager det at etablere en arkitekturfunktion?",
+        body: "Tidsrammen afhænger af organisationens størrelse og modenhed. En grundlæggende kortlægning og etablering af de første principper kan gøres på få måneder. At opbygge en fuldt moden funktion på niveau 5 på ACMM-skalaen er dog en flerårig proces, der kræver løbende tilpasning.",
+      },
+      {
+        heading: "Er TOGAF relevant for små og mellemstore virksomheder?",
+        body: "Ja, men det kræver tilpasning. SMV'er behøver ikke implementere hele TOGAF-metoden, men kan udvælge de dele af rammeværket, der giver mest værdi. Det kan for eksempel være at skabe et overblik over applikationsporteføljen eller definere klare principper for indkøb af ny software.",
+      },
+      {
+        heading: "Bindeleddet mellem strategi og drift",
+        body: "En stærk enterprise arkitektur er det nødvendige bindeled mellem ledelsens strategiske ambitioner og it-afdelingens daglige drift. Uden dette bindeled risikerer virksomheden at spilde ressourcer på teknologi, der mangler forretningsværdi. Hos We Lead Projects står vi klar med erfarne konsulenter, som kan hjælpe jer med at etablere et solidt fundament, uanset om I står over for en klassisk systemudskiftning eller en kompleks AI-implementering.",
+      },
+    ],
+    sources: [
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "Gartner: Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
+      { label: "Wikipedia: Enterprise Architecture", url: "https://en.wikipedia.org/wiki/Enterprise_architecture" },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
