@@ -172,7 +172,9 @@ export default async function ArticlePage({
               <p className="font-bold text-sm" style={{ color: DARK }}>Brian P.N. Tofft</p>
               <p className="text-xs mb-2" style={{ color: RED }}>Managing Partner, We Lead Projects</p>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Brian har mere end 30 års erfaring med projektledelse og IT-transformationer på tværs af brancher.
+                {article.lang === "da"
+                  ? "Brian har mere end 30 års erfaring med projektledelse og IT-transformationer på tværs af brancher."
+                  : "Brian has more than 30 years of experience in project management and IT transformations across industries."}
               </p>
             </div>
           </div>

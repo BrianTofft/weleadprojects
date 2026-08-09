@@ -60,7 +60,7 @@ export default function EnterpriseArchitecturePage() {
             <a href="https://www.opengroup.org/togaf" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
               TOGAF
             </a>, tilpasset den konkrete organisations modenhed og behov. Vil du forstå disciplinen bedre, kan du læse mere i vores artikel{" "}
-            <Link href="/indsigt/hvad-er-enterprise-architecture" style={{ color: RED }} className="underline hover:opacity-75">
+            <Link href="/indsigt/enterprise-arkitektur-guide" style={{ color: RED }} className="underline hover:opacity-75">
               Hvad er Enterprise Architecture?
             </Link>
           </p>

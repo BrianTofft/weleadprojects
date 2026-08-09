@@ -100,85 +100,6 @@ export const articles: Article[] = [
     ],
   },
 
-  // ─── ARTIKEL 2 — DA ──────────────────────────────────────────────────────
-  {
-    slug: "hvad-er-enterprise-architecture",
-    lang: "da",
-    category: "Enterprise Architecture",
-    title: "Hvad er Enterprise Architecture?",
-    description:
-      "Enterprise Architecture er bindeledet mellem strategi og IT. Forstå hvad EA er, hvornår det er relevant og hvad det kan gøre for din organisation.",
-    date: "Marts 2025",
-    readingMinutes: 6,
-    intro:
-      "Mange virksomheder oplever det samme problem: IT-systemer der ikke taler godt sammen, digitale initiativer der kører parallelt uden koordinering, og strategiske beslutninger der tages uden et klart billede af den eksisterende IT-arkitektur. Enterprise Architecture (EA) er disciplinen der løser netop dette. Og det er langt mere praktisk end det lyder.",
-    sections: [
-      {
-        heading: "Hvad er Enterprise Architecture?",
-        body: "Enterprise Architecture er en struktureret tilgang til at kortlægge og styre sammenhængen mellem en virksomheds forretningsprocesser, data, applikationer og teknisk infrastruktur. Det handler ikke om at tegne flotte diagrammer. Det handler om at skabe et fælles sprog og en fælles forståelse, der gør det muligt at træffe bedre beslutninger om IT-investeringer og forandringer.",
-      },
-      {
-        heading: "Fra strategi til IT og tilbage igen",
-        body: "Den vigtigste rolle for EA er at sikre, at IT-initiativer understøtter virksomhedens strategiske mål. Uden denne kobling sker det let, at IT-afdelingen investerer i løsninger der løser tekniske problemer, men ikke forretningsmæssige behov, eller omvendt, at forretningssiden bestiller IT uden at forstå de arkitekturmæssige konsekvenser. En Enterprise Arkitekt fungerer som brobygger mellem de to verdener.",
-      },
-      {
-        heading: "Hvornår har din virksomhed brug for EA?",
-        body: "EA er særligt relevant i fire situationer: (1) Du gennemgår en digital transformation eller cloud-migrering. (2) Din IT-portefølje er vokset organisk og er svær at overskue. (3) Du integrerer systemer efter en fusion eller opkøb. (4) Du oplever, at nye IT-projekter regelmæssigt støder på uventede afhængigheder og kompleksiteter. I alle disse tilfælde kan en klar arkitekturvision reducere risiko, omkostninger og tid til markedet markant.",
-      },
-      {
-        heading: "EA i praksis, ikke kun på papir",
-        body: "En EA-indsats behøver ikke starte stort. Det vigtigste første skridt er at skabe et overblik: hvilke systemer har vi, hvad bruges de til, hvem ejer dem, og hvordan hænger de sammen? Fra dette udgangspunkt kan man prioritere initiativer, identificere risici og lægge en realistisk teknisk roadmap. Hos We Lead Projects kombinerer vi EA-ekspertise med praktisk projektledelsesbaggrund, fordi arkitektur kun skaber værdi når den kan omsættes til handling.",
-      },
-      {
-        heading: "Fremtidens arkitektur er fleksibel",
-        body: "De virksomheder der klarer sig bedst i det digitale landskab er dem, der har bygget en arkitektur der kan tilpasse sig. Det betyder ikke at genopfinde alt fra bunden. Det betyder at sikre, at nye systemer og integrationer bygger på et solidt og veldokumenteret fundament. Cloud-native arkitekturer, API-first tilgange og modulære løsningsdesigns er centrale begreber i dette arbejde.",
-      },
-    ],
-    sources: [
-      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
-      { label: "Gartner: Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
-    ],
-  },
-
-  // ─── ARTIKEL 2 — EN ──────────────────────────────────────────────────────
-  {
-    slug: "what-is-enterprise-architecture",
-    lang: "en",
-    category: "Enterprise Architecture",
-    title: "What Is Enterprise Architecture?",
-    description:
-      "Enterprise Architecture bridges business strategy and IT. Understand what EA is, when it matters, and what it can do for your organisation.",
-    date: "March 2025",
-    readingMinutes: 6,
-    intro:
-      "Many organisations face the same challenge: IT systems that don't communicate well, digital initiatives running in parallel without coordination, and strategic decisions made without a clear picture of the existing IT landscape. Enterprise Architecture (EA) is the discipline that addresses exactly this. And it is far more practical than it sounds.",
-    sections: [
-      {
-        heading: "What is Enterprise Architecture?",
-        body: "Enterprise Architecture is a structured approach to mapping and managing the relationships between a company's business processes, data, applications, and technical infrastructure. It is not about drawing elaborate diagrams. It is about creating a shared language and a common understanding that enables better decisions about IT investments and organisational change.",
-      },
-      {
-        heading: "From strategy to IT and back again",
-        body: "The most important role of EA is to ensure that IT initiatives support the company's strategic objectives. Without this alignment, IT departments easily invest in solutions that solve technical problems but not business needs, or conversely, the business side commissions IT without understanding the architectural implications. An Enterprise Architect acts as a bridge between the two worlds.",
-      },
-      {
-        heading: "When does your business need EA?",
-        body: "EA is particularly relevant in four situations: (1) You are undergoing a digital transformation or cloud migration. (2) Your IT portfolio has grown organically and is difficult to oversee. (3) You are integrating systems after a merger or acquisition. (4) You regularly find that new IT projects run into unexpected dependencies and complexities. In all these cases, a clear architectural vision can significantly reduce risk, cost, and time to market.",
-      },
-      {
-        heading: "EA in practice, not just on paper",
-        body: "An EA initiative does not need to start large. The most important first step is to create an overview: what systems do we have, what are they used for, who owns them, and how do they connect? From this foundation, you can prioritise initiatives, identify risks, and develop a realistic technical roadmap. At We Lead Projects, we combine EA expertise with hands-on project management experience, because architecture only creates value when it can be translated into action.",
-      },
-      {
-        heading: "The architecture of the future is flexible",
-        body: "The businesses that thrive in the digital landscape are those that have built an architecture capable of adapting. This does not mean reinventing everything from scratch. It means ensuring that new systems and integrations are built on a solid, well-documented foundation. Cloud-native architectures, API-first approaches, and modular solution designs are central concepts in this work.",
-      },
-    ],
-    sources: [
-      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
-      { label: "Gartner: Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
-    ],
-  },
 
   // ─── ARTIKEL 3 — DA ──────────────────────────────────────────────────────
   {
@@ -607,6 +528,91 @@ export const articles: Article[] = [
       {
         heading: "Bindeleddet mellem strategi og drift",
         body: "En stærk enterprise arkitektur er det nødvendige bindeled mellem ledelsens strategiske ambitioner og it-afdelingens daglige drift. Uden dette bindeled risikerer virksomheden at spilde ressourcer på teknologi, der mangler forretningsværdi. Hos We Lead Projects står vi klar med erfarne konsulenter, som kan hjælpe jer med at etablere et solidt fundament, uanset om I står over for en klassisk systemudskiftning eller en kompleks AI-implementering.",
+      },
+    ],
+    sources: [
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "Gartner: Enterprise Architecture", url: "https://www.gartner.com/en/information-technology/glossary/enterprise-architecture-ea" },
+      { label: "Wikipedia: Enterprise Architecture", url: "https://en.wikipedia.org/wiki/Enterprise_architecture" },
+    ],
+  },
+
+  // ─── ARTIKEL 7 — EN ──────────────────────────────────────────────────────
+  {
+    slug: "enterprise-architecture-guide",
+    lang: "en",
+    category: "Enterprise Architecture",
+    title: "What Is Enterprise Architecture? From Strategy to IT Execution",
+    description:
+      "Learn how enterprise architecture bridges business strategy and IT. Get a step-by-step guide, insight into TOGAF, and AI governance from We Lead Projects.",
+    date: "August 2026",
+    readingMinutes: 10,
+    intro:
+      "Many IT projects fail because there is no clear thread connecting leadership's vision to technical reality. This is where a well-defined enterprise architecture becomes the solution, creating a structured plan for an organisation's current and future IT landscape. Rather than focusing solely on servers and software, architecture ensures that every technology investment directly supports the business's overarching goals.",
+    sections: [
+      {
+        heading: "What enterprise architecture means in practice",
+        body: "At We Lead Projects, we work daily to bridge strategy and operations when companies need help navigating complex IT transformations. You can think of enterprise architecture as the blueprint for a company's entire digital foundation. Jonkers (2006) defines the discipline as a plan for systematically mapping an organisation's current or future environment, which guides IT investment and translates business strategy into concrete technological solutions. Modern demands from artificial intelligence and agile development constantly change how we work with IT structures. Organisations therefore need practical, tangible steps to implement a successful architecture in everyday operations.",
+      },
+      {
+        heading: "Understanding the foundation of enterprise architecture",
+        body: "The core of the discipline is creating a clear overview. According to Wikipedia, the work rests on four central pillars: strategy understanding, business understanding (processes and information), technology understanding (infrastructure), and change understanding (IT governance). When these four elements work together, leadership gains the necessary foundation for making informed decisions about future investments. Gartner analysts Brian Burke and Betsy Burton argue that architecture work should primarily produce material for business decision-makers to drive organisational change. Architects should avoid a one-sided focus on IT cost reduction and instead show how new technology creates business opportunities or improves the customer experience. Success requires the organisation to have the right competencies and the right governance in place.",
+      },
+      {
+        heading: "Differences between the public and private sector",
+        body: "Implementation depends heavily on the sector. Research from Kristian Hjort-Madsen, a former head of office at the Danish Ministry of Finance, shows clear differences in the motivation behind architecture work. Commercial organisations primarily use the framework to adapt to shifting market conditions and gain competitive advantage quickly. Public authorities, by contrast, use architecture to support citizens' needs and meet the demands of a digitalised economy, with a focus on legal requirements, data security, and cross-cutting integration between different public systems. Regardless of sector, the goal is coherence. Our experience shows that the telecom, finance, and public sectors alike need a clear structure to prevent wasted resources and failed projects.",
+      },
+      {
+        heading: "The most widely used enterprise architecture frameworks",
+        body: "A framework gives the architect a shared language and a standardised method for describing the enterprise. Several recognised models exist on the market, and the choice depends on the organisation's maturity and specific needs. Research shows that the use of standardised modelling practices varies enormously in complexity. Some companies manage with simple diagrams, while others build extensive models with thousands of elements.",
+      },
+      {
+        heading: "TOGAF: The Open Group Architecture Framework",
+        body: "TOGAF is the most widely used framework globally, primarily because it offers a detailed method called the Architecture Development Method (ADM). This method guides the architect step by step through the process of building, maintaining, and changing an architecture so that it consistently aligns with the business's overarching goals.",
+      },
+      {
+        heading: "Zachman Framework",
+        body: "Unlike process models, the Zachman Framework is an ontological schema that functions as a matrix system for organising architectural artefacts such as documents, models, and diagrams. The system forces the organisation to consider every perspective, covering everything from the executive's overarching vision to the programmer's detailed code.",
+      },
+      {
+        heading: "ArchiMate",
+        body: "ArchiMate is a visual modelling language that architects often use in combination with TOGAF. It provides a standardised set of symbols for describing business processes, applications, and technology infrastructure. Using ArchiMate makes it significantly easier to communicate complex relationships to stakeholders without a technical background.",
+      },
+      {
+        heading: "Connecting traditional frameworks with agile methods",
+        body: "Modern IT leadership must often reconcile planning-driven enterprise architecture with agile development methods such as Scrum and SAFe. Traditional frameworks like TOGAF can seem slow in a world where software is updated multiple times a day through DevOps pipelines. The solution is to adapt the architecture so the architect moves from being a rigid control function to acting as an advisor. This advisor sets out the guidelines and principles within which agile teams operate, an approach known as agile architecture. It defines the fixed boundaries for security requirements and integrations while letting individual teams make local technology choices. At We Lead Projects, we are method-neutral. We know that the choice between agile, waterfall, or hybrid always depends on the project's specific risk profile.",
+      },
+      {
+        heading: "Measuring organisational maturity with ACMM",
+        body: "To improve your IT structure, you first need to know your current state. The Architecture Capability Maturity Model (ACMM), developed by the US Department of Commerce, is an excellent tool for evaluating an organisation's maturity in IT architecture. ACMM assesses maturity on a scale from 0 (no architecture) to 5 (optimised and continuously improved architecture) by examining elements such as leadership support, documentation, processes, and integration. A thorough ACMM assessment helps a company identify weak points and lay out a realistic plan for future improvements. A lack of maturity is a frequent cause of failed projects.",
+      },
+      {
+        heading: "Step-by-step guide: starting an enterprise architecture programme",
+        body: "Many companies struggle to translate theory into practice. Building an architecture function from scratch requires a structured approach that moves the organisation from its current state (as-is) to its desired future state (to-be). The first step is defining the business's goals, since the architecture programme must solve concrete problems such as reducing time-to-market or improving data security. The next step is mapping the current IT landscape to gain a precise overview of existing systems, integrations, and data flows. The third step is designing the target picture, defining the future architecture that supports the business strategy. The fourth step is developing a roadmap that describes the specific projects and changes needed to reach the target picture. The final step is establishing governance by setting up clear rules and processes for how new IT solutions are approved and integrated going forward.",
+      },
+      {
+        heading: "Artificial intelligence requires a strong enterprise architecture",
+        body: "Implementing artificial intelligence is a massive technological shift that requires high data quality, clear governance, and solid infrastructure. This is where enterprise architecture provides the necessary foundation to meet these demands. At We Lead Projects, we offer specialised AI-EA assessments lasting four to eight weeks. We map the company's AI assets and establish governance frameworks to ensure compliance with the EU AI Act and GDPR, then develop realistic roadmaps. By integrating AI into the existing TOGAF-based architecture layers, we ensure the technology solves concrete business problems rather than simply being a prestige project.",
+      },
+      {
+        heading: "Education and certification as an architect in Denmark",
+        body: "Demand for skilled enterprise architects is high in Denmark, and many IT professionals pursue formal certification or further education to ensure a high level of expertise. The three most recognised providers in Denmark are Teknologisk Institut, Aarhus BSS, and Dansk IT. Teknologisk Institut offers an Enterprise Architect Master certification focused on the practical application of architecture principles in Danish companies. Aarhus BSS offers a Master's in IT specialising in Enterprise Architecture Management, combining academic depth with business understanding. Dansk IT offers recognised certifications that validate an architect's competencies nationally. Price, duration, and expected return on investment vary significantly between these programmes. A short certification can often be completed in a few weeks, while a full master's degree spans several years as a part-time study. The return for the company shows up as fewer failed IT projects and faster execution of business strategy. Our own team has more than 125 years of combined experience, and our Managing Partner, Brian P.N. Tofft, has more than 30 years of experience in the industry.",
+      },
+      {
+        heading: "What is the difference between an IT architect and an enterprise architect?",
+        body: "While an IT architect focuses on specific systems, software solutions, or infrastructure, an enterprise architect has a broader focus on the entire organisation. The enterprise architect ensures that IT strategy supports business strategy, so all systems work together toward a shared goal.",
+      },
+      {
+        heading: "How long does it take to establish an architecture function?",
+        body: "The timeframe depends on the organisation's size and maturity. A basic mapping exercise and establishment of the first principles can be done in a few months. Building a fully mature function at level 5 on the ACMM scale, however, is a multi-year process that requires ongoing adaptation.",
+      },
+      {
+        heading: "Is TOGAF relevant for small and medium-sized enterprises?",
+        body: "Yes, but it requires adaptation. SMEs do not need to implement the entire TOGAF method but can select the parts of the framework that deliver the most value, such as creating an overview of the application portfolio or defining clear principles for purchasing new software.",
+      },
+      {
+        heading: "The link between strategy and operations",
+        body: "A strong enterprise architecture is the essential link between leadership's strategic ambitions and IT's day-to-day operations. Without this link, a company risks wasting resources on technology that lacks business value. At We Lead Projects, our experienced consultants are ready to help you establish a solid foundation, whether you are facing a classic system replacement or a complex AI implementation.",
       },
     ],
     sources: [
