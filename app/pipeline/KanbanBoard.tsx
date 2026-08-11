@@ -1,5 +1,6 @@
 'use client'
 import { useState, useCallback } from 'react'
+import { useRouter } from 'next/navigation'
 import LeadModal from './LeadModal'
 
 export type Lead = {
@@ -33,11 +34,18 @@ function formatDKK(v: number) {
 export default function KanbanBoard({ initialLeads }: { initialLeads: Lead[] }) {
   const [leads, setLeads] = useState<Lead[]>(initialLeads)
   const [modal, setModal] = useState<{ open: boolean; lead?: Lead }>({ open: false })
+  const router = useRouter()
 
   const refresh = useCallback(async () => {
     const res = await fetch('/api/pipeline/leads')
     if (res.ok) setLeads(await res.json())
   }, [])
+
+  async function handleLogout() {
+    await fetch('/api/pipeline/logout', { method: 'POST' })
+    router.push('/pipeline/login')
+    router.refresh()
+  }
 
   async function handleStatusChange(lead: Lead, newStatus: string) {
     setLeads(prev => prev.map(l => l.id === lead.id ? { ...l, status: newStatus } : l))
@@ -84,6 +92,12 @@ export default function KanbanBoard({ initialLeads }: { initialLeads: Lead[] }) 
             style={{ background: '#cc2222', color: 'white', border: 'none', borderRadius: 6, padding: '9px 18px', fontSize: 13, fontWeight: 700, cursor: 'pointer', letterSpacing: 0.3 }}
           >
             + Ny lead
+          </button>
+          <button
+            onClick={handleLogout}
+            style={{ background: 'transparent', color: 'rgba(255,255,255,0.6)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 6, padding: '9px 14px', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}
+          >
+            Log ud
           </button>
         </div>
       </div>
