@@ -8,6 +8,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Om os",
   description: "Vi leverer professionel konsulentassistance inden for projektledelse, Enterprise Architecture og IT-transformationer. Læs mere om We Lead Projects.",
+  alternates: {
+    canonical: "https://www.weleadprojects.com/om-os",
+  },
   openGraph: {
     title: "Om os | We Lead Projects",
     description: "Grundlagt i 2018 med en vision om at gøre projekter rigtigt. Mød teamet bag We Lead Projects.",

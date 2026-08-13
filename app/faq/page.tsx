@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "FAQ",
   description:
     "Svar på de mest stillede spørgsmål om We Lead Projects. Vores arbejdsproces, samarbejde, priser og hvad der gør os specielle.",
+  alternates: {
+    canonical: "https://www.weleadprojects.com/faq",
+  },
   openGraph: {
     title: "FAQ | We Lead Projects",
     description: "Svar på de mest stillede spørgsmål om projektledelse og samarbejde med We Lead Projects.",

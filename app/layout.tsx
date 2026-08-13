@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "We Lead Projects ApS" }],
   creator: "We Lead Projects ApS",
+  alternates: {
+    canonical: BASE,
+  },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",

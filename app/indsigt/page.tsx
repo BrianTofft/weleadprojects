@@ -8,6 +8,9 @@ import { articles } from "@/lib/articles";
 export const metadata: Metadata = {
   title: "Indsigt",
   description: "Artikler og indsigter om projektledelse, Enterprise Architecture og IT-transformationer fra We Lead Projects.",
+  alternates: {
+    canonical: "https://www.weleadprojects.com/indsigt",
+  },
   openGraph: {
     title: "Indsigt | We Lead Projects",
     description: "Læs vores artikler om projektledelse, Enterprise Architecture og IT-transformationer, på dansk og engelsk.",

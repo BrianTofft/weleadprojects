@@ -7,6 +7,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Ydelser",
   description: "Vi tilbyder professionel projektledelse, Enterprise Architecture, risikostyring og IT-transformationer. Se alle vores ydelser hos We Lead Projects.",
+  alternates: {
+    canonical: "https://www.weleadprojects.com/ydelser",
+  },
   openGraph: {
     title: "Ydelser | We Lead Projects",
     description: "Planlægning, risikostyring, kommunikation og innovative løsninger. Se alle vores ydelser.",

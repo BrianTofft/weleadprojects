@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "AI-governance-rådgivning",
   description:
     "Governance-rammer og EU AI Act-compliance til AI-adoption. Vi bygger AI-governance ind i jeres eksisterende Enterprise Architecture, ikke ved siden af.",
+  alternates: {
+    canonical: "https://www.weleadprojects.com/ydelser/ai-governance",
+  },
   openGraph: {
     title: "AI-governance | We Lead Projects",
     description: "Governance-rammer og EU AI Act-compliance til struktureret AI-adoption.",

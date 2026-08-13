@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Enterprise Architecture-rådgivning",
   description:
     "Enterprise Architecture der kobler systemlandskabet til forretningsstrategien. Kortlægning, prioritering og en arkitektur der understøtter vækst.",
+  alternates: {
+    canonical: "https://www.weleadprojects.com/ydelser/enterprise-architecture",
+  },
   openGraph: {
     title: "Enterprise Architecture | We Lead Projects",
     description: "Enterprise Architecture der kobler systemlandskabet til forretningsstrategien.",

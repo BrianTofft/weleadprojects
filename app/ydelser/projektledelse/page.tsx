@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Projektledelse til IT-projekter",
   description:
     "Erfarne projektledere til komplekse IT-projekter og transformationer. Vi tager ansvar for leverance, uanset om I kører Waterfall, Agile eller hybrid.",
+  alternates: {
+    canonical: "https://www.weleadprojects.com/ydelser/projektledelse",
+  },
   openGraph: {
     title: "Projektledelse | We Lead Projects",
     description: "Erfarne projektledere til komplekse IT-projekter og transformationer.",
