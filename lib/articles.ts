@@ -621,6 +621,136 @@ export const articles: Article[] = [
       { label: "Wikipedia: Enterprise Architecture", url: "https://en.wikipedia.org/wiki/Enterprise_architecture" },
     ],
   },
+
+  // ─── ARTIKEL 8 — DA ──────────────────────────────────────────────────────
+  {
+    slug: "ai-governance-guide",
+    lang: "da",
+    category: "AI Governance",
+    title: "AI governance: Den komplette guide til strategi, lovgivning og implementering",
+    description:
+      "Lær hvordan AI governance fungerer i praksis: EU AI Act, risikokategorier, Anticipatory Governance og hvordan I integrerer det i jeres Enterprise Architecture.",
+    date: "August 2026",
+    readingMinutes: 7,
+    intro:
+      "Forskere fra Springer Nature bemærker, at globale databaser i øjeblikket indeholder over 3000 dokumenterede AI-hændelser, hvor systemer har fejlet eller forårsaget skade. Dette tal understreger et akut behov for struktureret kontrol. For at lykkes med AI governance skal ledelsen etablere en ramme af politikker, processer og tekniske standarder. Denne ramme sikrer, at kunstig intelligens skaber forretningsværdi uden at overtræde lovgivning eller etiske grænser. Mange organisationer kæmper med at omsætte komplekse lovkrav til praktisk it-arkitektur. Vi ser ofte, at projekter strander, fordi fundamentet mangler. Gennem professionel rådgivning kan virksomheder bygge bro mellem forretningsstrategi og teknisk udførelse.",
+    sections: [
+      {
+        heading: "Hvad er forskellen på etisk AI og ansvarlig AI?",
+        body: "Mange virksomheder blander begreberne sammen i deres strategidokumenter. Akademisk litteratur adskiller dem dog tydeligt, og denne sondring er afgørende for en præcis implementering. Etisk AI handler om de moralske principper bag teknologien. Det omfatter diskussioner om retfærdighed, menneskelig værdighed og samfundsmæssig påvirkning. Det er de overordnede værdier, som en organisation ønsker at fremme. Ansvarlig AI er derimod den operationelle disciplin, der fokuserer på risikominimering. Det handler om at bygge systemer, der er gennemsigtige, sikre og fri for bias. Mens etisk AI definerer målet, leverer ansvarlig AI de konkrete værktøjer til at nå dertil. En effektiv strategi for AI governance kræver, at organisationen mestrer begge dele. Hvis man kun fokuserer på etik, ender man med hensigtserklæringer uden teknisk substans. Hvis man kun fokuserer på ansvarlighed, risikerer man at bygge sikre systemer, der løser de forkerte problemer.",
+      },
+      {
+        heading: "AI Governance Stack: fra globale værdier til tekniske standarder",
+        body: "Organisationen Partnership on AI definerer en model i tre lag kaldet AI Governance Stack. Denne model bygger bro mellem højtflyvende deklarationer og den kode, som udviklere skriver. Modellen gør det muligt for ledelsen at delegere ansvaret præcist på tværs af organisationen.",
+      },
+      {
+        heading: "De tre lag i modellen",
+        body: "Det øverste lag består af globale værdier og multilaterale aftaler. Her finder vi initiativer som UNESCOs Recommendation on the Ethics of Artificial Intelligence, som 193 lande vedtog i 2021. OECD Working Party on Artificial Intelligence (AIGO) opererer også på dette niveau og sætter retningen for international politik. Det mellemste lag omfatter lovgivning og nationale prioriteter. Dette lag omsætter de globale værdier til bindende regler for virksomheder og borgere. I Europa er dette lag primært defineret af nye EU-forordninger og national databeskyttelseslovgivning. Det nederste lag udgøres af tekniske standarder og branchepraksis. Technical AI Governance (TAIG) udgør fundamentet her. Det omfatter de konkrete testprotokoller, datakvalitetstjek og sikkerhedsforanstaltninger, som ingeniører udfører dagligt. Uden dette lag forbliver lovgivningen teoretisk.",
+      },
+      {
+        heading: "EU AI Act og den globale standard for AI governance",
+        body: "Den 13. juni 2024 blev Regulation (EU) 2024/1689 officielt vedtaget. Denne lovgivning fastsætter harmoniserede regler for kunstig intelligens på tværs af EU. Loven inddeler AI-systemer i fire risikokategorier. Systemer med uacceptabel risiko forbydes helt. Højrisikosystemer underlægges strenge krav til dokumentation, overvågning og menneskelig kontrol. Systemer med begrænset risiko kræver primært gennemsigtighed, mens systemer med minimal risiko kan anvendes frit. En central detalje er lovens ekstraterritoriale effekt. Ligesom GDPR rammer EU AI Act ikke kun europæiske virksomheder. Hvis en amerikansk eller asiatisk virksomhed leverer et AI-system, der producerer output til brug i EU, skal de overholde forordningen. Dette gør loven til en de facto global standard. Virksomheder skal derfor kortlægge deres systemer nu for at undgå massive bøder. Lovgivningen udvikler sig dog konstant, hvilket kræver en proaktiv tilgang fra ledelsen.",
+      },
+      {
+        heading: "Foregribende styring: Anticipatory Governance i praksis",
+        body: "Teknologien udvikler sig hurtigere end lovgivningen. Derfor anbefaler OECD en strategi baseret på foregribende styring (Anticipatory Governance). Denne tilgang handler om at håndtere fremtidige AI-udviklinger proaktivt i stedet for at reagere, når skaden er sket eller loven er brudt. Virksomheder, der anvender foregribende styring, opretter interne råd og overvåger initiativer som Global Dialogue on AI Governance. De bygger fleksibilitet ind i deres systemer, så de hurtigt kan tilpasse sig nye regler. Dette kræver en kultur, hvor medarbejdere opfordres til at rapportere potentielle risici tidligt i udviklingsfasen. Manglende foregribende styring er ofte en primær årsag til, at it-projekter fejler.",
+      },
+      {
+        heading: "Værktøjer til måling af modenhed og parathed",
+        body: "For at etablere effektiv kontrol har ledelsen brug for data om organisationens nuværende tilstand. UNESCO har udviklet Readiness Assessment Methodology (RAM), som hjælper regeringer og store organisationer med at vurdere deres parathed. Metoden kortlægger juridiske, sociale og tekniske mangler systematisk. I erhvervslivet fungerer lignende vurderinger som fundament for investeringer. Hos We Lead Projects udfører vi specifikke AI-EA vurderinger af fire til otte ugers varighed. Disse forløb kortlægger virksomhedens eksisterende AI-aktiver, identificerer huller i datakvaliteten og etablerer rammer for overholdelse af EU AI Act og GDPR. En grundig vurdering sikrer, at virksomheden ikke investerer i teknologi, som infrastrukturen ikke kan understøtte. Vores team har over 125 års samlet erfaring med at levere disse analyser.",
+      },
+      {
+        heading: "Integration af AI i Enterprise Architecture",
+        body: "En succesfuld implementering kræver, at kunstig intelligens ikke behandles som et isoleret it-projekt. Det skal integreres dybt i virksomhedens eksisterende arkitektur. Vi anvender TOGAF-rammeværket til at sikre, at forretningsmål, data, applikationer og teknologi hænger sammen. En forretningsførst-tilgang betyder, at teknologien skal løse et konkret problem. Vi starter altid med at definere forretningsværdien. Derefter sikrer vi, at datagrundlaget er validt og lovligt at anvende. Først til sidst vælger vi den specifikke algoritme eller platform. Denne metode minimerer risikoen for fejlslagne investeringer. Valget af projektmodel er også afgørende for succesen, forskellige organisationer kræver forskellige tilgange.",
+      },
+      {
+        heading: "Hvem har ansvaret for kontrollen i en virksomhed?",
+        body: "Ansvaret ligger typisk hos en kombination af den juridiske afdeling, it-ledelsen og forretningsenhederne. En tværfaglig styregruppe sikrer, at alle aspekter af teknologien dækkes. Det er ledelsens opgave at fordele dette ansvar klart.",
+      },
+      {
+        heading: "Hvordan påvirker EU AI Act små og mellemstore virksomheder?",
+        body: "Reglerne afhænger udelukkende af systemets risikoniveau, ikke virksomhedens størrelse. SMV'er, der udvikler eller anvender højrisikosystemer, skal dokumentere deres processer lige så grundigt som store koncerner. Der findes dog visse undtagelser for forskning og udvikling.",
+      },
+      {
+        heading: "Hvad er det første skridt mod compliance?",
+        body: "Det første skridt er en komplet kortlægning af alle AI-systemer, der i øjeblikket anvendes eller udvikles i organisationen. Dette inkluderer tredjepartsløsninger og skygge-it.",
+      },
+      {
+        heading: "Næste skridt for din organisation",
+        body: "Arbejdet med AI governance slutter aldrig. Det er en kontinuerlig proces, der kræver tilpasning, efterhånden som teknologien og lovgivningen ændrer sig. Start med at kortlægge jeres nuværende systemer og vurder dem ud fra kravene i EU AI Act. Etabler derefter klare retningslinjer for, hvordan medarbejdere må anvende kunstig intelligens i deres daglige arbejde. Sørg for at integrere disse retningslinjer i jeres Enterprise Architecture, så de bliver en naturlig del af it-driften. Hvis I mangler de interne ressourcer til at drive denne forandring, kan ekstern projektledelse sikre, at initiativerne forankres korrekt i forretningen.",
+      },
+    ],
+    sources: [
+      { label: "EU AI Act: Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "UNESCO: Recommendation on the Ethics of Artificial Intelligence", url: "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" },
+      { label: "OECD: AI Policy Observatory", url: "https://oecd.ai" },
+    ],
+  },
+
+  // ─── ARTIKEL 8 — EN ──────────────────────────────────────────────────────
+  {
+    slug: "ai-governance-complete-guide",
+    lang: "en",
+    category: "AI Governance",
+    title: "AI Governance: The Complete Guide to Strategy, Regulation, and Implementation",
+    description:
+      "Learn how AI governance works in practice: the EU AI Act, risk categories, anticipatory governance, and how to integrate it into your enterprise architecture.",
+    date: "August 2026",
+    readingMinutes: 7,
+    intro:
+      "Researchers at Springer Nature note that global databases currently document more than 3,000 recorded AI incidents in which systems have failed or caused harm. This figure underscores an urgent need for structured control. To succeed with AI governance, leadership must establish a framework of policies, processes, and technical standards. This framework ensures that artificial intelligence creates business value without breaching legislation or ethical boundaries. Many organisations struggle to translate complex legal requirements into practical IT architecture. We often see projects stall because the foundation is missing. Through professional advisory support, companies can bridge the gap between business strategy and technical execution.",
+    sections: [
+      {
+        heading: "What is the difference between ethical AI and responsible AI?",
+        body: "Many companies blend these concepts together in their strategy documents. Academic literature, however, distinguishes them clearly, and this distinction is essential for precise implementation. Ethical AI concerns the moral principles behind the technology. It covers discussions of fairness, human dignity, and societal impact, the overarching values an organisation wants to promote. Responsible AI, by contrast, is the operational discipline focused on risk minimisation. It is about building systems that are transparent, secure, and free of bias. While ethical AI defines the goal, responsible AI delivers the concrete tools to get there. An effective AI governance strategy requires an organisation to master both. Focus on ethics alone, and you end up with declarations of intent lacking technical substance. Focus on responsibility alone, and you risk building secure systems that solve the wrong problems.",
+      },
+      {
+        heading: "The AI Governance Stack: from global values to technical standards",
+        body: "The Partnership on AI defines a three-layer model called the AI Governance Stack. This model bridges the gap between lofty declarations and the code that developers write. It allows leadership to delegate responsibility precisely across the organisation.",
+      },
+      {
+        heading: "The three layers of the model",
+        body: "The top layer consists of global values and multilateral agreements. Here we find initiatives such as UNESCO's Recommendation on the Ethics of Artificial Intelligence, adopted by 193 countries in 2021. The OECD Working Party on Artificial Intelligence (AIGO) also operates at this level, setting the direction for international policy. The middle layer covers legislation and national priorities. This layer translates global values into binding rules for companies and citizens. In Europe, this layer is primarily defined by new EU regulations and national data protection law. The bottom layer consists of technical standards and industry practice. Technical AI Governance (TAIG) forms the foundation here, covering the concrete test protocols, data quality checks, and security measures that engineers carry out daily. Without this layer, legislation remains theoretical.",
+      },
+      {
+        heading: "The EU AI Act and the global standard for AI governance",
+        body: "On 13 June 2024, Regulation (EU) 2024/1689 was formally adopted. This legislation sets harmonised rules for artificial intelligence across the EU. The law divides AI systems into four risk categories. Systems with unacceptable risk are banned outright. High-risk systems are subject to strict requirements for documentation, monitoring, and human oversight. Limited-risk systems primarily require transparency, while minimal-risk systems can be used freely. A key detail is the law's extraterritorial effect. Like the GDPR, the EU AI Act does not only affect European companies. If a US or Asian company delivers an AI system that produces output used in the EU, it must comply with the regulation. This makes the law a de facto global standard. Companies therefore need to map their systems now to avoid massive fines. The legislation is also constantly evolving, requiring a proactive approach from leadership.",
+      },
+      {
+        heading: "Anticipatory governance in practice",
+        body: "Technology evolves faster than legislation. The OECD therefore recommends a strategy based on anticipatory governance. This approach is about handling future AI developments proactively rather than reacting once the damage is done or the law is broken. Companies applying anticipatory governance set up internal councils and monitor initiatives such as the Global Dialogue on AI Governance. They build flexibility into their systems so they can adapt quickly to new rules. This requires a culture where employees are encouraged to report potential risks early in the development phase. A lack of anticipatory governance is often a primary reason why IT projects fail.",
+      },
+      {
+        heading: "Tools for measuring maturity and readiness",
+        body: "To establish effective control, leadership needs data on the organisation's current state. UNESCO has developed the Readiness Assessment Methodology (RAM), which helps governments and large organisations assess their readiness. The method systematically maps legal, social, and technical gaps. In the business world, similar assessments serve as the foundation for investment decisions. At We Lead Projects, we conduct dedicated AI-EA assessments lasting four to eight weeks. These engagements map a company's existing AI assets, identify gaps in data quality, and establish frameworks for compliance with the EU AI Act and GDPR. A thorough assessment ensures a company does not invest in technology its infrastructure cannot support. Our team has more than 125 years of combined experience delivering these analyses.",
+      },
+      {
+        heading: "Integrating AI into Enterprise Architecture",
+        body: "Successful implementation requires that artificial intelligence is not treated as an isolated IT project. It must be deeply integrated into the company's existing architecture. We use the TOGAF framework to ensure that business goals, data, applications, and technology align. A business-first approach means the technology must solve a concrete problem. We always start by defining the business value. We then ensure the data foundation is valid and legal to use. Only at the end do we select the specific algorithm or platform. This method minimises the risk of failed investments. The choice of project model is also critical to success, different organisations require different approaches.",
+      },
+      {
+        heading: "Who is responsible for governance within a company?",
+        body: "Responsibility typically lies with a combination of the legal department, IT leadership, and business units. A cross-functional steering committee ensures every aspect of the technology is covered. It is leadership's job to distribute this responsibility clearly.",
+      },
+      {
+        heading: "How does the EU AI Act affect small and medium-sized enterprises?",
+        body: "The rules depend solely on the system's risk level, not the size of the company. SMEs that develop or use high-risk systems must document their processes as thoroughly as large corporations. Certain exceptions do exist for research and development.",
+      },
+      {
+        heading: "What is the first step toward compliance?",
+        body: "The first step is a complete inventory of all AI systems currently used or under development within the organisation. This includes third-party solutions and shadow IT.",
+      },
+      {
+        heading: "Next steps for your organisation",
+        body: "AI governance work never ends. It is a continuous process that requires adaptation as technology and legislation evolve. Start by mapping your current systems and assessing them against the requirements of the EU AI Act. Then establish clear guidelines for how employees may use artificial intelligence in their daily work. Make sure to integrate these guidelines into your enterprise architecture so they become a natural part of IT operations. If you lack the internal resources to drive this change, external project management can ensure the initiatives are properly anchored in the business.",
+      },
+    ],
+    sources: [
+      { label: "EU AI Act: European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "UNESCO: Recommendation on the Ethics of Artificial Intelligence", url: "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" },
+      { label: "OECD: AI Policy Observatory", url: "https://oecd.ai" },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
