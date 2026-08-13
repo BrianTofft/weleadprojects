@@ -369,7 +369,7 @@ export const articles: Article[] = [
     category: "Enterprise Architecture",
     title: "AI-governance vs. EA-governance",
     description:
-      "De fleste virksomheder behandler AI-governance som en ny disciplin adskilt fra Enterprise Architecture. Det er en dyr fejl. Se hvorfor, og hvordan de to bør hænge sammen.",
+      "De fleste virksomheder behandler AI-governance som en ny disciplin adskilt fra EA. Det er en dyr fejl. Se hvorfor de to bør hænge sammen.",
     date: "August 2026",
     readingMinutes: 7,
     intro:
@@ -414,7 +414,7 @@ export const articles: Article[] = [
     category: "Enterprise Architecture",
     title: "AI Governance vs. EA Governance",
     description:
-      "Most organisations treat AI governance as a new discipline separate from Enterprise Architecture. That is a costly mistake. Here is why, and how the two should connect.",
+      "Most organisations treat AI governance as a new discipline separate from EA. That is a costly mistake. See why the two should connect.",
     date: "August 2026",
     readingMinutes: 7,
     intro:
@@ -457,7 +457,7 @@ export const articles: Article[] = [
     slug: "enterprise-arkitektur-guide",
     lang: "da",
     category: "Enterprise Architecture",
-    title: "Hvad er enterprise arkitektur? Fra strategi til it-eksekvering",
+    title: "Hvad er enterprise arkitektur?",
     description:
       "Lær hvordan enterprise arkitektur bygger bro mellem forretningsstrategi og it. Få en trin-for-trin guide, indsigt i TOGAF og AI-governance fra We Lead Projects.",
     date: "August 2026",
@@ -542,7 +542,7 @@ export const articles: Article[] = [
     slug: "enterprise-architecture-guide",
     lang: "en",
     category: "Enterprise Architecture",
-    title: "What Is Enterprise Architecture? From Strategy to IT Execution",
+    title: "What Is Enterprise Architecture?",
     description:
       "Learn how enterprise architecture bridges business strategy and IT. Get a step-by-step guide, insight into TOGAF, and AI governance from We Lead Projects.",
     date: "August 2026",
@@ -627,7 +627,7 @@ export const articles: Article[] = [
     slug: "ai-governance-guide",
     lang: "da",
     category: "AI Governance",
-    title: "AI governance: Den komplette guide til strategi, lovgivning og implementering",
+    title: "AI governance: Den komplette guide",
     description:
       "Lær hvordan AI governance fungerer i praksis: EU AI Act, risikokategorier, Anticipatory Governance og hvordan I integrerer det i jeres Enterprise Architecture.",
     date: "August 2026",
@@ -692,7 +692,7 @@ export const articles: Article[] = [
     slug: "ai-governance-complete-guide",
     lang: "en",
     category: "AI Governance",
-    title: "AI Governance: The Complete Guide to Strategy, Regulation, and Implementation",
+    title: "AI Governance: The Complete Guide",
     description:
       "Learn how AI governance works in practice: the EU AI Act, risk categories, anticipatory governance, and how to integrate it into your enterprise architecture.",
     date: "August 2026",

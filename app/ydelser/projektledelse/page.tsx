@@ -74,11 +74,14 @@ export default function ProjektledelsePage() {
           <p className="text-gray-600 leading-relaxed mb-4">
             Vi leverer projektledelse til IT-projekter og digitale transformationer af enhver kompleksitet. Vores konsulenter har i gennemsnit mere end 15 års erfaring, og vi træder ind uanset om projektet skal startes fra bunden, eller allerede er i gang og har brug for at komme tilbage på sporet.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Vi er metodeneutrale. Vi vælger den tilgang, klassisk Waterfall, Agile eller en hybrid model, der passer til jeres organisation og projektets natur, ikke omvendt. Læs mere om, hvordan vi vælger model, i vores artikel om{" "}
             <Link href="/indsigt/agile-waterfall-eller-hybrid" style={{ color: RED }} className="underline hover:opacity-75">
               Agile, Waterfall eller Hybrid
             </Link>.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            En ekstern projektleder kommer uden intern politik og uden fortid i organisationen. Det giver frihed til at pege på det, som interne medarbejdere ofte ikke tør sige højt, uanset om det handler om urealistiske deadlines, manglende ressourcer eller en beslutning der aldrig blev truffet. Vores konsulenter går ind med samme ansvarsfølelse som en fastansat projektleder, men uden bindingerne til de interne relationer der ellers kan gøre det svært at eskalere ubehagelige sandheder i tide.
           </p>
         </div>
       </section>
@@ -112,6 +115,19 @@ export default function ProjektledelsePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sådan arbejder vi</p>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Fra behovsafklaring til fastforankret leverance</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Vi starter altid med at forstå projektets reelle risikobillede, ikke bare tidsplanen på papiret. Det betyder samtaler med både styregruppe og de medarbejdere, der faktisk skal levere. Ofte ligger den største risiko et andet sted end der, hvor den formelle statusrapport peger hen.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Undervejs holder vi fast i klar og direkte kommunikation, også når status ikke er positiv. Et projekt der er ti procent forsinket i uge to, retter sig sjældent af sig selv. Vores erfaring er, at tidlig og ærlig eskalering næsten altid er billigere end at vente på, at problemet løser sig selv.
+          </p>
         </div>
       </section>
 

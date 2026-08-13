@@ -74,7 +74,7 @@ export default function AiGovernancePage() {
           <p className="text-gray-600 leading-relaxed mb-4">
             Vi placerer AI-governance som en udvidelse af jeres eksisterende EA-funktion, ikke som et parallelt spor med sit eget sprog og sine egne processer. Det betyder samme risikoklassificeringsmodel for AI-systemer som for øvrige IT-systemer, samme dataejerskabsstruktur, og en arkitekt med reelt mandat til at sige nej til initiativer der ikke kan dokumentere deres dataforudsætninger.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Vil du forstå tankegangen bedre, kan du læse vores artikel{" "}
             <Link href="/indsigt/ai-governance-vs-ea-governance" style={{ color: RED }} className="underline hover:opacity-75">
               AI-governance vs. EA-governance
@@ -82,6 +82,9 @@ export default function AiGovernancePage() {
             <a href="https://artificialintelligenceact.eu" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
               EU AI Act
             </a>.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Mange af de AI-eksperimenter, vi støder på hos kunder, er allerede i produktion, uden at nogen formelt godkendte dem. Det er sjældent et bevidst brud på reglerne. Det sker fordi et team fandt en hurtig løsning på et konkret problem, og ingen stoppede op og spurgte, hvem der ejer risikoen. Vores rolle er ikke at bremse den slags initiativer, men at sikre at de kan stå distancen, når krav om dokumentation og tilsyn for alvor rammer.
           </p>
         </div>
       </section>
@@ -115,6 +118,19 @@ export default function AiGovernancePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sådan arbejder vi</p>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Governance der følger med, ikke bagefter</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Vi starter med at kortlægge, ikke med at skrive politikker. Før nogen kan tage stilling til risiko, skal I vide, hvilke AI-funktioner der rent faktisk er i brug, hvem der har adgang til dem, og hvilke data de trækker på. Den kortlægning alene overrasker ofte ledelsen.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Derefter bygger vi en governance-model, der kan følge med udviklingen, i stedet for at blive forældet efter seks måneder. Det kræver klart ejerskab og en proces for løbende revurdering, ikke et engangsdokument der arkiveres og glemmes.
+          </p>
         </div>
       </section>
 

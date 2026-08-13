@@ -74,7 +74,7 @@ export default function EnterpriseArchitecturePage() {
           <p className="text-gray-600 leading-relaxed mb-4">
             Enterprise Architecture handler grundlæggende om at undgå den situation, eller komme ud af den. Det er ikke et IT-projekt. Det er en ledelsesdisciplin, der skaber et fælles sprog mellem forretning og teknologi, og gør det muligt at træffe bedre beslutninger om investeringer og forandringer.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Vores tilgang tager udgangspunkt i anerkendte industristandarder som{" "}
             <a href="https://www.opengroup.org/togaf" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
               TOGAF
@@ -82,6 +82,9 @@ export default function EnterpriseArchitecturePage() {
             <Link href="/indsigt/enterprise-arkitektur-guide" style={{ color: RED }} className="underline hover:opacity-75">
               Hvad er Enterprise Architecture?
             </Link>
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Vi begynder aldrig med et framework for frameworkets skyld. Vi begynder med at kortlægge, hvad der faktisk kører i produktion, hvem der ejer det, og hvilke forretningsprocesser der ville stoppe hvis det gik ned. Den øvelse alene afslører ofte flere risici og flere muligheder for konsolidering, end noget strategidokument har fanget.
           </p>
         </div>
       </section>
@@ -115,6 +118,19 @@ export default function EnterpriseArchitecturePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sådan arbejder vi</p>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Modenhed frem for et generisk framework</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Vi tilpasser dybden af arbejdet til organisationens faktiske modenhed. Et nystartet arkitekturteam har brug for noget andet end en virksomhed, der allerede har processer og governance på plads, men mangler eksekvering. Derfor starter vi ofte med en kort modenhedsvurdering, før vi anbefaler næste skridt.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Målet er aldrig et arkitekturdokument der ligger og samler støv. Det er en roadmap, ledelsen kan bruge til at prioritere investeringer, og som IT kan bruge til at sige nej til de projekter, der øger den tekniske gæld i stedet for at reducere den.
+          </p>
         </div>
       </section>
 
