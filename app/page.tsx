@@ -233,7 +233,7 @@ export default function Home() {
       </section>
 
       {/* OM OS */}
-      <section id="om-os" className="relative overflow-hidden" style={{ background: "#1C2544" }}>
+      <section id="om-os" className="relative overflow-hidden" style={{ background: OFFWHITE }}>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2" style={{ minHeight: 460 }}>
           {/* Left: photo */}
           <div className="relative hidden md:block">
@@ -243,35 +243,35 @@ export default function Home() {
               width={800}
               height={600}
               className="absolute inset-0 w-full h-full object-cover object-center"
-              style={{ filter: "brightness(0.5)" }}
             />
-            {/* Fade to dark on right edge */}
-            <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(28,37,68,0) 55%, rgba(28,37,68,1) 100%)" }} />
+            {/* Fade to offwhite on right edge */}
+            <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(247,245,245,0) 55%, rgba(247,245,245,1) 100%)" }} />
           </div>
 
           {/* Right: content */}
           <div className="px-10 py-20 flex flex-col justify-center">
             <p className="font-semibold uppercase tracking-widest text-sm mb-3" style={{ color: RED }}>Om os</p>
-            <h2 className="text-3xl font-bold text-white mb-5 leading-snug">
+            <h2 className="text-3xl font-bold mb-5 leading-snug" style={{ color: DARK }}>
               Din betroede<br />projektpartner siden 2018
             </h2>
-            <p className="text-white/60 mb-10 leading-relaxed">
+            <p className="text-gray-600 mb-10 leading-relaxed">
               Vi kombinerer mangeårig erfaring med intern vidensdeling for at levere projekter af enhver kompleksitet, altid med fremdrift og succes i fokus.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mb-10 border-t border-white/10 pt-8">
+            <div className="grid grid-cols-3 gap-6 mb-10 border-t pt-8" style={{ borderColor: BORDER }}>
               {[["125+", "Års samlet erfaring"], ["50+", "Projekter leveret"], ["2018", "Grundlagt"]].map(([val, lbl]) => (
                 <div key={lbl}>
                   <p className="text-3xl font-bold" style={{ color: RED }}>{val}</p>
-                  <p className="text-white/40 text-xs mt-1 uppercase tracking-wider">{lbl}</p>
+                  <p className="text-gray-400 text-xs mt-1 uppercase tracking-wider">{lbl}</p>
                 </div>
               ))}
             </div>
 
             <a
               href="/om-os"
-              className="inline-flex items-center gap-2 font-semibold transition-opacity hover:opacity-70 text-white"
+              className="inline-flex items-center gap-2 font-semibold transition-opacity hover:opacity-70"
+              style={{ color: DARK }}
             >
               Læs mere om os <span>→</span>
             </a>
