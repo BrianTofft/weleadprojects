@@ -357,12 +357,15 @@ export default function Home() {
               <Link
                 key={k.title}
                 href={k.href}
-                className="bg-white rounded-2xl p-8 border hover:shadow-lg hover:border-red-200 transition-all block"
+                className="group bg-white rounded-2xl p-8 border hover:shadow-lg hover:border-red-200 transition-all block"
                 style={{ borderColor: BORDER }}
               >
                 <div className="text-3xl mb-4">{k.icon}</div>
                 <h3 className="font-bold text-lg mb-3" style={{ color: DARK }}>{k.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{k.body}</p>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">{k.body}</p>
+                <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Læs mere <span>→</span>
+                </span>
               </Link>
             ))}
           </div>
