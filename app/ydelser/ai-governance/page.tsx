@@ -40,7 +40,7 @@ const leverancer = [
   {
     title: "Kortlægning af AI-aktiver",
     body: "Overblik over hvilke modeller og AI-funktioner der allerede er i brug, ofte skjult i SaaS-produkter, uden at nogen har set det samlet.",
-    more: "Vi kortlægger både de AI-funktioner der er bevidst indkøbt, og dem der er sluppet ind som en del af opdateringer til eksisterende SaaS-værktøjer, ofte uden at nogen aktivt tog stilling til det.",
+    more: "Vi kortlægger både de AI-funktioner der er bevidst indkøbt, og dem, der er sluppet ind som en del af opdateringer til eksisterende SaaS-værktøjer, ofte uden at nogen aktivt tog stilling til det.",
   },
   {
     title: "Risikoklassificering",
@@ -107,7 +107,7 @@ export default function AiGovernancePage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="text-gray-600 leading-relaxed mb-4">
-            De fleste virksomheder behandler AI-governance som noget der skal opfindes fra bunden af jura og compliance. Men risikoklassificering, dataejerskab og afhængighedskortlægning er præcis det, Enterprise Architecture allerede burde have styr på. Problemet er sjældent, at AI kræver en helt ny form for governance. Det er, at eksisterende arkitekturgovernance aldrig blev udvidet til at dække det.
+            De fleste virksomheder behandler AI-governance, som noget der skal opfindes fra bunden af jura og compliance. Men risikoklassificering, dataejerskab og afhængighedskortlægning er præcis det, Enterprise Architecture allerede burde have styr på. Problemet er sjældent, at AI kræver en helt ny form for governance. Det er, at eksisterende arkitekturgovernance aldrig blev udvidet til at dække det.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Vi placerer AI-governance som en udvidelse af jeres eksisterende EA-funktion, ikke som et parallelt spor med sit eget sprog og sine egne processer. Det betyder samme risikoklassificeringsmodel for AI-systemer som for øvrige IT-systemer, samme dataejerskabsstruktur, og en arkitekt med reelt mandat til at sige nej til initiativer der ikke kan dokumentere deres dataforudsætninger.
@@ -122,7 +122,7 @@ export default function AiGovernancePage() {
             </a>.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Mange af de AI-eksperimenter, vi støder på hos kunder, er allerede i produktion, uden at nogen formelt godkendte dem. Det er sjældent et bevidst brud på reglerne. Det sker fordi et team fandt en hurtig løsning på et konkret problem, og ingen stoppede op og spurgte, hvem der ejer risikoen. Vores rolle er ikke at bremse den slags initiativer, men at sikre at de kan stå distancen, når krav om dokumentation og tilsyn for alvor rammer.
+            Mange af de AI-eksperimenter, vi støder på hos kunder, er allerede i produktion, uden at nogen formelt godkendte dem. Det er sjældent et bevidst brud på reglerne. Det sker, fordi et team fandt en hurtig løsning på et konkret problem, og ingen stoppede op og spurgte, hvem der ejer risikoen. Vores rolle er ikke at bremse den slags initiativer, men at sikre at de kan stå distancen, når krav om dokumentation og tilsyn for alvor rammer.
           </p>
           <p className="text-gray-600 leading-relaxed">
             <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">

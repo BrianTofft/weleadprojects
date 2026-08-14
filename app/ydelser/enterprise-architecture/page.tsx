@@ -56,7 +56,7 @@ const leverancer = [
   },
   {
     title: "Roadmap og prioritering",
-    body: "En realistisk, prioriteret teknisk roadmap der tager udgangspunkt i jeres faktiske modenhed, ikke en generisk skabelon.",
+    body: "En realistisk, prioriteret teknisk roadmap, der tager udgangspunkt i jeres faktiske modenhed, ikke en generisk skabelon.",
     more: "Roadmappet bygges i etaper, der hver leverer selvstændig værdi, så I ikke skal vente to år på at se resultatet af arbejdet.",
   },
 ];

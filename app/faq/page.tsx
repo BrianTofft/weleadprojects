@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Hvor lang tid varer et projekt typisk?",
-    a: "Projektvarighed afhænger af kompleksitet. Vi tilbyder kortvarige engagementer (1–3 måneder) for afgrænsede problemstillinger, mellemfristede (3–6 måneder) for større forandringer, og langsigtede engagementer (6–12 måneder eller mere) for store transformationer.",
+    a: "Projektvarighed afhænger af kompleksitet. Vi tilbyder kortvarige engagementer (1–3 måneder) for afgrænsede problemstillinger, mellemfristede (3–6 måneder) for større forandringer og langsigtede engagementer (6–12 måneder eller mere) for store transformationer.",
   },
   {
     q: "Kan I levere kunde cases eller kundeudtalelser?",

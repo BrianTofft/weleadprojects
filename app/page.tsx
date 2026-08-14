@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Hvor lang tid varer et projekt typisk?",
-    a: "Projektvarighed afhænger af kompleksitet. Vi tilbyder kortvarige engagementer (1–3 måneder) for afgrænsede problemstillinger, mellemfristede (3–6 måneder) for større forandringer, og langsigtede engagementer (6–12 måneder eller mere) for store transformationer.",
+    a: "Projektvarighed afhænger af kompleksitet. Vi tilbyder kortvarige engagementer (1–3 måneder) for afgrænsede problemstillinger, mellemfristede (3–6 måneder) for større forandringer og langsigtede engagementer (6–12 måneder eller mere) for store transformationer.",
   },
   {
     q: "Kan I levere kunde cases eller kundeudtalelser?",
@@ -385,7 +385,7 @@ export default function Home() {
               We Lead Projects ledes af Brian P.N. Tofft, der tidligere har været Enterprise Architect hos Microsoft og Technical Authority / Enterprise Architect hos DSB, og som i dag trækker på mere end 30 års erfaring med projektledelse og Enterprise Architecture.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Det giver os mulighed for at gå ind i projekter på alle niveauer, fra strategisk rådgivning til operationel eksekvering, og altid med den rette kompetence til netop jeres situation.
+              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Det giver os mulighed for at gå ind i projekter på alle niveauer, fra strategisk rådgivning til operationel eksekvering og altid med den rette kompetence til netop jeres situation.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Vi er ikke bundet af én metodisk model. Uanset om jeres projekt kræver klassisk Waterfall-styring, agile sprints eller en hybrid tilgang, vælger vi den fremgangsmåde der skaber størst fremdrift, og tilpasser os undervejs. Det kalder vi professionel projektstyring i praksis.

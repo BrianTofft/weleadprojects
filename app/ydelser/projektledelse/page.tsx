@@ -119,7 +119,7 @@ export default function ProjektledelsePage() {
             </Link>.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            En ekstern projektleder kommer uden intern politik og uden fortid i organisationen. Det giver frihed til at pege på det, som interne medarbejdere ofte ikke tør sige højt, uanset om det handler om urealistiske deadlines, manglende ressourcer eller en beslutning der aldrig blev truffet. Vores konsulenter går ind med samme ansvarsfølelse som en fastansat projektleder, men uden bindingerne til de interne relationer der ellers kan gøre det svært at eskalere ubehagelige sandheder i tide.
+            En ekstern projektleder kommer uden intern politik og uden fortid i organisationen. Det giver frihed til at pege på det, som interne medarbejdere ofte ikke tør sige højt, uanset om det handler om urealistiske deadlines, manglende ressourcer eller en beslutning der aldrig blev truffet. Vores konsulenter går ind med samme ansvarsfølelse som en fastansat projektleder, men uden bindingerne til de interne relationer, der ellers kan gøre det svært at eskalere ubehagelige sandheder i tide.
           </p>
         </div>
       </section>
@@ -157,7 +157,7 @@ export default function ProjektledelsePage() {
             Vi starter altid med at forstå projektets reelle risikobillede, ikke bare tidsplanen på papiret. Det betyder samtaler med både styregruppe og de medarbejdere, der faktisk skal levere. Ofte ligger den største risiko et andet sted end der, hvor den formelle statusrapport peger hen.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Undervejs holder vi fast i klar og direkte kommunikation, også når status ikke er positiv. Et projekt der er ti procent forsinket i uge to, retter sig sjældent af sig selv. Vores erfaring er, at tidlig og ærlig eskalering næsten altid er billigere end at vente på, at problemet løser sig selv.
+            Undervejs holder vi fast i klar og direkte kommunikation, også når status ikke er positiv. Et projekt, der er ti procent forsinket i uge to, retter sig sjældent af sig selv. Vores erfaring er, at tidlig og ærlig eskalering næsten altid er billigere end at vente på, at problemet løser sig selv.
           </p>
         </div>
       </section>
