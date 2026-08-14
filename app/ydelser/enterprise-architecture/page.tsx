@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
 import FaqAccordion from "@/components/FaqAccordion";
+import ExpandableCards from "@/components/ExpandableCards";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -22,7 +23,6 @@ export const metadata: Metadata = {
 const DARK = "#2d1a1a";
 const RED = "#cc2222";
 const OFFWHITE = "#f7f5f5";
-const BORDER = "#e8e0e0";
 
 const serviceJsonLd = {
   "@context": "https://schema.org",
@@ -37,10 +37,28 @@ const serviceJsonLd = {
 };
 
 const leverancer = [
-  { title: "Kortlægning af systemlandskabet", body: "Overblik over hvilke systemer I har, hvad de bruges til, hvem der ejer dem, og hvordan de hænger sammen. Grundlaget for enhver arkitekturbeslutning." },
-  { title: "Strategisk kobling", body: "Sikring af at teknologiinvesteringer understøtter forretningsstrategien, i stedet for at drive den i en tilfældig retning bestemt af den seneste leverandørsamtale." },
-  { title: "Risiko- og gældsreduktion", body: "Identifikation af teknisk gæld og skjulte afhængigheder, før de bliver til dyre overraskelser i næste projekt." },
-  { title: "Roadmap og prioritering", body: "En realistisk, prioriteret teknisk roadmap der tager udgangspunkt i jeres faktiske modenhed, ikke en generisk skabelon." },
+  {
+    title: "Kortlægning af systemlandskabet",
+    body: "Overblik over hvilke systemer I har, hvad de bruges til, hvem der ejer dem, og hvordan de hænger sammen. Grundlaget for enhver arkitekturbeslutning.",
+    more: "Vi kortlægger ikke kun systemerne, men også dataflowene mellem dem, så I kan se konsekvenserne af at ændre eller udskifte et enkelt system, før I står midt i det.",
+  },
+  {
+    title: "Strategisk kobling",
+    body: "Sikring af at teknologiinvesteringer understøtter forretningsstrategien, i stedet for at drive den i en tilfældig retning bestemt af den seneste leverandørsamtale.",
+    more: "Vi oversætter forretningsmål til konkrete arkitekturprincipper, så investeringsbeslutninger kan begrundes i strategi frem for i, hvem der sidst holdt et overbevisende oplæg.",
+  },
+  {
+    title: "Risiko- og gældsreduktion",
+    body: "Identifikation af teknisk gæld og skjulte afhængigheder, før de bliver til dyre overraskelser i næste projekt.",
+    more: "Vi prioriterer den tekniske gæld efter reel forretningsrisiko, ikke efter hvor gammel eller grim koden ser ud, så indsatsen går der hvor den faktisk betaler sig.",
+    linkHref: "/indsigt/5-advarselstegn-it-projekt-korer-af-sporet",
+    linkLabel: "Se 5 advarselstegn på at et projekt kører af sporet",
+  },
+  {
+    title: "Roadmap og prioritering",
+    body: "En realistisk, prioriteret teknisk roadmap der tager udgangspunkt i jeres faktiske modenhed, ikke en generisk skabelon.",
+    more: "Roadmappet bygges i etaper, der hver leverer selvstændig værdi, så I ikke skal vente to år på at se resultatet af arbejdet.",
+  },
 ];
 
 const faqs = [
@@ -115,14 +133,7 @@ export default function EnterpriseArchitecturePage() {
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad vi leverer</p>
             <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver inden for Enterprise Architecture</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {leverancer.map((l) => (
-              <div key={l.title} className="bg-white rounded-2xl border p-7" style={{ borderColor: BORDER }}>
-                <h3 style={{ color: DARK }} className="font-bold mb-2">{l.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{l.body}</p>
-              </div>
-            ))}
-          </div>
+          <ExpandableCards items={leverancer} />
         </div>
       </section>
 

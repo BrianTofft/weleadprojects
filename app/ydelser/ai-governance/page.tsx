@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
 import FaqAccordion from "@/components/FaqAccordion";
+import ExpandableCards from "@/components/ExpandableCards";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -22,7 +23,6 @@ export const metadata: Metadata = {
 const DARK = "#2d1a1a";
 const RED = "#cc2222";
 const OFFWHITE = "#f7f5f5";
-const BORDER = "#e8e0e0";
 
 const serviceJsonLd = {
   "@context": "https://schema.org",
@@ -37,10 +37,28 @@ const serviceJsonLd = {
 };
 
 const leverancer = [
-  { title: "Kortlægning af AI-aktiver", body: "Overblik over hvilke modeller og AI-funktioner der allerede er i brug, ofte skjult i SaaS-produkter, uden at nogen har set det samlet." },
-  { title: "Risikoklassificering", body: "Vurdering af jeres AI-initiativer efter samme model som øvrige IT-systemer, herunder klassificering iht. EU AI Act." },
-  { title: "Governance-struktur", body: "Klart ejerskab for AI-beslutninger, dataejerskab og modelgodkendelse, forankret i jeres eksisterende arkitekturfunktion." },
-  { title: "AI-roadmap", body: "En prioriteret plan for hvornår I køber, tilpasser eller selv bygger AI-løsninger, baseret på jeres datamodenhed og strategiske mål." },
+  {
+    title: "Kortlægning af AI-aktiver",
+    body: "Overblik over hvilke modeller og AI-funktioner der allerede er i brug, ofte skjult i SaaS-produkter, uden at nogen har set det samlet.",
+    more: "Vi kortlægger både de AI-funktioner der er bevidst indkøbt, og dem der er sluppet ind som en del af opdateringer til eksisterende SaaS-værktøjer, ofte uden at nogen aktivt tog stilling til det.",
+  },
+  {
+    title: "Risikoklassificering",
+    body: "Vurdering af jeres AI-initiativer efter samme model som øvrige IT-systemer, herunder klassificering iht. EU AI Act.",
+    more: "Klassificeringen afgør, hvilke krav til dokumentation og menneskeligt tilsyn der gælder, så I ikke bruger unødige ressourcer på lavrisiko-systemer eller overser kravene til de kritiske.",
+  },
+  {
+    title: "Governance-struktur",
+    body: "Klart ejerskab for AI-beslutninger, dataejerskab og modelgodkendelse, forankret i jeres eksisterende arkitekturfunktion.",
+    more: "Vi bygger governance-strukturen ind i den arkitekturfunktion I allerede har, i stedet for at oprette et parallelt AI-udvalg med sine egne processer og sit eget sprog.",
+    linkHref: "/indsigt/ai-governance-guide",
+    linkLabel: "Læs den komplette guide til AI governance",
+  },
+  {
+    title: "AI-roadmap",
+    body: "En prioriteret plan for hvornår I køber, tilpasser eller selv bygger AI-løsninger, baseret på jeres datamodenhed og strategiske mål.",
+    more: "Roadmappet tager udgangspunkt i, hvor jeres data og arkitektur faktisk står i dag, ikke i hvor hurtigt konkurrenterne angiveligt bevæger sig.",
+  },
 ];
 
 const faqs = [
@@ -124,14 +142,7 @@ export default function AiGovernancePage() {
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad vi leverer</p>
             <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver inden for AI-governance</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {leverancer.map((l) => (
-              <div key={l.title} className="bg-white rounded-2xl border p-7" style={{ borderColor: BORDER }}>
-                <h3 style={{ color: DARK }} className="font-bold mb-2">{l.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{l.body}</p>
-              </div>
-            ))}
-          </div>
+          <ExpandableCards items={leverancer} />
         </div>
       </section>
 

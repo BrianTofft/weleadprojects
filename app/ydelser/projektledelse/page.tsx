@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
 import FaqAccordion from "@/components/FaqAccordion";
+import ExpandableCards from "@/components/ExpandableCards";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -22,7 +23,6 @@ export const metadata: Metadata = {
 const DARK = "#2d1a1a";
 const RED = "#cc2222";
 const OFFWHITE = "#f7f5f5";
-const BORDER = "#e8e0e0";
 
 const serviceJsonLd = {
   "@context": "https://schema.org",
@@ -37,10 +37,28 @@ const serviceJsonLd = {
 };
 
 const leverancer = [
-  { title: "Planlægning og milepælsstruktur", body: "Detaljeret projektplan tilpasset jeres kompleksitet, med realistiske milepæle og ressourceallokering fastlagt inden opstart." },
-  { title: "Risikostyring", body: "Løbende identifikation og afbødning af risici, så projektet forbliver på sporet og inden for budget, i stedet for at reagere når skaden er sket." },
-  { title: "Interessentstyring", body: "Struktureret kommunikation til alle niveauer, fra styregruppe til slutbrugere, så opbakningen holder gennem hele forløbet." },
-  { title: "Fremdrift og eksekvering", body: "Tæt opfølgning på leverancer, beslutninger og afhængigheder, med klar eskalering når noget kræver ledelsens involvering." },
+  {
+    title: "Planlægning og milepælsstruktur",
+    body: "Detaljeret projektplan tilpasset jeres kompleksitet, med realistiske milepæle og ressourceallokering fastlagt inden opstart.",
+    more: "Vi lægger vægt på, at planen er noget teamet reelt navigerer efter i hverdagen, ikke et dokument der lægges i skuffen efter kickoff-mødet. Milepælene sættes ud fra reelle afhængigheder, ikke ønsketænkning om hvor hurtigt tingene kan gå.",
+  },
+  {
+    title: "Risikostyring",
+    body: "Løbende identifikation og afbødning af risici, så projektet forbliver på sporet og inden for budget, i stedet for at reagere når skaden er sket.",
+    more: "Vi arbejder med en levende risikolog gennem hele forløbet, ikke en engangsøvelse ved opstart. Hver risiko har en ejer og en konkret handlingsplan, ikke bare en rød markering i et regneark.",
+    linkHref: "/indsigt/5-advarselstegn-it-projekt-korer-af-sporet",
+    linkLabel: "Se 5 advarselstegn på at et projekt kører af sporet",
+  },
+  {
+    title: "Interessentstyring",
+    body: "Struktureret kommunikation til alle niveauer, fra styregruppe til slutbrugere, så opbakningen holder gennem hele forløbet.",
+    more: "Vi kortlægger tidligt, hvem der reelt træffer beslutningerne, og hvem der blot skal informeres, så vigtig kommunikation ikke drukner i cc-lister eller går tabt mellem lag i organisationen.",
+  },
+  {
+    title: "Fremdrift og eksekvering",
+    body: "Tæt opfølgning på leverancer, beslutninger og afhængigheder, med klar eskalering når noget kræver ledelsens involvering.",
+    more: "Vi måler fremdrift på reelle leverancer, ikke på hvor mange møder der er afholdt. Når noget afviger fra planen, eskalerer vi tidligt og med et konkret løsningsforslag, ikke bare en statusopdatering.",
+  },
 ];
 
 const faqs = [
@@ -112,14 +130,7 @@ export default function ProjektledelsePage() {
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad vi leverer</p>
             <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver i professionel projektledelse</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {leverancer.map((l) => (
-              <div key={l.title} className="bg-white rounded-2xl border p-7" style={{ borderColor: BORDER }}>
-                <h3 style={{ color: DARK }} className="font-bold mb-2">{l.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{l.body}</p>
-              </div>
-            ))}
-          </div>
+          <ExpandableCards items={leverancer} />
         </div>
       </section>
 
