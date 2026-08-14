@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
+import FaqAccordion from "@/components/FaqAccordion";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -40,6 +41,25 @@ const leverancer = [
   { title: "Risikoklassificering", body: "Vurdering af jeres AI-initiativer efter samme model som øvrige IT-systemer, herunder klassificering iht. EU AI Act." },
   { title: "Governance-struktur", body: "Klart ejerskab for AI-beslutninger, dataejerskab og modelgodkendelse, forankret i jeres eksisterende arkitekturfunktion." },
   { title: "AI-roadmap", body: "En prioriteret plan for hvornår I køber, tilpasser eller selv bygger AI-løsninger, baseret på jeres datamodenhed og strategiske mål." },
+];
+
+const faqs = [
+  {
+    q: "Hvornår gælder EU AI Act for vores virksomhed?",
+    a: "Det afhænger af hvilken rolle I har i forhold til AI-systemet og dets risikoklasse. Vi hjælper med at afklare det som en del af kortlægningen.",
+  },
+  {
+    q: "Skal vi stoppe eksisterende AI-initiativer, mens vi får styr på governance?",
+    a: "Nej, målet er sjældent at bremse initiativer, men at sikre at de kan dokumentere deres dataforudsætninger og stå distancen ved en gennemgang.",
+  },
+  {
+    q: "Er AI-governance det samme som GDPR-compliance?",
+    a: "Nej. GDPR er en del af billedet, men AI-governance omfatter også risikoklassificering, modelgodkendelse og løbende tilsyn med systemer der ændrer sig over tid.",
+  },
+  {
+    q: "Hvor starter vi, hvis vi slet ikke har styr på det i dag?",
+    a: "Vi starter altid med en kortlægning af, hvilke AI-funktioner der allerede er i brug, før vi bygger en governance-struktur ovenpå.",
+  },
 ];
 
 const naarDetGiverMening = [
@@ -93,7 +113,7 @@ export default function AiGovernancePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad vi leverer</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver</h2>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver inden for AI-governance</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {leverancer.map((l) => (
@@ -124,7 +144,7 @@ export default function AiGovernancePage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sådan arbejder vi</p>
-          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Governance der følger med, ikke bagefter</h2>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">AI-governance der følger med, ikke bagefter</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Vi starter med at kortlægge, ikke med at skrive politikker. Før nogen kan tage stilling til risiko, skal I vide, hvilke AI-funktioner der rent faktisk er i brug, hvem der har adgang til dem, og hvilke data de trækker på. Den kortlægning alene overrasker ofte ledelsen.
           </p>
@@ -134,7 +154,15 @@ export default function AiGovernancePage() {
         </div>
       </section>
 
-      <section style={{ background: OFFWHITE }} className="py-16 px-6 text-center">
+      <section style={{ background: OFFWHITE }} className="py-20 px-6">
+        <div className="max-w-3xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Spørgsmål</p>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-8">Ofte stillede spørgsmål om AI-governance</h2>
+          <FaqAccordion faqs={faqs} />
+        </div>
+      </section>
+
+      <section className="py-16 px-6 text-center bg-white">
         <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Klar til at få styr på jeres AI-governance?</h2>
         <p className="text-gray-500 mb-8 max-w-xl mx-auto">
           Kontakt os for en uforpligtende samtale om, hvor jeres organisation står i dag.

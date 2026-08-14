@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
+import FaqAccordion from "@/components/FaqAccordion";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -40,6 +41,25 @@ const leverancer = [
   { title: "Risikostyring", body: "Løbende identifikation og afbødning af risici, så projektet forbliver på sporet og inden for budget, i stedet for at reagere når skaden er sket." },
   { title: "Interessentstyring", body: "Struktureret kommunikation til alle niveauer, fra styregruppe til slutbrugere, så opbakningen holder gennem hele forløbet." },
   { title: "Fremdrift og eksekvering", body: "Tæt opfølgning på leverancer, beslutninger og afhængigheder, med klar eskalering når noget kræver ledelsens involvering." },
+];
+
+const faqs = [
+  {
+    q: "Hvor lang tid tager det at komme i gang?",
+    a: "Typisk kan vi træde ind i et projekt inden for få uger fra første samtale, afhængig af kompleksitet og jeres interne beslutningsproces.",
+  },
+  {
+    q: "Arbejder I kun med store transformationsprojekter?",
+    a: "Nej. Vi leverer projektledelse til alt fra afgrænsede IT-implementeringer til store tværorganisatoriske transformationer.",
+  },
+  {
+    q: "Hvad hvis projektet allerede er i gang og har problemer?",
+    a: "Vi træder ofte ind midt i et projekt for at genskabe fremdrift, afklare ejerskab og få styr på risikobilledet, ikke kun ved opstart.",
+  },
+  {
+    q: "Følger I en bestemt metode?",
+    a: "Vi er metodeneutrale og vælger Waterfall, Agile eller en hybrid tilgang ud fra projektets natur og jeres organisation, ikke omvendt.",
+  },
 ];
 
 const naarDetGiverMening = [
@@ -90,7 +110,7 @@ export default function ProjektledelsePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad vi leverer</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver</h2>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver i professionel projektledelse</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {leverancer.map((l) => (
@@ -121,7 +141,7 @@ export default function ProjektledelsePage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sådan arbejder vi</p>
-          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Fra behovsafklaring til fastforankret leverance</h2>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Vores tilgang til projektledelse: fra behovsafklaring til leverance</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Vi starter altid med at forstå projektets reelle risikobillede, ikke bare tidsplanen på papiret. Det betyder samtaler med både styregruppe og de medarbejdere, der faktisk skal levere. Ofte ligger den største risiko et andet sted end der, hvor den formelle statusrapport peger hen.
           </p>
@@ -131,7 +151,15 @@ export default function ProjektledelsePage() {
         </div>
       </section>
 
-      <section style={{ background: OFFWHITE }} className="py-16 px-6 text-center">
+      <section style={{ background: OFFWHITE }} className="py-20 px-6">
+        <div className="max-w-3xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Spørgsmål</p>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-8">Ofte stillede spørgsmål om projektledelse</h2>
+          <FaqAccordion faqs={faqs} />
+        </div>
+      </section>
+
+      <section className="py-16 px-6 text-center bg-white">
         <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Klar til at få styr på jeres projekt?</h2>
         <p className="text-gray-500 mb-8 max-w-xl mx-auto">
           Kontakt os for en uforpligtende samtale om jeres udfordring, uanset om projektet er ved at starte, eller allerede er i gang.

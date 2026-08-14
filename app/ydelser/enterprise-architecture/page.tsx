@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
+import FaqAccordion from "@/components/FaqAccordion";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -40,6 +41,25 @@ const leverancer = [
   { title: "Strategisk kobling", body: "Sikring af at teknologiinvesteringer understøtter forretningsstrategien, i stedet for at drive den i en tilfældig retning bestemt af den seneste leverandørsamtale." },
   { title: "Risiko- og gældsreduktion", body: "Identifikation af teknisk gæld og skjulte afhængigheder, før de bliver til dyre overraskelser i næste projekt." },
   { title: "Roadmap og prioritering", body: "En realistisk, prioriteret teknisk roadmap der tager udgangspunkt i jeres faktiske modenhed, ikke en generisk skabelon." },
+];
+
+const faqs = [
+  {
+    q: "Skal vi implementere TOGAF fuldt ud for at få værdi?",
+    a: "Nej. Vi tilpasser altid dybden af arbejdet til jeres modenhed og konkrete behov, i stedet for at følge et framework slavisk.",
+  },
+  {
+    q: "Hvor lang tid tager en kortlægning af systemlandskabet?",
+    a: "En indledende kortlægning kan typisk gennemføres på få uger, mens en fuldt etableret arkitekturfunktion er et længere forløb.",
+  },
+  {
+    q: "Er Enterprise Architecture kun relevant for store virksomheder?",
+    a: "Nej. Mellemstore virksomheder med et organisk vokset systemlandskab har ofte mindst lige så meget gavn af det.",
+  },
+  {
+    q: "Hvad er forskellen på Enterprise Architecture og Solution Architecture?",
+    a: "Enterprise Architecture arbejder på tværs af hele organisationen med strategi og sammenhæng, mens Solution Architecture fokuserer på arkitekturen i en enkelt løsning.",
+  },
 ];
 
 const naarDetGiverMening = [
@@ -93,7 +113,7 @@ export default function EnterpriseArchitecturePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad vi leverer</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver</h2>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold">Fire kerneopgaver inden for Enterprise Architecture</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {leverancer.map((l) => (
@@ -124,7 +144,7 @@ export default function EnterpriseArchitecturePage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sådan arbejder vi</p>
-          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Modenhed frem for et generisk framework</h2>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Enterprise Architecture: modenhed frem for et generisk framework</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Vi tilpasser dybden af arbejdet til organisationens faktiske modenhed. Et nystartet arkitekturteam har brug for noget andet end en virksomhed, der allerede har processer og governance på plads, men mangler eksekvering. Derfor starter vi ofte med en kort modenhedsvurdering, før vi anbefaler næste skridt.
           </p>
@@ -134,7 +154,15 @@ export default function EnterpriseArchitecturePage() {
         </div>
       </section>
 
-      <section style={{ background: OFFWHITE }} className="py-16 px-6 text-center">
+      <section style={{ background: OFFWHITE }} className="py-20 px-6">
+        <div className="max-w-3xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Spørgsmål</p>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-8">Ofte stillede spørgsmål om Enterprise Architecture</h2>
+          <FaqAccordion faqs={faqs} />
+        </div>
+      </section>
+
+      <section className="py-16 px-6 text-center bg-white">
         <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Klar til at skabe overblik?</h2>
         <p className="text-gray-500 mb-8 max-w-xl mx-auto">
           Kontakt os for en uforpligtende samtale om jeres systemlandskab, uanset hvor I står i dag.
