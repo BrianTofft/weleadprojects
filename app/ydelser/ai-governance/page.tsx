@@ -103,8 +103,17 @@ export default function AiGovernancePage() {
               EU AI Act
             </a>.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Mange af de AI-eksperimenter, vi støder på hos kunder, er allerede i produktion, uden at nogen formelt godkendte dem. Det er sjældent et bevidst brud på reglerne. Det sker fordi et team fandt en hurtig løsning på et konkret problem, og ingen stoppede op og spurgte, hvem der ejer risikoen. Vores rolle er ikke at bremse den slags initiativer, men at sikre at de kan stå distancen, når krav om dokumentation og tilsyn for alvor rammer.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
+              EU AI Act
+            </a>{" "}
+            (Regulation (EU) 2024/1689) trådte i kraft 1. august 2024 og opererer med fire risikokategorier: uacceptabel risiko (forbudt), højrisiko (strenge krav til dokumentation og tilsyn), begrænset risiko (transparenskrav) og minimal risiko. Reglerne indfases gradvist, med bredere anvendelse fra august 2026, hvilket er en af grundene til at kortlægning bør ske nu frem for at vente på den næste frist. Se de fulde detaljer og tidsplan hos{" "}
+            <a href="https://ai-act-service-desk.ec.europa.eu/en/faq" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
+              EU's AI Act Service Desk
+            </a>.
           </p>
         </div>
       </section>
