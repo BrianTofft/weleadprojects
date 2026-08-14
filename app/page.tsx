@@ -212,23 +212,39 @@ export default function Home() {
       </section>
 
       {/* KORT FORTALT */}
-      <section className="py-10 px-6 bg-white border-b" style={{ borderColor: BORDER }}>
-        <div className="max-w-4xl mx-auto">
-          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-xs mb-4">Kort fortalt</p>
-          <ul className="space-y-3 text-sm text-gray-600">
-            <li className="flex items-start gap-3">
-              <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
-              <span>Professionel <strong style={{ color: DARK }}>projektledelse</strong> fra vores kontor i Roskilde til både mindre IT-projekter og store transformationer.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
-              <span>Erfarne eksperter inden for <strong style={{ color: DARK }}>Enterprise Architecture</strong> og <strong style={{ color: DARK }}>AI Governance</strong>, matchet til jeres branche.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
-              <span>En betroet partner der har leveret projekter med reel fremdrift siden 2018.</span>
-            </li>
-          </ul>
+      <section className="py-16 px-6 bg-white border-b" style={{ borderColor: BORDER }}>
+        <div className="max-w-5xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-8 text-center">Kort fortalt</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: "🎯",
+                body: <>Professionel <strong style={{ color: DARK }}>projektledelse</strong> fra vores kontor i Roskilde til både mindre IT-projekter og store transformationer.</>,
+              },
+              {
+                icon: "🏗️",
+                body: <>Erfarne eksperter inden for <strong style={{ color: DARK }}>Enterprise Architecture</strong> og <strong style={{ color: DARK }}>AI Governance</strong>, matchet til jeres branche.</>,
+              },
+              {
+                icon: "🤝",
+                body: <>En betroet partner der har leveret projekter med reel fremdrift siden 2018.</>,
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center text-center gap-3 rounded-2xl border p-6"
+                style={{ borderColor: BORDER, background: OFFWHITE }}
+              >
+                <div
+                  className="w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0"
+                  style={{ background: "#fde8e8" }}
+                >
+                  {item.icon}
+                </div>
+                <p className="text-gray-600 leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
