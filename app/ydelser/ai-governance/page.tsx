@@ -110,7 +110,7 @@ export default function AiGovernancePage() {
             <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
               EU AI Act
             </a>{" "}
-            (Regulation (EU) 2024/1689) trådte i kraft 1. august 2024 og opererer med fire risikokategorier: uacceptabel risiko (forbudt), højrisiko (strenge krav til dokumentation og tilsyn), begrænset risiko (transparenskrav) og minimal risiko. Reglerne indfases gradvist, med bredere anvendelse fra august 2026, hvilket er en af grundene til at kortlægning bør ske nu frem for at vente på den næste frist. Se de fulde detaljer og tidsplan hos{" "}
+            (Regulation (EU) 2024/1689) trådte i kraft 1. august 2024 og opererer med fire risikokategorier: uacceptabel risiko (forbudt), højrisiko (strenge krav til dokumentation og tilsyn), begrænset risiko (transparenskrav) og minimal risiko. Reglerne er indfaset trinvist: forbudte AI-praksisser og AI-literacy-krav fra februar 2025, governance-regler og forpligtelser for generelle AI-modeller fra august 2025, og fra 2. august 2026 gælder loven bredt, herunder kravene til højrisikosystemer og transparens. Sidste fase følger i august 2027 for højrisikosystemer der indgår i allerede regulerede produkter. Se de fulde detaljer og tidsplan hos{" "}
             <a href="https://ai-act-service-desk.ec.europa.eu/en/faq" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
               EU's AI Act Service Desk
             </a>.
