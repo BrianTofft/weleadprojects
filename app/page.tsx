@@ -214,19 +214,19 @@ export default function Home() {
       {/* KORT FORTALT */}
       <section className="py-10 px-6 bg-white border-b" style={{ borderColor: BORDER }}>
         <div className="max-w-4xl mx-auto">
-          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-xs mb-3">Kort fortalt</p>
-          <ul className="grid md:grid-cols-3 gap-4 text-sm text-gray-600">
-            <li className="flex items-start gap-2">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-xs mb-4">Kort fortalt</p>
+          <ul className="space-y-3 text-sm text-gray-600">
+            <li className="flex items-start gap-3">
               <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
-              Professionel <strong style={{ color: DARK }}>projektledelse</strong> fra vores kontor i Roskilde til både mindre IT-projekter og store transformationer.
+              <span>Professionel <strong style={{ color: DARK }}>projektledelse</strong> fra vores kontor i Roskilde til både mindre IT-projekter og store transformationer.</span>
             </li>
-            <li className="flex items-start gap-2">
+            <li className="flex items-start gap-3">
               <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
-              Erfarne eksperter inden for <strong style={{ color: DARK }}>Enterprise Architecture</strong> og <strong style={{ color: DARK }}>AI Governance</strong>, matchet til jeres branche.
+              <span>Erfarne eksperter inden for <strong style={{ color: DARK }}>Enterprise Architecture</strong> og <strong style={{ color: DARK }}>AI Governance</strong>, matchet til jeres branche.</span>
             </li>
-            <li className="flex items-start gap-2">
+            <li className="flex items-start gap-3">
               <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
-              En betroet partner der har leveret projekter med reel fremdrift siden 2018.
+              <span>En betroet partner der har leveret projekter med reel fremdrift siden 2018.</span>
             </li>
           </ul>
         </div>
