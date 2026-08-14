@@ -66,8 +66,8 @@ const heroSlides = [
     image: "/hero.JPEG",
     flip: true,
     label: "Plan Well, Lead Better",
-    heading: "Lad os sikre at dit projekt",
-    headingRed: "bliver en succes",
+    heading: "Professionel projektledelse",
+    headingRed: "vi sikrer jeres succes",
     body: "Uanset om det er et mindre IT-projekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.",
   },
   {
@@ -211,6 +211,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* KORT FORTALT */}
+      <section className="py-10 px-6 bg-white border-b" style={{ borderColor: BORDER }}>
+        <div className="max-w-4xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-xs mb-3">Kort fortalt</p>
+          <ul className="grid md:grid-cols-3 gap-4 text-sm text-gray-600">
+            <li className="flex items-start gap-2">
+              <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
+              Professionel <strong style={{ color: DARK }}>projektledelse</strong> fra vores kontor i Roskilde til både mindre IT-projekter og store transformationer.
+            </li>
+            <li className="flex items-start gap-2">
+              <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
+              Erfarne eksperter inden for <strong style={{ color: DARK }}>Enterprise Architecture</strong> og <strong style={{ color: DARK }}>AI Governance</strong>, matchet til jeres branche.
+            </li>
+            <li className="flex items-start gap-2">
+              <span style={{ color: RED }} className="mt-0.5 shrink-0 font-bold">✓</span>
+              En betroet partner der har leveret projekter med reel fremdrift siden 2018.
+            </li>
+          </ul>
+        </div>
+      </section>
+
       {/* OM OS */}
       <section id="om-os" className="relative overflow-hidden" style={{ background: "#1C2544" }}>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2" style={{ minHeight: 460 }}>
@@ -331,6 +352,9 @@ export default function Home() {
             <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Erfarne projektledere, baseret i Roskilde</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
               We Lead Projects er et dansk konsulenthus specialiseret i projektledelse, Enterprise Architecture og IT-transformationer. Siden 2018 har vi hjulpet virksomheder i hele Danmark med at planlægge, styre og gennemføre projekter, fra mindre IT-implementeringer til store digitale transformationer på tværs af hele organisationen.
+            </p>
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              We Lead Projects ledes af Brian P.N. Tofft, der tidligere har været Enterprise Architect hos Microsoft og Technical Authority / Enterprise Architect hos DSB, og som i dag trækker på mere end 30 års erfaring med projektledelse og Enterprise Architecture.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
               Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Det giver os mulighed for at gå ind i projekter på alle niveauer, fra strategisk rådgivning til operationel eksekvering, og altid med den rette kompetence til netop jeres situation.

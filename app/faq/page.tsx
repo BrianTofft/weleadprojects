@@ -56,6 +56,22 @@ const faqs = [
     q: "Hvad sker der, hvis projektet løber ind i problemer undervejs?",
     a: "Vi identificerer udfordringer tidligt via løbende risikostyring og eskalerer proaktivt. Opstår der alligevel større problemer, stiller vi ekstra ressourcer og støtte til rådighed, og finder altid en fremadrettet løsning frem for at placere ansvar.",
   },
+  {
+    q: "Hvad indebærer professionel projektledelse i praksis?",
+    a: "Professionel projektledelse handler om at skabe retning og styre tid, ressourcer og risici effektivt, så projektet leverer det aftalte resultat, også når der opstår uforudsete udfordringer undervejs. Vi tilpasser altid metoden til opgavens kompleksitet.",
+  },
+  {
+    q: "Hvordan integreres Enterprise Architecture i vores forretning?",
+    a: "Enterprise Architecture skaber en tydelig sammenhæng mellem forretningsstrategi, organisation og teknologi. Vi tager ofte udgangspunkt i anerkendte frameworks som TOGAF, som vi tilpasser til jeres modenhed og konkrete behov.",
+  },
+  {
+    q: "Hvilke krav stiller de nye regler til AI governance?",
+    a: "God AI governance er nødvendigt for at overholde EU AI Act og sikre gennemsigtighed i jeres AI-systemer. Det omfatter klare politikker for datasikkerhed, risikovurderinger og menneskeligt tilsyn. Reglerne indfases gradvist, så det er vigtigt at starte forberedelserne i god tid.",
+  },
+  {
+    q: "Skal vi vælge en agil eller klassisk projektmodel?",
+    a: "Ingen model er universelt bedst til alle opgaver. Klassiske metoder fungerer godt ved stabile leverancer, mens agile tilgange giver plads til løbende tilpasning. I praksis viser en hybrid tilgang sig ofte at levere de stærkeste resultater for både budget og samarbejde.",
+  },
 ];
 
 const faqJsonLd = {
