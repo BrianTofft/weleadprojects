@@ -3,6 +3,7 @@
 import { useState } from "react";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -338,23 +339,31 @@ export default function Home() {
                 icon: "🎯",
                 title: "Projektledelse",
                 body: "Erfarne projektledere der tager ansvar for leverance, fra behovsafklaring til afslutning. Uanset metode: Waterfall, Agile eller hybrid.",
+                href: "/ydelser/projektledelse",
               },
               {
                 icon: "🏗️",
                 title: "Enterprise Architecture",
                 body: "Vi kobler systemlandskabet til forretningsstrategien. Kortlægning, prioritering og arkitektur der understøtter vækst frem for at hæmme den.",
+                href: "/ydelser/enterprise-architecture",
               },
               {
                 icon: "⚖️",
                 title: "AI Governance",
                 body: "Governance-rammer, EU AI Act compliance og struktureret tilgang til AI-adoption, så AI-initiativer skaber reel forretningsværdi og ikke compliance-risiko.",
+                href: "/ydelser/ai-governance",
               },
             ].map((k) => (
-              <div key={k.title} className="bg-white rounded-2xl p-8 border" style={{ borderColor: BORDER }}>
+              <Link
+                key={k.title}
+                href={k.href}
+                className="bg-white rounded-2xl p-8 border hover:shadow-lg hover:border-red-200 transition-all block"
+                style={{ borderColor: BORDER }}
+              >
                 <div className="text-3xl mb-4">{k.icon}</div>
                 <h3 className="font-bold text-lg mb-3" style={{ color: DARK }}>{k.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{k.body}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
