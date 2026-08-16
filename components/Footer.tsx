@@ -17,10 +17,10 @@ const hours = [
 
 const logos = [
   { src: "/footer/MSP1.webp",                             alt: "Microsoft Partner" },
-  { src: "/footer/ITB_logo_01_hvid_RGB.webp",             alt: "IT-Branchen" },
+  { src: "/footer/ITB_logo_01_hvid_RGB.webp",             alt: "IT-Branchen", href: "https://itb.dk" },
   { src: "/footer/dit_Logo_G.webp",                       alt: "dansk·it" },
   { src: "/footer/DANSKERHVERV_20202.webp",               alt: "Dansk Erhverv" },
-  { src: "/footer/Erhvervsforum-roskilde-retina-01.webp", alt: "Erhvervsforum Roskilde" },
+  { src: "/footer/Erhvervsforum-roskilde-retina-01.webp", alt: "Roskilde Handel & Erhverv", href: "https://roskildehandelogerhverv.dk" },
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
@@ -99,21 +99,29 @@ export default function Footer() {
           <div>
             <Label>Partnere</Label>
             <div className="grid grid-cols-3 gap-2">
-              {logos.map((logo) => (
-                <div
-                  key={logo.alt}
-                  className="rounded flex items-center justify-center"
-                  style={{ height: "72px", background: "rgba(255,255,255,0.06)" }}
-                >
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={90}
-                    height={60}
-                    className="object-contain max-h-full max-w-full p-1"
-                  />
-                </div>
-              ))}
+              {logos.map((logo) => {
+                const tile = (
+                  <div
+                    className="rounded flex items-center justify-center"
+                    style={{ height: "72px", background: "rgba(255,255,255,0.06)" }}
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={90}
+                      height={60}
+                      className="object-contain max-h-full max-w-full p-1"
+                    />
+                  </div>
+                );
+                return logo.href ? (
+                  <a key={logo.alt} href={logo.href} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                    {tile}
+                  </a>
+                ) : (
+                  <div key={logo.alt}>{tile}</div>
+                );
+              })}
             </div>
           </div>
 
