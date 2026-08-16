@@ -20,7 +20,7 @@ const logos = [
   { src: "/footer/ITB_logo_01_hvid_RGB.webp",             alt: "IT-Branchen", href: "https://itb.dk" },
   { src: "/footer/dit_Logo_G.webp",                       alt: "dansk·it" },
   { src: "/footer/DANSKERHVERV_20202.webp",               alt: "Dansk Erhverv" },
-  { src: "/footer/Erhvervsforum-roskilde-retina-01.webp", alt: "Roskilde Handel & Erhverv", href: "https://roskildehandelogerhverv.dk" },
+  { src: "/footer/roskilde-handel-erhverv.svg",           alt: "Roskilde Handel & Erhverv", href: "https://roskildehandelogerhverv.dk", lightBg: true },
   { src: "/footer/leverandoer_logo_RGB.webp",             alt: "Leverandør" },
 ];
 
@@ -103,7 +103,7 @@ export default function Footer() {
                 const tile = (
                   <div
                     className="rounded flex items-center justify-center"
-                    style={{ height: "72px", background: "rgba(255,255,255,0.06)" }}
+                    style={{ height: "72px", background: logo.lightBg ? "#fff" : "rgba(255,255,255,0.06)" }}
                   >
                     <Image
                       src={logo.src}
