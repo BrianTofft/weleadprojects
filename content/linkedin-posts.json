@@ -68,5 +68,15 @@
     "date": "2026-09-02",
     "type": "Observation",
     "content": "Efter 30 år i branchen har jeg stadig ikke fundet en god jobtitel til det jeg laver.\n\nProjektleder? For snævert.\nEnterprise Arkitekt? Halvt rigtigt.\nAI-rådgiver? Alle kalder sig det nu.\n\nDet jeg reelt gør: jeg sørger for at komplekse projekter bliver leveret, at teknologivalg hænger sammen med forretningsstrategien, og at AI-entusiasme møder virkelighed, inden det koster for meget.\n\nDe tre ting hænger uløseligt sammen. Alligevel ansætter de fleste virksomheder tre forskellige folk til at løse dem. Tre siloer, tre agendaer og ingen der har det samlede overblik.\n\nJeg har set det gå galt. Mange gange.\n\nMåske er den rigtige titel bare: en der har prøvet det."
+  },
+  {
+    "date": "2026-09-04",
+    "type": "Observation",
+    "content": "2. august 2026 kom og gik.\n\nDet var dagen hvor EU AI Act for alvor trådte i kraft, højrisikosystemer, transparenskrav, hele armamentet. Den dato har stået i kalenderen i to år.\n\nOg alligevel, de sidste par uger, har jeg talt med flere virksomheder der først nu spørger: \"skal vi egentlig gøre noget ved det her?\"\n\nIkke fordi de er ligeglade. Men fordi AI-governance i praksis er endt hos jura, som en compliance-øvelse man tager når tiden er der. Ikke hos Enterprise Architecture, hvor risikoklassificering og dataejerskab allerede burde ligge.\n\nResultatet: en frist der er passeret uden at nogen reelt ved, hvilke AI-systemer der overhovedet er omfattet.\n\nEr I forbi 2. august med et klart overblik, eller er det stadig et åbent spørgsmål hos jer?"
+  },
+  {
+    "date": "2026-09-07",
+    "type": "Provokation",
+    "content": "\"Vi skal bare overholde EU AI Act.\"\n\nDen sætning er problemet.\n\nFor to år siden fik virksomhederne en lang frist til at forberede sig på 2. august 2026. Nogle brugte tiden til at kortlægge deres AI-systemer, klassificere risiko og bygge det ind i den arkitektur de allerede havde. Andre ventede, fordi fristen føltes langt væk, lige indtil den ikke gjorde.\n\nDe første står nu med et overblik der også bruges til noget andet: hurtigere AI-beslutninger, fordi risikovurderingen allerede er en del af processen. De andre er i gang med en oprydning, der kunne have været en investering.\n\nCompliance er sjældent bare compliance. Det er enten et fundament man bygger videre på eller en regning man betaler bagefter.\n\nHvilken af de to er I?"
   }
 ]
