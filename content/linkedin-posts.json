@@ -78,5 +78,100 @@
     "date": "2026-09-07",
     "type": "Provokation",
     "content": "\"Vi skal bare overholde EU AI Act.\"\n\nDen sætning er problemet.\n\nFor to år siden fik virksomhederne en lang frist til at forberede sig på 2. august 2026. Nogle brugte tiden til at kortlægge deres AI-systemer, klassificere risiko og bygge det ind i den arkitektur de allerede havde. Andre ventede, fordi fristen føltes langt væk, lige indtil den ikke gjorde.\n\nDe første står nu med et overblik der også bruges til noget andet: hurtigere AI-beslutninger, fordi risikovurderingen allerede er en del af processen. De andre er i gang med en oprydning, der kunne have været en investering.\n\nCompliance er sjældent bare compliance. Det er enten et fundament man bygger videre på eller en regning man betaler bagefter.\n\nHvilken af de to er I?"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Provokation",
+    "content": "De fleste projektstyregrupper er ikke beslutningsorganer.\n\nDe er teater.\n\nStatusslide bliver vist. Grønne, gule og røde lamper bliver nikket til. Nogen stiller et spørgsmål der lyder kritisk, men aldrig kræver et svar, der ændrer noget. Og så går alle videre til næste punkt.\n\nDen reelle beslutning blev truffet før mødet, i en gang eller en kaffepause, af de to eller tre personer der faktisk har mandatet.\n\nJeg har siddet i nok af de møder til at genkende forskellen på et sted, hvor beslutninger bliver truffet, og et sted, hvor de bliver ratificeret.\n\nHvis din styregruppe altid er enig, er det sjældent fordi projektet går godt. Det er fordi de svære samtaler foregår et andet sted."
+  },
+  {
+    "date": "2026-09-11",
+    "type": "Observation",
+    "content": "Konsulentens dilemma er sjældent teknisk. Det er, hvornår man siger fra.\n\nKunden vil have løsning A. Du kan se, at problemet reelt kræver B. Sige det højt koster ubehag i mødet. Lade være koster kunden penge, seks måneder senere, når A ikke virkede.\n\nDe fleste vælger ubehaget i mødet frem for regningen senere. Det er dyrere at holde sin mund end at blive upopulær i tyve minutter.\n\nDet betyder ikke, at man altid har ret. Men det betyder, at man skylder kunden en ærlig indvending, før man leverer det de bad om.\n\nDen konsulent der aldrig siger fra, leverer ikke rådgivning. Vedkommende leverer bekræftelse."
+  },
+  {
+    "date": "2026-09-14",
+    "type": "Observation",
+    "content": "Enterprise Architecture er sjældent solgt rigtigt til en ledelse.\n\nDet præsenteres som governance, standarder, principper, dokumentation. Alt sammen rigtigt. Alt sammen kedeligt for en direktion, der tænker i risiko og investering.\n\nDen ramme jeg bruger i stedet: EA er en forsikring, ikke et bureaukrati.\n\nEn forsikring man ikke lægger mærke til, når alt går godt, men som er forskellen på en kontrolleret hændelse og en katastrofe, når noget rent faktisk går galt. Et system der falder ud uden nogen ved hvad det var koblet til. En AI-model, der trænes på data ingen kan stå inde for.\n\nLedelsen forstår forsikring. Det er derfor det er den samtale, jeg starter med, ikke arkitekturdiagrammerne."
+  },
+  {
+    "date": "2026-09-16",
+    "type": "Observation",
+    "content": "30 år i branchen har lært mig én ting om timing: virksomheder hyrer den rette hjælp for sent, næsten hver gang.\n\nIkke fordi de er dumme. Men fordi problemet sjældent ser stort ud, før det er det.\n\nEt lille scope-skred her. En leverandør der \"nok skal levere\". En risiko der bliver nævnt på et møde og aldrig fulgt op på. Ingen af delene udløser en alarm alene.\n\nSammenlagt er de forskellen på et projekt, der lander til tiden, og et der ender som en krisesag seks måneder senere.\n\nDen dyreste beslutning er sjældent den forkerte løsning. Det er at vente for længe med at bede om hjælp til at se problemet."
+  },
+  {
+    "date": "2026-09-18",
+    "type": "Provokation",
+    "content": "De fleste AI-pilotprojekter skalerer aldrig. Og næsten ingen taler højt om det.\n\nPiloten går godt. Et lille team, engagerede brugere, et afgrænset problem. Alle er begejstrede. Og så skal det ud i resten af organisationen, og pludselig fungerer intet af det, der gjorde piloten en succes.\n\nDataene fra piloten var kuraterede. Produktionsdataene er rodede. Brugerne i piloten var frivillige entusiaster. De almindelige brugere er det ikke. Governance-spørgsmålene der blev udskudt \"til senere\", er stadig ubesvarede.\n\nProblemet er ikke, at teknologien ikke virker. Det er, at ingen designede piloten til at afsløre, hvad der skulle til for at skalere den.\n\nEn pilot, der ikke er stresstestet mod produktionsvirkeligheden, er en demo, ikke et bevis."
+  },
+  {
+    "date": "2026-09-21",
+    "type": "Observation",
+    "content": "Den stille konsulentfejl er ikke at levere for lidt. Det er at levere præcis det, kunden bad om.\n\nKunden beder om et dashboard. De har reelt brug for en beslutning om, hvem der ejer dataene bag det. Kunden beder om en projektplan. De har reelt brug for en samtale om, hvorfor de sidste tre planer aldrig blev fulgt.\n\nDet er let at levere bestillingen. Det kræver ingen konfrontation, og kunden er tilfreds med det samme.\n\nMen en rådgiver, der kun leverer det bestilte, er reelt bare en leverandør med en anden titel.\n\nDet svære arbejde er at forstå forskellen på, hvad kunden beder om, og hvad de rent faktisk har brug for, og så sige det højt."
+  },
+  {
+    "date": "2026-09-23",
+    "type": "Provokation",
+    "content": "\"Vi har styr på det.\"\n\nDet er den sætning fra en projektejer, jeg altid undersøger nærmere.\n\nIkke fordi jeg tror, folk lyver. Men fordi \"styr på det\" sjældent betyder det samme for den, der siger det, som for den, der hører det.\n\nNogle gange betyder det: vi har en plan, og den holder. Andre gange betyder det: vi har ikke fået dårlige nyheder for nylig, så vi antager det går godt.\n\nDe to situationer ser identiske ud udefra, lige indtil de ikke gør.\n\nDerfor stiller jeg altid et opfølgende spørgsmål: hvad er det konkret, I har styr på, og hvornår tjekkede I det sidst? Svaret fortæller mere end selve udsagnet."
+  },
+  {
+    "date": "2026-09-25",
+    "type": "Observation",
+    "content": "Data governance er kedeligt, lige indtil det ikke er det.\n\nJeg havde en kunde, hvor et nyt rapporteringssystem skulle levere tal til ledelsen. Simpelt projekt, på papiret. Vi opdagede undervejs, at tre forskellige afdelinger definerede \"aktiv kunde\" forskelligt, og at ingen af definitionerne var dokumenteret noget sted.\n\nProjektet blev ikke forsinket af teknologien. Det blev forsinket af, at nogen skulle beslutte, hvilken definition der var den rigtige, og den beslutning krævede tre ledelsesmøder.\n\nDet er data governance. Ikke et compliance-dokument, men den kedelige forudsætning for, at et system overhovedet kan levere pålidelige tal.\n\nDe virksomheder, der tager den samtale tidligt, sparer sig selv for at tage den midt i et forsinket projekt."
+  },
+  {
+    "date": "2026-09-28",
+    "type": "Provokation",
+    "content": "Et interessentkort, der aldrig bliver opdateret, er farligere end slet intet kort.\n\nUden et kort ved alle, at de famler i blinde. Med et forældet kort tror alle, at de har overblikket.\n\nDen sponsor, der stod som \"stærkt engageret\" for seks måneder siden, er måske gået videre til et andet projekt i sit hoved. Den afdeling, der var \"neutral\", har måske fået en ny direktør med en helt anden dagsorden.\n\nInteressentkortet er ikke et dokument, man laver én gang ved opstart. Det er en løbende øvelse, fordi mennesker og prioriteter flytter sig, mens projektet kører.\n\nHvornår tjekkede I sidst, om jeres kort stadig stemmer med virkeligheden?"
+  },
+  {
+    "date": "2026-09-30",
+    "type": "Observation",
+    "content": "Teknisk gæld akkumuleres usynligt, og det er præcis derfor, den bliver farlig.\n\nHver enkelt beslutning giver mening isoleret set. En hurtig integration for at nå en deadline. Et system, der beholdes ét år længere end planlagt, fordi udskiftningen blev nedprioriteret. En genvej i datamodellen, fordi ingen havde tid til den rigtige løsning.\n\nIngen af delene føles som gæld i øjeblikket. De føles som fremdrift.\n\nDet er først, når man kortlægger systemlandskabet samlet, at man ser regningen: afhængigheder ingen kan forklare, integrationer der holder sammen på tape, og en arkitektur ingen længere forstår helheden af.\n\nEnterprise Architecture er værktøjet til at se den regning, før den forfalder for alvor."
+  },
+  {
+    "date": "2026-10-02",
+    "type": "Spørgsmål",
+    "content": "Hvordan opdager man et projekt i krise, før interessenterne selv gør?\n\nDet er sjældent ét stort signal. Det er flere små, der hver især kan bortforklares.\n\nStatusrapporten, der pludselig bliver længere og mere teknisk, som om detaljerne skal dække over retningen. Møder, der flyttes \"fordi kalenderen er presset\", igen. En projektleder, der svarer hurtigere på \"alt er fint\" end på et konkret spørgsmål om en leverance.\n\nIngen af delene beviser noget alene. Sammen er de et mønster.\n\nDe projektledere, jeg stoler mest på, er dem, der selv peger på mønsteret, før nogen beder dem om det.\n\nHvilke tidlige signaler ser I typisk hos jer, længe før krisen bliver officiel?"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "Spørgsmål",
+    "content": "Hvornår er en ekstern rådgiver pengene værd?\n\nDet er et ærligt spørgsmål, og svaret er ikke altid.\n\nEn rådgiver er pengene værd, når problemet kræver et blik udefra, en kompetence I ikke har internt, eller nogen der kan sige de ubehagelige ting uden at skulle leve med de interne konsekvenser bagefter.\n\nEn rådgiver er ikke pengene værd, når opgaven bare er at udføre noget, I allerede ved, hvordan man gør, men ikke har tid til.\n\nDe fleste virksomheder blander de to sammen, og ender enten med at betale for dyrt for udførelse, eller for billigt for indsigt, ved at holde det internt, når det burde have været udefra.\n\nHvordan skelner I hos jer?"
+  },
+  {
+    "date": "2026-10-07",
+    "type": "Observation",
+    "content": "Jeg stiller altid de samme tre spørgsmål i det første kundemøde.\n\nHvad sker der, hvis I ikke gør noget? Det afslører, om problemet reelt haster, eller om det bare føles akut i dag.\n\nHvem har prøvet at løse det her før, og hvad stoppede dem? Det afslører de organisatoriske forhindringer, ingen nævner i den officielle projektbeskrivelse.\n\nOg: hvem i lokalet er uenige i det, vi lige har aftalt, men ikke siger det højt? Det afslører, hvor den reelle modstand kommer til at opstå senere.\n\nIngen af spørgsmålene handler om teknologi. Det er fordi de fleste projekter aldrig fejler på teknologien."
+  },
+  {
+    "date": "2026-10-09",
+    "type": "Spørgsmål",
+    "content": "Hvad adskiller en projektleder, der styrer, fra én, der bare rapporterer?\n\nDen der rapporterer, samler status ind og videresender den. Grøn, gul, rød. Møde efter møde.\n\nDen der styrer, bruger statussen som udgangspunkt for en beslutning. Er vi bagud, fordi scope voksede, eller fordi et team er underbemandet? Skal vi eskalere nu, eller vente en uge og se om det retter sig selv?\n\nForskellen er ikke synlig på et statusslide. Den er synlig i, hvad der sker, efter mødet er slut.\n\nEr jeres projektledere styringsmænd, eller er de blevet postbude for dårlige nyheder?"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "Provokation",
+    "content": "AI-governance er ikke jura. Det er arkitektur med et compliance-lag ovenpå.\n\nJeg møder ofte den modsatte antagelse. Fordi EU AI Act er en lov, ender ejerskabet automatisk hos den juridiske afdeling. Det lyder logisk. Det er også forkert.\n\nJura kan fortælle jer, hvilken risikoklasse et AI-system tilhører, og hvilke dokumentationskrav der følger med. Jura kan ikke fortælle jer, hvilke data systemet trækker på, hvilke andre systemer det er koblet til, eller hvad der sker, hvis det fejler midt i en forretningsproces.\n\nDet er arkitekturviden. Uden den bliver compliance et papirarbejde, der aldrig rører den faktiske risiko.\n\nDen bedste AI-governance, jeg har set, sad hos Enterprise Architecture, med jura som rådgiver, ikke omvendt."
+  },
+  {
+    "date": "2026-10-14",
+    "type": "Observation",
+    "content": "Sunk cost er den mest menneskelige fejl i IT-projekter.\n\nMan har brugt to millioner og atten måneder på et system, der ikke virker som lovet. Alle i lokalet ved det, dybest set. Alligevel er den næste beslutning næsten altid at fortsætte, ikke at stoppe.\n\nDet er lettere at bede om endnu tre måneder end at stå i mødet og sige, at pengene er tabt.\n\nMen de to millioner er væk uanset hvad. Det eneste, der reelt er til diskussion, er, om de næste tre er det også.\n\nDen sværeste, og billigste, beslutning i et fejlslagent projekt er at stoppe det, mens det stadig er muligt at kalde det en lille fejl frem for en stor."
+  },
+  {
+    "date": "2026-10-16",
+    "type": "Provokation",
+    "content": "Enterprise-arkitektens vigtigste egenskab er ikke teknisk. Det er mandat.\n\nDen bedste arkitekturmodel i verden er værdiløs, hvis den, der ejer den, ikke kan sige nej til et projekt, ledelsen allerede har forelsket sig i.\n\nJeg har set dygtige arkitekter med perfekte diagrammer og nul indflydelse, fordi ingen reelt lyttede, når de advarede. Og jeg har set mindre polerede arkitekter, der stoppede kostbare fejltagelser, fordi de havde ledelsens tillid og turde bruge den.\n\nMandat kommer ikke af en titel. Det kommer af, at man har haft ret nok gange til, at folk lytter, næste gang man siger nej.\n\nHvis jeres arkitekt aldrig siger nej til noget, er spørgsmålet, om alt virkelig er en god idé, eller om ingen tør."
+  },
+  {
+    "date": "2026-10-19",
+    "type": "Spørgsmål",
+    "content": "Hvad har jeg lært mest af, projekterne der lykkedes, eller dem der mislykkedes?\n\nDet ærlige svar er dem der mislykkedes.\n\nEt vellykket projekt bekræfter, at tilgangen virkede den gang, under de forudsætninger. Et mislykket projekt tvinger en til at forstå, præcis hvor det gik galt, fordi konsekvenserne er umulige at ignorere.\n\nDe fejlslagne projekter er dem, jeg husker detaljerne fra. Hvem der ikke blev hørt. Hvilken beslutning, der blev truffet for sent. Hvilket signal, ingen tog alvorligt.\n\nDet er ubehageligt at grave i sine egne fejltagelser. Det er også den hurtigste vej til at blive bedre.\n\nHvornår tog I sidst en ærlig eftersynsrunde på et projekt, der ikke gik godt?"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "Provokation",
+    "content": "Governance uden ejerskab er bare et dokument, ingen læser.\n\nJeg har set flotte governance-rammer, komplette med processer, roller og eskaleringsveje, der aldrig blev brugt én eneste gang. Ikke fordi rammen var forkert. Men fordi ingen konkret person stod med ansvaret for at håndhæve den.\n\nEn governance-model uden en navngiven ejer er en hensigtserklæring. Den ligner styring. Den er det ikke.\n\nDet gælder EA-governance. Det gælder i endnu højere grad AI-governance, hvor tempoet er hurtigere, og konsekvenserne af manglende håndhævelse rammer hurtigere.\n\nInden I skriver den næste politik, spørg jer selv: hvem er navnet på den, der siger nej, når nogen bryder den, og har den person reelt lov til det?"
   }
 ]
