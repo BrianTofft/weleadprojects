@@ -4,6 +4,7 @@ import { useState } from "react";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -483,9 +484,22 @@ export default function Home() {
           <div>
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Kontakt</p>
             <h2 className="text-3xl font-bold mb-4" style={{ color: DARK }}>Lad os tage en snak</h2>
-            <p className="text-gray-500 mb-10 leading-relaxed">
+            <p className="text-gray-500 mb-6 leading-relaxed">
               Du kan altid kontakte os, og hvis telefonerne ikke er åbne, sender du en besked, så ringer vi tilbage senest den næste hverdag.
             </p>
+
+            <a
+              href="https://calendly.com/bt-weleadprojects/30min"
+              onClick={(e) => {
+                e.preventDefault();
+                const w = window as unknown as { Calendly?: { initPopupWidget: (opts: { url: string }) => void } };
+                w.Calendly?.initPopupWidget({ url: "https://calendly.com/bt-weleadprojects/30min" });
+              }}
+              style={{ background: RED }}
+              className="inline-flex items-center gap-2 hover:opacity-90 text-white font-semibold px-6 py-3 rounded-full transition-opacity mb-10"
+            >
+              Book et intromøde direkte <span>→</span>
+            </a>
 
             <div className="space-y-6 text-sm">
               <div className="flex items-start gap-4">
@@ -625,6 +639,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+      <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
 
       <Footer />
     </>
