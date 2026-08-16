@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
+import CookieSettingsLink from "./CookieSettingsLink";
 
 const BG     = "#1C2544";
 const BORDER = "rgba(255,255,255,0.12)";
@@ -137,8 +139,17 @@ export default function Footer() {
       </div>
 
       <div className="px-6 pb-6">
-        <div className="max-w-7xl mx-auto border-t pt-5 text-center text-sm text-white/40" style={{ borderColor: BORDER }}>
-          © 2026 We Lead Projects ApS
+        <div
+          className="max-w-7xl mx-auto border-t pt-5 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-white/40"
+          style={{ borderColor: BORDER }}
+        >
+          <span>© 2026 We Lead Projects ApS</span>
+          <span className="hidden sm:inline">·</span>
+          <Link href="/privatlivspolitik" className="hover:text-white/70 transition-colors">
+            Privatlivspolitik
+          </Link>
+          <span className="hidden sm:inline">·</span>
+          <CookieSettingsLink className="hover:text-white/70 transition-colors" />
         </div>
       </div>
 
