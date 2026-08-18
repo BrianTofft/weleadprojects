@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/ydelser/projektledelse`,          priority: 0.85, changeFrequency: "monthly" as const },
     { url: `${base}/ydelser/enterprise-architecture`, priority: 0.85, changeFrequency: "monthly" as const },
     { url: `${base}/ydelser/ai-governance`,           priority: 0.85, changeFrequency: "monthly" as const },
+    { url: `${base}/cases`,   priority: 0.8,  changeFrequency: "monthly" as const },
     { url: `${base}/indsigt`, priority: 0.8,  changeFrequency: "weekly"  as const },
     { url: `${base}/faq`,     priority: 0.7,  changeFrequency: "monthly" as const },
     { url: `${base}/news`,    priority: 0.6,  changeFrequency: "monthly" as const },
