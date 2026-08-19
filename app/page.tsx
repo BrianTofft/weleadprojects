@@ -67,7 +67,7 @@ const heroSlides = [
   {
     image: "/hero.JPEG",
     flip: true,
-    label: "Plan Well, Lead Better",
+    label: "Projektledelse & Rådgivning",
     heading: "Professionel projektledelse",
     headingRed: "vi sikrer jeres succes",
     body: "Uanset om det er et mindre IT-projekt eller en stor IT-transformation, kan vi bistå med erfarne projektledere, Enterprise arkitekter eller specialiserede eksperter inden for netop jeres branche eller domæne.",

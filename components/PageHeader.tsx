@@ -28,19 +28,14 @@ export default function PageHeader({
           alt={title}
           width={1920}
           height={600}
-          className="w-full h-full object-cover object-center"
-          style={{ filter: "brightness(0.32)" }}
+          className="w-full h-full object-cover object-center brightness-[0.45] md:brightness-[0.32]"
         />
       </div>
 
       {/* Gradient: left-side vignette so text is always readable */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.0) 100%)",
-        }}
-      />
+      {/* Gradient: subtle top vignette on mobile, left vignette on desktop */}
+      <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.0) 100%)" }} />
+      <div className="absolute inset-0 md:hidden" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.0) 100%)" }} />
 
       {/* Content — pt-36 clears the fixed nav (h-20 = 80px) + breathing room */}
       <div className="relative max-w-5xl mx-auto px-6 pt-36 pb-16">
