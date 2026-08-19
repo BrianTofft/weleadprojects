@@ -181,7 +181,7 @@ export default function Home() {
             <p key={`label-${slide}`} style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4 animate-fade">
               {heroSlides[slide].label}
             </p>
-            <h1 key={`h-${slide}`} className="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fade text-white md:text-[#2d1a1a]">
+            <h1 key={`h-${slide}`} className="text-3xl md:text-5xl font-bold leading-tight mb-6 animate-fade text-white md:text-[#2d1a1a]">
               {heroSlides[slide].heading}
               <br />
               <span style={{ color: RED }}>{heroSlides[slide].headingRed}</span>
