@@ -32,7 +32,7 @@ export default function PrivatlivspolitikPage() {
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto space-y-10">
-          <p className="text-gray-500 text-sm">Senest opdateret: 14. august 2026</p>
+          <p className="text-gray-500 text-sm">Senest opdateret: 19. august 2026</p>
 
           <div>
             <h2 style={{ color: DARK }} className="text-2xl font-bold mb-3">Dataansvarlig</h2>
@@ -57,10 +57,10 @@ export default function PrivatlivspolitikPage() {
           <div>
             <h2 style={{ color: DARK }} className="text-2xl font-bold mb-3">Cookies og måling af trafik</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
-              Vi bruger Google Analytics 4 (GA4) til at måle, hvordan besøgende bruger hjemmesiden, blandt andet hvilke sider der besøges, og hvor trafikken kommer fra. Det hjælper os med at forbedre indhold og brugeroplevelse.
+              Vi bruger Google Analytics 4 (GA4) til at måle, hvordan besøgende bruger hjemmesiden, blandt andet hvilke sider der besøges, og hvor trafikken kommer fra. Derudover bruger vi Microsoft Clarity til at forstå brugeradfærd via heatmaps og anonymiserede sessionsoptagelser. Begge værktøjer hjælper os med at forbedre indhold og brugeroplevelse.
             </p>
             <p className="text-gray-600 leading-relaxed mb-3">
-              GA4 sættes først, når du aktivt har accepteret cookies i samtykkebanneret. Afviser du, indlæses Google Analytics ikke, og der sættes ingen målings-cookies. Retsgrundlaget er dit samtykke, jf. GDPR artikel 6, stk. 1, litra a. Du kan til enhver tid trække dit samtykke tilbage nedenfor.
+              Både GA4 og Clarity sættes først, når du aktivt har accepteret cookies i samtykkebanneret. Afviser du, indlæses ingen af værktøjerne, og der sættes ingen målings-cookies. Retsgrundlaget er dit samtykke, jf. GDPR artikel 6, stk. 1, litra a. Du kan til enhver tid trække dit samtykke tilbage nedenfor.
             </p>
             <div className="overflow-x-auto rounded-xl border" style={{ borderColor: BORDER }}>
               <table className="w-full text-sm text-left">
@@ -82,13 +82,31 @@ export default function PrivatlivspolitikPage() {
                     <td className="px-4 py-3">Gemmer session- og besøgsdata til GA4</td>
                     <td className="px-4 py-3">2 år</td>
                   </tr>
+                  <tr className="border-t" style={{ borderColor: BORDER }}>
+                    <td className="px-4 py-3 font-mono text-xs">_clck</td>
+                    <td className="px-4 py-3">Microsoft Clarity, identificerer unikke besøgende</td>
+                    <td className="px-4 py-3">1 år</td>
+                  </tr>
+                  <tr className="border-t" style={{ borderColor: BORDER }}>
+                    <td className="px-4 py-3 font-mono text-xs">_clsk</td>
+                    <td className="px-4 py-3">Microsoft Clarity, forbinder sidevisninger i en session</td>
+                    <td className="px-4 py-3">1 dag</td>
+                  </tr>
+                  <tr className="border-t" style={{ borderColor: BORDER }}>
+                    <td className="px-4 py-3 font-mono text-xs">CLID</td>
+                    <td className="px-4 py-3">Microsoft Clarity, unik bruger-ID på tværs af sessioner</td>
+                    <td className="px-4 py-3">1 år</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-gray-500 text-sm mt-3">
-              Data behandles af Google LLC (USA) som databehandler under Googles standardvilkår og EU-US Data Privacy Framework. Læs mere i{" "}
+              GA4-data behandles af Google LLC (USA) under Googles standardvilkår og EU-US Data Privacy Framework. Læs mere i{" "}
               <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
-                Googles egen privatlivspolitik
+                Googles privatlivspolitik
+              </a>. Clarity-data behandles af Microsoft Corporation (USA) under Microsofts standardvilkår. Læs mere i{" "}
+              <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener noreferrer" style={{ color: RED }} className="underline hover:opacity-75">
+                Microsofts privatlivserklæring
               </a>.
             </p>
           </div>
@@ -96,7 +114,7 @@ export default function PrivatlivspolitikPage() {
           <div className="rounded-2xl border p-6" style={{ borderColor: BORDER, background: OFFWHITE }}>
             <h2 style={{ color: DARK }} className="text-lg font-bold mb-2">Skift dit cookie-valg</h2>
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
-              Du kan til enhver tid ændre eller trække dit samtykke til Google Analytics tilbage. Klik herunder for at nulstille dit valg, samtykkebanneret vises igen ved næste sideindlæsning.
+              Du kan til enhver tid ændre eller trække dit samtykke til Google Analytics og Microsoft Clarity tilbage. Klik herunder for at nulstille dit valg, samtykkebanneret vises igen ved næste sideindlæsning.
             </p>
             <CookieSettingsLink
               className="text-white font-semibold px-5 py-2 rounded-full text-sm hover:opacity-90 transition-opacity inline-block"
