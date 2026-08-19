@@ -168,7 +168,7 @@ export default function Home() {
         {/* Gradient overlay — dark scrim on mobile so white text stays legible, light gradient on desktop for dark text */}
         <div
           className="absolute inset-0 md:hidden"
-          style={{ background: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4))" }}
+          style={{ background: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))" }}
         />
         <div
           className="absolute inset-0 hidden md:block"
