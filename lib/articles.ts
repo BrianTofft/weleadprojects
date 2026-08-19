@@ -751,6 +751,127 @@ export const articles: Article[] = [
       { label: "OECD: AI Policy Observatory", url: "https://oecd.ai" },
     ],
   },
+  // ─── ARTIKEL 9 — DA ──────────────────────────────────────────────────────
+  {
+    slug: "pmo-ea-ai-governance-integration",
+    lang: "da",
+    category: "Strategi",
+    title: "PMO, EA og AI governance: Tre discipliner",
+    description:
+      "Hvordan Project Management Office, Enterprise Architecture og AI governance hænger sammen, og hvorfor virksomheder der integrerer dem vinder.",
+    date: "August 2026",
+    readingMinutes: 8,
+    intro:
+      "De fleste virksomheder opbygger projektledelse, arkitekturstyring og AI governance som tre separate funktioner. Hver med sin leder, sine processer og sit sprog. Det virker logisk på papiret, men i praksis skaber det blindzoner, dobbeltarbejde og beslutninger, der modarbejder hinanden. Denne artikel beskriver, hvordan de tre discipliner hænger sammen, og hvordan en integreret tilgang giver bedre projekter, stærkere arkitektur og reel kontrol over AI.",
+    sections: [
+      {
+        heading: "Tre funktioner, ét formål",
+        body: "Et Project Management Office (PMO) sikrer, at projekter gennemføres struktureret og leverer det forventede resultat. Enterprise Architecture (EA) sikrer, at teknologiske valg understøtter forretningsstrategien og passer ind i det samlede systemlandskab. AI governance sikrer, at brugen af kunstig intelligens sker ansvarligt, lovligt og med dokumenteret risikostyring. Alle tre funktioner eksisterer for at beskytte virksomheden mod dårlige beslutninger og spildte ressourcer. Alligevel opererer de i mange organisationer i siloer, hvor PMO rapporterer til en CIO eller COO, EA sidder i en teknikafdeling, og AI governance er placeret hos jura. Resultatet er, at et projekt kan blive godkendt af PMO uden at EA har vurderet den arkitekturmæssige konsekvens, eller at en AI-løsning implementeres uden at nogen har klassificeret den efter EU AI Act.",
+      },
+      {
+        heading: "Stage Gate-modellen som fælles ramme",
+        body: "En Stage Gate-model opdeler et IT-projekt i faser med klare gates, beslutningspunkter, hvor projektet vurderes inden det rykker videre. Typiske faser er idé og screening, foranalyse, planlægning, eksekvering, test og lancering. Ved hver gate stilles konkrete spørgsmål: er business casen stadig valid? Er risici identificeret og håndteret? Er de nødvendige ressourcer på plads? Denne model er PMO's styringsværktøj. Men den bliver langt stærkere, når EA og AI governance integreres direkte i faserne. I stedet for at arkitekturvurderinger og compliancetjek sker som isolerede sideprocesser, indlejres de som obligatoriske elementer ved de relevante gates.",
+      },
+      {
+        heading: "EA i projektmodellen: arkitektur som kvalitetskontrol",
+        body: "I en integreret model deltager Enterprise Architecture aktivt ved mindst tre gates. Ved foranalysen vurderer EA, om den foreslåede løsning passer ind i det eksisterende systemlandskab, eller om den skaber teknisk gæld. Ved planlægningsfasen definerer EA de arkitekturprincipper og guardrails, som projektet skal overholde. Og ved testfasen verificerer EA, at den leverede løsning faktisk overholder de fastsatte principper. Det kræver et Architecture Board, et tværfagligt organ med mandat til at godkende eller afvise arkitekturbeslutninger. Uden et Architecture Board ender arkitekturvurderinger som anbefalinger, som projektledere frit kan ignorere, når tidsplanen presser. Et Architecture Board med reelt mandat er forskellen på EA som governance og EA som dokumentation.",
+      },
+      {
+        heading: "AI governance i projektmodellen: compliance fra dag ét",
+        body: "EU AI Act trådte for alvor i kraft den 2. august 2026 for højrisikosystemer og transparenskrav. Det betyder, at ethvert projekt, der involverer AI, skal risikoklassificeres tidligt i forløbet. I en integreret Stage Gate-model sker denne klassificering allerede ved foranalysen. Spørgsmålene er konkrete: anvender projektet AI til beslutninger, der påvirker mennesker? Bruger det persondata til træning? Er systemet omfattet af Annex III i EU AI Act? Hvis svaret er ja, aktiveres en governance-track parallelt med projektplanen. Denne track omfatter dokumentation af datasæt, risikovurdering, test for bias og plan for menneskelig kontrol. Ved at integrere dette i projektmodellen undgår virksomheden den klassiske fejl: at bygge løsningen først og forsøge at gøre den compliant bagefter. Compliance bagefter er altid dyrere og ofte umulig uden grundlæggende ændringer.",
+      },
+      {
+        heading: "Guidelines og guardrails: EA som ramme for AI",
+        body: "Enterprise Architecture leverer de guidelines og guardrails, som AI governance bygger på. Guidelines beskriver den foretrukne tilgang: hvilke dataplatforme bruger vi? Hvilke standarder for datamodellering følger vi? Hvordan dokumenterer vi integrationer? Guardrails er de hårde grænser: ingen AI-model må trænes på data, der ikke er klassificeret. Ingen ny integration må oprettes uden at EA har godkendt den. Ingen tredjeparts-AI-tjeneste må tages i brug uden risikovurdering. Forskellen mellem guidelines og guardrails er afgørende. Guidelines kan fraviges med en begrundelse. Guardrails kan ikke. Når AI governance opererer inden for EA's guardrails, bliver det en del af den daglige drift frem for et separat complianceprojekt, der lever sit eget liv ved siden af organisationen.",
+      },
+      {
+        heading: "Synergien i praksis: et konkret eksempel",
+        body: "En virksomhed ønsker at implementere en AI-baseret løsning til automatiseret kundeservice. I en siloopdelt organisation ville projektet blive startet af forretningen, godkendt af PMO på baggrund af en business case og overleveret til IT til implementering. EA ville måske blive spurgt til råds undervejs, og compliance ville blive kontaktet tæt på lancering. I en integreret model ser forløbet anderledes ud. Ved idéfasen vurderer EA, om løsningen passer ind i det eksisterende systemlandskab, og AI governance klassificerer systemet efter EU AI Act (i dette tilfælde sandsynligvis begrænset risiko med transparenskrav). Ved foranalysen definerer EA datakravene, og governance-teamet verificerer, at de planlagte datasæt kan bruges lovligt. Ved planlægningen fastlægger PMO tidsplan og ressourcer med input fra EA om arkitekturkrav og fra governance om dokumentationskrav. Ved test verificerer alle tre funktioner: PMO at leverancen er komplet, EA at arkitekturprincipperne er overholdt, og governance at dokumentationen er på plads til en eventuel myndighedshenvendelse. Forskellen er ikke flere møder. Forskellen er, at de rigtige spørgsmål stilles på det rigtige tidspunkt, i stedet for at de stilles for sent.",
+      },
+      {
+        heading: "Dataplatformen som fundament",
+        body: "Ingen af de tre discipliner fungerer uden pålidelige data. PMO har brug for data til statusrapportering og ressourcestyring. EA har brug for data til at kortlægge systemlandskabet. AI governance har brug for data til risikovurdering og lineage. En struktureret dataplatform med klar master data, tiered datastruktur og data governance er derfor ikke et separat initiativ. Det er fundamentet, som PMO, EA og AI governance alle hviler på. Uden entydige datakilder kan PMO ikke rapportere retvisende, EA kan ikke vurdere afhængigheder, og AI governance kan ikke dokumentere, hvilke data en model er trænet på.",
+      },
+      {
+        heading: "Organisatorisk placering: hvem ejer hvad?",
+        body: "Den hyppigste fejl er at placere AI governance hos jura alene. Jura kan vurdere lovkrav, men kan ikke vurdere, hvilke data et system trækker på, eller hvilke andre systemer det er koblet til. Det er arkitekturviden. Den bedste AI governance, vi har set, sidder hos Enterprise Architecture med jura som rådgiver. PMO bør ligeledes have en tæt kobling til EA, så projektmodellens gates afspejler arkitekturkrav. Konkret anbefaler vi, at Architecture Board inkluderer en fast repræsentant fra PMO, og at PMO's gate-kriterier inkluderer EA- og governance-godkendelser. Det skaber en integreret styringskæde, hvor ingen beslutning tages i isolation.",
+      },
+      {
+        heading: "Fem trin til at komme i gang",
+        body: "Start med en kortlægning af, hvordan de tre funktioner opererer i dag. Hvor sidder de organisatorisk? Hvem rapporterer til hvem? Hvor er der overlap, og hvor er der huller? Dernæst: etabler en fælles projektmodel med Stage Gates, der inkluderer EA-vurdering og AI-klassificering som obligatoriske elementer. Tredje trin er at oprette eller styrke et Architecture Board med reelt mandat til at sige nej. Fjerde trin er at definere klare guardrails for AI, som er forankret i EA's eksisterende principper. Femte og sidste trin er at sikre, at dataplatformen understøtter alle tre funktioner med entydige kilder og klar lineage. Ingen af trinene kræver et stort program. De kræver, at nogen sætter sig for bordenden og beslutter, at disse discipliner ikke længere opererer i siloer.",
+      },
+      {
+        heading: "Hvornår bør man søge ekstern hjælp?",
+        body: "Mange virksomheder har kompetencerne internt, men mangler kapacitet eller mandat til at drive forandringen. En ekstern rådgiver tilføjer to ting: et blik udefra, der ser de blindzoner, organisationen selv er for tæt på til at opdage, og en uafhængighed, der gør det lettere at stille de ubehagelige spørgsmål. Hos We Lead Projects har vi opbygget PMO-funktioner, etableret Architecture Boards og designet AI governance-rammer for virksomheder i alt fra retail til den offentlige sektor. Vores erfaring er, at den største gevinst ikke ligger i de enkelte funktioner, men i integrationen mellem dem.",
+      },
+    ],
+    sources: [
+      { label: "EU AI Act: Europa-Kommissionens regulering af AI", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
+    ],
+  },
+
+  // ─── ARTIKEL 9 — EN ──────────────────────────────────────────────────────
+  {
+    slug: "pmo-ea-ai-governance-integration-guide",
+    lang: "en",
+    category: "Strategy",
+    title: "PMO, EA and AI Governance: Integration",
+    description:
+      "How Project Management Office, Enterprise Architecture, and AI governance connect, and why companies that integrate them deliver better results.",
+    date: "August 2026",
+    readingMinutes: 8,
+    intro:
+      "Most companies build project management, architecture governance, and AI governance as three separate functions. Each with its own leader, processes, and language. It looks logical on paper, but in practice it creates blind spots, duplicated effort, and decisions that work against each other. This article describes how the three disciplines connect, and how an integrated approach delivers better projects, stronger architecture, and real control over AI.",
+    sections: [
+      {
+        heading: "Three functions, one purpose",
+        body: "A Project Management Office (PMO) ensures that projects are executed in a structured way and deliver the expected result. Enterprise Architecture (EA) ensures that technology choices support the business strategy and fit into the overall system landscape. AI governance ensures that the use of artificial intelligence happens responsibly, legally, and with documented risk management. All three functions exist to protect the company from poor decisions and wasted resources. Yet in many organisations they operate in silos, where PMO reports to a CIO or COO, EA sits in a technology department, and AI governance is placed with legal. The result is that a project can be approved by PMO without EA assessing the architectural consequence, or an AI solution gets implemented without anyone classifying it under the EU AI Act.",
+      },
+      {
+        heading: "The Stage Gate model as a shared framework",
+        body: "A Stage Gate model divides an IT project into phases with clear gates, decision points where the project is assessed before it progresses. Typical phases are idea and screening, preliminary analysis, planning, execution, testing, and launch. At each gate, concrete questions are asked: is the business case still valid? Have risks been identified and managed? Are the necessary resources in place? This model is PMO's governance tool. But it becomes far more powerful when EA and AI governance are integrated directly into the phases. Instead of architecture reviews and compliance checks happening as isolated side processes, they are embedded as mandatory elements at the relevant gates.",
+      },
+      {
+        heading: "EA in the project model: architecture as quality control",
+        body: "In an integrated model, Enterprise Architecture participates actively at a minimum of three gates. At the preliminary analysis, EA assesses whether the proposed solution fits into the existing system landscape, or whether it creates technical debt. At the planning phase, EA defines the architecture principles and guardrails the project must adhere to. And at the testing phase, EA verifies that the delivered solution actually complies with the established principles. This requires an Architecture Board, a cross-functional body with the mandate to approve or reject architecture decisions. Without an Architecture Board, architecture assessments end up as recommendations that project managers can freely ignore when the timeline pressures mount. An Architecture Board with real mandate is the difference between EA as governance and EA as documentation.",
+      },
+      {
+        heading: "AI governance in the project model: compliance from day one",
+        body: "The EU AI Act came into broad effect on 2 August 2026 for high-risk systems and transparency requirements. This means that every project involving AI must be risk-classified early in the process. In an integrated Stage Gate model, this classification happens at the preliminary analysis. The questions are concrete: does the project use AI for decisions that affect people? Does it use personal data for training? Is the system covered by Annex III of the EU AI Act? If the answer is yes, a governance track is activated in parallel with the project plan. This track covers documentation of datasets, risk assessment, bias testing, and a plan for human oversight. By integrating this into the project model, the company avoids the classic mistake: building the solution first and attempting to make it compliant afterwards. Retrofitting compliance is always more expensive and often impossible without fundamental changes.",
+      },
+      {
+        heading: "Guidelines and guardrails: EA as the framework for AI",
+        body: "Enterprise Architecture provides the guidelines and guardrails on which AI governance builds. Guidelines describe the preferred approach: which data platforms do we use? What standards for data modelling do we follow? How do we document integrations? Guardrails are the hard boundaries: no AI model may be trained on data that has not been classified. No new integration may be created without EA approval. No third-party AI service may be adopted without a risk assessment. The distinction between guidelines and guardrails is critical. Guidelines can be deviated from with justification. Guardrails cannot. When AI governance operates within EA's guardrails, it becomes part of daily operations rather than a separate compliance project that lives its own life alongside the organisation.",
+      },
+      {
+        heading: "The synergy in practice: a concrete example",
+        body: "A company wants to implement an AI-based solution for automated customer service. In a siloed organisation, the project would be initiated by the business, approved by PMO based on a business case, and handed to IT for implementation. EA might be consulted along the way, and compliance would be contacted close to launch. In an integrated model, the process looks different. At the idea phase, EA assesses whether the solution fits into the existing system landscape, and AI governance classifies the system under the EU AI Act (in this case, likely limited risk with transparency requirements). At the preliminary analysis, EA defines the data requirements, and the governance team verifies that the planned datasets can be used legally. At planning, PMO establishes the timeline and resources with input from EA on architecture requirements and from governance on documentation requirements. At testing, all three functions verify: PMO that the deliverable is complete, EA that architecture principles have been followed, and governance that documentation is in place for a potential regulatory inquiry. The difference is not more meetings. The difference is that the right questions are asked at the right time, instead of being asked too late.",
+      },
+      {
+        heading: "The data platform as foundation",
+        body: "None of the three disciplines function without reliable data. PMO needs data for status reporting and resource management. EA needs data to map the system landscape. AI governance needs data for risk assessment and lineage. A structured data platform with clear master data, a tiered data structure, and data governance is therefore not a separate initiative. It is the foundation on which PMO, EA, and AI governance all rest. Without unambiguous data sources, PMO cannot report accurately, EA cannot assess dependencies, and AI governance cannot document which data a model was trained on.",
+      },
+      {
+        heading: "Organisational placement: who owns what?",
+        body: "The most common mistake is placing AI governance with legal alone. Legal can assess regulatory requirements, but cannot assess which data a system draws on, or which other systems it is connected to. That is architecture knowledge. The best AI governance we have seen sits with Enterprise Architecture, with legal as an advisor. PMO should likewise have a close link to EA, so the project model's gates reflect architecture requirements. Specifically, we recommend that the Architecture Board includes a permanent representative from PMO, and that PMO's gate criteria include EA and governance approvals. This creates an integrated governance chain where no decision is made in isolation.",
+      },
+      {
+        heading: "Five steps to get started",
+        body: "Start by mapping how the three functions operate today. Where do they sit organisationally? Who reports to whom? Where is there overlap, and where are there gaps? Next, establish a shared project model with Stage Gates that include EA assessment and AI classification as mandatory elements. Third, create or strengthen an Architecture Board with real mandate to say no. Fourth, define clear guardrails for AI that are anchored in EA's existing principles. Fifth, ensure the data platform supports all three functions with unambiguous sources and clear lineage. None of these steps require a large programme. They require someone to sit at the head of the table and decide that these disciplines no longer operate in silos.",
+      },
+      {
+        heading: "When should you seek external help?",
+        body: "Many companies have the competencies internally but lack the capacity or mandate to drive the change. An external advisor adds two things: an outside perspective that sees the blind spots the organisation itself is too close to notice, and an independence that makes it easier to ask the uncomfortable questions. At We Lead Projects, we have built PMO functions, established Architecture Boards, and designed AI governance frameworks for companies ranging from retail to the public sector. Our experience is that the greatest value lies not in the individual functions, but in the integration between them.",
+      },
+    ],
+    sources: [
+      { label: "EU AI Act: European Commission", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "The Open Group: TOGAF Standard", url: "https://www.opengroup.org/togaf" },
+      { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
