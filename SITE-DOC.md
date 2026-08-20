@@ -18,7 +18,8 @@ Next.js 16 · Tailwind v4 · Vercel · Sidst opdateret august 2026
 | `/indsigt` | Artikel-oversigt |
 | `/indsigt/[slug]` | Dynamisk artikel-side (12 artikler, 6 DA + 6 EN) |
 | `/faq` | FAQ + FAQPage JSON-LD |
-| `/find-projektleder` | Calendly-booking |
+| `/find-projektleder` | Projektleder-landing med booking og formular (findprojektleder.dk) |
+| `/find-ai-konsulent` | AI-konsulent-landing med booking og formular (findaikonsulenter.dk) |
 | `/privatlivspolitik` | GDPR, cookies, GA4 + Clarity |
 | `/news` | Redirect til `/indsigt` |
 | `/pipeline` | Intern lead-tracker (password-beskyttet) |
@@ -61,7 +62,7 @@ Next.js 16 · Tailwind v4 · Vercel · Sidst opdateret august 2026
 | **Supabase** | Pipeline lead-database (PostgreSQL, free tier) |
 | **Google Analytics 4** | Trafik-analyse (consent-gated) |
 | **Microsoft Clarity** | Heatmaps + session replay (consent-gated, projekt y4rnibl6ul) |
-| **Calendly** | Booking på `/find-projektleder` |
+| **Calendly** | Booking på `/find-projektleder` og `/find-ai-konsulent` |
 | **Trustpilot** | Review-widget i footer |
 | **Microsoft 365** | Email (`bt@weleadprojects.com`, MX via Vercel DNS) |
 
@@ -101,9 +102,18 @@ Alle `.cmd`-wrappere loader env-vars fra `.env.local` med `findstr`, da Task Sch
 
 ---
 
-## DNS og email
+## Domæner og DNS
 
-- Domæne registreret hos **Nordicway.dk**, nameservers peger på **Vercel DNS**
+| Domæne | Type | Formål |
+|--------|------|--------|
+| `weleadprojects.com` | Primært | Hoveddomæne (nameservers på Vercel DNS) |
+| `weleadprojects.dk` | Redirect | Viderestilles til `.com` hos registrar |
+| `findprojektleder.dk` | Proxy-rewrite | Viser `/find-projektleder` via `proxy.ts` |
+| `findaikonsulenter.dk` | Proxy-rewrite | Viser `/find-ai-konsulent` via `proxy.ts` |
+
+- Domæner registreret hos **Nordicway.dk**
+- `weleadprojects.com` nameservers peger på **Vercel DNS**
+- `findprojektleder.dk` og `findaikonsulenter.dk` tilføjet som domæner i Vercel-projektet
 - Alle DNS-records (MX, SPF, DKIM, DMARC) administreres i Vercel DNS
 - Email kører via Microsoft 365
 - Resend DKIM/SPF/DMARC-records ligger i Vercel DNS
