@@ -5,11 +5,11 @@ export function proxy(request: NextRequest) {
   const host = request.headers.get('host') || ''
   const { pathname } = request.nextUrl
 
-  if (host === 'findaikonsulenter.dk' || host === 'www.findaikonsulenter.dk') {
+  if ((host === 'findaikonsulenter.dk' || host === 'www.findaikonsulenter.dk') && pathname !== '/find-ai-konsulent') {
     return NextResponse.rewrite(new URL('/find-ai-konsulent', request.url))
   }
 
-  if (host === 'findprojektleder.dk' || host === 'www.findprojektleder.dk') {
+  if ((host === 'findprojektleder.dk' || host === 'www.findprojektleder.dk') && pathname !== '/find-projektleder') {
     return NextResponse.rewrite(new URL('/find-projektleder', request.url))
   }
 
