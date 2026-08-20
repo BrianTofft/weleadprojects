@@ -14,6 +14,7 @@ const STATUSES = [
 const KILDER = [
   { id: 'linkedin', label: 'LinkedIn' },
   { id: 'findprojektleder', label: 'FindProjektleder' },
+  { id: 'findaikonsulenter', label: 'FindAIKonsulenter' },
   { id: 'netvaerk', label: 'Netværk' },
   { id: 'website', label: 'Website' },
   { id: 'andet', label: 'Andet' },

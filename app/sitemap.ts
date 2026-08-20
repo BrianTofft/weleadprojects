@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/faq`,     priority: 0.7,  changeFrequency: "monthly" as const },
     { url: `${base}/news`,    priority: 0.6,  changeFrequency: "monthly" as const },
     { url: `${base}/find-projektleder`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${base}/find-ai-konsulent`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/privatlivspolitik`, priority: 0.3, changeFrequency: "yearly" as const },
   ];
 

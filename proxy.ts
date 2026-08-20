@@ -2,7 +2,16 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export function proxy(request: NextRequest) {
+  const host = request.headers.get('host') || ''
   const { pathname } = request.nextUrl
+
+  if (host === 'findaikonsulenter.dk' || host === 'www.findaikonsulenter.dk') {
+    return NextResponse.rewrite(new URL('/find-ai-konsulent', request.url))
+  }
+
+  if (host === 'findprojektleder.dk' || host === 'www.findprojektleder.dk') {
+    return NextResponse.rewrite(new URL('/find-projektleder', request.url))
+  }
 
   if (pathname.startsWith('/api/pipeline/auth')) {
     return NextResponse.next()
@@ -28,5 +37,9 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/pipeline/:path*', '/api/pipeline/:path*'],
+  matcher: [
+    '/pipeline/:path*',
+    '/api/pipeline/:path*',
+    '/((?!api|_next/static|_next/image|favicon\\.ico|.*\\.(?:png|jpg|jpeg|gif|webp|svg|ico|woff2|ttf|eot)$).*)',
+  ],
 }
