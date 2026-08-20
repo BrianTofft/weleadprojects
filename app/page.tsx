@@ -178,7 +178,7 @@ export default function Home() {
         {/* Slide content */}
         <div className="relative max-w-6xl mx-auto w-full px-6 pt-8 md:pt-36 pb-28">
           <div className="max-w-lg">
-            <p key={`label-${slide}`} style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-4 animate-fade">
+            <p key={`label-${slide}`} className="font-semibold uppercase tracking-widest text-sm mb-4 animate-fade text-white/80 md:text-[#cc2222]">
               {heroSlides[slide].label}
             </p>
             <h1 key={`h-${slide}`} className="text-3xl md:text-5xl font-bold leading-tight mb-6 animate-fade text-white md:text-[#2d1a1a]">
