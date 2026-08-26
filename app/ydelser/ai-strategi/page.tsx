@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI-strategi | We Lead Projects",
     description: "En AI-strategi der er forankret i jeres faktiske systemlandskab og datamodenhed.",
-    images: [{ url: "/Graphics/AdobeStock_828719609.webp", width: 1200, height: 630, alt: "AI-strategi hos We Lead Projects" }],
+    images: [{ url: "/Graphics/project-manager-with-team.webp", width: 1200, height: 630, alt: "AI-strategi hos We Lead Projects" }],
   },
 };
 
@@ -101,7 +101,7 @@ export default function AiStrategiPage() {
         label="Ydelser"
         title="AI-strategi"
         subtitle="En AI-strategi der er forankret i jeres faktiske systemlandskab og datamodenhed, ikke i hvad konkurrenterne angiveligt gør, eller hvad en leverandør har solgt jer."
-        image="/Graphics/AdobeStock_828719609.webp"
+        image="/Graphics/project-manager-with-team.webp"
       />
 
       <section className="py-20 px-6 bg-white">
