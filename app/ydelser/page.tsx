@@ -204,6 +204,18 @@ export default function YdelserPage() {
               </span>
             </Link>
             <Link
+              href="/ydelser/ai-strategi"
+              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
+              style={{ borderColor: BORDER }}
+            >
+              <div className="text-3xl mb-4">🤖</div>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI-strategi</h3>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed">En prioriteret AI-plan forankret i jeres faktiske data, arkitektur og organisatoriske kapacitet.</p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
+            <Link
               href="/ydelser/ai-governance"
               className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
               style={{ borderColor: BORDER }}

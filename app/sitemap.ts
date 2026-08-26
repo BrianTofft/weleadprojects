@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/ydelser`, priority: 0.9,  changeFrequency: "monthly" as const },
     { url: `${base}/ydelser/projektledelse`,          priority: 0.85, changeFrequency: "monthly" as const },
     { url: `${base}/ydelser/enterprise-architecture`, priority: 0.85, changeFrequency: "monthly" as const },
+    { url: `${base}/ydelser/ai-strategi`,              priority: 0.85, changeFrequency: "monthly" as const },
     { url: `${base}/ydelser/ai-governance`,           priority: 0.85, changeFrequency: "monthly" as const },
     { url: `${base}/cases`,   priority: 0.8,  changeFrequency: "monthly" as const },
     { url: `${base}/indsigt`, priority: 0.8,  changeFrequency: "weekly"  as const },

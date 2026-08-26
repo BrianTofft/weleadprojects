@@ -21,6 +21,7 @@ const links = [
 const ydelserSubmenu = [
   { label: "Projektledelse",           href: "/ydelser/projektledelse" },
   { label: "Enterprise Architecture",  href: "/ydelser/enterprise-architecture" },
+  { label: "AI-strategi",              href: "/ydelser/ai-strategi" },
   { label: "AI-governance",            href: "/ydelser/ai-governance" },
 ];
 

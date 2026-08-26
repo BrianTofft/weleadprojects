@@ -185,22 +185,22 @@ export default function AiGovernancePage() {
       <section className="py-16 px-6 text-center bg-white">
         <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Klar til at få styr på jeres AI-governance?</h2>
         <p className="text-gray-500 mb-8 max-w-xl mx-auto">
-          Kontakt os for en uforpligtende samtale om, hvor jeres organisation står i dag.
+          Book et gratis intromøde, eller kontakt os for en uforpligtende samtale om, hvor jeres organisation står i dag.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <Link
-            href="/#kontakt"
+            href="/find-ai-konsulent"
             style={{ background: RED }}
             className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
           >
-            Kontakt os
+            Book intromøde
           </Link>
           <Link
-            href="/ydelser"
+            href="/#kontakt"
             style={{ color: DARK, borderColor: DARK }}
             className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity inline-block"
           >
-            Se alle ydelser
+            Kontakt os
           </Link>
         </div>
       </section>
