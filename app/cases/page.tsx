@@ -42,7 +42,7 @@ const cases = [
       "En større retailvirksomhed stod i en situation, mange vækstvirksomheder genkender. IT-projekter blev startet på mavefornemmelse, kørt af dem der råbte højest, og afsluttet når budgettet var brugt. Der var ingen projektmodel, ingen arkitekturfunktion og ingen stillingtagen til AI, trods stigende brug af AI-værktøjer i organisationen.",
       "Kort sagt: teknologien var løbet fra styringen.",
       "Vi startede med det mest akutte. En Stage Gate-model med klare faser for et standard IT-projekt, fra idé til afslutning. Hver fase med konkrete krav til, hvad der skal beskrives og godkendes, før projektet rykker videre. Ikke et teoretisk dokument, men en operationel ramme, som projektledere faktisk kan bruge.",
-      "Dernæst etablerede vi en Enterprise Architecture-funktion med et Architecture Board, guidelines og guardrails. EA blev koblet direkte ind i projektmodellens faser, så arkitekturvurderinger sker løbende i projektet, ikke som et stempel til sidst.",
+      "Dernæst etablerede vi en Enterprise Architecture funktion med et Architecture Board, guidelines og guardrails. EA blev koblet direkte ind i projektmodellens faser, så arkitekturvurderinger sker løbende i projektet, ikke som et stempel til sidst.",
       "Til sidst udarbejdede vi et udkast til en AI-strategi, der binder ind i EA-modellen. Ikke en isoleret AI-politik, men en integreret del af den arkitektur og governance, virksomheden nu havde fået på plads.",
     ],
     result:

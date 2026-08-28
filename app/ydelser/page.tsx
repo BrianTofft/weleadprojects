@@ -116,7 +116,7 @@ const competencies = [
   {
     icon: "/Graphics/management.webp",
     title: "Enterprise Arkitektur",
-    body: "Enterprise Architecture-opgaver involverer udvikling af en omfattende ramme der tilpasser IT-infrastruktur med forretningsprocesser og strategiske mål, herunder AI-governance og kortlægning af AI-aktiver som en integreret del af EA-rammeværket.",
+    body: "Enterprise Architecture opgaver involverer udvikling af en omfattende ramme der tilpasser IT-infrastruktur med forretningsprocesser og strategiske mål, herunder AI-governance og kortlægning af AI-aktiver som en integreret del af EA-rammeværket.",
   },
   {
     icon: "/Graphics/collaboration_11244653.webp",
@@ -356,7 +356,7 @@ export default function YdelserPage() {
               Vi kalder det 1+1=3, fordi to konsulenter i samspil leverer mere end dobbelt så meget værdi.
             </p>
             <p className="text-gray-600 mt-4">
-              Vores Enterprise Architecture-arbejde tager udgangspunkt i anerkendte industristandarder som{" "}
+              Vores Enterprise Architecture arbejde tager udgangspunkt i anerkendte industristandarder som{" "}
               <a
                 href="https://www.opengroup.org/togaf"
                 target="_blank"

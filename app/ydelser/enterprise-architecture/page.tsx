@@ -7,7 +7,7 @@ import ExpandableCards from "@/components/ExpandableCards";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Enterprise Architecture-rådgivning",
+  title: "Enterprise Architecture rådgivning",
   description:
     "Enterprise Architecture der kobler systemlandskabet til forretningsstrategien. Kortlægning, prioritering og en arkitektur der understøtter vækst.",
   alternates: {

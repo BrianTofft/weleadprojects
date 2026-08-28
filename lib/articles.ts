@@ -373,7 +373,7 @@ export const articles: Article[] = [
     date: "August 2026",
     readingMinutes: 7,
     intro:
-      "De fleste virksomheder taler om AI-governance og Enterprise Architecture-governance som om det er to forskellige projekter. Det ene ligger hos jura og compliance. Det andet ligger hos IT og arkitektur. Problemet er, at AI-systemer er arkitektur. De har grænseflader, afhængigheder og datalinje ligesom alt andet i systemlandskabet. Når de to discipliner ikke taler sammen, ender virksomheden enten med en juridisk vandtæt strategi der er teknisk usammenhængende, eller en teknisk solid løsning der aldrig består en compliance-gennemgang.",
+      "De fleste virksomheder taler om AI-governance og Enterprise Architecture governance som om det er to forskellige projekter. Det ene ligger hos jura og compliance. Det andet ligger hos IT og arkitektur. Problemet er, at AI-systemer er arkitektur. De har grænseflader, afhængigheder og datalinje ligesom alt andet i systemlandskabet. Når de to discipliner ikke taler sammen, ender virksomheden enten med en juridisk vandtæt strategi der er teknisk usammenhængende, eller en teknisk solid løsning der aldrig består en compliance-gennemgang.",
     sections: [
       {
         heading: "AI-governance er ikke en ny disciplin",
