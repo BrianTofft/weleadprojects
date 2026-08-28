@@ -7,15 +7,15 @@ import ExpandableCards from "@/components/ExpandableCards";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "AI-strategi",
+  title: "AI-strategi der skaber reel værdi",
   description:
-    "En AI-strategi der er forankret i jeres faktiske systemlandskab og datamodenhed. Vi hjælper med at prioritere, hvad der giver reel forretningsværdi, og hvornår.",
+    "Få en AI-strategi forankret i jeres systemlandskab og datamodenhed. Vi hjælper med at prioritere use cases og skabe et roadmap med reel forretningsværdi.",
   alternates: {
     canonical: "https://www.weleadprojects.com/ydelser/ai-strategi",
   },
   openGraph: {
-    title: "AI-strategi | We Lead Projects",
-    description: "En AI-strategi der er forankret i jeres faktiske systemlandskab og datamodenhed.",
+    title: "AI-strategi der skaber reel værdi | We Lead Projects",
+    description: "Få en AI-strategi forankret i jeres systemlandskab og datamodenhed. Vi hjælper med at prioritere use cases og skabe et roadmap med reel forretningsværdi.",
     images: [{ url: "/Graphics/project-manager-with-team.webp", width: 1200, height: 630, alt: "AI-strategi hos We Lead Projects" }],
   },
 };
