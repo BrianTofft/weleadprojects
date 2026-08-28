@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "AI-governance-rådgivning",
   description:
-    "Governance-rammer og EU AI Act-compliance til AI-adoption. Vi bygger AI-governance ind i jeres eksisterende Enterprise Architecture, ikke ved siden af.",
+    "Få professionel AI-governance-rådgivning og EU AI Act-compliance. Vi integrerer AI-governance direkte i jeres eksisterende Enterprise Architecture.",
   alternates: {
     canonical: "https://www.weleadprojects.com/ydelser/ai-governance",
   },

@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Enterprise Architecture rådgivning",
   description:
-    "Enterprise Architecture der kobler systemlandskabet til forretningsstrategien. Kortlægning, prioritering og en arkitektur der understøtter vækst.",
+    "Få professionel Enterprise Architecture rådgivning. Vi kobler systemlandskabet til jeres forretningsstrategi og sikrer et klart roadmap for vækst.",
   alternates: {
     canonical: "https://www.weleadprojects.com/ydelser/enterprise-architecture",
   },

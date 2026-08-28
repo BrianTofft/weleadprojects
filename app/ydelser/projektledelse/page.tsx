@@ -7,9 +7,9 @@ import ExpandableCards from "@/components/ExpandableCards";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Projektledelse til IT-projekter",
+  title: "IT-projektledelse der sikrer leverancen",
   description:
-    "Erfarne projektledere til komplekse IT-projekter og transformationer. Vi tager ansvar for leverance, uanset om I kører Waterfall, Agile eller hybrid.",
+    "Professionel projektledelse til komplekse IT-projekter. Vi sikrer klar styring, fremdrift og stærkt ejerskab, så jeres IT-transformation lykkes hele vejen.",
   alternates: {
     canonical: "https://www.weleadprojects.com/ydelser/projektledelse",
   },
