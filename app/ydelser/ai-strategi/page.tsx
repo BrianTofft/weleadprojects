@@ -38,7 +38,7 @@ const serviceJsonLd = {
 
 const leverancer = [
   {
-    title: "AI-modenhedsvurdering",
+    title: "AI-modenhedsvurdering i jeres AI-strategi",
     body: "Et realistisk billede af, hvor I faktisk er i dag, på data, arkitektur, kompetencer og organisatorisk parathed.",
     more: "Mange AI-strategier bygger på en ønsket fremtidsstat frem for den faktiske udgangssituation. Vores modenhedsvurdering kortlægger det faktiske grundlag og identificerer, hvad der skal styrkes, før de ambitiøse use cases er realistiske.",
   },
@@ -55,7 +55,7 @@ const leverancer = [
     linkLabel: "Læs vores guide til AI governance",
   },
   {
-    title: "AI-roadmap",
+    title: "AI-roadmap til eksekvering",
     body: "En konkret tidsplan for hvornår I implementerer hvad, med klare afhængigheder til data, arkitektur og organisatorisk kapacitet.",
     more: "Et AI-roadmap er kun brugbart, hvis det tager udgangspunkt i, hvad der faktisk kan lade sig gøre. Vi bygger roadmappet op omkring jeres reelle kapacitet og sikrer, at det er koordineret med øvrige it-initiativer og ikke kolliderer med dem.",
   },
