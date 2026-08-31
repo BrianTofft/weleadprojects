@@ -181,8 +181,8 @@
   },
   {
     "date": "2026-10-26",
-    "type": "Provokation",
-    "content": "De bedste systemkrav er skrevet af folk der forstår forretningen.\n\nIkke af folk der forstår systemet.\n\nDet lyder indlysende. Og alligevel overlader de fleste virksomheder kravspecifikationen til IT-afdelingen, fordi de er dem der ved hvordan systemet virker.\n\nResultatet er teknisk præcist og forretningsmæssigt forkert.\n\nKrav skal tage udgangspunkt i processer og beslutninger. Hvad skal systemet gøre muligt? Hvad skal det forhindre? Hvem skal bruge det, og hvad ved de ikke om IT?\n\nEn kravspecifikation skrevet af IT er en ønskeseddel til IT. Ikke et mandat fra forretningen."
+    "type": "Observation",
+    "content": "Systemlandskabet i de fleste virksomheder er ikke designet. Det er forhandlet.\n\nHvert system har en historie. Et SAP-modul fordi nogen fik et godt tilbud. En integration der aldrig skulle have eksisteret, men som nu holder tre processer kørende. Et CRM der overtog opgaver fra et andet system, fordi det andet system ikke kunne følge med.\n\nIngen enkelt beslutning var forkert. Samlet set er det et systemlandskab ingen rigtig forstår.\n\nDet er præcis den situation Enterprise Architecture er designet til at forhindre. Og den situation de fleste organisationer har, inden de begynder at arbejde seriøst med det."
   },
   {
     "date": "2026-10-28",
@@ -191,8 +191,8 @@
   },
   {
     "date": "2026-10-30",
-    "type": "Provokation",
-    "content": "\"Vi har valgt den rigtige leverandør.\"\n\nDet er en af de sætninger der oftest går forud for en projektkrise.\n\nIkke fordi leverandøren er forkert. Men fordi valget af leverandør er blevet forvekslet med valget af løsning. Og de to er ikke det samme.\n\nEn leverandør kan levere præcis det de sagde de ville levere. Og projektet kan stadig fejle, fordi det de leverede ikke løste det rigtige problem.\n\nLeverandørvalget kommer efter behovsafklaringen. Ikke i stedet for den."
+    "type": "Observation",
+    "content": "De fleste virksomheder ved ikke hvilke AI-systemer de har i produktion.\n\nIkke fordi nogen har skjult dem. Men fordi AI er gledet ind ad bagdøren i de SaaS-produkter de allerede bruger.\n\nCopilot i Teams. Automatisk oversættelse i CRM'et. Anbefalingsalgoritmer i supportværktøjet. Ingen tog en beslutning om at implementere AI. Leverandøren opdaterede bare produktet.\n\nEU AI Act spørger ikke om I valgte at bruge AI. Den spørger om I ved hvad I bruger, og om I kan stå inde for det.\n\nDe fleste kan ikke svare ja på begge."
   },
   {
     "date": "2026-11-02",
@@ -202,7 +202,7 @@
   {
     "date": "2026-11-04",
     "type": "Observation",
-    "content": "Projektkontoret måler på leverancer.\n\nSjældent på om de rigtige beslutninger bliver truffet i tide.\n\nDet er en grundlæggende fejl i de fleste PMO-setups. Man kan have 100 procent grønne statuser og stadig have et projekt der er ved at køre af sporet, fordi ingen har taget stilling til den risiko der har ligget i risikologgen siden uge tre.\n\nStatus er ikke det samme som sundhed.\n\nEt projekt kan se fint ud på papiret og alligevel mangle det der faktisk afgør om det lander: klare beslutninger, reelt ejerskab og nogen der tør eskalere."
+    "content": "Enterprise Architecture løser ikke tekniske problemer.\n\nDet løser prioriteringsproblemer.\n\nTekniske problemer har løsninger. Prioriteringsproblemer har interessenter med modstridende agendaer, budgetter der ikke rækker, og beslutninger der bliver udskudt fordi ingen vil eje dem.\n\nEA's egentlige værdi er ikke kortlægningen af systemlandskabet. Det er at give ledelsen et fælles sprog og et fælles billede, der gør det muligt at tage de svære prioriteringsbeslutninger, inden de bliver til kriser.\n\nEt arkitekturdiagram er bare papir. Det er beslutningsevnen bag det der tæller."
   },
   {
     "date": "2026-11-06",
@@ -221,8 +221,8 @@
   },
   {
     "date": "2026-11-13",
-    "type": "Provokation",
-    "content": "\"Vi kender vores kunder.\"\n\nDet er præcis hvad man siger, inden man bygger noget ingen vil bruge.\n\nIkke fordi folk lyver. Men fordi der er forskel på at kende sine kunder og på at vide hvad de faktisk vil gøre i et nyt system, i en ny proces, under tidspres.\n\nDet man ved om kunderne, er hvad de har gjort hidtil. Ikke hvad de vil gøre, når alt er anderledes.\n\nDen antagelse har kostet mange projekter mere end nogen teknisk fejl nogensinde har gjort."
+    "type": "Observation",
+    "content": "Risikoklassificering af AI-systemer er ikke en juridisk opgave.\n\nDet er en arkitekturvurdering.\n\nJura kan fortælle jer hvilke krav der følger med en given risikoklasse. Men den kan ikke fortælle jer hvilken klasse jeres system tilhører, hvilke data det trækker på, hvilke processer det er koblet til, eller hvad der sker hvis det fejler.\n\nDet ved arkitekterne. Eller burde.\n\nAI-governance placeret udelukkende hos compliance-funktionen er governance der mangler halvdelen af grundlaget for sine egne beslutninger."
   },
   {
     "date": "2026-11-16",

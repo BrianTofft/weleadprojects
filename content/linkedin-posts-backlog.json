@@ -1,0 +1,22 @@
+[
+  {
+    "date": "backlog",
+    "type": "Provokation",
+    "content": "De bedste systemkrav er skrevet af folk der forstår forretningen.\n\nIkke af folk der forstår systemet.\n\nDet lyder indlysende. Og alligevel overlader de fleste virksomheder kravspecifikationen til IT-afdelingen, fordi de er dem der ved hvordan systemet virker.\n\nResultatet er teknisk præcist og forretningsmæssigt forkert.\n\nKrav skal tage udgangspunkt i processer og beslutninger. Hvad skal systemet gøre muligt? Hvad skal det forhindre? Hvem skal bruge det, og hvad ved de ikke om IT?\n\nEn kravspecifikation skrevet af IT er en ønskeseddel til IT. Ikke et mandat fra forretningen."
+  },
+  {
+    "date": "backlog",
+    "type": "Provokation",
+    "content": "\"Vi har valgt den rigtige leverandør.\"\n\nDet er en af de sætninger der oftest går forud for en projektkrise.\n\nIkke fordi leverandøren er forkert. Men fordi valget af leverandør er blevet forvekslet med valget af løsning. Og de to er ikke det samme.\n\nEn leverandør kan levere præcis det de sagde de ville levere. Og projektet kan stadig fejle, fordi det de leverede ikke løste det rigtige problem.\n\nLeverandørvalget kommer efter behovsafklaringen. Ikke i stedet for den."
+  },
+  {
+    "date": "backlog",
+    "type": "Observation",
+    "content": "Projektkontoret måler på leverancer.\n\nSjældent på om de rigtige beslutninger bliver truffet i tide.\n\nDet er en grundlæggende fejl i de fleste PMO-setups. Man kan have 100 procent grønne statuser og stadig have et projekt der er ved at køre af sporet, fordi ingen har taget stilling til den risiko der har ligget i risikologgen siden uge tre.\n\nStatus er ikke det samme som sundhed.\n\nEt projekt kan se fint ud på papiret og alligevel mangle det der faktisk afgør om det lander: klare beslutninger, reelt ejerskab og nogen der tør eskalere."
+  },
+  {
+    "date": "backlog",
+    "type": "Provokation",
+    "content": "\"Vi kender vores kunder.\"\n\nDet er præcis hvad man siger, inden man bygger noget ingen vil bruge.\n\nIkke fordi folk lyver. Men fordi der er forskel på at kende sine kunder og på at vide hvad de faktisk vil gøre i et nyt system, i en ny proces, under tidspres.\n\nDet man ved om kunderne, er hvad de har gjort hidtil. Ikke hvad de vil gøre, når alt er anderledes.\n\nDen antagelse har kostet mange projekter mere end nogen teknisk fejl nogensinde har gjort."
+  }
+]
