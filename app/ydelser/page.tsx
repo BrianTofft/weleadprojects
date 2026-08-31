@@ -227,6 +227,26 @@ export default function YdelserPage() {
                 Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
               </span>
             </Link>
+            <Link
+              href="/ydelser/ai-systems-audit"
+              className="group bg-white rounded-2xl border-2 p-8 hover:shadow-lg transition-all"
+              style={{ borderColor: RED }}
+            >
+              <div className="text-3xl mb-4">🔍</div>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit</h3>
+              <p className="text-gray-500 text-sm mb-3 leading-relaxed">Kortlæg jeres AI-systemer og få risikoklassificering efter EU AI Act. 2 dage, fast pris, konkret leverance.</p>
+              <span
+                className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-4"
+                style={{ background: "#fef2f2", color: RED }}
+              >
+                Prisfastsat produkt
+              </span>
+              <div>
+                <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                  Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
