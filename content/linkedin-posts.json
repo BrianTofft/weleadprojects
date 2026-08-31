@@ -173,5 +173,65 @@
     "date": "2026-10-21",
     "type": "Provokation",
     "content": "Governance uden ejerskab er bare et dokument, ingen læser.\n\nJeg har set flotte governance-rammer, komplette med processer, roller og eskaleringsveje, der aldrig blev brugt én eneste gang. Ikke fordi rammen var forkert. Men fordi ingen konkret person stod med ansvaret for at håndhæve den.\n\nEn governance-model uden en navngiven ejer er en hensigtserklæring. Den ligner styring. Den er det ikke.\n\nDet gælder EA-governance. Det gælder i endnu højere grad AI-governance, hvor tempoet er hurtigere, og konsekvenserne af manglende håndhævelse rammer hurtigere.\n\nInden I skriver den næste politik, spørg jer selv: hvem er navnet på den, der siger nej, når nogen bryder den, og har den person reelt lov til det?"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "Observation",
+    "content": "Scope creep starter ikke med at nogen beder om mere.\n\nDet starter med at ingen siger fra.\n\nJeg ser det igen og igen. En interessent nævner en idé i et møde. Projektlederen skriver det ned. Ingen kalder det scope change. Ingen tager en beslutning. Det havner bare i planen.\n\nEt halvt år senere er projektet forsinket, og ingen forstår rigtig hvorfor.\n\nDisciplinen er ikke at afvise nye idéer. Det er at tage stilling til dem med det samme. Hvad koster det? Hvad skubber det? Hvem beslutter det?\n\nDe tre spørgsmål er billige at stille i uge to. Dyre at undlade i uge tolv."
+  },
+  {
+    "date": "2026-10-26",
+    "type": "Provokation",
+    "content": "De bedste systemkrav er skrevet af folk der forstår forretningen.\n\nIkke af folk der forstår systemet.\n\nDet lyder indlysende. Og alligevel overlader de fleste virksomheder kravspecifikationen til IT-afdelingen, fordi de er dem der ved hvordan systemet virker.\n\nResultatet er teknisk præcist og forretningsmæssigt forkert.\n\nKrav skal tage udgangspunkt i processer og beslutninger. Hvad skal systemet gøre muligt? Hvad skal det forhindre? Hvem skal bruge det, og hvad ved de ikke om IT?\n\nEn kravspecifikation skrevet af IT er en ønskeseddel til IT. Ikke et mandat fra forretningen."
+  },
+  {
+    "date": "2026-10-28",
+    "type": "Observation",
+    "content": "Jeg har aldrig set et projekt gå i stå fordi folk ikke arbejdede hårdt nok.\n\nHårdt arbejde er der næsten altid nok af.\n\nDet der mangler er klarhed. Hvem ejer beslutningen? Hvad er det præcis vi leverer til hvem og hvornår? Hvilke afhængigheder blokerer vi for lige nu?\n\nUden svar på de spørgsmål kan et team arbejde intenst i ugevis og alligevel stå samme sted.\n\nDet er ikke et motivationsproblem. Det er et ledelsesproblem."
+  },
+  {
+    "date": "2026-10-30",
+    "type": "Provokation",
+    "content": "\"Vi har valgt den rigtige leverandør.\"\n\nDet er en af de sætninger der oftest går forud for en projektkrise.\n\nIkke fordi leverandøren er forkert. Men fordi valget af leverandør er blevet forvekslet med valget af løsning. Og de to er ikke det samme.\n\nEn leverandør kan levere præcis det de sagde de ville levere. Og projektet kan stadig fejle, fordi det de leverede ikke løste det rigtige problem.\n\nLeverandørvalget kommer efter behovsafklaringen. Ikke i stedet for den."
+  },
+  {
+    "date": "2026-11-02",
+    "type": "Observation",
+    "content": "En AI-strategi uden en navngiven ejer er ikke en strategi.\n\nDet er et dokument.\n\nJeg ser dem overalt. Velskrevne. Ambitiøse. Med roadmaps og use cases og en vision for 2027. Ingen der er ansvarlig for at eksekvere dem.\n\nEn strategi kræver at nogen kan sige: det her er mit ansvar, de her beslutninger tager jeg, og det her er hvad vi laver næste kvartal.\n\nUden det er det visionært underholdning. Ikke ledelse."
+  },
+  {
+    "date": "2026-11-04",
+    "type": "Observation",
+    "content": "Projektkontoret måler på leverancer.\n\nSjældent på om de rigtige beslutninger bliver truffet i tide.\n\nDet er en grundlæggende fejl i de fleste PMO-setups. Man kan have 100 procent grønne statuser og stadig have et projekt der er ved at køre af sporet, fordi ingen har taget stilling til den risiko der har ligget i risikologgen siden uge tre.\n\nStatus er ikke det samme som sundhed.\n\nEt projekt kan se fint ud på papiret og alligevel mangle det der faktisk afgør om det lander: klare beslutninger, reelt ejerskab og nogen der tør eskalere."
+  },
+  {
+    "date": "2026-11-06",
+    "type": "Observation",
+    "content": "Det dyreste møde i et IT-projekt er kickoff-mødet.\n\nIkke fordi det tager lang tid. Men fordi det er her de dårlige antagelser bliver cementeret.\n\nAlle er enige. Alle er begejstrede. Ingen stiller de ubehagelige spørgsmål, fordi stemningen er god og kontrakten er underskrevet.\n\nEr scope realistisk givet de ressourcer der er til rådighed? Er der budget til det der uundgåeligt går galt? Hvem ejer beslutningerne når I er uenige?\n\nDe spørgsmål er billige i uge nul. Meget dyre i uge tyve."
+  },
+  {
+    "date": "2026-11-09",
+    "type": "Observation",
+    "content": "Det er ikke dokumentationen der sinker et IT-projekt.\n\nDet er manglen på beslutninger.\n\nJeg ser det hele tiden. Projektteamet venter på en afklaring. Afklaringen kræver en beslutning. Beslutningen kræver et møde. Mødet bliver udskudt.\n\nI mellemtiden arbejder folk videre på antagelser. Og antagelserne viser sig at være forkerte tre måneder senere.\n\nGod dokumentation er et biprodukt af gode beslutningsprocesser. Ikke en erstatning for dem."
+  },
+  {
+    "date": "2026-11-11",
+    "type": "Observation",
+    "content": "Jeg stiller altid det samme spørgsmål tidligt i et projekt: hvem har lov til at sige nej?\n\nIkke hvem der formelt kan eskalere. Hvem der reelt kan stoppe noget.\n\nSvaret afslører mere om projektets sundhed end nogen tidsplan eller risikoregister.\n\nHvis ingen kan sige nej til nye idéer, er scope ikke styret. Hvis ingen kan sige nej til leverandøren, er kontrakten ikke forhandlet ordentligt. Hvis ingen kan sige nej til direktøren, er projektet politisk, ikke fagligt.\n\nEt projekt med for mange ja-sigere er et projekt uden styring."
+  },
+  {
+    "date": "2026-11-13",
+    "type": "Provokation",
+    "content": "\"Vi kender vores kunder.\"\n\nDet er præcis hvad man siger, inden man bygger noget ingen vil bruge.\n\nIkke fordi folk lyver. Men fordi der er forskel på at kende sine kunder og på at vide hvad de faktisk vil gøre i et nyt system, i en ny proces, under tidspres.\n\nDet man ved om kunderne, er hvad de har gjort hidtil. Ikke hvad de vil gøre, når alt er anderledes.\n\nDen antagelse har kostet mange projekter mere end nogen teknisk fejl nogensinde har gjort."
+  },
+  {
+    "date": "2026-11-16",
+    "type": "Observation",
+    "content": "Enterprise Architecture er ikke populær i budgetforhandlinger.\n\nDet er den funktion der skal begrunde hvorfor noget ikke skal bygges.\n\nDet er let at sælge et nyt system. Visionerne er konkrete, ROI'en ser god ud på slide to, og leverandøren har forberedt en overbevisende demo.\n\nDet er sværere at sælge overblik. At forklare at det nye system kolliderer med tre eksisterende integrationer. At datamodellen ikke passer. At det samme problem allerede er halvt løst et andet sted.\n\nArkitektens job er ikke at bremse innovation. Det er at sikre at investeringen faktisk virker."
+  },
+  {
+    "date": "2026-11-18",
+    "type": "Provokation",
+    "content": "De fleste AI-projekter der fejler, fejler ikke på teknologien.\n\nDe fejler på at ingen definerede hvad succes var, inden de gik i gang.\n\nPiloten virkede. Brugerne var tilfredse. Modellen præsterede over forventning. Og så skulle det skaleres, og ingen kunne svare på hvilke måltal der skulle nås, hvem der ejede beslutningen om udrulning, eller hvad der skulle ske med de medarbejdere hvis arbejde ændrede sig.\n\nEt AI-projekt er et forandringsprojekt med et teknologisk element.\n\nIkke omvendt."
   }
 ]
