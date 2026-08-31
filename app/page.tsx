@@ -373,6 +373,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AI SYSTEMS AUDIT CALLOUT */}
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Link
+            href="/ydelser/ai-systems-audit"
+            className="group flex flex-col md:flex-row items-center gap-8 rounded-2xl border-2 p-8 md:p-10 hover:shadow-lg transition-all"
+            style={{ borderColor: RED }}
+          >
+            <div className="shrink-0 text-5xl">🔍</div>
+            <div className="flex-1 text-center md:text-left">
+              <span
+                className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3"
+                style={{ background: "#fef2f2", color: RED }}
+              >
+                Prisfastsat produkt
+              </span>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit — 49.000 kr.</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Ved I præcis hvilke AI-systemer I har i produktion? De fleste virksomheder gør det ikke. På 2 dage kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.
+              </p>
+            </div>
+            <span style={{ color: RED }} className="shrink-0 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              Læs mere <span>→</span>
+            </span>
+          </Link>
+        </div>
+      </section>
+
       {/* EKSPERTISE */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">

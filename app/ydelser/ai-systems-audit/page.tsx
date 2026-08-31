@@ -82,7 +82,7 @@ const processSteps = [
 const faqs = [
   {
     q: "Hvad koster et AI Systems Audit?",
-    a: "Fast pris aftalt på forhånd, afhængig af organisationens størrelse og kompleksitet. Kontakt os, så sender vi et konkret tilbud inden for 24 timer.",
+    a: "49.000 kr. ekskl. moms. Fast pris uanset organisationens størrelse, ingen variabel fakturering.",
   },
   {
     q: "Hvad kræver det af os?",
@@ -143,8 +143,8 @@ export default function AiSystemsAuditPage() {
                 <div className="text-sm text-gray-500">Kortlægning, klassificering, governance, handlingsplan</div>
               </div>
               <div>
-                <div className="text-3xl font-bold mb-1" style={{ color: RED }}>Fast pris</div>
-                <div className="text-sm text-gray-500">Aftalt på forhånd, ingen åbne regninger</div>
+                <div className="text-3xl font-bold mb-1" style={{ color: RED }}>49.000 kr.</div>
+                <div className="text-sm text-gray-500">Fast pris ekskl. moms, ingen åbne regninger</div>
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ export default function AiSystemsAuditPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-white text-2xl font-bold mb-4">Klar til at få det faktiske billede?</h2>
           <p className="text-white opacity-70 mb-8 leading-relaxed">
-            Kontakt os, og vi sender et konkret tilbud inden for 24 timer. Fast pris, ingen forpligtelse.
+            49.000 kr. ekskl. moms. Book et møde, og vi aftaler datoer og forberedelse.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
