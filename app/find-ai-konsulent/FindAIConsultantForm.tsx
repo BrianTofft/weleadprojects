@@ -10,6 +10,7 @@ const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
 const projekttyper = [
+  "AI Systems Audit (49.000 kr. fast pris)",
   "AI-strategi og governance",
   "AI-implementering (GenAI / ML)",
   "AI-readiness vurdering",
@@ -207,6 +208,39 @@ export default function FindAIConsultantForm() {
             Uanset om I står overfor jeres første AI use case eller skal skalere en eksisterende
             AI-praksis, kan vi typisk have en kvalificeret konsulent klar inden for få dage.
           </p>
+        </div>
+      </section>
+
+      {/* AI SYSTEMS AUDIT CALLOUT */}
+      <section className="py-10 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <a
+            href="/ydelser/ai-systems-audit"
+            className="group flex flex-col md:flex-row items-center gap-6 rounded-2xl border-2 p-7 hover:shadow-lg transition-all"
+            style={{ borderColor: RED }}
+          >
+            <div className="shrink-0 text-4xl">🔍</div>
+            <div className="flex-1 text-center md:text-left">
+              <span
+                className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-2"
+                style={{ background: "#fef2f2", color: RED }}
+              >
+                Prisfastsat produkt
+              </span>
+              <h3 className="font-bold text-lg mb-1" style={{ color: DARK }}>
+                AI Systems Audit — 49.000 kr.
+              </h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Vil du starte konkret og afgrænset? På 2 dage kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.
+              </p>
+            </div>
+            <span
+              style={{ color: RED }}
+              className="shrink-0 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+            >
+              Læs mere <span>→</span>
+            </span>
+          </a>
         </div>
       </section>
 
