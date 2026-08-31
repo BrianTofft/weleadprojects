@@ -1,0 +1,1538 @@
+<title>AI Systems Audit Drejebog</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --bg: #f7f5f5;
+    --surface: #ffffff;
+    --surface-2: #f0ecec;
+    --border: #e0d8d8;
+    --text: #2d1a1a;
+    --text-muted: #6b5555;
+    --text-faint: #9e8888;
+    --accent: #cc2222;
+    --accent-light: #fef2f2;
+    --navy: #1C2544;
+    --navy-text: #ffffff;
+    --risk-prohibited-bg: #fef2f2;
+    --risk-prohibited: #b91c1c;
+    --risk-high-bg: #fff7ed;
+    --risk-high: #c2410c;
+    --risk-limited-bg: #fefce8;
+    --risk-limited: #a16207;
+    --risk-minimal-bg: #f0fdf4;
+    --risk-minimal: #15803d;
+    --sidebar-w: 230px;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141010;
+      --surface: #1e1818;
+      --surface-2: #251e1e;
+      --border: #3a2e2e;
+      --text: #f0ece8;
+      --text-muted: #b09898;
+      --text-faint: #7a6060;
+      --accent: #e04040;
+      --accent-light: #2a1010;
+      --navy: #0e1530;
+      --risk-prohibited-bg: #2a1010;
+      --risk-prohibited: #f87171;
+      --risk-high-bg: #2a1a08;
+      --risk-high: #fb923c;
+      --risk-limited-bg: #1e1a06;
+      --risk-limited: #fbbf24;
+      --risk-minimal-bg: #082015;
+      --risk-minimal: #4ade80;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #141010;
+    --surface: #1e1818;
+    --surface-2: #251e1e;
+    --border: #3a2e2e;
+    --text: #f0ece8;
+    --text-muted: #b09898;
+    --text-faint: #7a6060;
+    --accent: #e04040;
+    --accent-light: #2a1010;
+    --navy: #0e1530;
+    --risk-prohibited-bg: #2a1010;
+    --risk-prohibited: #f87171;
+    --risk-high-bg: #2a1a08;
+    --risk-high: #fb923c;
+    --risk-limited-bg: #1e1a06;
+    --risk-limited: #fbbf24;
+    --risk-minimal-bg: #082015;
+    --risk-minimal: #4ade80;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.65;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: var(--navy);
+    overflow-y: auto;
+    padding: 28px 0 40px;
+    z-index: 100;
+    scrollbar-width: thin;
+  }
+
+  .sidebar-logo {
+    padding: 0 20px 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 20px;
+  }
+
+  .sidebar-logo span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .sidebar-logo strong {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+    display: block;
+  }
+
+  .nav-section {
+    padding: 0 0 16px;
+  }
+
+  .nav-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    padding: 12px 20px 6px;
+    display: block;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 20px;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    transition: color 0.15s, background 0.15s;
+    border-left: 2px solid transparent;
+    line-height: 1.4;
+  }
+
+  .nav-link:hover, .nav-link.active {
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    border-left-color: var(--accent);
+  }
+
+  .nav-link .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    flex-shrink: 0;
+  }
+
+  /* MAIN */
+  .main {
+    margin-left: var(--sidebar-w);
+    flex: 1;
+    max-width: 860px;
+    padding: 48px 56px 100px 56px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 64px;
+    scroll-margin-top: 40px;
+  }
+
+  .section-eyebrow {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.15;
+    text-wrap: balance;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.25;
+    text-wrap: balance;
+    margin-bottom: 16px;
+    margin-top: 40px;
+  }
+
+  h2:first-child { margin-top: 0; }
+
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 10px;
+    margin-top: 28px;
+  }
+
+  h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+
+  p { margin-bottom: 12px; color: var(--text); }
+  p:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; }
+
+  /* INTRO BOX */
+  .intro-box {
+    background: var(--navy);
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .intro-stat { text-align: center; }
+
+  .intro-stat .val {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .intro-stat .lbl {
+    font-size: 11.5px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.4;
+  }
+
+  /* DIVIDER */
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  /* TIME BLOCKS */
+  .timeblock {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    background: var(--surface);
+  }
+
+  .timeblock-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .timeblock-time {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+    white-space: nowrap;
+    min-width: 96px;
+  }
+
+  .timeblock-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  .timeblock-tag {
+    margin-left: auto;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .timeblock-body {
+    padding: 16px 18px;
+  }
+
+  .timeblock-body .participants {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .timeblock-body .participants::before {
+    content: '↳';
+    color: var(--accent);
+    font-size: 13px;
+  }
+
+  /* QUESTION LIST */
+  .q-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .q-list li {
+    padding: 8px 12px 8px 14px;
+    border-left: 2px solid var(--border);
+    font-size: 13.5px;
+    color: var(--text);
+  }
+
+  .q-list li strong {
+    display: block;
+    font-size: 12px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 2px;
+  }
+
+  /* RISK TABLE */
+  .risk-table-wrap { overflow-x: auto; margin-bottom: 20px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  /* RISK BADGES */
+  .risk-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .risk-badge::before { content: '●'; font-size: 8px; }
+
+  .risk-prohibited { background: var(--risk-prohibited-bg); color: var(--risk-prohibited); }
+  .risk-high       { background: var(--risk-high-bg);       color: var(--risk-high);       }
+  .risk-limited    { background: var(--risk-limited-bg);    color: var(--risk-limited);    }
+  .risk-minimal    { background: var(--risk-minimal-bg);    color: var(--risk-minimal);    }
+
+  /* SPOT CHECK GRID */
+  .system-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .system-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    background: var(--surface);
+  }
+
+  .system-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .system-name {
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--text);
+  }
+
+  .system-checks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .system-checks li {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .system-checks li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--text-faint);
+    font-size: 11px;
+    top: 2px;
+  }
+
+  /* REPORT SECTIONS */
+  .report-section {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 10px;
+    background: var(--surface);
+  }
+
+  .report-section-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-faint);
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .report-section-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .report-section-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+
+  /* CHECKLIST */
+  .checklist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    color: var(--text);
+  }
+
+  .checklist li::before {
+    content: '☐';
+    color: var(--accent);
+    font-size: 15px;
+    line-height: 1.4;
+    flex-shrink: 0;
+  }
+
+  /* DECISION TREE */
+  .decision-step {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .decision-step-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    min-width: 24px;
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+
+  .decision-step-content { flex: 1; }
+
+  .decision-step-q {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .decision-outcomes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .decision-outcome {
+    font-size: 12.5px;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  .decision-outcome .oc-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 1px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .oc-yes .oc-label { background: var(--risk-prohibited-bg); color: var(--risk-prohibited); }
+  .oc-no .oc-label { background: var(--risk-minimal-bg); color: var(--risk-minimal); }
+  .oc-maybe .oc-label { background: var(--risk-high-bg); color: var(--risk-high); }
+
+  /* INFO BLOCK */
+  .info-block {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 0 6px 6px 0;
+    margin: 16px 0;
+    font-size: 13.5px;
+    color: var(--text);
+  }
+
+  .info-block strong { color: var(--accent); }
+
+  /* MATERIAL LIST */
+  .material-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .material-list li {
+    font-size: 13px;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .material-list li::before {
+    content: '📄';
+    font-size: 14px;
+  }
+
+  /* TIMELINE ROW */
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+
+  .tl-row {
+    display: flex;
+    gap: 0;
+    position: relative;
+  }
+
+  .tl-date {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    font-weight: 500;
+    color: var(--accent);
+    min-width: 90px;
+    padding: 10px 16px 10px 0;
+    text-align: right;
+    flex-shrink: 0;
+    line-height: 1.4;
+  }
+
+  .tl-line {
+    width: 1px;
+    background: var(--border);
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .tl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    position: absolute;
+    left: -3.5px;
+    top: 14px;
+  }
+
+  .tl-content {
+    padding: 8px 0 16px 18px;
+    flex: 1;
+  }
+
+  .tl-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 3px;
+  }
+
+  .tl-body {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* MONO LABEL */
+  .mono-label {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    background: var(--surface-2);
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 800px) {
+    .sidebar { display: none; }
+    .main { margin-left: 0; padding: 32px 24px 80px; }
+    .intro-box { grid-template-columns: 1fr; }
+    .system-grid { grid-template-columns: 1fr; }
+    .material-list { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <span>We Lead Projects</span>
+    <strong>AI Systems Audit<br>Drejebog v1.0</strong>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Overblik</span>
+    <a class="nav-link" href="#overblik"><span class="dot"></span>Produktdefinition</a>
+    <a class="nav-link" href="#forberedelse"><span class="dot"></span>Forberedelse</a>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Gennemførelse</span>
+    <a class="nav-link" href="#dag1"><span class="dot"></span>Dag 1 — Kortlægning</a>
+    <a class="nav-link" href="#dag2"><span class="dot"></span>Dag 2 — Analyse</a>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Metode</span>
+    <a class="nav-link" href="#spotcheck"><span class="dot"></span>Spot-check protokol</a>
+    <a class="nav-link" href="#euaiact"><span class="dot"></span>EU AI Act guide</a>
+    <a class="nav-link" href="#klassificering"><span class="dot"></span>Klassificeringsmodel</a>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Rapport</span>
+    <a class="nav-link" href="#rapport"><span class="dot"></span>Rapport-skabelon</a>
+    <a class="nav-link" href="#leverance"><span class="dot"></span>Leverance og afslutning</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- OVERBLIK -->
+  <section class="section" id="overblik">
+    <span class="section-eyebrow">Drejebog</span>
+    <h1>AI Systems Audit</h1>
+    <p style="color:var(--text-muted); font-size:15px; margin-bottom:28px;">
+      Operationel vejledning til gennemførelse, analyse og rapportering. Version 1.0 — We Lead Projects 2026.
+    </p>
+
+    <div class="intro-box">
+      <div class="intro-stat">
+        <span class="val">2</span>
+        <span class="lbl">dages gennemgang<br>(+ 1 dag rapport)</span>
+      </div>
+      <div class="intro-stat">
+        <span class="val">4</span>
+        <span class="lbl">leverancer i rapporten</span>
+      </div>
+      <div class="intro-stat">
+        <span class="val">49.000</span>
+        <span class="lbl">kr. ekskl. moms<br>fast pris</span>
+      </div>
+    </div>
+
+    <h2>Hvad auditen leverer</h2>
+    <p>Fire konkrete leverancer i én samlet rapport:</p>
+
+    <div class="risk-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Leverance</th>
+            <th>Beskrivelse</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="mono-label">L1</span></td>
+            <td><strong>AI-aktiv kortlægning</strong></td>
+            <td>Komplet liste over alle AI-systemer og AI-funktioner, inkl. dem der er sluppet ind via SaaS.</td>
+          </tr>
+          <tr>
+            <td><span class="mono-label">L2</span></td>
+            <td><strong>EU AI Act klassificering</strong></td>
+            <td>Hvert system klassificeret i én af de fire risikokategorier med begrundelse og gældende krav.</td>
+          </tr>
+          <tr>
+            <td><span class="mono-label">L3</span></td>
+            <td><strong>Governance-anbefaling</strong></td>
+            <td>Konkret anbefaling for ejerskab, beslutningsprocesser og løbende tilsyn.</td>
+          </tr>
+          <tr>
+            <td><span class="mono-label">L4</span></td>
+            <td><strong>Prioriteret handlingsplan</strong></td>
+            <td>Tiltag rangeret efter risiko og ressourcebehov: 30 dage / næste budgetrunde / løbende.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FORBEREDELSE -->
+  <section class="section" id="forberedelse">
+    <span class="section-eyebrow">Fase 0</span>
+    <h2 style="margin-top:0">Forberedelse (inden kundemøde)</h2>
+
+    <h3>Send til kunden: Velkomstbrev med materialliste</h3>
+    <p>Sendes senest 5 arbejdsdage inden dag 1. Kunden skal fremsende materialet senest 2 arbejdsdage inden.</p>
+
+    <h4>Kunden skal fremsende</h4>
+    <ul class="material-list">
+      <li>Liste over alle SaaS-produkter (navn, leverandør, antal brugere)</li>
+      <li>Systemlandskabsdiagram (hvis det eksisterer)</li>
+      <li>Liste over igangværende IT- og AI-projekter</li>
+      <li>Eksisterende IT-governancepolitik (hvis den findes)</li>
+      <li>Organisationsdiagram (IT-funktionen og ledelse)</li>
+      <li>Liste over HR-systemer brugt til rekruttering og performance</li>
+      <li>Eventuelle eksisterende AI-politikker eller guidelines</li>
+      <li>Oversigt over cloud-abonnementer (Azure, AWS, GCP)</li>
+    </ul>
+
+    <div class="info-block" style="margin-top:20px;">
+      <strong>OBS:</strong> Materialet bruges til at forberede interviewguides og en første hypotese om systemlandskabet. Kunden behøver ikke have styr på det — manglende materiale er i sig selv en fund.
+    </div>
+
+    <h3>Brians forberedelse (2-3 timer)</h3>
+    <ul class="checklist">
+      <li>Gennemgå indsendt materiale og notér hvad der mangler</li>
+      <li>Forbered hypotese-liste over AI-systemer baseret på SaaS-listen (brug spot-check protokollen)</li>
+      <li>Tilpas interviewguides til virksomhedens branche og størrelse</li>
+      <li>Print eller forbered digital version af klassificeringsskema (se afsnit 6)</li>
+      <li>Book mødelokale og aftal deltagerlister med kundens kontaktperson</li>
+      <li>Forbered blank AI-aktivliste i Excel/Notion til live-udfyldning under dag 1</li>
+    </ul>
+  </section>
+
+  <!-- DAG 1 -->
+  <section class="section" id="dag1">
+    <span class="section-eyebrow">Fase 1</span>
+    <h2 style="margin-top:0">Dag 1 — Kortlægning</h2>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">09:00 – 09:30</span>
+        <span class="timeblock-title">Kick-off og forventningsafstemning</span>
+        <span class="timeblock-tag">Åbent møde</span>
+      </div>
+      <div class="timeblock-body">
+        <p class="participants">IT-chef (obligatorisk) + evt. CTO, CDO, direktør</p>
+        <h4>Agenda</h4>
+        <ul class="checklist">
+          <li>Præsenter formål: vi kortlægger fakta, ikke evaluer om I har gjort tingene rigtigt</li>
+          <li>Gennemgå program for de 2 dage</li>
+          <li>Afklar fortrolighed: rapporten er intern og ejes af kunden</li>
+          <li>Afklar: hvem har mandat til at give os adgang til information?</li>
+          <li>Afklar: er der systemer vi ikke må se/spørge ind til og hvorfor?</li>
+        </ul>
+        <div class="info-block">
+          <strong>Nøgle-indledning:</strong> "Vi starter ikke med politikker og governance. Vi starter med at finde ud af, hvad I faktisk har. Det er altid overraskende — og det er netop pointen."
+        </div>
+      </div>
+    </div>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">09:30 – 11:30</span>
+        <span class="timeblock-title">Systemlandskab-interview</span>
+        <span class="timeblock-tag">Struktureret interview</span>
+      </div>
+      <div class="timeblock-body">
+        <p class="participants">IT-chef + Enterprise Architect (hvis rollen findes)</p>
+        <h4>Spørgsmål — systemlandskab</h4>
+        <ul class="q-list">
+          <li><strong>Åbner</strong>Beskriv jeres IT-landskab overordnet: hvad er kerne-systemerne, og hvad køber I som SaaS?</li>
+          <li><strong>AI-opmærksomhed</strong>Hvilke AI-initiativer er I selv bevidste om? (pilotprojekter, implementeringer, eksperimenter)</li>
+          <li><strong>Indkøbsproces</strong>Hvem godkender nye SaaS-produkter? Sker det centralt eller kan teams købe selv?</li>
+          <li><strong>Microsoft 365</strong>Har I aktiveret Copilot for M365? Til hvem? Hvilke apps bruges aktivt?</li>
+          <li><strong>Cloud</strong>Hvilke cloud-services bruger I? Har nogen teams adgang til Azure OpenAI, AWS Bedrock eller lignende?</li>
+          <li><strong>Custom builds</strong>Har IT eller forretningen bygget noget selv med AI/ML-komponenter de seneste 3 år?</li>
+          <li><strong>Integrationer</strong>Er der systemer der kalder ChatGPT, Claude eller andre LLM-APIs som en del af en arbejdsgang?</li>
+          <li><strong>Shadow AI</strong>Hvad ved I om brug af AI-værktøjer som medarbejderne selv har taget i brug? (ChatGPT, Gemini, Claude direkte)</li>
+        </ul>
+
+        <h4>Spørgsmål — databehandling</h4>
+        <ul class="q-list">
+          <li><strong>Persondata</strong>Hvilke af jeres systemer behandler personoplysninger om medarbejdere, kunder eller borgere?</li>
+          <li><strong>Træningsdata</strong>Er nogen af jeres data brugt til at træne modeller — enten af jer eller af en leverandør?</li>
+          <li><strong>Data-lokation</strong>Ved I hvor data fra AI-systemer behandles geografisk? EU vs. ikke-EU?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">11:30 – 13:00</span>
+        <span class="timeblock-title">SaaS-gennemgang og spot-checks</span>
+        <span class="timeblock-tag">Systematisk screening</span>
+      </div>
+      <div class="timeblock-body">
+        <p class="participants">IT-procurement / IT-drift / systemadministrator</p>
+        <h4>Fremgangsmåde</h4>
+        <ul class="checklist">
+          <li>Gennemgå kundens SaaS-liste linje for linje (brug spot-check protokollen i afsnit 4)</li>
+          <li>For hvert produkt: notér om AI-funktioner er aktiveret (ja/nej/uvist)</li>
+          <li>Notér hvem der administrerer adgangen til hvert system</li>
+          <li>Spørg ind til alle systemer markeret "uvist" — hvem ville vide det?</li>
+          <li>Identificér systemer der ikke er på listen men nævnt i interviews</li>
+        </ul>
+        <p><em>Se afsnit 4 (Spot-check protokol) for specifikke tjekpunkter pr. system.</em></p>
+      </div>
+    </div>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">14:00 – 15:30</span>
+        <span class="timeblock-title">Business unit-interviews</span>
+        <span class="timeblock-tag">3–4 korte interviews</span>
+      </div>
+      <div class="timeblock-body">
+        <p class="participants">HR-chef, salgschef, driftschef, økonomi-/financhef (30 min. pr. person)</p>
+        <h4>Spørgsmål til ALLE business units</h4>
+        <ul class="q-list">
+          <li><strong>Daglig brug</strong>Hvilke AI-værktøjer bruger du eller dit team i hverdagen — også dem I selv har fundet?</li>
+          <li><strong>Beslutningsstøtte</strong>Er der systemer der hjælper med at prioritere, rangere eller beslutte noget i jeres arbejde?</li>
+          <li><strong>Nye tiltag</strong>Er der projekter eller planer om at indføre AI i jeres område det næste år?</li>
+          <li><strong>Bekymringer</strong>Er der noget I er usikre på i relation til AI og compliance?</li>
+        </ul>
+        <h4>Tillægsspørgsmål: HR-chef (kritisk)</h4>
+        <ul class="q-list">
+          <li><strong>Rekruttering</strong>Bruger I AI i rekrutteringsprocessen? CV-screening, videointerviews, scoring af kandidater?</li>
+          <li><strong>Performance</strong>Er der systemer der automatisk vurderer, rangerer eller scorere medarbejderpræstation?</li>
+          <li><strong>Systemer</strong>Hvilken ATS (Applicant Tracking System) bruger I? Er AI-funktioner aktiveret?</li>
+          <li><strong>Beslutninger</strong>Bruges AI-output som grundlag for ansættelses- eller afskedigelsesbeslutninger?</li>
+        </ul>
+        <div class="info-block">
+          <strong>Vigtigt:</strong> HR-systemer med AI til rekruttering, performance eller kompensation er i EU AI Acts Annex III (høj risiko). Det er det vigtigste at kortlægge præcist.
+        </div>
+      </div>
+    </div>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">15:30 – 17:00</span>
+        <span class="timeblock-title">Teknisk gennemgang</span>
+        <span class="timeblock-tag">Arkitekt-niveau</span>
+      </div>
+      <div class="timeblock-body">
+        <p class="participants">IT-arkitekt, systemudvikler eller CTO (afhænger af organisation)</p>
+        <h4>Spørgsmål</h4>
+        <ul class="q-list">
+          <li><strong>API-kald</strong>Hvilke systemer sender data til eksterne AI-APIs? (OpenAI, Anthropic, Google, Azure OpenAI)</li>
+          <li><strong>Custom ML</strong>Er der ML-modeller bygget internt — i Azure ML, AWS SageMaker, Google Vertex eller lignende?</li>
+          <li><strong>Automation</strong>Er der RPA-flows eller automatiseringsscripts med AI-komponenter?</li>
+          <li><strong>Data-pipelines</strong>Er der datapipelines der feeder træningsdata til en model?</li>
+          <li><strong>Monitoring</strong>Monitoreres nogen AI-systemer for drift eller fejlrate?</li>
+          <li><strong>Logging</strong>Logges beslutninger truffet med AI-assistance? Hvem har adgang til logs?</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Slut på dag 1: Intern opsamling (15 min.)</h3>
+    <ul class="checklist">
+      <li>Gennemgå og konsolider kortlægningslisten — hvad er sikkert, hvad skal verificeres</li>
+      <li>Notér de vigtigste fund til dag 2</li>
+      <li>Identificér hvem der skal følges op med på dag 2</li>
+    </ul>
+  </section>
+
+  <!-- DAG 2 -->
+  <section class="section" id="dag2">
+    <span class="section-eyebrow">Fase 2</span>
+    <h2 style="margin-top:0">Dag 2 — Analyse og governance</h2>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">09:00 – 10:30</span>
+        <span class="timeblock-title">Intern analyse-session (Brian alene)</span>
+        <span class="timeblock-tag">Intern arbejde</span>
+      </div>
+      <div class="timeblock-body">
+        <h4>Opgaver</h4>
+        <ul class="checklist">
+          <li>Udfyld klassificeringsskema for hvert identificeret system (se afsnit 5)</li>
+          <li>Identificér de 3–5 vigtigste governance-huller</li>
+          <li>Forbered spørgsmål til governance-interview</li>
+          <li>Forbered udkast til handlingsplan-prioritering</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">10:30 – 12:00</span>
+        <span class="timeblock-title">Governance-interview</span>
+        <span class="timeblock-tag">Struktureret interview</span>
+      </div>
+      <div class="timeblock-body">
+        <p class="participants">Legal/Compliance-ansvarlig + CISO (hvis rollen eksisterer) + IT-chef</p>
+        <h4>Spørgsmål — ejerskab og governance</h4>
+        <ul class="q-list">
+          <li><strong>Ejerskab</strong>Hvem ejer risikoen ved et AI-system i dag? Er der en navngiven person?</li>
+          <li><strong>Beslutningsproces</strong>Hvem godkender et nyt AI-system inden det tages i brug?</li>
+          <li><strong>EU AI Act</strong>Er EU AI Act på jeres radar? Har I taget stilling til jeres forpligtelser?</li>
+          <li><strong>GDPR og AI</strong>Er der en proces for at vurdere om et nyt AI-system kræver en DPIA?</li>
+          <li><strong>Incidents</strong>Har I haft hændelser relateret til AI — fejlbeslutninger, datalæk, bias?</li>
+          <li><strong>Leverandørkontrakter</strong>Er AI-leverandørers behandling af data reguleret i jeres kontrakter? Eksisterer databehandleraftaler?</li>
+          <li><strong>Tilsyn</strong>Er der processer for løbende tilsyn med AI-systemer efter go-live?</li>
+          <li><strong>Transparens</strong>Informeres medarbejdere eller kunder om at AI bruges i processer der påvirker dem?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">13:00 – 15:00</span>
+        <span class="timeblock-title">Validering af kortlægning med kunden</span>
+        <span class="timeblock-tag">Fælles gennemgang</span>
+      </div>
+      <div class="timeblock-body">
+        <p class="participants">IT-chef + evt. Enterprise Architect</p>
+        <h4>Fremgangsmåde</h4>
+        <ul class="checklist">
+          <li>Gennemgå kortlægningslisten sammen: bekræft, korriger, tilføj</li>
+          <li>Verificer klassificering af høj-risiko systemer (vis begrundelsen, bed om bekræftelse)</li>
+          <li>Afdæk eventuelle systemer der endnu ikke er nævnt</li>
+          <li>Bekræft ejerskab for hvert system: hvem i organisationen er ansvarlig?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeblock">
+      <div class="timeblock-header">
+        <span class="timeblock-time">15:00 – 16:00</span>
+        <span class="timeblock-title">Afsluttende debriefing</span>
+        <span class="timeblock-tag">Ledelsesniveau</span>
+      </div>
+      <div class="timeblock-body">
+        <p class="participants">IT-chef + CDO/CTO + evt. direktør</p>
+        <h4>Agenda</h4>
+        <ul class="checklist">
+          <li>Foreløbige fund: hvad er overraskende, hvad var forventet</li>
+          <li>Top 3 risici der kræver hurtig handling</li>
+          <li>Forventning til rapporten: format, modtager, fortrolighed</li>
+          <li>Spørg: er der noget vi ikke har nået at belyse i dag?</li>
+          <li>Aftal: rapport leveres inden for 5 arbejdsdage</li>
+        </ul>
+        <div class="info-block">
+          <strong>Afslutningssætning:</strong> "I de næste dage bearbejder vi fundene og skriver rapporten. Ingen af jeres systemer er unikke — vi ser de samme mønstre igen og igen. Rapporten vil give jer et klart billede og et konkret startsted."
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPOT-CHECK -->
+  <section class="section" id="spotcheck">
+    <span class="section-eyebrow">Metode</span>
+    <h2 style="margin-top:0">Spot-check protokol — kendte AI-systemer</h2>
+    <p>For hvert system: <strong>Er det aktivt?</strong> → <strong>Hvem bruger det?</strong> → <strong>Hvilke data behandler det?</strong> → <strong>Hvem ejer det?</strong></p>
+
+    <h3>Microsoft 365</h3>
+    <div class="system-grid">
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Microsoft 365 Copilot</span>
+          <span class="risk-badge risk-limited">Begrænset</span>
+        </div>
+        <ul class="system-checks">
+          <li>Aktiveret? Antal licenser?</li>
+          <li>Hvilke apps: Word, Excel, Teams, Outlook?</li>
+          <li>Copilot for Security aktiveret?</li>
+          <li>Bruges det til HR-formål? (→ potentielt høj risiko)</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Power Automate / Power BI</span>
+          <span class="risk-badge risk-minimal">Minimal</span>
+        </div>
+        <ul class="system-checks">
+          <li>AI Builder-flows aktiveret?</li>
+          <li>Power BI: Key Influencers, Q&A, Smart Narrative?</li>
+          <li>Bruges flows til at træffe automatiske beslutninger?</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Azure OpenAI Service</span>
+          <span class="risk-badge risk-limited">Afhænger af brug</span>
+        </div>
+        <ul class="system-checks">
+          <li>Er der et Azure OpenAI-abonnement?</li>
+          <li>Hvem har adgang og til hvad?</li>
+          <li>Kald GPT/Claude APIs internt fra egne apps?</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Viva / Teams AI</span>
+          <span class="risk-badge risk-limited">Begrænset → Høj*</span>
+        </div>
+        <ul class="system-checks">
+          <li>Viva Insights aktiveret?</li>
+          <li>Viva Engage AI-funktioner?</li>
+          <li>Teams Meeting Recap / Copilot i Teams?</li>
+          <li>*Medarbejderovervågning → potentielt høj risiko</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>CRM og salgssystemer</h3>
+    <div class="system-grid">
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Salesforce</span>
+          <span class="risk-badge risk-limited">Begrænset</span>
+        </div>
+        <ul class="system-checks">
+          <li>Einstein Analytics aktiveret?</li>
+          <li>Einstein GPT / Agentforce?</li>
+          <li>Predictive lead/opportunity scoring?</li>
+          <li>AI til forecasting?</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">HubSpot</span>
+          <span class="risk-badge risk-minimal">Minimal</span>
+        </div>
+        <ul class="system-checks">
+          <li>AI Content Assistant aktiveret?</li>
+          <li>Predictive lead scoring aktiveret?</li>
+          <li>ChatSpot eller AI-integrationer?</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>HR-systemer — særlig opmærksomhed krævet</h3>
+    <div class="info-block">
+      <strong>EU AI Act Annex III, punkt 4:</strong> AI brugt til rekruttering, udvælgelse, forfremmelse, opsigelse, opgavetildeling og præstationsovervågning er klassificeret som <strong>høj risiko</strong>. Gælder fra august 2026.
+    </div>
+    <div class="system-grid">
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">ATS-systemer generelt</span>
+          <span class="risk-badge risk-high">Høj risiko</span>
+        </div>
+        <ul class="system-checks">
+          <li>Hvilket ATS bruges? (Workable, Teamtailor, Greenhouse...)</li>
+          <li>Er AI-screening/scoring-funktioner aktiveret?</li>
+          <li>Bruges AI-ranking som beslutningsgrundlag?</li>
+          <li>Er kandidater informeret om AI-brug?</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">HireVue / video-interview AI</span>
+          <span class="risk-badge risk-high">Høj risiko</span>
+        </div>
+        <ul class="system-checks">
+          <li>Aktivt i rekrutteringsprocessen?</li>
+          <li>Scorer systemet kandidater automatisk?</li>
+          <li>Bruges score som eliminationsgrundlag?</li>
+          <li>Databehandleraftale i EU?</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Workday / SAP SuccessFactors</span>
+          <span class="risk-badge risk-high">Høj risiko (HR-modul)</span>
+        </div>
+        <ul class="system-checks">
+          <li>Skills Intelligence Cloud aktiveret?</li>
+          <li>AI-kompensationsanbefalinger?</li>
+          <li>Attrition prediction (fratrædelsesrisiko)?</li>
+          <li>Hvem ser AI-anbefalingerne og hvordan bruges de?</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Pymetrics / Harver</span>
+          <span class="risk-badge risk-high">Høj risiko</span>
+        </div>
+        <ul class="system-checks">
+          <li>Bruges til kandidatvurdering?</li>
+          <li>Neuroscience-baseret profiling aktiveret?</li>
+          <li>Bruges output til at ekskludere kandidater?</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>IT-service og drift</h3>
+    <div class="system-grid">
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">ServiceNow</span>
+          <span class="risk-badge risk-minimal">Minimal</span>
+        </div>
+        <ul class="system-checks">
+          <li>Now Intelligence / AI Search aktiveret?</li>
+          <li>Virtual Agent (chatbot) aktiveret?</li>
+          <li>Predictive AIOps i brug?</li>
+          <li>Bruges i kritisk infrastruktur? (→ potentielt høj risiko)</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Zendesk / Intercom</span>
+          <span class="risk-badge risk-limited">Begrænset</span>
+        </div>
+        <ul class="system-checks">
+          <li>AI Agents (automatisk svar) aktiveret?</li>
+          <li>Intelligent triage i brug?</li>
+          <li>Informeres kunder om AI-interaktion?</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Developer tools og custom builds</h3>
+    <div class="system-grid">
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">GitHub Copilot</span>
+          <span class="risk-badge risk-minimal">Minimal</span>
+        </div>
+        <ul class="system-checks">
+          <li>Licenseret til hvem?</li>
+          <li>Bruges Copilot til kode der behandler persondata?</li>
+          <li>Enterprise vs. Individual licens?</li>
+        </ul>
+      </div>
+      <div class="system-card">
+        <div class="system-card-header">
+          <span class="system-name">Custom ML / egne modeller</span>
+          <span class="risk-badge risk-high">Afhænger af brug</span>
+        </div>
+        <ul class="system-checks">
+          <li>Er der modeller bygget internt?</li>
+          <li>Hvad bruges de til? (klassificering, forudsigelse, anbefaling)</li>
+          <li>Hvem ejer og vedligeholder modellerne?</li>
+          <li>Er der modeldokumentation og version control?</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EU AI ACT GUIDE -->
+  <section class="section" id="euaiact">
+    <span class="section-eyebrow">Metode</span>
+    <h2 style="margin-top:0">EU AI Act — resumé til auditbrug</h2>
+
+    <p><strong>Forordning (EU) 2024/1689.</strong> I kraft 1. august 2024. Indfases trinvist.</p>
+
+    <div class="timeline">
+      <div class="tl-row">
+        <span class="tl-date">Feb 2025</span>
+        <div class="tl-line"><div class="tl-dot"></div></div>
+        <div class="tl-content">
+          <div class="tl-title">Forbud i kraft</div>
+          <div class="tl-body">Alle forbudte AI-praksisser (Art. 5) er ulovlige. AI-literacy-krav for udbydere og deployers.</div>
+        </div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-date">Aug 2025</span>
+        <div class="tl-line"><div class="tl-dot"></div></div>
+        <div class="tl-content">
+          <div class="tl-title">GPAI-modeller og governance</div>
+          <div class="tl-body">Forpligtelser for generelle AI-modeller (ChatGPT, Claude etc.) og nationale myndigheder/AI-kontorer.</div>
+        </div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-date">Aug 2026</span>
+        <div class="tl-line"><div class="tl-dot"></div></div>
+        <div class="tl-content">
+          <div class="tl-title">Loven gælder bredt ← PRIMÆR FRIST</div>
+          <div class="tl-body">Krav til høj-risiko systemer (Annex III), transparens-krav og databaser. Den vigtigste frist for de fleste virksomheder.</div>
+        </div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-date">Aug 2027</span>
+        <div class="tl-line"><div class="tl-dot"></div></div>
+        <div class="tl-content">
+          <div class="tl-title">Høj-risiko i regulerede produkter</div>
+          <div class="tl-body">Høj-risiko AI-systemer der er del af produkter reguleret i Annex I (medicinsk udstyr, maskiner, legetøj m.v.).</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px;">Nøglebegreber</h3>
+    <div class="risk-table-wrap">
+      <table>
+        <thead>
+          <tr><th>Rolle</th><th>Definition</th><th>Forpligtelser</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Provider</strong></td>
+            <td>Udvikler og markedsfører et AI-system (inkl. gratis). Oftest software-leverandøren.</td>
+            <td>Fuld overholdelse: CE-mærkning, teknisk dokumentation, registrering i EU-database.</td>
+          </tr>
+          <tr>
+            <td><strong>Deployer</strong></td>
+            <td>Bruger et AI-system i professionel sammenhæng. Langt de fleste danske virksomheder.</td>
+            <td>Brug som tilsigtet, menneskelig kontrol, overvågning, informationspligt til berørte, rapportering af alvorlige hændelser.</td>
+          </tr>
+          <tr>
+            <td><strong>Importer</strong></td>
+            <td>Bringer et ikke-EU-system til det europæiske marked.</td>
+            <td>Verificerer at provider overholder loven.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="info-block">
+      <strong>Praktisk regel:</strong> Hvis I bruger et AI-system bygget af andre (SaaS, API), er I deployer. Hvis I bygger noget selv — også internt — er I provider for den del. De fleste virksomheder er deployers for 95 % af systemerne og providers for 5 %.
+    </div>
+  </section>
+
+  <!-- KLASSIFICERINGSMODEL -->
+  <section class="section" id="klassificering">
+    <span class="section-eyebrow">Metode</span>
+    <h2 style="margin-top:0">Klassificeringsmodel</h2>
+
+    <h3>De fire kategorier</h3>
+    <div class="risk-table-wrap">
+      <table>
+        <thead>
+          <tr><th>Kategori</th><th>Beskrivelse</th><th>Eksempler</th><th>Krav</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="risk-badge risk-prohibited">Forbudt</span></td>
+            <td>Ulovligt at bruge eller udbyde. Art. 5. I kraft feb 2025.</td>
+            <td>Social scoring, real-time biometrisk masseovervågning, subliminal manipulation, emotionsovervågning i job/uddannelse (med undtagelser), ansigtsgenkendelses-scraping.</td>
+            <td>Stop straks. Juridisk rådgivning.</td>
+          </tr>
+          <tr>
+            <td><span class="risk-badge risk-high">Høj risiko</span></td>
+            <td>Stærkt reguleret. Annex III. Krav til dokumentation, menneskelig kontrol og registrering.</td>
+            <td><strong>HR:</strong> AI til rekruttering, scoring, performance, opsigelse. <strong>Kredit:</strong> AI til kreditvurdering. <strong>Biometri:</strong> Ansigtsverifikation. <strong>Kritisk infrastruktur.</strong></td>
+            <td>Risikovurdering. Dokumentation. Menneskelig kontrol. Informer berørte. Evt. registrering i EU-database.</td>
+          </tr>
+          <tr>
+            <td><span class="risk-badge risk-limited">Begrænset risiko</span></td>
+            <td>Transparenskrav. Brugeren skal vide de interagerer med AI.</td>
+            <td>Chatbots og virtuelle assistenter. Deepfakes og AI-genereret indhold. AI der udgiver sig for at være menneske.</td>
+            <td>Oplys tydeligt at det er AI. Mærk AI-genereret indhold.</td>
+          </tr>
+          <tr>
+            <td><span class="risk-badge risk-minimal">Minimal risiko</span></td>
+            <td>Ingen specifikke juridiske krav. Frivillige adfærdskodekser anbefales.</td>
+            <td>Spam-filtre, AI-anbefalinger i video/e-handel, AI i spil, de fleste generative AI-tools til intern brug (Copilot til tekstskrivning, Copilot til kode m.v.).</td>
+            <td>Ingen obligatoriske krav. God praksis anbefales.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Beslutningsprocess: klassificér hvert system</h3>
+
+    <div class="decision-step">
+      <span class="decision-step-num">1</span>
+      <div class="decision-step-content">
+        <div class="decision-step-q">Er systemet på listen over forbudte AI-praksisser (Art. 5)?</div>
+        <div class="decision-outcomes">
+          <div class="decision-outcome oc-yes"><span class="oc-label">JA</span> → Forbudt. Stop brug. Juridisk rådgivning omgående.</div>
+          <div class="decision-outcome oc-no"><span class="oc-label">NEJ</span> → Fortsæt til trin 2.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="decision-step">
+      <span class="decision-step-num">2</span>
+      <div class="decision-step-content">
+        <div class="decision-step-q">Er systemet på listen over høj-risiko applikationer (Annex III)?</div>
+        <div class="decision-outcomes">
+          <div class="decision-outcome oc-maybe"><span class="oc-label">JA</span> → Høj risiko. Igangsæt compliance-arbejde inden aug 2026.</div>
+          <div class="decision-outcome oc-no"><span class="oc-label">NEJ</span> → Fortsæt til trin 3.</div>
+        </div>
+        <p style="font-size:12.5px; color:var(--text-muted); margin-top:8px;">
+          <strong>Annex III check-liste:</strong> Biometri / kritisk infrastruktur / uddannelse / HR og rekruttering / vigtige tjenester (kredit, forsikring) / retshåndhævelse / migration / retsvæsen.
+        </p>
+      </div>
+    </div>
+
+    <div class="decision-step">
+      <span class="decision-step-num">3</span>
+      <div class="decision-step-content">
+        <div class="decision-step-q">Interagerer systemet direkte med mennesker uden de ved det er AI? Genererer det indhold der præsenteres som autentisk?</div>
+        <div class="decision-outcomes">
+          <div class="decision-outcome oc-maybe"><span class="oc-label">JA</span> → Begrænset risiko. Transparenskrav: oplys om AI-interaktion, mærk indhold.</div>
+          <div class="decision-outcome oc-no"><span class="oc-label">NEJ</span> → Minimal risiko. Ingen obligatoriske krav.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Klassificeringsskema til udfyldning (én række pr. system)</h3>
+    <div class="risk-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>System</th>
+            <th>Leverandør</th>
+            <th>Funktion</th>
+            <th>Rolle</th>
+            <th>Risiko</th>
+            <th>Ejerskab</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="opacity:0.5; font-style:italic; font-size:12px;">
+            <td>Eks: HireVue</td>
+            <td>HireVue Inc.</td>
+            <td>Videointerviewscoring</td>
+            <td>Deployer</td>
+            <td><span class="risk-badge risk-high">Høj risiko</span></td>
+            <td>HR-chef</td>
+            <td>Mangler dokumentation</td>
+          </tr>
+          <tr style="border-top: 2px dashed var(--border);">
+            <td colspan="7" style="color:var(--text-faint); font-size:12px; text-align:center; padding:12px;">← Udfyld under dag 1–2 →</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:13px; color:var(--text-muted);">
+      <strong>Status-værdier:</strong> OK · Mangler dokumentation · Mangler menneskelig kontrol · Mangler informationspligt · Kritisk — stop brug
+    </p>
+  </section>
+
+  <!-- RAPPORT -->
+  <section class="section" id="rapport">
+    <span class="section-eyebrow">Leverance</span>
+    <h2 style="margin-top:0">Rapport-skabelon</h2>
+    <p>Rapporten skrives inden for 5 arbejdsdage efter dag 2. Maks. 25–35 sider inkl. bilag. Sendes som PDF.</p>
+
+    <div class="report-section">
+      <span class="report-section-num">01</span>
+      <div class="report-section-title">Ledelsessammenfatning (1–2 sider)</div>
+      <div class="report-section-desc">
+        Maks. 3 afsnit: (1) Hvad vi fandt — de vigtigste fund i ét klart billede. (2) De 3 vigtigste risici der kræver handling. (3) Anbefalet næste skridt. Ingen teknisk sprog. Skal kunne læses af en direktør på 5 minutter.
+      </div>
+    </div>
+
+    <div class="report-section">
+      <span class="report-section-num">02</span>
+      <div class="report-section-title">Metode og forbehold</div>
+      <div class="report-section-desc">
+        Kort beskrivelse af gennemførelse (interviews, deltagere, materiale gennemgået). Eksplicit forbehold: auditen er baseret på de informationer vi har modtaget — kortlægningen er komplet inden for det vi er vist, ikke nødvendigvis udtømmende for hele organisationen.
+      </div>
+    </div>
+
+    <div class="report-section">
+      <span class="report-section-num">03 · L1</span>
+      <div class="report-section-title">AI-aktivoversigt — komplet kortlægning</div>
+      <div class="report-section-desc">
+        Tabel med alle identificerede AI-systemer: navn, leverandør, funktion, brugere (antal og roller), data der behandles, geografisk lokation for databehandling, aktivt/inaktivt. Gruppe systemer: (A) Bevidst implementerede. (B) AI i eksisterende SaaS. (C) Medarbejder-initierede værktøjer (shadow AI). Inkludér systemer markeret "uvist" som en separat kategori der kræver opfølgning.
+      </div>
+    </div>
+
+    <div class="report-section">
+      <span class="report-section-num">04 · L2</span>
+      <div class="report-section-title">EU AI Act risikoklassificering</div>
+      <div class="report-section-desc">
+        Kortfattet intro til de fire kategorier (½ side maks.). Derefter: klassificeringstabel med alle systemer, kategori, begrundelse og gældende krav. For høj-risiko systemer: uddybende afsnit pr. system med specifikke compliance-krav og frister. Vær konkret: "Systemet klassificeres som høj risiko fordi det bruges til automatisk scoring af jobkandidater (Annex III, punkt 4b). Krav: dokumentation, menneskelig kontrol, information til kandidater, registrering."
+      </div>
+    </div>
+
+    <div class="report-section">
+      <span class="report-section-num">05 · L3</span>
+      <div class="report-section-title">Governance-analyse og anbefaling</div>
+      <div class="report-section-desc">
+        Nuværende governance-situation: beskriv ejerskab, beslutningsprocesser og tilsynsstrukturer som de er i dag — ikke som de burde være. Identificér konkrete huller: manglende ejerskab, manglende databehandleraftaler, manglende informationspligt. Anbefalingen: minimum to og maks. fem konkrete tiltag. Hvert tiltag: hvem gør hvad, hvornår. Byg på eksisterende governance-strukturer — foreslå aldrig et nyt parallelt udvalg.
+      </div>
+    </div>
+
+    <div class="report-section">
+      <span class="report-section-num">06 · L4</span>
+      <div class="report-section-title">Prioriteret handlingsplan</div>
+      <div class="report-section-desc">
+        Tre tidshorisonter: <strong>30 dage</strong> — tiltag der skal igangsættes nu (typisk: forbudte systemer stoppes, høj-risiko systemer identificeres med ansvarlig). <strong>Næste budgetrunde</strong> — investeringer der kræver godkendelse (dokumentation, compliance-arbejde, eventuel DPIA). <strong>Løbende</strong> — processer der skal implementeres for at holde governance ajour (kvartalsvise reviews, onboarding-proces for nye AI-systemer). For hvert tiltag: ansvarlig, deadline, estimeret ressourcebehov (lav/mellem/høj).
+      </div>
+    </div>
+
+    <div class="report-section">
+      <span class="report-section-num">Bilag A</span>
+      <div class="report-section-title">Komplet klassificeringsskema (udfyldt)</div>
+      <div class="report-section-desc">Den fulde tabel med alle systemer, klassificering og status. Bruges som arbejdsredskab fremadrettet.</div>
+    </div>
+
+    <div class="report-section">
+      <span class="report-section-num">Bilag B</span>
+      <div class="report-section-title">EU AI Act tidsplan og relevante krav</div>
+      <div class="report-section-desc">Én-sides resumé af EU AI Act med indfasningsplan og de specifikke krav der er relevante for denne kundes systemer. Skræddersyes til kundens faktiske situation.</div>
+    </div>
+  </section>
+
+  <!-- LEVERANCE -->
+  <section class="section" id="leverance">
+    <span class="section-eyebrow">Afslutning</span>
+    <h2 style="margin-top:0">Leverance og afslutning</h2>
+
+    <h3>Rapport-skriveproces (5 arbejdsdage)</h3>
+    <div class="risk-table-wrap">
+      <table>
+        <thead><tr><th>Dag</th><th>Aktivitet</th></tr></thead>
+        <tbody>
+          <tr><td><span class="mono-label">Dag 1</span></td><td>Konsolidér noter, udfyld klassificeringsskema endeligt, identificér huller der kræver opfølgning hos kunden.</td></tr>
+          <tr><td><span class="mono-label">Dag 2</span></td><td>Skriv afsnit 3 (kortlægning) og 4 (klassificering). Send evt. opklarende spørgsmål til kunden.</td></tr>
+          <tr><td><span class="mono-label">Dag 3</span></td><td>Skriv afsnit 5 (governance) og 6 (handlingsplan).</td></tr>
+          <tr><td><span class="mono-label">Dag 4</span></td><td>Skriv ledelsessammenfatning. Review hele rapport. Ensret sprog og forbehold.</td></tr>
+          <tr><td><span class="mono-label">Dag 5</span></td><td>Finputs, PDF-eksport, afsendelse til kundens kontaktperson.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Afsendelse</h3>
+    <ul class="checklist">
+      <li>Send rapport som PDF pr. e-mail til aftalt modtager</li>
+      <li>Tilbyd et opfølgningsmøde (30 min.) til gennemgang — gratis, del af leverancen</li>
+      <li>Bekræft at kunden ejer rapporten og at den er fortrolig</li>
+      <li>Notér i din CRM hvad kunden besluttede sig til som næste skridt</li>
+    </ul>
+
+    <h3>Opfølgning (30 dage efter leverance)</h3>
+    <ul class="checklist">
+      <li>Send kort opfølgning: "Har rapporten givet anledning til spørgsmål?"</li>
+      <li>Tilbyd assistance til implementering af de prioriterede tiltag (separat engagement)</li>
+    </ul>
+
+    <div class="info-block" style="margin-top:28px;">
+      <strong>Fakturering:</strong> 50 % ved opstart (ved underskrift af aftale). 50 % ved levering af rapport. Ingen variabel fakturering, ingen overraskelser.
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // Active nav link on scroll
+  const links = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('.section[id]');
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => obs.observe(s));
+</script>
