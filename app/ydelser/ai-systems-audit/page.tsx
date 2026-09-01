@@ -45,7 +45,7 @@ const leverancer = [
     more: "De fleste virksomheder undervurderer, hvor mange AI-funktioner de allerede har i produktion. Microsoft 365 Copilot, Salesforce Einstein, ServiceNow og andre store SaaS-platforme aktiverer løbende AI-funktioner som en del af normale opdateringer. Kortlægningen giver ledelsen det faktiske billede, ikke det antagne.",
   },
   {
-    title: "EU AI Act risikoklassificering",
+    title: "EU AI Act klassificering og gap-analyse",
     body: "Hvert identificeret AI-system klassificeret efter EU AI Acts fire risikokategorier med begrundelse og de compliance-krav, der følger af klassificeringen.",
     more: "Klassificeringen afgør, hvilke krav til dokumentation, menneskeligt tilsyn og transparens der gælder. Den er ikke en juridisk vurdering, men en arkitekturvurdering — og det er en afgørende forskel, fordi den trækker på den viden der allerede findes om systemet, ikke på en juridisk fortolkning udefra.",
   },
@@ -140,7 +140,7 @@ export default function AiSystemsAuditPage() {
               </div>
               <div>
                 <div className="text-3xl font-bold mb-1" style={{ color: RED }}>4 leverancer</div>
-                <div className="text-sm text-gray-500">Kortlægning, klassificering, gap-analyse, 90-dages plan</div>
+                <div className="text-sm text-gray-500">Kortlægning, klassificering, anbefaling, 90-dages plan</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-1" style={{ color: RED }}>49.000 kr.</div>
