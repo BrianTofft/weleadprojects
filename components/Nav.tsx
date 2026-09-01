@@ -19,10 +19,16 @@ const links = [
 ];
 
 const ydelserSubmenu = [
-  { label: "Projektledelse",           href: "/ydelser/projektledelse" },
-  { label: "Enterprise Architecture",  href: "/ydelser/enterprise-architecture" },
-  { label: "AI-strategi",              href: "/ydelser/ai-strategi" },
-  { label: "AI-governance",            href: "/ydelser/ai-governance" },
+  { label: "Projektledelse",           href: "/ydelser/projektledelse",           group: null },
+  { label: "Enterprise Architecture",  href: "/ydelser/enterprise-architecture",  group: null },
+  { label: "AI-strategi",              href: "/ydelser/ai-strategi",              group: null },
+  { label: "AI-governance",            href: "/ydelser/ai-governance",            group: null },
+];
+
+const aiProgramSubmenu = [
+  { label: "AI Systems Audit",          href: "/ydelser/ai-systems-audit" },
+  { label: "AI Governance Accelerator", href: "/ydelser/ai-governance-accelerator" },
+  { label: "Implementation Partner",    href: "/ydelser/ai-implementation-partner" },
 ];
 
 export default function Nav() {
@@ -81,7 +87,7 @@ export default function Nav() {
                     className="absolute top-full left-0 pt-3 -ml-2"
                   >
                     <div
-                      className="bg-white rounded-xl border shadow-lg py-2 min-w-[220px]"
+                      className="bg-white rounded-xl border shadow-lg py-2 min-w-[240px]"
                       style={{ borderColor: BORDER }}
                     >
                       {ydelserSubmenu.map((s) => (
@@ -90,6 +96,24 @@ export default function Nav() {
                           href={s.href}
                           style={pathname === s.href ? { color: RED } : { color: DARK }}
                           className="block px-5 py-2.5 text-sm hover:opacity-60 transition-opacity whitespace-nowrap"
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                      <div className="mx-4 my-1.5 border-t" style={{ borderColor: BORDER }} />
+                      <Link
+                        href="/ydelser/ai-governance-program"
+                        style={pathname === "/ydelser/ai-governance-program" ? { color: RED } : { color: DARK }}
+                        className="block px-5 py-2 text-sm font-semibold hover:opacity-60 transition-opacity whitespace-nowrap"
+                      >
+                        AI Governance Program
+                      </Link>
+                      {aiProgramSubmenu.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          style={pathname === s.href ? { color: RED } : { color: "#9e8888" }}
+                          className="block px-7 py-2 text-sm hover:opacity-60 transition-opacity whitespace-nowrap"
                         >
                           {s.label}
                         </Link>
@@ -189,6 +213,26 @@ export default function Nav() {
                         onClick={() => setOpen(false)}
                         className="py-2 text-sm"
                         style={{ color: pathname === s.href ? RED : "#6b7280" }}
+                      >
+                        {s.label}
+                      </Link>
+                    ))}
+                    <div className="my-1 border-t" style={{ borderColor: BORDER }} />
+                    <Link
+                      href="/ydelser/ai-governance-program"
+                      onClick={() => setOpen(false)}
+                      className="py-2 text-sm font-semibold"
+                      style={{ color: pathname === "/ydelser/ai-governance-program" ? RED : DARK }}
+                    >
+                      AI Governance Program
+                    </Link>
+                    {aiProgramSubmenu.map((s) => (
+                      <Link
+                        key={s.href}
+                        href={s.href}
+                        onClick={() => setOpen(false)}
+                        className="py-2 text-sm pl-3"
+                        style={{ color: pathname === s.href ? RED : "#9e8888" }}
                       >
                         {s.label}
                       </Link>
