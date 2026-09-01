@@ -7,14 +7,14 @@ const BASE = "https://www.weleadprojects.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
   title: {
-    default: "We Lead Projects | Professionel Projektledelse",
+    default: "We Lead Projects | AI Governance Specialister",
     template: "%s | We Lead Projects",
   },
   description:
-    "Erfarne projektledere, Enterprise Arkitekter og AI Governance-rådgivere til komplekse IT-transformationer. We Lead Projects, grundlagt 2018, Roskilde.",
+    "AI governance-specialister med enterprise architecture og 30 års transformationspraksis. AI Systems Audit, EU AI Act compliance og implementeringsledelse. Baseret i Roskilde.",
   keywords: [
-    "projektledelse", "IT-projekter", "Enterprise Architecture",
-    "digital transformation", "konsulent", "projektleder", "Roskilde",
+    "ai governance", "eu ai act", "ai compliance", "enterprise architecture",
+    "ai systems audit", "ai governance konsulent", "digital transformation", "Roskilde",
   ],
   authors: [{ name: "We Lead Projects ApS" }],
   creator: "We Lead Projects ApS",
@@ -33,24 +33,24 @@ export const metadata: Metadata = {
     locale: "da_DK",
     url: BASE,
     siteName: "We Lead Projects",
-    title: "We Lead Projects | Professionel Projektledelse",
+    title: "We Lead Projects | AI Governance Specialister",
     description:
-      "Erfarne projektledere og specialister til IT-projekter, Enterprise Architecture og digitale transformationer.",
+      "AI governance-specialister med enterprise architecture-baggrund. AI Systems Audit, EU AI Act compliance og implementeringsledelse fra Roskilde.",
     images: [
       {
-        url: "/hero.JPEG",
+        url: "/Graphics/GettyImages-517041045_optimized.webp",
         width: 1200,
         height: 630,
-        alt: "We Lead Projects",
+        alt: "We Lead Projects AI Governance",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "We Lead Projects | Professionel Projektledelse",
+    title: "We Lead Projects | AI Governance Specialister",
     description:
-      "Erfarne projektledere og specialister til IT-projekter, Enterprise Architecture og digitale transformationer.",
-    images: ["/hero.JPEG"],
+      "AI governance-specialister med enterprise architecture-baggrund. AI Systems Audit, EU AI Act compliance og implementeringsledelse.",
+    images: ["/Graphics/GettyImages-517041045_optimized.webp"],
   },
   robots: {
     index: true,

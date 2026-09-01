@@ -8,35 +8,26 @@ import Script from "next/script";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const services = [
-  { icon: "/Graphics/Services-3.png",  title: "Planlægning og Styring",         body: "Vi leverer detaljeret planlægning, der er skræddersyet til dit projekts specifikke behov for en problemfri eksekveringsproces, også inden opstart." },
-  { icon: "/Graphics/Services-8.png",  title: "Koordinering og risiko reduktion", body: "Vi udmærker os ved at identificere og afbøde potentielle risici tidligt i processen for at sikre, at dit projekt forbliver på sporet og inden for budgettet." },
-  { icon: "/Graphics/Services-7.png",  title: "Kommunikationshjælp",             body: "Vi holder ALTID relevante deltagere og interessenter informeret med vores effektive kommunikationsstøtte, der forbedrer samarbejdet mellem alle projektinteressenter." },
-  { icon: "/Graphics/Services-4.png",  title: "Effektivt Workflow",              body: "Vi leverer projektledelsesopgaver for at opnå bedre produktivitet og holder dig på sporet med projekttidslinjer ved hjælp af vores effektive workflow-strategier." },
-  { icon: "/Graphics/Services-6.png",  title: "Det effektive Team",              body: "Udnyt styrken i teamwork ved at forbedre kommunikationen mellem teammedlemmerne for et mere inkluderende og effektiviseret projektmål." },
-  { icon: "/Graphics/Services-5.png",  title: "AI & Enterprise Architecture",    body: "Vi rådgiver om AI governance, EU AI Act compliance og Enterprise Architecture, og sikrer at teknologiinvesteringer understøtter din forretningsstrategi frem for at drive den." },
-];
-
 const faqs = [
   {
-    q: "Hvordan kan I hjælpe min forretning?",
-    a: "Vi tilbyder ekspertise og strategisk vejledning tilpasset dine forretningsmål, effektiv projektplanlægning og udførelse samt tidlig risikostyring og reduktion, så dit projekt lykkes.",
+    q: "Hvad er et AI Systems Audit, og hvad får vi ud af det?",
+    a: "Et AI Systems Audit er en struktureret kortlægning af alle de AI-systemer I har i produktion eller under implementering. Resultatet er et fuldt overblik over jeres AI-aktiver, en risikoklassificering efter EU AI Act og en konkret governance-anbefaling. Leveret på 1-2 uger til fast pris. De fleste virksomheder opdager systemer de ikke vidste de havde.",
   },
   {
-    q: "Hvordan ser processen ud for jeres ydelser?",
-    a: "Vores samarbejde forløber i syv faser: indledende konsultation, behovsanalyse med tilbud, formaliseret aftale og onboarding, projektplanlægning med interessenter, eksekvering med løbende opfølgning, evaluering og feedback samt formel projektafslutning med efterfølgende support.",
+    q: "Hvad kræver EU AI Act af vores virksomhed?",
+    a: "EU AI Act indfases gradvist og stiller krav afhængigt af risikoniveauet på jeres AI-systemer. Høj-risiko-systemer kræver dokumentation, menneskelig tilsyn og risikovurderinger. Forbuddte systemer skal identificeres og tages ud af drift. Udgangspunktet er altid at vide hvilke systemer I har, og det er præcis det et AI Systems Audit leverer.",
   },
   {
-    q: "Hvor lang tid varer et projekt typisk?",
-    a: "Projektvarighed afhænger af kompleksitet. Vi tilbyder kortvarige engagementer (1–3 måneder) for afgrænsede problemstillinger, mellemfristede (3–6 måneder) for større forandringer og langsigtede engagementer (6–12 måneder eller mere) for store transformationer.",
+    q: "Hvad er forskellen på AI-strategi og AI governance?",
+    a: "AI-strategi handler om at beslutte hvad I vil bruge AI til og hvornår. AI governance handler om at sikre at den AI I bruger, opfylder krav til gennemsigtighed, ansvarlighed og compliance, herunder EU AI Act. Man kan have en strategi uden governance. Men governance uden strategi giver heller ikke mening. Vi hjælper med begge dele og sammenhængen mellem dem.",
   },
   {
-    q: "Kan I levere kunde cases eller kundeudtalelser?",
-    a: "Ja. Vi har bl.a. cases inden for forretningsudviklingsplanlægning i telecom-sektoren, implementering af IT-systemer samt digitale transformationer på tværs af brancher.",
+    q: "Hvornår skal vi starte med AI governance?",
+    a: "Nu. EU AI Act er i kraft og indfasningen accelererer. Virksomheder der venter, risikerer at skulle implementere governance under tidspres og med langt større omkostninger. Samtidig er AI-adoption accelererende: jo flere systemer I får i produktion, jo sværere bliver kortlægningsopgaven. Det bedste tidspunkt at starte var for et år siden. Det næstbedste er nu.",
   },
   {
-    q: "Hvad gør jeres virksomhed speciel?",
-    a: "Vi skræddersyr løsninger til hvert projekt, har dokumenteret erfaring på tværs af brancher, anvender innovative metoder med de nyeste trends, prioriterer transparent kommunikation og tilbyder omfattende support efter projektafslutning.",
+    q: "Hvad adskiller jer fra rene AI-konsulenter?",
+    a: "Vi er enterprise arkitekter og transformationsledere der har specialiseret os i AI governance. En ren AI-konsulent ved hvad EU AI Act kræver. Vi ved også hvad det kræver at implementere det i en organisation med 50 systemer og tre forretningsenheder. Den forskel er afgørende for om governance bliver et levende system eller blot et dokument.",
   },
 ];
 

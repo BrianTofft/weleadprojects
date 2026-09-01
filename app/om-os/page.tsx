@@ -101,8 +101,8 @@ export default function OmOs() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-white text-center">
             {[
-              { label: "Enterprise Architecture", value: "30+", sub: "Aars erfaring med systemlandskaber og EA-rammevaerker" },
-              { label: "Digitale transformationer", value: "50+", sub: "Projekter leveret paa tvaers af brancher og organisationsstoerrelser" },
+              { label: "Enterprise Architecture", value: "30+", sub: "Års erfaring med systemlandskaber og EA-rammeværker" },
+              { label: "Digitale transformationer", value: "50+", sub: "Projekter leveret på tværs af brancher og organisationsstørrelser" },
               { label: "AI governance", value: "2023", sub: "Specialiserede virksomheden i AI governance og EU AI Act" },
             ].map((s) => (
               <div key={s.label}>

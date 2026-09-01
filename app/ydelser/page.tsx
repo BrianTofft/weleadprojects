@@ -22,141 +22,34 @@ const RED = "#cc2222";
 const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
-const services = [
-  {
-    icon: "/Graphics/Services-3.png",
-    title: "Planlægning og Styring",
-    intro: "Vi leverer detaljeret planlægning skræddersyet til dit projekts specifikke behov, også inden opstart.",
-    bullets: [
-      "Projektplan og milepælsstruktur",
-      "Ressource- og kapacitetsplanlægning",
-      "Budgetopfølgning og scope management",
-      "Rapportering og statusopdateringer til ledelsen",
-    ],
-  },
-  {
-    icon: "/Graphics/Services-8.png",
-    title: "Koordinering og Risikoreduktion",
-    intro: "Vi identificerer og afbøder potentielle risici tidligt for at sikre, at dit projekt forbliver på sporet og inden for budgettet.",
-    bullets: [
-      "Risikoidentifikation og risikoregister",
-      "Proaktiv eskalering og handlingsplaner",
-      "Afhængighedsstyring på tværs af teams",
-      "Løbende kvalitetskontrol og review-gates",
-    ],
-  },
-  {
-    icon: "/Graphics/Services-7.png",
-    title: "Kommunikationshjælp",
-    intro: "Vi holder ALTID relevante deltagere og interessenter informeret med effektiv kommunikationsstøtte.",
-    bullets: [
-      "Interessentanalyse og kommunikationsplan",
-      "Facilitering af møder og workshops",
-      "Udarbejdelse af beslutningsoplæg og præsentationer",
-      "Dokumentation og videndeling",
-    ],
-  },
-  {
-    icon: "/Graphics/Services-4.png",
-    title: "Effektivt Workflow",
-    intro: "Vi optimerer arbejdsgange og holder projekter på sporet med strukturerede workflow-strategier.",
-    bullets: [
-      "Agile og hybrid projektmetoder",
-      "Procesoptimering og automatisering",
-      "Tooling-setup (Jira, DevOps, Planner m.fl.)",
-      "Sprint-planlægning og backlog management",
-    ],
-  },
-  {
-    icon: "/Graphics/Services-6.png",
-    title: "Det Effektive Team",
-    intro: "Udnyt styrken i teamwork ved at forbedre kommunikationen og samarbejdet mod et fælles projektmål.",
-    bullets: [
-      "Onboarding og teamopsætning",
-      "Rolleafklaring og RACI-modeller",
-      "Konflikthåndtering og facilitering",
-      "Sidemandsoplæring og mentoring",
-    ],
-  },
-  {
-    icon: "/Graphics/Services-5.png",
-    title: "Innovative Løsninger",
-    intro: "Vi implementerer kreative løsninger for at overvinde projektudfordringer og levere resultater ud over forventningerne.",
-    bullets: [
-      "Enterprise Architecture og solution design",
-      "Cloud-transformationer og migrationer",
-      "AI-implementering og AI-governance",
-      "IT-strategi og digitaliseringsrådgivning",
-      "Proof of Concept og pilotprojekter",
-    ],
-  },
-];
-
-const competencies = [
-  {
-    icon: "/Graphics/planning_1980602.webp",
-    title: "Projekt Planlægning",
-    body: "Projektplanlægningsopgaver er afgørende for at skitsere omfanget, målene og tidsplanen for et projekt, og sikre at alle aktiviteter er velorganiserede og kan eksekveres effektivt.",
-  },
-  {
-    icon: "/Graphics/process_7879828.webp",
-    title: "Projekt Styring",
-    body: "Projektudførelsesopgaver fokuserer på gennemførelsesfasen, hvor de planlagte aktiviteter sættes i værk for at nå projektets mål, typisk med agilmetodiske erfaringsprocesser.",
-  },
-  {
-    icon: "/Graphics/evaluation.webp",
-    title: "Risiko Styring",
-    body: "Risikostyring er planlægningen og styringen til at hjælpe kunden med at forstå og anvende principperne for at identificere, vurdere og afbøde risici i forskellige projektkontekster.",
-  },
-  {
-    icon: "/Graphics/application.webp",
-    title: "IT Arkitektur",
-    body: "IT-arkitektur involverer typisk udarbejdelse af omfattende dokumentation, der skitserer design og struktur af IT-systemer, og dækker alle relevante arkitekturaspekter.",
-  },
-  {
-    icon: "/Graphics/management.webp",
-    title: "Enterprise Arkitektur",
-    body: "Enterprise Architecture opgaver involverer udvikling af en omfattende ramme der tilpasser IT-infrastruktur med forretningsprocesser og strategiske mål, herunder AI-governance og kortlægning af AI-aktiver som en integreret del af EA-rammeværket.",
-  },
-  {
-    icon: "/Graphics/collaboration_11244653.webp",
-    title: "Ledelsesrådgivning",
-    body: "Ledelsesrådgivningsopgaver involverer typisk analyse af forretningsproblemer og levering af strategiske løsninger for at forbedre organisationens præstation.",
-  },
-  {
-    icon: "/Graphics/application.webp",
-    title: "AI Implementering",
-    body: "Vi bistår med projektledelse af AI-implementeringer i alle faser, fra businesscase og datavurdering til PoC, pilot og fuld skalering. Vi kombinerer teknisk forståelse med stærk projektstyring og erfaring med de særlige risici der er forbundet med AI-projekter.",
-  },
-];
 
 const deliveryMethods = [
   {
-    label: "Traditionel",
-    tag: "Vandfaldsmetoden",
-    body: "Den traditionelle projektledelsesmodel er en lineær og sekventiel tilgang til styring af projekter. Den er bedst egnet til projekter med veldefinerede krav og stabile miljøer.",
+    label: "Kortlægning",
+    tag: "AI Systems Audit",
+    body: "En afgrænset, fast-pris leverance der giver jer det fulde overblik over AI-aktiver, EU AI Act-klassificering og en prioriteret governance-anbefaling. Leveret på 1-2 uger.",
     color: "#1C2544",
   },
   {
-    label: "Agil",
-    tag: "Iterativ tilgang",
-    body: "Den agile projektledelsesmodel er en fleksibel og iterativ tilgang med fokus på løbende forbedringer og kundesamarbejde. Den leverer værdi trinvist gennem hele projektets livscyklus.",
+    label: "Struktur",
+    tag: "AI Governance Accelerator",
+    body: "Et 8-12 ugers forløb hvor vi etablerer governance-rammen: politikker, roller, compliance-dokumentation og kontrolmekanismer tilpasset jeres organisation og risikoniveau.",
     color: RED,
   },
   {
-    label: "Hybrid",
-    tag: "Kombineret tilgang",
-    body: "Den hybride projektledelsesmodel kombinerer elementer fra både traditionelle og agile metoder og udnytter styrkerne fra begge tilgange til projektspecifikke behov.",
+    label: "Implementering",
+    tag: "Implementation Partner",
+    body: "Løbende samarbejde hvor vi driver implementeringen af governance-strukturen og sikrer at politikker forankres i praksis. Retainer eller projektbaseret engagement.",
     color: "#4a6741",
   },
 ];
 
 const process = [
-  { step: "01", title: "Indledende konsultation", body: "Vi lytter til jeres udfordringer og mål, helt uforpligtende." },
-  { step: "02", title: "Behovsanalyse og tilbud", body: "Vi afdækker scope, ressourcer og tidsplan og sender et konkret tilbud." },
-  { step: "03", title: "Aftale og onboarding", body: "Formaliseret samarbejdsaftale og kickoff med alle centrale interessenter." },
-  { step: "04", title: "Eksekvering og opfølgning", body: "Løbende fremdriftsrapportering, risikoopfølgning og statusmøder." },
-  { step: "05", title: "Evaluering og afslutning", body: "Formel projektafslutning med erfaringsopsamling og efterfølgende support." },
+  { step: "01", title: "AI-kortlægning", body: "Vi identificerer alle AI-systemer i jeres organisation, inkl. systemer I måske ikke vidste I havde." },
+  { step: "02", title: "Risikoklassificering", body: "Hvert system klassificeres efter EU AI Act-kategorierne og vurderes mod jeres forretningsmæssige risikoprofil." },
+  { step: "03", title: "Governance-ramme", body: "Vi etablerer politikker, roller og compliance-dokumentation tilpasset jeres organisation og modenhedsniveau." },
+  { step: "04", title: "Implementering", body: "Governance-strukturen forankres i organisationen med ansvarlige, processer og kontrolmekanismer." },
+  { step: "05", title: "Løbende governance", body: "AI-landskabet ændrer sig. Vi sikrer at jeres governance-praksis holder trit med nye systemer og nye krav." },
 ];
 
 export default function YdelserPage() {
@@ -301,10 +194,10 @@ export default function YdelserPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Projektmetoder</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Tre tilgange til projektlevering</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Samarbejdsmodel</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Tre måder at arbejde med os</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-              Vi er ikke bundet af én model. Vi vælger den tilgang der passer bedst til netop jeres projekt og tilpasser os løbende undervejs.
+              Fra den afgrænsede audit til det løbende partnerskab. Hvert trin kan stå alene eller bruges som del af et samlet AI governance-forløb.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -324,7 +217,7 @@ export default function YdelserPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sådan arbejder vi</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold">Vores proces i 5 trin</h2>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold">AI governance i 5 faser</h2>
           </div>
           <div className="grid md:grid-cols-5 gap-6">
             {process.map((p, i) => (
@@ -353,19 +246,19 @@ export default function YdelserPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores tilgang</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-5">1+1=3 Metoden</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores styrke</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-5">EA + implementeringsledelse = governance der virker</h2>
             <p className="text-gray-600 mb-4">
-              Vores konsulenter arbejder ikke i siloer. Vi deler erfaringer og indsigter på tværs af projekter, så den viden der opbygges i ét projekt, direkte gavner det næste.
+              AI governance er ikke et compliance-dokument. Det er en levende struktur der skal passe til jeres systemlandskab, jeres organisation og jeres risikoniveau. Det kræver forståelse for arkitektur, ikke bare kendskab til regler.
             </p>
             <p className="text-gray-600 mb-4">
-              Det betyder, at du som kunde altid får en konsulent der er understøttet af et helt team, med adgang til specialistviden inden for Enterprise Architecture, infrastruktur og løsningsdesign.
+              Vores enterprise architecture-baggrund giver os den indsigt i systemlandskabet der er forudsætningen for governance-rammer der rent faktisk beskriver det I har. Vores transformationserfaring giver os evnen til at forankre dem i organisationen, ikke bare dokumentere dem.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Det er kombinationen der skaber reel compliance frem for papiroverholdelse. Og det er den kombination rene AI-konsulenter ikke har.
             </p>
             <p className="text-gray-600">
-              Vi kalder det 1+1=3, fordi to konsulenter i samspil leverer mere end dobbelt så meget værdi.
-            </p>
-            <p className="text-gray-600 mt-4">
-              Vores Enterprise Architecture arbejde tager udgangspunkt i anerkendte industristandarder som{" "}
+              Vores EA-arbejde tager udgangspunkt i anerkendte frameworks som{" "}
               <a
                 href="https://www.opengroup.org/togaf"
                 target="_blank"
@@ -375,17 +268,17 @@ export default function YdelserPage() {
               >
                 TOGAF
               </a>{" "}
-              , tilpasset den konkrete organisations modenhed og behov.
+              tilpasset den konkrete organisations modenhed og AI-ambitioner.
             </p>
           </div>
           <div
             className="rounded-2xl border p-10 text-center"
             style={{ borderColor: BORDER, background: OFFWHITE }}
           >
-            <div className="text-6xl font-bold mb-4" style={{ color: RED }}>1+1=3</div>
-            <p style={{ color: DARK }} className="font-semibold text-lg mb-3">Intern vidensdeling</p>
+            <div className="text-5xl font-bold mb-4" style={{ color: RED }}>EA + PL</div>
+            <p style={{ color: DARK }} className="font-semibold text-lg mb-3">= AI governance med substans</p>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Alle konsulenter lærer og vokser på tværs af projekterne, backup fra kolleger og løbende erfaringsudveksling er en integreret del af måden, vi arbejder på.
+              Enterprise architecture giver kortlægningen det tekniske fundament. Transformationsledelse giver implementeringen den organisatoriske tyngde. Tilsammen giver det AI governance der holder.
             </p>
           </div>
         </div>
