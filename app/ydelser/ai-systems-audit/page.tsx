@@ -234,13 +234,15 @@ export default function AiSystemsAuditPage() {
             49.000 kr. ekskl. moms. Book et møde, og vi aftaler datoer og forberedelse.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link
-              href="/find-ai-konsulent"
+            <a
+              href="https://calendly.com/bt-weleadprojects/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ background: RED }}
               className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
             >
-              Book et møde
-            </Link>
+              Book intromøde
+            </a>
             <Link
               href="/#kontakt"
               className="border border-white text-white font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity inline-block"
