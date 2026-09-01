@@ -925,7 +925,6 @@ export const articles: Article[] = [
     sources: [
       { label: "EU AI Act: Forordning 2024/1689 (EUR-Lex)", url: "https://eur-lex.europa.eu/legal-content/DA/TXT/?uri=CELEX:32024R1689" },
       { label: "Europa-Kommissionen: AI Act Service Desk", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
-      { label: "EUAI-databasen for højrisikosystemer", url: "https://ec.europa.eu/transparency/expert-groups-register/screen/home" },
     ],
   },
 
@@ -982,7 +981,6 @@ export const articles: Article[] = [
     sources: [
       { label: "EU AI Act: Regulation 2024/1689 (EUR-Lex)", url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" },
       { label: "European Commission: AI Act Service Desk", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
-      { label: "EUAI database for high-risk systems", url: "https://ec.europa.eu/transparency/expert-groups-register/screen/home" },
     ],
   },
 
