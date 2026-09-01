@@ -67,7 +67,7 @@ const tiers = [
       "Risikomodel og arkitektur-guardrails",
       "Prioriteret implementerings-roadmap",
     ],
-    href: null,
+    href: "/ydelser/ai-governance-accelerator",
     featured: true,
   },
   {
