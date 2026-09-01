@@ -277,7 +277,7 @@ export default function AiGovernanceProgramPage() {
             {[
               {
                 cue: "\"Vi er ikke sikre på hvilke AI-systemer vi faktisk har i brug.\"",
-                answer: "Start med AI Systems Audit. To dage, fast pris. I ved præcis hvad I har, inden I beslutter næste skridt.",
+                answer: "Start med AI Systems Audit. 1-2 uger, fast pris. I ved præcis hvad I har, inden I beslutter næste skridt.",
                 product: "AI Systems Audit",
               },
               {
