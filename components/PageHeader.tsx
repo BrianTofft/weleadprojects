@@ -35,7 +35,7 @@ export default function PageHeader({
       {/* Gradient: left-side vignette so text is always readable */}
       {/* Gradient: subtle top vignette on mobile, left vignette on desktop */}
       <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.0) 100%)" }} />
-      <div className="absolute inset-0 md:hidden" style={{ background: "rgba(0,0,0,0.45)" }} />
+      <div className="absolute inset-0 md:hidden" style={{ background: "rgba(0,0,0,0.62)" }} />
 
       {/* Content — pt-36 clears the fixed nav (h-20 = 80px) + breathing room */}
       <div className="relative max-w-5xl mx-auto px-6 pt-36 pb-16">
