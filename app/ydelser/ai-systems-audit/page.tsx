@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
 import FaqAccordion from "@/components/FaqAccordion";
 import ExpandableCards from "@/components/ExpandableCards";
+import CalendlyButton from "@/components/CalendlyButton";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -252,15 +253,10 @@ export default function AiSystemsAuditPage() {
             49.000 kr. ekskl. moms. Book et møde, og vi aftaler datoer og forberedelse.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <a
-              href="https://calendly.com/bt-weleadprojects/30min"
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalendlyButton
               style={{ background: RED }}
-              className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
-            >
-              Book intromøde
-            </a>
+              className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block cursor-pointer"
+            />
             <Link
               href="/#kontakt"
               className="border border-white text-white font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity inline-block"

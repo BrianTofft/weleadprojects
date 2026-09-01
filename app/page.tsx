@@ -4,8 +4,8 @@ import { useState } from "react";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import Nav from "@/components/Nav";
+import CalendlyButton from "@/components/CalendlyButton";
 import Footer from "@/components/Footer";
 
 const faqs = [
@@ -572,18 +572,12 @@ export default function Home() {
               Du kan altid kontakte os, og hvis telefonerne ikke er åbne, sender du en besked, så ringer vi tilbage senest den næste hverdag.
             </p>
 
-            <a
-              href="https://calendly.com/bt-weleadprojects/30min"
-              onClick={(e) => {
-                e.preventDefault();
-                const w = window as unknown as { Calendly?: { initPopupWidget: (opts: { url: string }) => void } };
-                w.Calendly?.initPopupWidget({ url: "https://calendly.com/bt-weleadprojects/30min" });
-              }}
+            <CalendlyButton
               style={{ background: RED }}
-              className="inline-flex items-center gap-2 hover:opacity-90 text-white font-semibold px-6 py-3 rounded-full transition-opacity mb-10"
+              className="inline-flex items-center gap-2 hover:opacity-90 text-white font-semibold px-6 py-3 rounded-full transition-opacity mb-10 cursor-pointer"
             >
               Book et intromøde direkte <span>→</span>
-            </a>
+            </CalendlyButton>
 
             <div className="space-y-6 text-sm">
               <div className="flex items-start gap-4">
@@ -724,8 +718,7 @@ export default function Home() {
         </div>
       </section>
 
-      <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
-      <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
+
 
       <Footer />
     </>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import PageHeader from "@/components/PageHeader";
+import CalendlyButton from "@/components/CalendlyButton";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -247,19 +248,14 @@ export default function AiGovernanceProgramPage() {
                       Se detaljer
                     </Link>
                   ) : (
-                    <a
-                      href="https://calendly.com/bt-weleadprojects/30min"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-center font-semibold py-3 rounded-full transition-opacity hover:opacity-90"
+                    <CalendlyButton
+                      className="block w-full text-center font-semibold py-3 rounded-full transition-opacity hover:opacity-90 cursor-pointer"
                       style={{
                         background: t.featured ? RED : "transparent",
                         color: t.featured ? "#fff" : RED,
                         border: t.featured ? "none" : `2px solid ${RED}`,
                       }}
-                    >
-                      Book intromøde
-                    </a>
+                    />
                   )}
                 </div>
               </div>
@@ -387,15 +383,12 @@ export default function AiGovernanceProgramPage() {
             Book et 20 minutters møde. Vi stiller tre spørgsmål og kan normalt anbefale det rigtige forløb inden mødet er slut.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <a
-              href="https://calendly.com/bt-weleadprojects/30min"
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalendlyButton
               style={{ background: RED }}
-              className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
+              className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block cursor-pointer"
             >
               Book gratis afklaringsmøde
-            </a>
+            </CalendlyButton>
             <Link
               href="/#kontakt"
               className="border border-white text-white font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity inline-block"
