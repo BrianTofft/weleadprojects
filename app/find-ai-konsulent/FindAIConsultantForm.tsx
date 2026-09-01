@@ -225,10 +225,10 @@ export default function FindAIConsultantForm() {
                 className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-2"
                 style={{ background: "#fef2f2", color: RED }}
               >
-                Prisfastsat produkt
+                Fast pris & defineret output
               </span>
               <h3 className="font-bold text-lg mb-1" style={{ color: DARK }}>
-                AI Systems Audit — 49.000 kr.
+                AI Systems Audit → 49.000 DKK (ex. moms)
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 Vil du starte konkret og afgrænset? På 2 dage kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.

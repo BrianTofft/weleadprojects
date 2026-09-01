@@ -387,9 +387,9 @@ export default function Home() {
                 className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3"
                 style={{ background: "#fef2f2", color: RED }}
               >
-                Prisfastsat produkt
+                Fast pris & defineret output
               </span>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit — 49.000 kr.</h3>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit → 49.000 DKK (ex. moms)</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 Ved I præcis hvilke AI-systemer I har i produktion? De fleste virksomheder gør det ikke. På 2 dage kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.
               </p>

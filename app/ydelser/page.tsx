@@ -239,7 +239,7 @@ export default function YdelserPage() {
                 className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-4"
                 style={{ background: "#fef2f2", color: RED }}
               >
-                Prisfastsat produkt
+                Fast pris & defineret output
               </span>
               <div>
                 <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
