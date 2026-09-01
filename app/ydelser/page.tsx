@@ -5,15 +5,15 @@ import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ydelser",
-  description: "Vi tilbyder professionel projektledelse, Enterprise Architecture, risikostyring og IT-transformationer. Se alle vores ydelser hos We Lead Projects.",
+  title: "AI Governance og Ydelser",
+  description: "AI Systems Audit, AI Governance Accelerator og Implementation Partner. Funderet i enterprise architecture og 30 års transformationspraksis. Vi Lead Projects.",
   alternates: {
     canonical: "https://www.weleadprojects.com/ydelser",
   },
   openGraph: {
-    title: "Ydelser | We Lead Projects",
-    description: "Planlægning, risikostyring, kommunikation og innovative løsninger. Se alle vores ydelser.",
-    images: [{ url: "/Hero2.webp", width: 1200, height: 630, alt: "We Lead Projects Ydelser" }],
+    title: "AI Governance og Ydelser | We Lead Projects",
+    description: "Tre AI governance-produkter til tre faser: kortlægning, compliance-struktur og implementering.",
+    images: [{ url: "/Graphics/GettyImages-517041045_optimized.webp", width: 1200, height: 630, alt: "We Lead Projects AI Governance" }],
   },
 };
 
@@ -166,156 +166,133 @@ export default function YdelserPage() {
 
       <PageHeader
         label="Ydelser"
-        title="Professionelle leverancer som sikrer succes"
-        subtitle="Vi trækker på mangeårig erfaring og vores 1+1=3 metode til at levere projekter af enhver størrelse, fra målrettede rådgivningsforløb til store digitale transformationer."
-        image="/Graphics/Project-Management-Consultancy.webp"
+        title="AI governance med det rette fundament"
+        subtitle="Tre produkter til tre faser. Funderet i enterprise architecture og 30 års transformationspraksis, det der adskiller os fra rene AI-konsulenter."
+        image="/Graphics/GettyImages-517041045_optimized.webp"
       />
 
-      {/* KERNEYDELSER — links til dedikerede undersider */}
+      {/* AI GOVERNANCE PROGRAM */}
       <section style={{ background: OFFWHITE }} className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores kerneydelser</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold">Tre discipliner, ét samlet tilbud</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Link
-              href="/ydelser/projektledelse"
-              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
-              style={{ borderColor: BORDER }}
-            >
-              <div className="text-3xl mb-4">🎯</div>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">Projektledelse</h3>
-              <p className="text-gray-500 text-sm mb-5 leading-relaxed">Erfarne projektledere der tager ansvar for leverance, fra behovsafklaring til afslutning.</p>
-              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
-                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-              </span>
-            </Link>
-            <Link
-              href="/ydelser/enterprise-architecture"
-              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
-              style={{ borderColor: BORDER }}
-            >
-              <div className="text-3xl mb-4">🏗️</div>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">Enterprise Architecture</h3>
-              <p className="text-gray-500 text-sm mb-5 leading-relaxed">Vi kobler systemlandskabet til forretningsstrategien, så teknologi understøtter vækst.</p>
-              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
-                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-              </span>
-            </Link>
-            <Link
-              href="/ydelser/ai-strategi"
-              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
-              style={{ borderColor: BORDER }}
-            >
-              <div className="text-3xl mb-4">🤖</div>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI-strategi</h3>
-              <p className="text-gray-500 text-sm mb-5 leading-relaxed">En prioriteret AI-plan forankret i jeres faktiske data, arkitektur og organisatoriske kapacitet.</p>
-              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
-                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-              </span>
-            </Link>
-            <Link
-              href="/ydelser/ai-governance"
-              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
-              style={{ borderColor: BORDER }}
-            >
-              <div className="text-3xl mb-4">⚖️</div>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI-governance</h3>
-              <p className="text-gray-500 text-sm mb-5 leading-relaxed">Governance-rammer og EU AI Act-compliance til struktureret AI-adoption.</p>
-              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
-                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-              </span>
-            </Link>
-            <Link
-              href="/ydelser/ai-systems-audit"
-              className="group bg-white rounded-2xl border-2 p-8 hover:shadow-lg transition-all"
-              style={{ borderColor: RED }}
-            >
-              <div className="text-3xl mb-4">🔍</div>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit</h3>
-              <p className="text-gray-500 text-sm mb-3 leading-relaxed">Kortlæg jeres AI-systemer og få risikoklassificering efter EU AI Act. 2 dage, fast pris, konkret leverance.</p>
-              <span
-                className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-4"
-                style={{ background: "#fef2f2", color: RED }}
-              >
-                Fast pris & defineret output
-              </span>
-              <div>
-                <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
-                  Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-                </span>
-              </div>
-            </Link>
-            <Link
-              href="/ydelser/ai-governance-program"
-              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
-              style={{ borderColor: BORDER }}
-            >
-              <div className="text-3xl mb-4">📊</div>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Governance Program</h3>
-              <p className="text-gray-500 text-sm mb-5 leading-relaxed">Tre produkter til tre faser: kortlægning, governance-struktur og implementering. Se og sammenlign alle produkter.</p>
-              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
-                Se alle produkter <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-              </span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICE CARDS */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Alle ydelser</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold">Detaljeret overblik</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {services.map((s) => (
-              <div
-                key={s.title}
-                className="rounded-2xl border p-8"
-                style={{ borderColor: BORDER, background: OFFWHITE }}
-              >
-                <div className="w-16 h-16 mb-5 rounded-xl flex items-center justify-center" style={{ background: "#eef3f9" }}>
-                  <img src={s.icon} alt={s.title} width={40} height={40} className="w-10 h-10 object-contain" style={{ mixBlendMode: "multiply" }} />
-                </div>
-                <h2 style={{ color: DARK }} className="text-xl font-bold mb-2">{s.title}</h2>
-                <p className="text-gray-500 text-sm mb-5 leading-relaxed">{s.intro}</p>
-                <ul className="space-y-2">
-                  {s.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-2 text-sm text-gray-600">
-                      <span style={{ color: RED }} className="mt-0.5 shrink-0">✓</span>
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* KOMPETENCER */}
-      <section style={{ background: OFFWHITE }} className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Faglige kompetencer</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Omfattende rådgivende løsninger</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">AI Governance Program</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Tre produkter til tre faser</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-              Vi besidder bred erfaring inden for projektledelse, Enterprise Architecture og løsningsarkitektur, og kan bistå inden for alle følgende fagområder.
+              Fra den indledende kortlægning over compliance-strukturen til den løbende governance-praksis. Hvert produkt kan stå alene eller bruges som skridt i et samlet forløb.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {competencies.map((c) => (
-              <div key={c.title} className="bg-white rounded-2xl border p-7 flex flex-col" style={{ borderColor: BORDER }}>
-                <div className="w-14 h-14 mb-5 rounded-xl flex items-center justify-center" style={{ background: "#eef3f9" }}>
-                  <img src={c.icon} alt={c.title} width={36} height={36} className="w-9 h-9 object-contain" style={{ mixBlendMode: "multiply" }} />
-                </div>
-                <h3 style={{ color: DARK }} className="font-bold text-base mb-2">{c.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{c.body}</p>
+            <Link
+              href="/ydelser/ai-systems-audit"
+              className="group bg-white rounded-2xl border-2 p-8 hover:shadow-lg transition-all flex flex-col"
+              style={{ borderColor: RED }}
+            >
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ background: "#fde8e8" }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                </svg>
               </div>
-            ))}
+              <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-3 self-start" style={{ background: "#fef2f2", color: RED }}>
+                Fast pris og defineret output
+              </span>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">AI Systems Audit</h3>
+              <p className="text-xs font-semibold mb-3" style={{ color: RED }}>49.000 DKK (ex. moms)</p>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed flex-1">Kortlægning af jeres AI-aktiver med EU AI Act-klassificering og governance-anbefaling. Leveret på 1-2 uger. Fast pris, ingen åbne regninger.</p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
+            <Link
+              href="/ydelser/ai-governance-accelerator"
+              className="group bg-white rounded-2xl border p-8 hover:shadow-lg hover:border-red-200 transition-all flex flex-col"
+              style={{ borderColor: BORDER }}
+            >
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ background: "#fde8e8" }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-3 self-start" style={{ background: "#fef2f2", color: RED }}>
+                8-12 uger
+              </span>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">AI Governance Accelerator</h3>
+              <p className="text-xs font-semibold mb-3" style={{ color: RED }}>Tilbud efter scope</p>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed flex-1">Etablering af governance-struktur, politikker og compliance-dokumentation tilpasset jeres organisation og risikoniveau.</p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
+            <Link
+              href="/ydelser/ai-implementation-partner"
+              className="group bg-white rounded-2xl border p-8 hover:shadow-lg hover:border-red-200 transition-all flex flex-col"
+              style={{ borderColor: BORDER }}
+            >
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ background: "#fde8e8" }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-3 self-start" style={{ background: "#fef2f2", color: RED }}>
+                Loebende samarbejde
+              </span>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">Implementation Partner</h3>
+              <p className="text-xs font-semibold mb-3" style={{ color: RED }}>Retainer eller projekt</p>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed flex-1">Vi driver implementeringen af jeres AI governance-struktur fra politikker til praksis med fuld ansvarlig projektledelse.</p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* METODISK FUNDAMENT */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores fundament</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Hvorfor vi er anderledes end rene AI-konsulenter</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
+              AI governance uden forståelse for systemlandskab og implementeringsevne er regelkendskab uden realitet. Vores EA- og transformationsbaggrund er det der giver vores governance-rådgivning substans.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Link
+              href="/ydelser/enterprise-architecture"
+              className="group rounded-2xl border p-8 hover:shadow-lg hover:border-red-200 transition-all"
+              style={{ borderColor: BORDER, background: OFFWHITE }}
+            >
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ background: "#fde8e8" }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M3 17.5h4M5 14v7M6.5 14V10h5"/>
+                </svg>
+              </div>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-3">Enterprise Architecture</h3>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed">
+                Vi kortlægger systemlandskabet og kobler det til forretningsstrategien. Det er den indsigt der gør AI governance-rammer til noget der faktisk passer til organisationen, frem for generiske skabeloner.
+              </p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere om EA <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
+            <Link
+              href="/ydelser/projektledelse"
+              className="group rounded-2xl border p-8 hover:shadow-lg hover:border-red-200 transition-all"
+              style={{ borderColor: BORDER, background: OFFWHITE }}
+            >
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ background: "#fde8e8" }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+              </div>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-3">Transformationsledelse</h3>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed">
+                30 års erfaring med at drive organisationsforandringer i mål. Governance-strukturer implementeres ikke af sig selv. Vi tager ansvar for leverancen og sikrer at politikker bliver til praksis.
+              </p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Læs mere om projektledelse <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
           </div>
         </div>
       </section>
@@ -416,17 +393,26 @@ export default function YdelserPage() {
 
       {/* CTA */}
       <section style={{ background: OFFWHITE }} className="py-16 px-6 text-center">
-        <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Klar til at komme i gang?</h2>
+        <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Start med et AI Systems Audit</h2>
         <p className="text-gray-500 mb-8 max-w-xl mx-auto">
-          Kontakt os og fortæl om dit projekt. Vi finder den rigtige løsning til jer.
+          Fast pris, defineret output og leveret på 1-2 uger. Et konkret sted at begynde, uanset hvor i AI governance-rejsen I er.
         </p>
-        <Link
-          href="/#kontakt"
-          style={{ background: RED }}
-          className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
-        >
-          Kontakt os
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/ydelser/ai-systems-audit"
+            style={{ background: RED }}
+            className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
+          >
+            Se AI Systems Audit
+          </Link>
+          <Link
+            href="/#kontakt"
+            className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity inline-block"
+            style={{ borderColor: DARK, color: DARK }}
+          >
+            Kontakt os
+          </Link>
+        </div>
       </section>
 
       <Footer />

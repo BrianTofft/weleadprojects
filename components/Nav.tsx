@@ -18,17 +18,15 @@ const links = [
   { label: "Kontakt", href: "/#kontakt" },
 ];
 
-const ydelserSubmenu = [
-  { label: "Projektledelse",           href: "/ydelser/projektledelse",           group: null },
-  { label: "Enterprise Architecture",  href: "/ydelser/enterprise-architecture",  group: null },
-  { label: "AI-strategi",              href: "/ydelser/ai-strategi",              group: null },
-  { label: "AI-governance",            href: "/ydelser/ai-governance",            group: null },
-];
-
 const aiProgramSubmenu = [
   { label: "AI Systems Audit",          href: "/ydelser/ai-systems-audit" },
   { label: "AI Governance Accelerator", href: "/ydelser/ai-governance-accelerator" },
   { label: "Implementation Partner",    href: "/ydelser/ai-implementation-partner" },
+];
+
+const fundamentSubmenu = [
+  { label: "Projektledelse",          href: "/ydelser/projektledelse" },
+  { label: "Enterprise Architecture", href: "/ydelser/enterprise-architecture" },
 ];
 
 export default function Nav() {
@@ -87,24 +85,13 @@ export default function Nav() {
                     className="absolute top-full left-0 pt-3 -ml-2"
                   >
                     <div
-                      className="bg-white rounded-xl border shadow-lg py-2 min-w-[240px]"
+                      className="bg-white rounded-xl border shadow-lg py-2 min-w-[260px]"
                       style={{ borderColor: BORDER }}
                     >
-                      {ydelserSubmenu.map((s) => (
-                        <Link
-                          key={s.href}
-                          href={s.href}
-                          style={pathname === s.href ? { color: RED } : { color: DARK }}
-                          className="block px-5 py-2.5 text-sm hover:opacity-60 transition-opacity whitespace-nowrap"
-                        >
-                          {s.label}
-                        </Link>
-                      ))}
-                      <div className="mx-4 my-1.5 border-t" style={{ borderColor: BORDER }} />
                       <Link
                         href="/ydelser/ai-governance-program"
                         style={pathname === "/ydelser/ai-governance-program" ? { color: RED } : { color: DARK }}
-                        className="block px-5 py-2 text-sm font-semibold hover:opacity-60 transition-opacity whitespace-nowrap"
+                        className="block px-5 py-2.5 text-sm font-semibold hover:opacity-60 transition-opacity whitespace-nowrap"
                       >
                         AI Governance Program
                       </Link>
@@ -112,8 +99,22 @@ export default function Nav() {
                         <Link
                           key={s.href}
                           href={s.href}
-                          style={pathname === s.href ? { color: RED } : { color: "#9e8888" }}
-                          className="block px-7 py-2 text-sm hover:opacity-60 transition-opacity whitespace-nowrap"
+                          style={pathname === s.href ? { color: RED } : { color: "#6b5f5f" }}
+                          className="block px-8 py-2 text-sm hover:opacity-60 transition-opacity whitespace-nowrap"
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                      <div className="mx-4 my-2 border-t" style={{ borderColor: BORDER }} />
+                      <span className="block px-5 py-1 text-xs font-medium uppercase tracking-wider" style={{ color: "#9e8888" }}>
+                        Metodisk fundament
+                      </span>
+                      {fundamentSubmenu.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          style={pathname === s.href ? { color: RED } : { color: "#6b5f5f" }}
+                          className="block px-5 py-2 text-sm hover:opacity-60 transition-opacity whitespace-nowrap"
                         >
                           {s.label}
                         </Link>
@@ -206,18 +207,6 @@ export default function Nav() {
                 </div>
                 {mobileYdelserOpen && (
                   <div className="pb-3 flex flex-col gap-1 pl-4">
-                    {ydelserSubmenu.map((s) => (
-                      <Link
-                        key={s.href}
-                        href={s.href}
-                        onClick={() => setOpen(false)}
-                        className="py-2 text-sm"
-                        style={{ color: pathname === s.href ? RED : "#6b7280" }}
-                      >
-                        {s.label}
-                      </Link>
-                    ))}
-                    <div className="my-1 border-t" style={{ borderColor: BORDER }} />
                     <Link
                       href="/ydelser/ai-governance-program"
                       onClick={() => setOpen(false)}
@@ -232,7 +221,22 @@ export default function Nav() {
                         href={s.href}
                         onClick={() => setOpen(false)}
                         className="py-2 text-sm pl-3"
-                        style={{ color: pathname === s.href ? RED : "#9e8888" }}
+                        style={{ color: pathname === s.href ? RED : "#6b5f5f" }}
+                      >
+                        {s.label}
+                      </Link>
+                    ))}
+                    <div className="my-1 border-t" style={{ borderColor: BORDER }} />
+                    <span className="py-1 text-xs font-medium uppercase tracking-wider" style={{ color: "#9e8888" }}>
+                      Metodisk fundament
+                    </span>
+                    {fundamentSubmenu.map((s) => (
+                      <Link
+                        key={s.href}
+                        href={s.href}
+                        onClick={() => setOpen(false)}
+                        className="py-2 text-sm"
+                        style={{ color: pathname === s.href ? RED : "#6b5f5f" }}
                       >
                         {s.label}
                       </Link>

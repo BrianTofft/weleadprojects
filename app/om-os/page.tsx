@@ -7,13 +7,13 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Om os",
-  description: "Vi leverer professionel konsulentassistance inden for projektledelse, Enterprise Architecture og IT-transformationer. Læs mere om We Lead Projects.",
+  description: "Vi er AI governance-specialister med enterprise architecture og transformationsledelse som fundament. Ikke AI-teoretikere, implementeringsfolk.",
   alternates: {
     canonical: "https://www.weleadprojects.com/om-os",
   },
   openGraph: {
     title: "Om os | We Lead Projects",
-    description: "Grundlagt i 2018 med en vision om at gøre projekter rigtigt. Mød teamet bag We Lead Projects.",
+    description: "AI governance-specialister med 30 års erfaring i enterprise architecture og digital transformation.",
     images: [{ url: "/hero.JPEG", width: 1200, height: 630, alt: "We Lead Projects Om os" }],
   },
 };
@@ -24,11 +24,11 @@ const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
 const values = [
-  { icon: "🤝", title: "Samarbejde og kommunikation", body: "Vi prioriterer tæt dialog med alle interessenter og sikrer, at alle parter er informeret og engageret gennem hele projektet." },
-  { icon: "📚", title: "Kontinuerlig læring og tilpasning", body: "Vi holder os konstant opdateret med de nyeste metoder og trends inden for projektledelse og IT, og deler viden på tværs af vores team." },
-  { icon: "🌟", title: "Begunstigelse og tillid", body: "Vi opbygger langvarige relationer baseret på gensidig tillid, ærlighed og en fælles forståelse af de forretningsmæssige mål." },
-  { icon: "💡", title: "Innovation og fleksibilitet", body: "Vi er ikke bundet af én model. Vi finder den tilgang der passer bedst til det konkrete projekt og tilpasser os løbende undervejs." },
-  { icon: "🎓", title: "Mentor programmer og sidemandsoplæring", body: "Vores konsulenter vokser ved at lære af hinanden. Intern vidensdeling og mentoring er en integreret del af måden vi arbejder på." },
+  { title: "Substans over jargon", body: "Vi leverer governance-rammer der er forankret i jeres faktiske systemlandskab og organisation. Ikke generiske skabeloner tilpasset ingenting." },
+  { title: "Implementeringsansvar", body: "Vi tager ansvar for at politikker bliver til praksis. En governance-struktur der ikke implementeres er blot et dokument." },
+  { title: "Enterprise Architecture som udgangspunkt", body: "Forståelse for systemlandskabet er forudsætningen for governance der holder. Vi starter altid med at forstå det tekniske og organisatoriske fundament." },
+  { title: "Langsigtet relation", body: "AI governance er ikke et engangsprojekt. Vi opbygger relationer baseret på tillid og gensidig forståelse af det forretningsmæssige formål." },
+  { title: "Metodeneutralitet", body: "Vi er ikke bundet af et bestemt framework. Vi vælger den tilgang der passer til jeres organisation og modenhedsniveau." },
 ];
 
 export default function OmOs() {
@@ -38,8 +38,8 @@ export default function OmOs() {
 
       <PageHeader
         label="Om os"
-        title="Professionel konsulent assistance"
-        subtitle="Vi trækker på mangeårig erfaring for at håndtere projekter af enhver kompleksitet, fra mindre IT-projekter til store digitale transformationer."
+        title="AI governance-specialister med enterprise-baggrund"
+        subtitle="Vi er enterprise arkitekter og transformationsledere der har specialiseret os i AI governance. Det er den kombination der giver vores rådgivning substans."
         image="/Graphics/project-manager-with-team.webp"
       />
 
@@ -47,24 +47,18 @@ export default function OmOs() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores tilgang</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Vi startede i 2018 med en vision</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvem vi er</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Ikke AI-teoretikere. Implementeringsfolk.</h2>
             <p className="text-gray-600 mb-4">
-              Fra begyndelsen har vi prioriteret koordinering og kommunikation højt for at sikre en vellykket projektleverance. Vores konsulenter besidder ekspertise inden for projektledelse kombineret med specialiseret viden inden for bl.a. Enterprise Architecture, infrastrukturprojekter og Solution Architecture.
+              We Lead Projects er et AI governance-konsulenthus baseret i Roskilde. Vi hjælper virksomheder med at kortlægge AI-aktiver, etablere governance-strukturer og sikre EU AI Act-compliance, fra strategisk overblik til kontrolleret implementering.
             </p>
             <p className="text-gray-600 mb-4">
-              Gennem ansvar og erfaringsmodeller, backup fra kollegaer og nyeste viden om projektstyring, navigerer vi projektlandskabet. Vi kalder det 1+1=3 metoden. Vores interne vidensdeling sikrer at alle konsulenter løbende lærer og vokser på tværs af projekterne.
+              Vores baggrund er enterprise architecture og digital transformation, ikke AI-forskning eller compliance-jura. Det er den kombination der gør os anderledes: vi forstår systemlandskabet, vi kender organisationsstrukturerne, og vi har drevet implementeringer i mål i 30 år. Governance der ikke implementeres er bare et dokument.
             </p>
             <p className="text-gray-600 mb-4">
-              Vores fokus på interessentstyring har givet os mulighed for at vokse til et betroet navn i branchen, og sikret succesfulde leverancer for kunder i mange forskellige brancher og domæner.
-            </p>
-            <p className="text-gray-600 mb-4">
-              Vi arbejder metodeneutralt og tilpasser vores tilgang til det enkelte projekt. Uanset om det kræver klassisk Waterfall-styring, agile sprints eller en hybrid model, vælger vi altid den fremgangsmåde der skaber størst fremdrift for netop jeres organisation og projekttype.
+              Projektledelse og enterprise architecture er ikke konkurrerende ydelser vi tilbyder på siden. Det er den erfaring og tyngde der gør vores AI governance-rådgivning troværdig og praktisk anvendelig. En ren AI-konsulent ved hvad EU AI Act kræver. Vi ved også hvad det kræver at implementere det i en organisation med 50 systemer og tre forretningsenheder.
             </p>
             <p className="text-gray-600">
-              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Kombineret med stærk projektledelsesbaggrund giver det os mulighed for at gå ind i projekter på alle niveauer, fra strategisk rådgivning til operationel eksekvering.
-            </p>
-            <p className="text-gray-600 mt-4">
               We Lead Projects ApS er registreret under CVR-nr. 44934655. Du kan se virksomhedens fulde selskabsoplysninger på{" "}
               <a
                 href="https://datacvr.virk.dk/enhed/virksomhed/44934655"
@@ -90,14 +84,33 @@ export default function OmOs() {
               />
             </div>
             <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">Brian P.N. Tofft</h3>
-            <p style={{ color: RED }} className="font-semibold text-sm mb-4">Founder & Managing Partner</p>
+            <p style={{ color: RED }} className="font-semibold text-sm mb-4">Founder og Managing Partner</p>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Brian har mere end 30 års erfaring med at levere projekter af høj kvalitet, med fokus på etisk praksis og kontinuerlig vidensopbygning. Han er daglig leder og tovholder for We Lead Projects.
+              Tidligere Enterprise Architect hos Microsoft og Technical Authority hos DSB. Mere end 30 års erfaring med enterprise architecture, digital transformation og projektledelse. Grundlagde We Lead Projects i 2018 og specialiserede virksomheden i AI governance.
             </p>
             <div className="mt-6 pt-6 border-t text-sm space-y-1" style={{ borderColor: BORDER }}>
               <p className="text-gray-500"><a href="tel:+4552400088" className="hover:underline">+45 5240 0088</a></p>
               <p className="text-gray-500"><a href="mailto:hello@weleadprojects.com" className="hover:underline">hello@weleadprojects.com</a></p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DIFFERENTIATOR */}
+      <section className="py-16 px-6" style={{ background: "#1C2544" }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 text-white text-center">
+            {[
+              { label: "Enterprise Architecture", value: "30+", sub: "Aars erfaring med systemlandskaber og EA-rammevaerker" },
+              { label: "Digitale transformationer", value: "50+", sub: "Projekter leveret paa tvaers af brancher og organisationsstoerrelser" },
+              { label: "AI governance", value: "2023", sub: "Specialiserede virksomheden i AI governance og EU AI Act" },
+            ].map((s) => (
+              <div key={s.label}>
+                <p className="text-4xl font-bold mb-1" style={{ color: "#cc2222" }}>{s.value}</p>
+                <p className="font-semibold mb-2">{s.label}</p>
+                <p className="text-sm opacity-70">{s.sub}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -112,7 +125,6 @@ export default function OmOs() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v) => (
               <div key={v.title} className="bg-white rounded-xl border p-7" style={{ borderColor: BORDER }}>
-                <div className="text-3xl mb-4">{v.icon}</div>
                 <h3 style={{ color: DARK }} className="font-bold mb-2">{v.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{v.body}</p>
               </div>
@@ -123,15 +135,24 @@ export default function OmOs() {
 
       {/* CTA */}
       <section className="py-16 px-6 bg-white text-center">
-        <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Klar til at samarbejde?</h2>
-        <p className="text-gray-500 mb-8 max-w-xl mx-auto">Kontakt os og hør hvordan vi kan hjælpe med at sikre fremdrift og succes i dit næste projekt.</p>
-        <Link
-          href="/#kontakt"
-          style={{ background: RED }}
-          className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
-        >
-          Kontakt os
-        </Link>
+        <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Vil I vide mere om vores tilgang?</h2>
+        <p className="text-gray-500 mb-8 max-w-xl mx-auto">Tag en uforpligtende snak med os om jeres AI governance-situation. Vi stiller de rigtige sporgsmal.</p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/#kontakt"
+            style={{ background: RED }}
+            className="hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity inline-block"
+          >
+            Kontakt os
+          </Link>
+          <Link
+            href="/ydelser/ai-systems-audit"
+            className="border font-semibold px-8 py-3 rounded-full hover:opacity-60 transition-opacity inline-block"
+            style={{ borderColor: DARK, color: DARK }}
+          >
+            Se AI Systems Audit
+          </Link>
+        </div>
       </section>
 
       <Footer />

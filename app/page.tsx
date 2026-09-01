@@ -65,30 +65,30 @@ const BORDER = "#e8e0e0";
 
 const heroSlides = [
   {
+    image: "/Graphics/GettyImages-517041045_optimized.webp",
+    flip: true,
+    brightness: 0.65,
+    label: "AI Governance Specialister",
+    heading: "Tag kontrol over",
+    headingRed: "AI i jeres organisation",
+    body: "Vi kortlægger AI-aktiver, etablerer governance-strukturer og sikrer EU AI Act-compliance. Funderet i enterprise architecture og 30 års transformationspraksis.",
+  },
+  {
     image: "/hero.JPEG",
     flip: true,
-    label: "Projektledelse & Rådgivning",
-    heading: "Professionel projektledelse",
-    headingRed: "vi sikrer jeres succes",
-    body: "Vi bistår med erfarne projektledere, Enterprise Arkitekter og specialiserede eksperter, uanset om det er et mindre IT-projekt eller en stor digital transformation.",
+    label: "Enterprise Architecture",
+    heading: "Systemlandskabet",
+    headingRed: "som fundament for governance",
+    body: "AI governance uden forståelse for systemlandskabet er regelkendskab uden realitet. Vi bringer enterprise architecture-perspektivet ind, hvor det skaber forskel.",
   },
   {
     image: "/Hero2.webp",
     flip: false,
     brightness: 0.5,
-    label: "Projekter er vores DNA",
-    heading: "Intet projekt er",
-    headingRed: "for stort eller for småt",
-    body: "Vi påtager os ansvaret for alt fra mindre IT-projekter til større IT-transformationer og Cloud-implementeringer, altid med fokus på fremdrift og succesfuld leverance.",
-  },
-  {
-    image: "/Graphics/GettyImages-517041045_optimized.webp",
-    flip: true,
-    brightness: 0.65,
-    label: "EA + AI Governance",
-    heading: "Fra strategi til",
-    headingRed: "kontrolleret AI-adoption",
-    body: "Vi hjælper virksomheder med at kortlægge systemlandskabet, etablere governance-rammer og navigere EU AI Act, så AI-initiativer skaber forretningsværdi frem for compliance-risiko.",
+    label: "Implementeringsledelse",
+    heading: "Governance der",
+    headingRed: "virker i praksis",
+    body: "Vi driver AI governance-implementeringer i mål, fra kortlægning og compliance til etablering af strukturer der holder, fordi vi har gjort det med digitale transformationer i 30 år.",
   },
 ];
 
@@ -220,25 +220,37 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                icon: "🎯",
-                body: <>Professionel <strong style={{ color: DARK }}>projektledelse</strong> fra vores kontor i Roskilde til både mindre IT-projekter og store transformationer.</>,
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                  </svg>
+                ),
+                body: <>Tre AI governance-produkter, tilpasset tre faser: kortlægning, compliance-struktur og kontrolleret implementering.</>,
               },
               {
-                icon: "🏗️",
-                body: <>Erfarne eksperter inden for <strong style={{ color: DARK }}>Enterprise Architecture</strong> og <strong style={{ color: DARK }}>AI Governance</strong>, matchet til jeres branche.</>,
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M3 17.5h4M5 14v7M6.5 14V10h5"/>
+                  </svg>
+                ),
+                body: <>Enterprise Architecture og transformationsledelse som fundament, det der adskiller os fra rene AI-konsulenter.</>,
               },
               {
-                icon: "🤝",
-                body: <>En betroet partner der har leveret projekter med reel fremdrift siden 2018.</>,
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                ),
+                body: <>30 års erfaring med enterprise-organisationer. Ikke AI-teoretikere, implementeringsfolk der har leveret siden 2018.</>,
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center text-center gap-3 rounded-2xl border p-6"
+                className="flex flex-col items-center text-center gap-4 rounded-2xl border p-6"
                 style={{ borderColor: BORDER, background: OFFWHITE }}
               >
                 <div
-                  className="w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0"
+                  className="w-12 h-12 rounded-full flex items-center justify-center shrink-0"
                   style={{ background: "#fde8e8" }}
                 >
                   {item.icon}
@@ -328,31 +340,43 @@ export default function Home() {
       <section className="py-20 px-6" style={{ background: OFFWHITE }}>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Tre kernekompetencer</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">Projektledelse. Enterprise Architecture. AI Governance.</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad vi bringer til bordet</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-4">AI governance med det rette fundament</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-              Tre discipliner der hænger uløseligt sammen, og som vi som regel leverer i kombination.
+              AI governance kræver mere end regelkendskab. Det kræver forståelse for systemlandskabet, transformationserfaring og evnen til at drive implementeringen i mål.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                icon: "🎯",
-                title: "Projektledelse",
-                body: "Erfarne projektledere der tager ansvar for leverance, fra behovsafklaring til afslutning. Uanset metode: Waterfall, Agile eller hybrid.",
-                href: "/ydelser/projektledelse",
+                icon: (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>
+                  </svg>
+                ),
+                title: "AI Governance",
+                body: "Governance-rammer, EU AI Act compliance og kortlægning af AI-aktiver. Vi strukturerer jeres tilgang, så AI-initiativer skaber forretningsværdi og ikke compliance-risiko.",
+                href: "/ydelser/ai-governance",
               },
               {
-                icon: "🏗️",
+                icon: (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M3 17.5h4M5 14v7M6.5 14V10h5"/>
+                  </svg>
+                ),
                 title: "Enterprise Architecture",
-                body: "Vi kobler systemlandskabet til forretningsstrategien. Kortlægning, prioritering og arkitektur der understøtter vækst frem for at hæmme den.",
+                body: "Vi kobler systemlandskabet til forretningsstrategien. Kortlægning, prioritering og arkitektur der giver governance et reelt grundlag at stå på.",
                 href: "/ydelser/enterprise-architecture",
               },
               {
-                icon: "⚖️",
-                title: "AI Governance",
-                body: "Governance-rammer, EU AI Act compliance og struktureret tilgang til AI-adoption, så AI-initiativer skaber reel forretningsværdi og ikke compliance-risiko.",
-                href: "/ydelser/ai-governance",
+                icon: (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                ),
+                title: "Implementeringsledelse",
+                body: "Erfarne projektledere der tager ansvar for leverance, fra behovsafklaring til afslutning. Vi bringer den transformationserfaring der gør governance til virkelighed.",
+                href: "/ydelser/projektledelse",
               },
             ].map((k) => (
               <Link
@@ -361,7 +385,7 @@ export default function Home() {
                 className="group bg-white rounded-2xl p-8 border hover:shadow-lg hover:border-red-200 transition-all block"
                 style={{ borderColor: BORDER }}
               >
-                <div className="text-3xl mb-4">{k.icon}</div>
+                <div className="mb-4">{k.icon}</div>
                 <h3 className="font-bold text-lg mb-3" style={{ color: DARK }}>{k.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">{k.body}</p>
                 <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
@@ -381,17 +405,21 @@ export default function Home() {
             className="group flex flex-col md:flex-row items-center gap-8 rounded-2xl border-2 p-8 md:p-10 hover:shadow-lg transition-all"
             style={{ borderColor: RED }}
           >
-            <div className="shrink-0 text-5xl">🔍</div>
+            <div className="shrink-0 w-14 h-14 rounded-full flex items-center justify-center" style={{ background: "#fde8e8" }}>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/>
+              </svg>
+            </div>
             <div className="flex-1 text-center md:text-left">
               <span
                 className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3"
                 style={{ background: "#fef2f2", color: RED }}
               >
-                Fast pris & defineret output
+                Fast pris og defineret output
               </span>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit → 49.000 DKK (ex. moms)</h3>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit, 49.000 DKK (ex. moms)</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Ved I præcis hvilke AI-systemer I har i produktion? De fleste virksomheder gør det ikke. På 2 dage kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.
+                Ved I præcis hvilke AI-systemer I har i produktion? De fleste virksomheder gør det ikke. På 1-2 uger kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.
               </p>
             </div>
             <span style={{ color: RED }} className="shrink-0 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
@@ -405,19 +433,19 @@ export default function Home() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Vores ekspertise</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Erfarne projektledere, baseret i Roskilde</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvem vi er</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">AI governance-specialister med enterprise-baggrund</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              We Lead Projects er et dansk konsulenthus specialiseret i projektledelse, Enterprise Architecture og IT-transformationer. Siden 2018 har vi hjulpet virksomheder i hele Danmark med at planlægge, styre og gennemføre projekter, fra mindre IT-implementeringer til store digitale transformationer på tværs af hele organisationen.
+              We Lead Projects er et dansk AI governance-konsulenthus baseret i Roskilde. Vi hjælper virksomheder med at kortlægge AI-aktiver, etablere governance-strukturer og navigere EU AI Act, fra strategisk overblik til kontrolleret implementering.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              We Lead Projects ledes af Brian P.N. Tofft, der tidligere har været Enterprise Architect hos Microsoft og Technical Authority / Enterprise Architect hos DSB, og som i dag trækker på mere end 30 års erfaring med projektledelse og Enterprise Architecture.
+              Vi er ikke AI-konsulenter der har lært projektledelse. Vi er enterprise arkitekter og transformationsledere der har specialiseret os i AI governance. Det er en afgørende forskel: governance der holder kræver forståelse for systemlandskab, organisationsstrukturer og reelle implementeringsevner, ikke kun kendskab til EU AI Act.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Vores konsulenter har individuel specialviden inden for Enterprise Architecture, cloud-transformationer, infrastrukturprojekter og Solution Architecture. Det giver os mulighed for at gå ind i projekter på alle niveauer, fra strategisk rådgivning til operationel eksekvering og altid med den rette kompetence til netop jeres situation.
+              We Lead Projects ledes af Brian P.N. Tofft, tidligere Enterprise Architect hos Microsoft og Technical Authority hos DSB, med mere end 30 års erfaring med enterprise architecture og digital transformation. Den baggrund er det fundament der gør vores AI governance-rådgivning troværdig og praktisk anvendelig.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Vi er ikke bundet af én metodisk model. Uanset om jeres projekt kræver klassisk Waterfall-styring, agile sprints eller en hybrid tilgang, vælger vi den fremgangsmåde der skaber størst fremdrift, og tilpasser os undervejs. Det kalder vi professionel projektstyring i praksis.
+              Vi arbejder på tværs af brancher og organisationsstørrelser. Uanset om I er i gang med jeres første AI-kortlægning eller har brug for at konsolidere en governance-struktur på tværs af forretningsenheder, tager vi ansvar for leverancen.
             </p>
           </div>
         </div>
@@ -427,32 +455,69 @@ export default function Home() {
       <section id="ydelser" className="py-20 px-6" style={{ background: OFFWHITE }}>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Ydelser</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-3">Hvad vi hjælper med</h2>
+            <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">AI Governance Program</p>
+            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-3">Tre produkter til tre faser</h2>
             <p className="text-gray-500 max-w-xl mx-auto text-sm">
-              Fra planlægning til afslutning. Vi dækker alle aspekter af professionel projektledelse.
+              Fra den indledende kortlægning over compliance-strukturen til den løbende governance-praksis.
             </p>
           </div>
 
-          <p className="text-gray-500 max-w-2xl mx-auto text-sm text-center mb-8">
-            Vi bistår virksomheder med professionel projektledelse fra idé til aflevering. Vores konsulenter har bred erfaring på tværs af brancher og projekttyper, og arbejder altid tæt på jeres organisation for at sikre fremdrift, kvalitet og succesfuld leverance.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
-            {services.map((s) => (
-              <a
-                key={s.title}
-                href="/ydelser"
-                className="group flex flex-col items-center text-center p-6 rounded-2xl bg-white border hover:shadow-lg hover:border-red-200 transition-all"
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            {[
+              {
+                icon: (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                  </svg>
+                ),
+                badge: "Fast pris, defineret output",
+                title: "AI Systems Audit",
+                price: "49.000 DKK",
+                body: "Kortlægning af jeres AI-aktiver med EU AI Act-klassificering og governance-anbefaling. Leveret på 1-2 uger.",
+                href: "/ydelser/ai-systems-audit",
+              },
+              {
+                icon: (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                ),
+                badge: "8-12 uger",
+                title: "AI Governance Accelerator",
+                price: "Tilbud efter scope",
+                body: "Etablering af governance-struktur, politikker og compliance-dokumentation tilpasset jeres organisation og risikoniveau.",
+                href: "/ydelser/ai-governance-accelerator",
+              },
+              {
+                icon: (
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cc2222" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                ),
+                badge: "Løbende samarbejde",
+                title: "Implementation Partner",
+                price: "Retainer eller projekt",
+                body: "Vi driver implementeringen af jeres AI governance-struktur, fra politikker til praksis, med fuld ansvarlig projektledelse.",
+                href: "/ydelser/ai-implementation-partner",
+              },
+            ].map((p) => (
+              <Link
+                key={p.title}
+                href={p.href}
+                className="group bg-white rounded-2xl p-8 border hover:shadow-lg hover:border-red-200 transition-all block"
                 style={{ borderColor: BORDER }}
               >
-                <div
-                  className="w-14 h-14 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                  style={{ background: "#eef3f9" }}
-                >
-                  <img src={s.icon} alt={s.title} width={32} height={32} className="w-8 h-8 object-contain" style={{ mixBlendMode: "multiply" }} />
-                </div>
-                <h3 className="font-bold text-sm leading-snug" style={{ color: DARK }}>{s.title}</h3>
-              </a>
+                <div className="mb-4">{p.icon}</div>
+                <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-3" style={{ background: "#fef2f2", color: RED }}>
+                  {p.badge}
+                </span>
+                <h3 className="font-bold text-lg mb-1" style={{ color: DARK }}>{p.title}</h3>
+                <p className="text-xs font-medium mb-3" style={{ color: RED }}>{p.price}</p>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">{p.body}</p>
+                <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Læs mere <span>→</span>
+                </span>
+              </Link>
             ))}
           </div>
 
@@ -462,7 +527,7 @@ export default function Home() {
               style={{ background: RED }}
               className="inline-block hover:opacity-90 text-white font-semibold px-8 py-3 rounded-full transition-opacity"
             >
-              Se alle ydelser →
+              Se alle ydelser
             </a>
           </div>
         </div>
