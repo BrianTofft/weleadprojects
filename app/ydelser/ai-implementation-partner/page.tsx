@@ -238,7 +238,7 @@ export default function AiImplementationPartnerPage() {
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sammenhæng</p>
           <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Tredje trin i AI Governance Program</h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            Implementation Partner forudsætter normalt en velfunderet governance-struktur. Har I ikke kortlagt jeres AI-systemer, starter vi med AI Systems Audit. Mangler I governance-modellen, bygger vi den med AI Governance Accelerator. Har I begge dele, er Implementation Partner det naturlige næste skridt.
+            Implementation Partner forudsætter normalt en velfunderet governance-struktur. Har I ikke kortlagt jeres AI-systemer, starter vi med <Link href="/ydelser/ai-systems-audit" className="underline hover:opacity-70" style={{ color: RED }}>AI Systems Audit</Link>. Mangler I governance-modellen, bygger vi den med <Link href="/ydelser/ai-governance-accelerator" className="underline hover:opacity-70" style={{ color: RED }}>AI Governance Accelerator</Link>. Har I begge dele, er Implementation Partner det naturlige næste skridt.
           </p>
           <Link
             href="/ydelser/ai-governance-program"

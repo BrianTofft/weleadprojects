@@ -226,6 +226,24 @@ export default function AiSystemsAuditPage() {
         </div>
       </section>
 
+      {/* NÆSTE TRIN */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad sker der efter audittet?</p>
+          <h2 style={{ color: DARK }} className="text-2xl font-bold mb-5">Audittet er trin 1 af 3</h2>
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            AI Systems Audit leverer kortlægningen og anbefalingen. Virksomheder der vil videre bygger derefter governance-strukturen med <Link href="/ydelser/ai-governance-accelerator" className="underline hover:opacity-70" style={{ color: RED }}>AI Governance Accelerator</Link> og forankrer den løbende med <Link href="/ydelser/ai-implementation-partner" className="underline hover:opacity-70" style={{ color: RED }}>Implementation Partner</Link>. Alle tre produkter kan bruges selvstændigt eller som et samlet program.
+          </p>
+          <Link
+            href="/ydelser/ai-governance-program"
+            className="inline-flex items-center gap-2 font-semibold text-sm"
+            style={{ color: RED }}
+          >
+            Se sammenligningsmatrix for alle tre produkter →
+          </Link>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ background: NAVY }} className="py-20 px-6 text-center">
         <div className="max-w-2xl mx-auto">

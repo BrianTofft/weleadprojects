@@ -108,7 +108,10 @@ export default function FaqPage() {
               Her har vi samlet de spørgsmål vi oftest får. Svarene bygger ikke på generiske skabeloner, men på reel erfaring med at kortlægge AI-systemer, bygge governance-strukturer og implementere dem i organisationer med komplekse systemlandskaber.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Finder du ikke svar på det du leder efter, er du velkommen til at kontakte os direkte. Den første snak er altid uforpligtende.
+              Vil du have et samlet overblik over EU AI Act, risikoklasser og tidslinje? Se vores{" "}
+              <Link href="/eu-ai-act" className="underline hover:opacity-70" style={{ color: "#cc2222" }}>
+                dedikerede EU AI Act-guide
+              </Link>. Finder du ikke svar på det du leder efter, er du velkommen til at kontakte os direkte.
             </p>
           </div>
           <FaqAccordion faqs={faqs} />

@@ -872,6 +872,120 @@ export const articles: Article[] = [
       { label: "Project Management Institute (PMI)", url: "https://www.pmi.org/" },
     ],
   },
+  // ─── ARTIKEL 9 — DA ──────────────────────────────────────────────────────
+  {
+    slug: "eu-ai-act-guide",
+    lang: "da",
+    category: "AI Governance",
+    title: "EU AI Act: komplet guide til danske virksomheder",
+    description:
+      "Forstå EU AI Act: risikoklasser, tidslinje, krav til deployere og providere og hvad I konkret skal gøre for at overholde forordningen.",
+    date: "September 2026",
+    readingMinutes: 8,
+    intro:
+      "EU AI Act (Forordning 2024/1689) er verdens første bindende, horisontale regulering af kunstig intelligens. Den trådte i kraft august 2024 og indfases gradvist frem mod 2027. Mange virksomheder tror stadig, at EU AI Act primært handler om dem der bygger AI-systemer. Det er forkert. Alle virksomheder der anvender AI-systemer i professionelt regi, er underlagt krav som deployer. Det betyder at de fleste danske virksomheder er berørt allerede nu, ofte uden at vide det.",
+    sections: [
+      {
+        heading: "Hvad er EU AI Act, og hvem gælder det for?",
+        body: "EU AI Act er en EU-forordning der gælder direkte i alle EU-lande uden national implementering. Den dækker alle AI-systemer der producerer output til brug i EU, uanset om systemet er udviklet i Danmark, USA eller Asien. Det gør forordningen til en de facto global standard, ligesom GDPR. Forordningen gælder for to typer aktører: providere der udvikler og bringer AI-systemer på markedet, og deployere der anvender AI-systemer i en professionel kontekst. De fleste virksomheder er deployere. Men hvis I tilpasser et tredjepartssystem til jeres egne formål, kan I også blive betragtet som provider med de tilhørende forpligtelser.",
+      },
+      {
+        heading: "EU AI Act tidslinje: hvornår gælder hvad?",
+        body: "EU AI Act indfases i etaper. August 2024: Forordningen trådte i kraft. Februar 2025: Forbudte AI-systemer (Kapitel II, Artikel 5) skulle identificeres og afvikles. August 2025: Regler for General Purpose AI-modeller, herunder store sprogmodeller som GPT, trådte i kraft. August 2026: Krav til højrisikosystemer (Annex III) trådte i kraft. Det betyder dokumentation, risikovurdering, menneskeligt tilsyn og registrering i EU-database. August 2027: Krav til AI-systemer reguleret under eksisterende sektorlovgivning (Annex I, fx medicinsk udstyr, luftfart) træder i kraft. Vi er i september 2026. De mest kritiske deadlines for de fleste virksomheder er allerede passeret eller lige netop trådt i kraft.",
+      },
+      {
+        heading: "De fire risikoklasser forklaret",
+        body: "EU AI Act inddeler AI-systemer i fire risikoklasser baseret på systemets potentiale for skade. Uacceptabel risiko er forbudt: social scoring, manipulerende AI, real-time biometrisk masseovervågning på offentlige steder og AI der udnytter psykologiske svagheder. Disse systemer skulle afvikles inden februar 2025. Høj risiko er tilladt, men underlagt strenge krav: AI i rekruttering og HR, kreditvurdering, uddannelse, medicinsk diagnostik, kritisk infrastruktur, retshåndhævelse og migration. Begrænset risiko kræver gennemsigtighed: chatbots skal oplyse om at de er AI, deepfakes skal mærkes, og emotion recognition-systemer skal notificere brugere. Minimal risiko: ingen særlige krav. Det dækker spam-filtre, AI i videospil og de fleste produktivitetsværktøjer.",
+      },
+      {
+        heading: "Krav til højrisikosystemer",
+        body: "Højrisikosystemer er den kategori der kræver mest opmærksomhed fra de fleste virksomheder. AI der bruges i rekruttering, HR-beslutninger, kreditvurdering eller kundesegmentering falder typisk her. Kravene inkluderer: et risikostyringssystem der løbende identificerer og mitigerer risici. Datadokumentation der sikrer at træningsdata er relevant, repræsentativ og fri for kendte bias. Teknisk dokumentation der beskriver systemets formål, design og begrænsninger. Logning af systemets handlinger og beslutninger. Gennemsigtighed over for de mennesker der bruger systemet. Menneskelig tilsyn der sikrer at systemet kan overstyre eller afvise automatiske beslutninger. Robusthed og nøjagtighed der dokumenteres via test. Registrering i EU-databasen EUAI.",
+      },
+      {
+        heading: "Deployer-ansvar: det er jer, ikke leverandøren",
+        body: "Det mest undervurderede aspekt af EU AI Act er deployer-ansvaret. Mange virksomheder antager, at compliance er leverandørens problem. Det er det ikke. Som deployer har I selvstændigt ansvar for at et AI-system bruges som foreskrevet, at der er menneskelig overvågning for højrisikosystemer, at brugen logges og dokumenteres, at medarbejdere der arbejder med systemet er tilstrækkeligt oplært, og at systemet ikke bruges til formål det ikke er godkendt til. Det gælder uanset om I har købt systemet fra SAP, Microsoft, et dansk softwarehus eller en startup. Og det gælder de AI-funktioner der er aktiveret i jeres eksisterende systemer, ikke kun de systemer I bevidst har indkøbt som AI.",
+      },
+      {
+        heading: "Mange virksomheder kender ikke deres AI-eksponering",
+        body: "Erfaring fra kortlægningsforløb viser, at de fleste virksomheder har betydeligt flere AI-systemer end de er bevidste om. CRM-systemer med AI-baserede anbefalingsfunktioner. HR-platforme der automatisk screener CVer. Rekrutteringsværktøjer med AI-scoring. Kundesupportsystemer med AI-kategorisering. Finanssystemer med anomaly detection. Alle disse er AI-systemer under EU AI Act, og alle er aktiveret af leverandøren i systemer I allerede bruger. Kortlægning er ikke en triviel øvelse. Det kræver at I kan identificere AI-funktionalitet på tværs af jeres samlede systemlandskab, vurdere formålet og klassificere risikoen. Det er præcis det et AI Systems Audit leverer.",
+      },
+      {
+        heading: "Bøder og konsekvenser ved manglende overholdelse",
+        body: "EU AI Act har tandkødet til at håndhæve sine krav. Overtrædelse af forbudsbestemmelserne kan medføre bøder på op til 35 millioner euro eller 7 procent af global omsætning, det højeste tal gælder. Overtrædelse af øvrige krav, herunder krav til højrisikosystemer, giver bøder på op til 15 millioner euro eller 3 procent af omsætning. Leverandører der giver forkerte oplysninger til tilsynsmyndigheder kan idømmes bøder på op til 7,5 millioner euro. Udover bøderne er der risiko for midlertidigt forbud mod brug af systemet, omdømmeskade og tab af kundernes tillid. Finanssektoren, sundhedssektoren og det offentlige er under særligt opsyn.",
+      },
+      {
+        heading: "EU AI Act og GDPR: to regelsæt, ét systemlandskab",
+        body: "EU AI Act og GDPR overlapper, men er ikke det samme. GDPR regulerer behandling af personoplysninger. EU AI Act regulerer AI-systemer, herunder dem der behandler personoplysninger. Et AI-system der behandler personoplysninger skal overholde begge regelsæt, og de har ikke altid det samme svar på det samme spørgsmål. Retsgrundlaget for behandling under GDPR og risikovurderingen under EU AI Act er separate processer der skal koordineres. Det er én af grundene til, at et holistisk AI governance-framework er nødvendigt: I kan ikke nøjes med at tænke i ét regelsæt ad gangen.",
+      },
+      {
+        heading: "Hvad er det første skridt?",
+        body: "Start med kortlægningen. I kan ikke klassificere det I ikke kender. Et AI Systems Audit identificerer alle AI-systemer på tværs af jeres organisation, klassificerer dem efter EU AI Acts fire risikokategorier, og leverer en konkret governance-anbefaling og 90-dages handlingsplan. Det er en fast-pris leverance der tager 1-2 uger. Resultatet er et overblik I kan handle på, og et fundament I kan bygge den videre governance-struktur oven på.",
+      },
+    ],
+    sources: [
+      { label: "EU AI Act: Forordning 2024/1689 (EUR-Lex)", url: "https://eur-lex.europa.eu/legal-content/DA/TXT/?uri=CELEX:32024R1689" },
+      { label: "Europa-Kommissionen: AI Act Service Desk", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "EUAI-databasen for højrisikosystemer", url: "https://ec.europa.eu/transparency/expert-groups-register/screen/home" },
+    ],
+  },
+
+  // ─── ARTIKEL 9 — EN ──────────────────────────────────────────────────────
+  {
+    slug: "eu-ai-act-complete-guide",
+    lang: "en",
+    category: "AI Governance",
+    title: "EU AI Act: Complete Guide for Companies",
+    description:
+      "Understand the EU AI Act: risk classes, timeline, requirements for deployers and providers, and what you need to do to comply with the regulation.",
+    date: "September 2026",
+    readingMinutes: 8,
+    intro:
+      "The EU AI Act (Regulation 2024/1689) is the world's first binding, horizontal regulation of artificial intelligence. It entered into force in August 2024 and is being phased in gradually until 2027. Many companies still believe the EU AI Act primarily concerns those who build AI systems. That is incorrect. All companies that use AI systems in a professional context are subject to requirements as deployers. This means that most companies are already affected, often without realising it.",
+    sections: [
+      {
+        heading: "What is the EU AI Act, and who does it apply to?",
+        body: "The EU AI Act is an EU regulation that applies directly in all EU member states without national implementation. It covers all AI systems that produce output for use in the EU, regardless of whether the system was developed in Denmark, the US, or Asia. This makes the regulation a de facto global standard, much like the GDPR. The regulation applies to two types of actors: providers who develop and place AI systems on the market, and deployers who use AI systems in a professional context. Most companies are deployers. However, if you customise a third-party system for your own purposes, you may also be treated as a provider with the corresponding obligations.",
+      },
+      {
+        heading: "EU AI Act timeline: when does what apply?",
+        body: "The EU AI Act is being phased in stages. August 2024: The regulation entered into force. February 2025: Prohibited AI systems (Chapter II, Article 5) had to be identified and decommissioned. August 2025: Rules for General Purpose AI models, including large language models such as GPT, entered into force. August 2026: Requirements for high-risk systems (Annex III) entered into force. This means documentation, risk assessment, human oversight, and registration in the EU database. August 2027: Requirements for AI systems regulated under existing sector legislation (Annex I, e.g. medical devices, aviation) will enter into force. We are now in September 2026. The most critical deadlines for most companies have already passed or have just come into effect.",
+      },
+      {
+        heading: "The four risk classes explained",
+        body: "The EU AI Act divides AI systems into four risk classes based on their potential for harm. Unacceptable risk is prohibited: social scoring, manipulative AI, real-time biometric mass surveillance in public spaces, and AI that exploits psychological vulnerabilities. These systems had to be decommissioned by February 2025. High risk is permitted but subject to strict requirements: AI used in recruitment and HR, credit scoring, education, medical diagnostics, critical infrastructure, law enforcement, and migration. Limited risk requires transparency: chatbots must disclose that they are AI, deepfakes must be labelled, and emotion recognition systems must notify users. Minimal risk: no special requirements. This covers spam filters, AI in video games, and most productivity tools.",
+      },
+      {
+        heading: "Requirements for high-risk systems",
+        body: "High-risk systems are the category requiring the most attention from most companies. AI used in recruitment, HR decisions, credit scoring, or customer segmentation typically falls here. Requirements include: a risk management system that continuously identifies and mitigates risks; data documentation ensuring that training data is relevant, representative, and free of known bias; technical documentation describing the system's purpose, design, and limitations; logging of the system's actions and decisions; transparency toward the humans using the system; human oversight ensuring the system can be overridden or rejected; robustness and accuracy documented through testing; and registration in the EU database EUAI.",
+      },
+      {
+        heading: "Deployer responsibility: it is you, not the vendor",
+        body: "The most underestimated aspect of the EU AI Act is deployer responsibility. Many companies assume that compliance is the vendor's problem. It is not. As a deployer, you have independent responsibility to ensure that an AI system is used as prescribed; that there is human oversight for high-risk systems; that use is logged and documented; that employees working with the system are adequately trained; and that the system is not used for purposes it has not been approved for. This applies regardless of whether you purchased the system from SAP, Microsoft, a Danish software house, or a startup. And it applies to AI features activated in your existing systems, not only systems you have consciously procured as AI.",
+      },
+      {
+        heading: "Many companies do not know their AI exposure",
+        body: "Experience from mapping engagements shows that most companies have significantly more AI systems than they are aware of. CRM systems with AI-based recommendation features. HR platforms that automatically screen CVs. Recruitment tools with AI scoring. Customer support systems with AI categorisation. Finance systems with anomaly detection. All of these are AI systems under the EU AI Act, and all of them were activated by the vendor in systems you already use. Mapping is not a trivial exercise. It requires identifying AI functionality across your entire system landscape, assessing the purpose, and classifying the risk. That is precisely what an AI Systems Audit delivers.",
+      },
+      {
+        heading: "Fines and consequences for non-compliance",
+        body: "The EU AI Act has the teeth to enforce its requirements. Violations of the prohibition provisions can result in fines of up to 35 million euros or 7 percent of global turnover, whichever is higher. Violations of other requirements, including high-risk system requirements, carry fines of up to 15 million euros or 3 percent of turnover. Providers who supply incorrect information to supervisory authorities can be fined up to 7.5 million euros. Beyond fines, there is a risk of temporary prohibition on using the system, reputational damage, and loss of customer trust. The financial sector, healthcare sector, and public sector are under particular scrutiny.",
+      },
+      {
+        heading: "The EU AI Act and GDPR: two frameworks, one system landscape",
+        body: "The EU AI Act and GDPR overlap but are not the same. The GDPR regulates the processing of personal data. The EU AI Act regulates AI systems, including those that process personal data. An AI system that processes personal data must comply with both frameworks, and they do not always give the same answer to the same question. The legal basis for processing under the GDPR and the risk assessment under the EU AI Act are separate processes that must be coordinated. This is one of the reasons why a holistic AI governance framework is necessary: you cannot think in only one regulatory framework at a time.",
+      },
+      {
+        heading: "What is the first step?",
+        body: "Start with the mapping. You cannot classify what you do not know. An AI Systems Audit identifies all AI systems across your organisation, classifies them according to the EU AI Act's four risk categories, and delivers a concrete governance recommendation and 90-day action plan. It is a fixed-price deliverable that takes 1-2 weeks. The result is an overview you can act on, and a foundation on which to build the broader governance structure.",
+      },
+    ],
+    sources: [
+      { label: "EU AI Act: Regulation 2024/1689 (EUR-Lex)", url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" },
+      { label: "European Commission: AI Act Service Desk", url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" },
+      { label: "EUAI database for high-risk systems", url: "https://ec.europa.eu/transparency/expert-groups-register/screen/home" },
+    ],
+  },
+
 ];
 
 export function getArticle(slug: string): Article | undefined {

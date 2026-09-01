@@ -153,6 +153,12 @@ export default function OmOs() {
             Se AI Systems Audit
           </Link>
         </div>
+        <p className="text-gray-400 text-sm mt-6">
+          Ny til EU AI Act?{" "}
+          <Link href="/eu-ai-act" className="underline hover:opacity-70" style={{ color: RED }}>
+            Læs vores guide til risikoklasser og tidslinje.
+          </Link>
+        </p>
       </section>
 
       <Footer />

@@ -284,6 +284,19 @@ export default function YdelserPage() {
         </div>
       </section>
 
+      {/* EU AI ACT REFERENCE */}
+      <section className="py-12 px-6 bg-white border-t" style={{ borderColor: "#e8e0e0" }}>
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-gray-500 text-sm leading-relaxed">
+            Ny til EU AI Act? Vores{" "}
+            <Link href="/eu-ai-act" className="underline hover:opacity-70 font-medium" style={{ color: RED }}>
+              EU AI Act-guide
+            </Link>{" "}
+            forklarer risikoklasser, tidslinje og hvad I konkret skal gøre, før I vælger ydelse.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ background: OFFWHITE }} className="py-16 px-6 text-center">
         <h2 style={{ color: DARK }} className="text-2xl font-bold mb-4">Start med et AI Systems Audit</h2>

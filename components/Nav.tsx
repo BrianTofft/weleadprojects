@@ -29,6 +29,10 @@ const fundamentSubmenu = [
   { label: "Enterprise Architecture", href: "/ydelser/enterprise-architecture" },
 ];
 
+const resourceSubmenu = [
+  { label: "EU AI Act guide",  href: "/eu-ai-act" },
+];
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [ydelserOpen, setYdelserOpen] = useState(false);
@@ -110,6 +114,20 @@ export default function Nav() {
                         Metodisk fundament
                       </span>
                       {fundamentSubmenu.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          style={pathname === s.href ? { color: RED } : { color: "#6b5f5f" }}
+                          className="block px-5 py-2 text-sm hover:opacity-60 transition-opacity whitespace-nowrap"
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                      <div className="mx-4 my-2 border-t" style={{ borderColor: BORDER }} />
+                      <span className="block px-5 py-1 text-xs font-medium uppercase tracking-wider" style={{ color: "#9e8888" }}>
+                        Viden
+                      </span>
+                      {resourceSubmenu.map((s) => (
                         <Link
                           key={s.href}
                           href={s.href}
@@ -231,6 +249,21 @@ export default function Nav() {
                       Metodisk fundament
                     </span>
                     {fundamentSubmenu.map((s) => (
+                      <Link
+                        key={s.href}
+                        href={s.href}
+                        onClick={() => setOpen(false)}
+                        className="py-2 text-sm"
+                        style={{ color: pathname === s.href ? RED : "#6b5f5f" }}
+                      >
+                        {s.label}
+                      </Link>
+                    ))}
+                    <div className="my-1 border-t" style={{ borderColor: BORDER }} />
+                    <span className="py-1 text-xs font-medium uppercase tracking-wider" style={{ color: "#9e8888" }}>
+                      Viden
+                    </span>
+                    {resourceSubmenu.map((s) => (
                       <Link
                         key={s.href}
                         href={s.href}

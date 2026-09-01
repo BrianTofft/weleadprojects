@@ -235,7 +235,7 @@ export default function AiGovernanceAcceleratorPage() {
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Sammenhæng</p>
           <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">Del af et større program</h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            Acceleratoren kan bruges som selvstændigt forløb, men indgår også som andet trin i AI Governance Program. Har I ikke kortlagt jeres AI-systemer endnu, anbefaler vi at starte med AI Systems Audit. Har I brug for hjælp til at drive implementeringen efter Acceleratoren, fortsætter vi som Implementation Partner.
+            Acceleratoren kan bruges som selvstændigt forløb, men indgår også som andet trin i AI Governance Program. Har I ikke kortlagt jeres AI-systemer endnu, anbefaler vi at starte med <Link href="/ydelser/ai-systems-audit" className="underline hover:opacity-70" style={{ color: RED }}>AI Systems Audit</Link>. Har I brug for hjælp til at drive implementeringen efter Acceleratoren, fortsætter vi som <Link href="/ydelser/ai-implementation-partner" className="underline hover:opacity-70" style={{ color: RED }}>Implementation Partner</Link>.
           </p>
           <Link
             href="/ydelser/ai-governance-program"
