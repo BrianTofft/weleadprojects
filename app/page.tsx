@@ -402,7 +402,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <Link
             href="/ydelser/ai-systems-audit"
-            className="group flex flex-col md:flex-row items-center gap-8 rounded-2xl border-2 p-8 md:p-10 hover:shadow-lg transition-all"
+            className="group flex flex-col md:flex-row items-center gap-8 rounded-2xl border-2 p-8 md:p-10 hover:shadow-lg transition-shadow"
             style={{ borderColor: RED }}
           >
             <div className="shrink-0 w-14 h-14 rounded-full flex items-center justify-center" style={{ background: "#fde8e8" }}>
@@ -422,8 +422,8 @@ export default function Home() {
                 Ved I præcis hvilke AI-systemer I har i produktion? De fleste virksomheder gør det ikke. På 1-2 uger kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.
               </p>
             </div>
-            <span style={{ color: RED }} className="shrink-0 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-              Læs mere <span>→</span>
+            <span style={{ color: RED }} className="shrink-0 font-semibold text-sm inline-flex items-center gap-1">
+              Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
             </span>
           </Link>
         </div>
