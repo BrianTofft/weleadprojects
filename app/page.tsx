@@ -318,8 +318,7 @@ export default function Home() {
                   alt={logo.alt}
                   width={110}
                   height={48}
-                  className="max-h-12 max-w-[110px] object-contain opacity-75 hover:opacity-100 transition-opacity duration-300"
-                  style={{ mixBlendMode: "multiply" }}
+                  className="max-h-12 max-w-[110px] object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             ))}

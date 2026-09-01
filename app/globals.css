@@ -39,7 +39,7 @@ html {
 }
 
 .logo-scroll {
-  animation: scrollLeft 20s linear infinite;
+  animation: scrollLeft 40s linear infinite;
 }
 
 .logo-scroll:hover {
