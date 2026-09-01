@@ -442,7 +442,7 @@ export default function Home() {
               Vi er ikke AI-konsulenter der har lært projektledelse. Vi er enterprise arkitekter og transformationsledere der har specialiseret os i AI governance. Det er en afgørende forskel: governance der holder kræver forståelse for systemlandskab, organisationsstrukturer og reelle implementeringsevner, ikke kun kendskab til EU AI Act.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              We Lead Projects ledes af Brian P.N. Tofft, tidligere Enterprise Architect hos Microsoft og Technical Authority hos DSB, med mere end 30 års erfaring med enterprise architecture og digital transformation. Den baggrund er det fundament der gør vores AI governance-rådgivning troværdig og praktisk anvendelig.
+              We Lead Projects ledes af Brian P.N. Tofft, enterprise arkitekt med dyb teknisk forståelse og ledende stillinger fra virksomheder som Rambøll, Trifork, DELL, DSB og Microsoft. Mere end 30 års erfaring med enterprise architecture og digital transformation er det fundament der gør vores AI governance-rådgivning troværdig og praktisk anvendelig.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Vi arbejder på tværs af brancher og organisationsstørrelser. Uanset om I er i gang med jeres første AI-kortlægning eller har brug for at konsolidere en governance-struktur på tværs af forretningsenheder, tager vi ansvar for leverancen.

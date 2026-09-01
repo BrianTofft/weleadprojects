@@ -86,7 +86,7 @@ export default function OmOs() {
             <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">Brian P.N. Tofft</h3>
             <p style={{ color: RED }} className="font-semibold text-sm mb-4">Founder og Managing Partner</p>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Tidligere Enterprise Architect hos Microsoft og Technical Authority hos DSB. Mere end 30 års erfaring med enterprise architecture, digital transformation og projektledelse. Grundlagde We Lead Projects i 2018 og specialiserede virksomheden i AI governance.
+              Enterprise arkitekt med dyb teknisk forståelse og ledende stillinger fra virksomheder som Rambøll, Trifork, DELL, DSB og Microsoft. Mere end 30 års erfaring med enterprise architecture, digital transformation og projektledelse. Grundlagde We Lead Projects i 2018 og specialiserede virksomheden i AI governance.
             </p>
             <div className="mt-6 pt-6 border-t text-sm space-y-1" style={{ borderColor: BORDER }}>
               <p className="text-gray-500"><a href="tel:+4552400088" className="hover:underline">+45 5240 0088</a></p>
