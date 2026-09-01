@@ -42,13 +42,13 @@ const tiers = [
     name: "AI Systems Audit",
     tagline: "Få det faktiske billede",
     price: "49.000 kr.",
-    duration: "2 dage",
+    duration: "1–2 uger",
     situation: "I ved ikke præcist hvilke AI-systemer I har i produktion — og I har brug for at vide det inden I kan tage stilling til governance eller compliance.",
     deliverables: [
       "AI-aktiv kortlægning",
-      "EU AI Act risikoklassificering",
+      "EU AI Act risikoklassificering og gap-analyse",
       "Governance-anbefaling (overordnet)",
-      "Prioriteret handlingsplan",
+      "90-dages handlingsplan",
     ],
     href: "/ydelser/ai-systems-audit",
     featured: false,
@@ -94,7 +94,7 @@ const matrixRows = [
     category: "AI Systems Audit",
     items: [
       { label: "AI-aktiv kortlægning", t1: true, t2: false, t3: false },
-      { label: "EU AI Act risikoklassificering", t1: true, t2: false, t3: false },
+      { label: "EU AI Act klassificering og gap-analyse", t1: true, t2: false, t3: false },
       { label: "Governance-anbefaling (overordnet)", t1: true, t2: false, t3: false },
       { label: "Prioriteret handlingsplan", t1: true, t2: false, t3: false },
     ],
@@ -371,7 +371,7 @@ export default function AiGovernanceProgramPage() {
               style={{ gridTemplateColumns: "1fr 120px 120px 120px", borderTop: `1px solid ${BORDER}` }}
             >
               <div className="p-4 text-sm" style={{ color: "#9e8888" }}>Varighed</div>
-              <div className="p-4 text-center text-xs" style={{ color: "#9e8888" }}>2 dage</div>
+              <div className="p-4 text-center text-xs" style={{ color: "#9e8888" }}>1–2 uger</div>
               <div className="p-4 text-center text-xs" style={{ color: "#9e8888", background: "rgba(28,37,68,0.04)" }}>4–6 uger</div>
               <div className="p-4 text-center text-xs" style={{ color: "#9e8888" }}>3–6 måneder</div>
             </div>

@@ -9,13 +9,13 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "AI Systems Audit",
   description:
-    "Kortlæg jeres AI-systemer og få risikoklassificering efter EU AI Act. Et 2-dages forløb med fast pris og konkret leverance.",
+    "Kortlæg jeres AI-systemer, lav gap-analyse mod EU AI Act og få en 90-dages handlingsplan. Fast pris, konkret leverance på 1-2 uger.",
   alternates: {
     canonical: "https://www.weleadprojects.com/ydelser/ai-systems-audit",
   },
   openGraph: {
     title: "AI Systems Audit | We Lead Projects",
-    description: "Kortlæg jeres AI-systemer og få risikoklassificering efter EU AI Act på 2 dage. Fast pris, konkret leverance.",
+    description: "Kortlæg jeres AI-systemer, lav gap-analyse mod EU AI Act og få en 90-dages handlingsplan. Fast pris, konkret leverance.",
     images: [{ url: "/Graphics/AdobeStock_828719609.webp", width: 1200, height: 630, alt: "AI Systems Audit hos We Lead Projects" }],
   },
 };
@@ -34,7 +34,7 @@ const serviceJsonLd = {
   provider: { "@type": "Organization", name: "We Lead Projects", url: "https://www.weleadprojects.com" },
   areaServed: "DK",
   description:
-    "Kortlægning af AI-systemer, risikoklassificering efter EU AI Act og governance-anbefaling. Et afgrænset 2-dages forløb med fast pris og konkret leverance.",
+    "Kortlægning af AI-systemer, gap-analyse mod EU AI Act, governance-anbefaling og 90-dages handlingsplan. Fast pris, konkret leverance på 1-2 uger.",
   url: "https://www.weleadprojects.com/ydelser/ai-systems-audit",
 };
 
@@ -55,9 +55,9 @@ const leverancer = [
     more: "Vi anbefaler aldrig et parallelt AI-udvalg med sit eget sprog. Anbefalingen tager udgangspunkt i, hvem der allerede har mandat til at træffe beslutninger om IT-risiko, og udvider det mandat til at dække AI. Det er hurtigere at implementere og lettere at fastholde.",
   },
   {
-    title: "Prioriteret handlingsplan",
-    body: "De vigtigste tiltag rangeret efter risiko og ressourcebehov, så I ved præcis hvor I starter, og hvad der kan vente.",
-    more: "Handlingsplanen skelner mellem det der kræver handling inden for 30 dage, det der skal i næste budgetrunde, og det der kan dokumenteres som lavprioriteret og håndteres løbende. Det giver ledelsen et konkret grundlag for beslutning, ikke en åben liste over muligheder.",
+    title: "90-dages handlingsplan",
+    body: "De vigtigste tiltag for de næste 90 dage, rangeret efter risiko og ressourcebehov, så I ved præcis hvor I starter, og hvad der kan vente.",
+    more: "Handlingsplanen skelner mellem det der kræver handling inden for de første 30 dage, det der skal adresseres i løbet af 90 dage, og det der kan dokumenteres som lavprioriteret og håndteres løbende. Det giver ledelsen et konkret grundlag for beslutning, ikke en åben liste over muligheder.",
   },
 ];
 
@@ -70,12 +70,12 @@ const processSteps = [
   {
     step: "02",
     title: "Gennemgang",
-    body: "To dages struktureret gennemgang med IT-chefen og relevante systemejere. Vi kortlægger AI-funktioner, klassificerer risiko og identificerer governance-huller.",
+    body: "Struktureret on-site gennemgang med IT-chefen og relevante systemejere. Vi kortlægger AI-funktioner, klassificerer risiko og identificerer gap mod EU AI Act-krav.",
   },
   {
     step: "03",
     title: "Leverance",
-    body: "Inden for fem arbejdsdage modtager I rapporten med kortlægning, klassificering og governance-anbefaling. Fast format, ingen åbne spørgsmål.",
+    body: "Inden for fem arbejdsdage modtager I rapporten med kortlægning, klassificering, gap-analyse og 90-dages handlingsplan. Fast format, ingen åbne spørgsmål.",
   },
 ];
 
@@ -122,7 +122,7 @@ export default function AiSystemsAuditPage() {
       <PageHeader
         label="Produkt"
         title="AI Systems Audit"
-        subtitle="Overblik over jeres AI-systemer, risikoklassificering efter EU AI Act og en governance-anbefaling — afsluttet på 2 dage, til en fast pris."
+        subtitle="Kortlægning af jeres AI-systemer, gap-analyse mod EU AI Act og en 90-dages handlingsplan — afsluttet på 1-2 uger, til en fast pris."
         image="/Graphics/AdobeStock_828719609.webp"
       />
 
@@ -135,12 +135,12 @@ export default function AiSystemsAuditPage() {
           >
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold mb-1" style={{ color: RED }}>2 dage</div>
-                <div className="text-sm text-gray-500">Gennemgang on-site eller remote</div>
+                <div className="text-3xl font-bold mb-1" style={{ color: RED }}>1–2 uger</div>
+                <div className="text-sm text-gray-500">Forberedelse, on-site gennemgang og rapport</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-1" style={{ color: RED }}>4 leverancer</div>
-                <div className="text-sm text-gray-500">Kortlægning, klassificering, governance, handlingsplan</div>
+                <div className="text-sm text-gray-500">Kortlægning, klassificering, gap-analyse, 90-dages plan</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-1" style={{ color: RED }}>49.000 kr.</div>
