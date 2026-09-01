@@ -282,15 +282,15 @@ export default function Home() {
           <div className="px-10 py-20 flex flex-col justify-center">
             <p className="font-semibold uppercase tracking-widest text-sm mb-3" style={{ color: RED }}>Om os</p>
             <h2 className="text-3xl font-bold mb-5 leading-snug" style={{ color: DARK }}>
-              Din betroede<br />projektpartner siden 2018
+              AI governance-specialister<br />med enterprise-baggrund
             </h2>
             <p className="text-gray-600 mb-10 leading-relaxed">
-              Vi kombinerer mangeårig erfaring med intern vidensdeling for at levere projekter af enhver kompleksitet, altid med fremdrift og succes i fokus.
+              Vi er enterprise arkitekter og transformationsledere der har specialiseret os i AI governance. Ikke AI-teoretikere, folk der har implementeret i enterprise-organisationer i 30 år og kender forskellen på en governance-struktur der holder og en der ikke gør.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mb-10 border-t pt-8" style={{ borderColor: BORDER }}>
-              {[["125+", "Års samlet erfaring"], ["50+", "Projekter leveret"], ["2018", "Grundlagt"]].map(([val, lbl]) => (
+              {[["30+", "Aars EA-erfaring"], ["50+", "Enterprise-leverancer"], ["2018", "Grundlagt"]].map(([val, lbl]) => (
                 <div key={lbl}>
                   <p className="text-3xl font-bold" style={{ color: RED }}>{val}</p>
                   <p className="text-gray-400 text-xs mt-1 uppercase tracking-wider">{lbl}</p>
