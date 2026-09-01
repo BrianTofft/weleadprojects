@@ -300,10 +300,10 @@ export default function EuAiActPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white bg-opacity-10 rounded-xl p-8">
-              <h3 className="text-xl font-bold text-white mb-3">Provider</h3>
-              <p className="text-gray-300 text-sm mb-5">Virksomheden der udvikler og bringer et AI-system på markedet eller i drift.</p>
-              <ul className="space-y-3 text-sm text-gray-200">
+            <div className="rounded-xl p-8" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)" }}>
+              <h3 className="text-xl font-bold mb-3" style={{ color: "#fff" }}>Provider</h3>
+              <p className="text-sm mb-5" style={{ color: "rgba(255,255,255,0.7)" }}>Virksomheden der udvikler og bringer et AI-system på markedet eller i drift.</p>
+              <ul className="space-y-3 text-sm" style={{ color: "rgba(255,255,255,0.85)" }}>
                 {[
                   "Risikovurdering og klassificering af systemet",
                   "Teknisk dokumentation og testresultater",
@@ -318,10 +318,10 @@ export default function EuAiActPage() {
                 ))}
               </ul>
             </div>
-            <div className="bg-white bg-opacity-10 rounded-xl p-8">
-              <h3 className="text-xl font-bold text-white mb-3">Deployer</h3>
-              <p className="text-gray-300 text-sm mb-5">Virksomheden der anvender et AI-system i professionelt regi. Det er jer, også når I bruger andres systemer.</p>
-              <ul className="space-y-3 text-sm text-gray-200">
+            <div className="rounded-xl p-8" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)" }}>
+              <h3 className="text-xl font-bold mb-3" style={{ color: "#fff" }}>Deployer</h3>
+              <p className="text-sm mb-5" style={{ color: "rgba(255,255,255,0.7)" }}>Virksomheden der anvender et AI-system i professionelt regi. Det er jer, også når I bruger andres systemer.</p>
+              <ul className="space-y-3 text-sm" style={{ color: "rgba(255,255,255,0.85)" }}>
                 {[
                   "Sikre at systemet bruges som foreskrevet",
                   "Menneskelig overvågning for højrisikosystemer",
@@ -337,7 +337,7 @@ export default function EuAiActPage() {
               </ul>
             </div>
           </div>
-          <p className="text-center text-gray-400 text-sm mt-8">
+          <p className="text-center text-sm mt-8" style={{ color: "rgba(255,255,255,0.55)" }}>
             De fleste virksomheder er deployere, men hvis I tilpasser et AI-system til jeres egne formål, kan I også blive betragtet som provider.
           </p>
         </div>
