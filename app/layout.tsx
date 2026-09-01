@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | We Lead Projects",
   },
   description:
-    "AI governance-specialister med enterprise architecture og 30 års transformationspraksis. AI Systems Audit, EU AI Act compliance og implementeringsledelse. Baseret i Roskilde.",
+    "AI governance-specialister med enterprise architecture og 30 års transformationspraksis. AI Systems Audit, EU AI Act compliance og implementeringsledelse.",
   keywords: [
     "ai governance", "eu ai act", "ai compliance", "enterprise architecture",
     "ai systems audit", "ai governance konsulent", "digital transformation", "Roskilde",
