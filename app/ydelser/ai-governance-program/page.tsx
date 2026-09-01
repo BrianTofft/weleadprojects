@@ -84,7 +84,7 @@ const tiers = [
       "Leverandørstyring ift. AI-compliance",
       "Overdragelsesplan og intern kapacitetsopbygning",
     ],
-    href: null,
+    href: "/ydelser/ai-implementation-partner",
     featured: false,
   },
 ];
