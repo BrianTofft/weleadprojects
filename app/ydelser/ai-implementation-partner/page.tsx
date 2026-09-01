@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "AI Implementation Partner",
   description:
-    "Vi driver jeres AI governance-implementering som midlertidigt AI Governance Office. Løbende tilsyn, implementeringsledelse og struktureret overdragelse til intern kapacitet.",
+    "Vi driver jeres AI governance-implementering som midlertidigt AI Governance Office. Tilsyn, implementeringsledelse og overdragelse til intern kapacitet.",
   alternates: {
     canonical: "https://www.weleadprojects.com/ydelser/ai-implementation-partner",
   },
