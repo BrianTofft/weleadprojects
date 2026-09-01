@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "AI Governance Program | We Lead Projects",
-    description: "Kortlægning, governance-model og implementering. Tre produkter — vælg det der passer jeres situation.",
+    description: "Kortlægning, governance-model og implementering. Tre produkter, vælg det der passer jeres situation.",
     images: [{ url: "/Graphics/AdobeStock_828719609.webp", width: 1200, height: 630, alt: "AI Governance Program hos We Lead Projects" }],
   },
 };
@@ -43,7 +43,7 @@ const tiers = [
     tagline: "Få det faktiske billede",
     price: "49.000 kr.",
     duration: "1–2 uger",
-    situation: "I ved ikke præcist hvilke AI-systemer I har i produktion — og I har brug for at vide det inden I kan tage stilling til governance eller compliance.",
+    situation: "I ved ikke præcist hvilke AI-systemer I har i produktion, og I har brug for at vide det inden I kan tage stilling til governance eller compliance.",
     deliverables: [
       "AI-aktiv kortlægning",
       "EU AI Act risikoklassificering og gap-analyse",
@@ -59,7 +59,7 @@ const tiers = [
     tagline: "Byg governance-strukturen",
     price: "275.000 kr.",
     duration: "4–6 uger",
-    situation: "I har overblikket. Nu mangler I en governance-struktur der faktisk virker — med klart ejerskab, beslutningsveje og risikomodel, forankret i jeres organisation.",
+    situation: "I har overblikket. Nu mangler I en governance-struktur der faktisk virker, med klart ejerskab, beslutningsveje og risikomodel, forankret i jeres organisation.",
     deliverables: [
       "Governance-model med klart ejerskab",
       "RACI og roller på tværs af IT, forretning og compliance",
@@ -76,7 +76,7 @@ const tiers = [
     tagline: "Driv implementeringen",
     price: "125.000 kr./md.",
     duration: "3–6 måneder",
-    situation: "Governance-strukturen er på plads. Nu skal den føres ud i livet — og det kræver nogen der driver det, holder momentum og rapporterer til ledelsen.",
+    situation: "Governance-strukturen er på plads. Nu skal den føres ud i livet, og det kræver nogen der driver det, holder momentum og rapporterer til ledelsen.",
     deliverables: [
       "Midlertidigt AI Governance Office",
       "Implementeringsledelse og facilitering",
@@ -141,7 +141,7 @@ export default function AiGovernanceProgramPage() {
       <PageHeader
         label="AI Governance"
         title="AI Governance Program"
-        subtitle="Tre produkter til tre faser. Vælg det der passer jeres situation — de kan bruges uafhængigt eller i rækkefølge."
+        subtitle="Tre produkter til tre faser. Vælg det der passer jeres situation. De kan bruges uafhængigt eller i rækkefølge."
         image="/Graphics/AdobeStock_828719609.webp"
       />
 
@@ -149,7 +149,7 @@ export default function AiGovernanceProgramPage() {
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="text-gray-600 leading-relaxed mb-4">
-            AI governance er ikke ét problem — det er tre forskellige problemer der opstår på tre forskellige tidspunkter. Nogle virksomheder mangler overblikket. Andre har overblikket men mangler strukturen. Andre igen har strukturen men ingen til at drive implementeringen.
+            AI governance er ikke ét problem. Det er tre forskellige problemer der opstår på tre forskellige tidspunkter. Nogle virksomheder mangler overblikket. Andre har overblikket men mangler strukturen. Andre igen har strukturen men ingen til at drive implementeringen.
           </p>
           <p className="text-gray-600 leading-relaxed">
             Hvert produkt er designet til én specifik fase. De er ikke varianter af det samme, men selvstændige forløb med egne leverancer. De kan købes enkeltvis eller i forlængelse af hinanden.
@@ -272,7 +272,7 @@ export default function AiGovernanceProgramPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvornår bruger du hvad</p>
-          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-8">Tre situationer — tre svar</h2>
+          <h2 style={{ color: DARK }} className="text-3xl font-bold mb-8">Tre situationer, tre svar</h2>
           <div className="space-y-5">
             {[
               {
@@ -312,7 +312,7 @@ export default function AiGovernanceProgramPage() {
           <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvad er inkluderet</p>
           <h2 style={{ color: DARK }} className="text-3xl font-bold mb-2">Sammenligningsmatrix</h2>
           <p className="text-gray-500 text-sm mb-10">
-            Hvert produkt leverer egne specifikke ydelser — produkterne er ikke kumulative.
+            Hvert produkt leverer egne specifikke ydelser. Produkterne er ikke kumulative.
           </p>
 
           <div className="rounded-2xl border overflow-hidden" style={{ borderColor: BORDER, background: "#fff" }}>

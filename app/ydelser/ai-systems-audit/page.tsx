@@ -41,13 +41,13 @@ const serviceJsonLd = {
 const leverancer = [
   {
     title: "AI-aktiv kortlægning",
-    body: "En samlet liste over alle AI-systemer og AI-funktioner i jeres systemlandskab — inkl. dem der er sluppet ind via SaaS-opdateringer uden at nogen aktivt godkendte dem.",
+    body: "En samlet liste over alle AI-systemer og AI-funktioner i jeres systemlandskab, inkl. dem der er sluppet ind via SaaS-opdateringer uden at nogen aktivt godkendte dem.",
     more: "De fleste virksomheder undervurderer, hvor mange AI-funktioner de allerede har i produktion. Microsoft 365 Copilot, Salesforce Einstein, ServiceNow og andre store SaaS-platforme aktiverer løbende AI-funktioner som en del af normale opdateringer. Kortlægningen giver ledelsen det faktiske billede, ikke det antagne.",
   },
   {
     title: "EU AI Act klassificering og gap-analyse",
     body: "Hvert identificeret AI-system klassificeret efter EU AI Acts fire risikokategorier med begrundelse og de compliance-krav, der følger af klassificeringen.",
-    more: "Klassificeringen afgør, hvilke krav til dokumentation, menneskeligt tilsyn og transparens der gælder. Den er ikke en juridisk vurdering, men en arkitekturvurdering — og det er en afgørende forskel, fordi den trækker på den viden der allerede findes om systemet, ikke på en juridisk fortolkning udefra.",
+    more: "Klassificeringen afgør, hvilke krav til dokumentation, menneskeligt tilsyn og transparens der gælder. Den er ikke en juridisk vurdering, men en arkitekturvurdering. Det er en afgørende forskel, fordi den trækker på den viden der allerede findes om systemet, ikke på en juridisk fortolkning udefra.",
   },
   {
     title: "Governance-anbefaling",
@@ -65,7 +65,7 @@ const processSteps = [
   {
     step: "01",
     title: "Forberedelse",
-    body: "I fremsender systemdokumentation, arkitekturdiagrammer og en liste over SaaS-produkter. Vi gennemgår materialet, inden vi mødes — typisk ½ dag fra jeres side.",
+    body: "I fremsender systemdokumentation, arkitekturdiagrammer og en liste over SaaS-produkter. Vi gennemgår materialet inden vi mødes, typisk ½ dag fra jeres side.",
   },
   {
     step: "02",
@@ -94,7 +94,7 @@ const faqs = [
   },
   {
     q: "Gælder EU AI Act overhovedet for os?",
-    a: "Det afhænger af hvilken rolle I spiller i forhold til systemet — udbyder, deployer eller bruger — og systemets risikoklasse. Klassificeringen er en central del af auditen.",
+    a: "Det afhænger af hvilken rolle I spiller i forhold til systemet: udbyder, deployer eller bruger, og systemets risikoklasse. Klassificeringen er en central del af auditen.",
   },
   {
     q: "Hvad sker der efter rapporten?",
@@ -122,7 +122,7 @@ export default function AiSystemsAuditPage() {
       <PageHeader
         label="Produkt"
         title="AI Systems Audit"
-        subtitle="Kortlægning af jeres AI-systemer, gap-analyse mod EU AI Act og en 90-dages handlingsplan — afsluttet på 1-2 uger, til en fast pris."
+        subtitle="Kortlægning af jeres AI-systemer, gap-analyse mod EU AI Act og en 90-dages handlingsplan. Afsluttet på 1-2 uger, til en fast pris."
         image="/Graphics/AdobeStock_828719609.webp"
       />
 

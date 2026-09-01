@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "AI Governance Accelerator | We Lead Projects",
-    description: "Governance-model, RACI og risikomodel på 4-6 uger. Konkret struktur der faktisk bruges — ikke endnu en rapport.",
+    description: "Governance-model, RACI og risikomodel på 4-6 uger. Konkret struktur der faktisk bruges, ikke endnu en rapport.",
     images: [{ url: "/Graphics/AdobeStock_828719609.webp", width: 1200, height: 630, alt: "AI Governance Accelerator hos We Lead Projects" }],
   },
 };
@@ -42,11 +42,11 @@ const leverancer = [
   {
     title: "Governance-model med klart ejerskab",
     body: "En konkret governance-model der definerer, hvem der ejer AI-risiko, hvem der godkender nye AI-projekter og hvem der fører tilsyn med eksisterende systemer.",
-    more: "De fleste AI governance-initiativer strander, fordi ejerskabet er uklart. En bestyrelse eller et udvalg uden mandat til at stoppe et projekt, er ikke governance — det er rådgivning. Vi designer modellen til at give reelt mandat til de mennesker der allerede har autoritet i organisationen, og kobler AI-governance til eksisterende risikostyring frem for at bygge et parallelt system.",
+    more: "De fleste AI governance-initiativer strander, fordi ejerskabet er uklart. En bestyrelse eller et udvalg uden mandat til at stoppe et projekt, er ikke governance. Det er rådgivning. Vi designer modellen til at give reelt mandat til de mennesker der allerede har autoritet i organisationen, og kobler AI-governance til eksisterende risikostyring frem for at bygge et parallelt system.",
   },
   {
     title: "RACI og roller på tværs af IT, forretning og compliance",
-    body: "Præcis afklaring af, hvem der er Responsible, Accountable, Consulted og Informed for beslutninger om AI-systemer — på tværs af de funktioner der i praksis er involveret.",
+    body: "Præcis afklaring af, hvem der er Responsible, Accountable, Consulted og Informed for beslutninger om AI-systemer, på tværs af de funktioner der i praksis er involveret.",
     more: "AI-projekter involverer typisk mindst tre funktioner der ikke normalt taler sammen: IT/arkitektur, forretningsejerne og compliance/legal. RACI-modellen oversættes til et sprog og en struktur, der giver mening for alle tre grupper, og vi faciliterer den nødvendige afklaring af overlap og gråzoner direkte med de involverede parter.",
   },
   {
@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: "Ender det med endnu en rapport der ikke bruges?",
-    a: "Det er præcis hvad vi forsøger at undgå. Governance-modellen designes til at virke inden for jeres eksisterende beslutningsstrukturer, ikke som et parallelt system. Vi validerer løbende med de mennesker der skal bruge den — ikke kun med dem der bestiller den.",
+    a: "Det er præcis hvad vi forsøger at undgå. Governance-modellen designes til at virke inden for jeres eksisterende beslutningsstrukturer, ikke som et parallelt system. Vi validerer løbende med de mennesker der skal bruge den, ikke kun med dem der bestiller den.",
   },
   {
     q: "Hvad sker der efter leverancen?",
@@ -137,7 +137,7 @@ export default function AiGovernanceAcceleratorPage() {
       <PageHeader
         label="AI Governance"
         title="AI Governance Accelerator"
-        subtitle="En fungerende governance-struktur på 4-6 uger. Klart ejerskab, beslutningsveje og risikomodel — forankret i jeres organisation, ikke i en rapport der samler støv."
+        subtitle="En fungerende governance-struktur på 4-6 uger. Klart ejerskab, beslutningsveje og risikomodel, forankret i jeres organisation. Ikke en rapport der samler støv."
         image="/Graphics/AdobeStock_828719609.webp"
       />
 
@@ -167,7 +167,7 @@ export default function AiGovernanceAcceleratorPage() {
       <section className="pb-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="text-gray-600 leading-relaxed mb-4">
-            De fleste virksomheder ved godt, at de mangler en AI governance-struktur. Problemet er ikke viden — det er, at initiativer til at bygge den typisk enten strander i organisation, drukner i konsulentrapporter eller lander som principper ingen ved, hvem der skal håndhæve.
+            De fleste virksomheder ved godt, at de mangler en AI governance-struktur. Problemet er ikke viden. Det er, at initiativer til at bygge den typisk enten strander i organisation, drukner i konsulentrapporter eller lander som principper ingen ved, hvem der skal håndhæve.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             AI Governance Accelerator er designet til at undgå netop det. Vi bygger governance-strukturen direkte i samspil med IT, forretning og compliance, validerer undervejs med de mennesker der skal bruge den, og leverer en model der virker inden for jeres eksisterende beslutningsstrukturer.

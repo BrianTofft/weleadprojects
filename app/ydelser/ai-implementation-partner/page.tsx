@@ -40,7 +40,7 @@ const serviceJsonLd = {
 const hvadViBringer = [
   {
     title: "Implementeringsledelse",
-    body: "Vi driver implementeringen af governance-strukturen og sikrer, at beslutningsfora faktisk mødes, at guardrails følges og at roadmappen rykker fremad. Ikke rådgivning om hvad der burde ske — men ansvar for at det sker.",
+    body: "Vi driver implementeringen af governance-strukturen og sikrer, at beslutningsfora faktisk mødes, at guardrails følges og at roadmappen rykker fremad. Ikke rådgivning om hvad der burde ske. Ansvar for at det sker.",
   },
   {
     title: "Midlertidigt AI Governance Office",
@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "Hvad er et 'midlertidigt AI Governance Office' i praksis?",
-    a: "Det betyder, at vi påtager os de funktioner et AI Governance Office normalt ville have: fast dagsorden til relevante fora, vurdering af nye AI-projekter, opfølgning på compliance-punkter og løbende rapportering til ledelsen. Vi agerer ikke som ekstern rådgiver der svarer på spørgsmål — vi tager ansvar for at tingene sker.",
+    a: "Det betyder, at vi påtager os de funktioner et AI Governance Office normalt ville have: fast dagsorden til relevante fora, vurdering af nye AI-projekter, opfølgning på compliance-punkter og løbende rapportering til ledelsen. Vi agerer ikke som ekstern rådgiver der svarer på spørgsmål. Vi tager ansvar for at tingene sker.",
   },
   {
     q: "Kræver det et forudgående Accelerator-forløb?",
@@ -75,7 +75,7 @@ const faqs = [
   },
   {
     q: "Hvem fra vores side skal være involveret?",
-    a: "Minimum én intern sponsor med mandat — typisk IT-direktøren eller CDO — og adgang til de relevante beslutningsfora. Derudover tilpasser vi engagementet til jeres organisation. Vi er ikke afhængige af en stor intern projektgruppe for at levere.",
+    a: "Minimum én intern sponsor med mandat, typisk IT-direktøren eller CDO, og adgang til de relevante beslutningsfora. Derudover tilpasser vi engagementet til jeres organisation. Vi er ikke afhængige af en stor intern projektgruppe for at levere.",
   },
   {
     q: "Hvad sker der, når engagementet slutter?",
@@ -107,7 +107,7 @@ export default function AiImplementationPartnerPage() {
       <PageHeader
         label="AI Governance"
         title="AI Implementation Partner"
-        subtitle="Vi driver implementeringen af jeres AI governance-struktur som midlertidigt AI Governance Office — og overdrager til jeres egne folk, når kapaciteten er bygget op."
+        subtitle="Vi driver implementeringen af jeres AI governance-struktur som midlertidigt AI Governance Office og overdrager til jeres egne folk, når kapaciteten er bygget op."
         image="/Graphics/AdobeStock_828719609.webp"
       />
 
@@ -137,13 +137,13 @@ export default function AiImplementationPartnerPage() {
       <section className="pb-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="text-gray-600 leading-relaxed mb-4">
-            En governance-model er ikke noget værd, hvis ingen driver implementeringen. Det er en banal observation, men det er præcis hvad der sker i de fleste organisationer: modellen er godkendt, roadmappen er præsenteret for ledelsen, og derefter sker der ingenting — fordi det forudsætter kapacitet og mandat ingen faktisk har.
+            En governance-model er ikke noget værd, hvis ingen driver implementeringen. Det er en banal observation, men det er præcis hvad der sker i de fleste organisationer: modellen er godkendt, roadmappen er præsenteret for ledelsen, og derefter sker der ingenting, fordi det forudsætter kapacitet og mandat ingen faktisk har.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Implementation Partner er designet til at lukke det gap. Vi påtager os rollen som midlertidigt AI Governance Office: vi driver implementeringen, holder momentum og rapporterer til ledelsen, mens I parallelt bygger den interne kapacitet der skal overtage.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Engagementet er tidsbegrænset per design. Vi er ikke ude efter et permanent konsulentforhold — vi er ude efter en velfungerende overdragelse.
+            Engagementet er tidsbegrænset per design. Vi er ikke ude efter et permanent konsulentforhold. Vi er ude efter en velfungerende overdragelse.
           </p>
         </div>
       </section>
