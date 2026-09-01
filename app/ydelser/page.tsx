@@ -247,6 +247,18 @@ export default function YdelserPage() {
                 </span>
               </div>
             </Link>
+            <Link
+              href="/ydelser/ai-governance-program"
+              className="group bg-white rounded-2xl border p-8 hover:shadow-lg transition-all"
+              style={{ borderColor: BORDER }}
+            >
+              <div className="text-3xl mb-4">📊</div>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Governance Program</h3>
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed">Tre produkter til tre faser: kortlægning, governance-struktur og implementering. Se og sammenlign alle produkter.</p>
+              <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
+                Se alle produkter <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </Link>
           </div>
         </div>
       </section>
