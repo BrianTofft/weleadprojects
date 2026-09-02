@@ -23,6 +23,10 @@ console.log(`Sender Klarsynet: ${issue.title} — ${today}`);
 
 const paragraphs = issue.body.split('\n\n').map(p => `<p style="margin:0 0 16px;">${p.replace(/\n/g, '<br>')}</p>`).join('');
 
+const imageHtml = issue.image
+  ? `<img src="${issue.image}" alt="" style="width:100%;max-height:300px;object-fit:cover;display:block;border-radius:6px;margin-bottom:20px;">`
+  : '';
+
 const html = `
 <div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;">
   <div style="background:#1C2544;padding:20px 24px;border-radius:8px 8px 0 0;">
@@ -30,6 +34,7 @@ const html = `
     <p style="color:rgba(255,255,255,0.5);margin:4px 0 0;font-size:12px;">${today} &nbsp;·&nbsp; Klar til at poste på LinkedIn</p>
   </div>
   <div style="border:1px solid #e8e0e0;border-top:none;padding:24px;border-radius:0 0 8px 8px;">
+    ${imageHtml}
     <h1 style="font-size:20px;color:#2d1a1a;margin:0 0 20px;">${issue.title}</h1>
     <div style="font-size:14px;line-height:1.8;color:#333;">${paragraphs}</div>
     <p style="margin-top:20px;font-size:13px;color:#888;">
