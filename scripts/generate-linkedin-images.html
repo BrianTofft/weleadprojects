@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<title>LinkedIn Billedgenerator — We Lead Projects</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, sans-serif; background: #f0f0f0; padding: 32px; }
+  h1 { font-size: 18px; font-weight: 600; margin-bottom: 24px; color: #333; }
+  .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 24px; flex-wrap: wrap; }
+  button { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 600; }
+  .btn-prev, .btn-next { background: #e8e0e0; color: #333; }
+  .btn-prev:hover, .btn-next:hover { background: #d0c8c8; }
+  .btn-dl { background: #cc2222; color: white; }
+  .btn-dl:hover { background: #a81a1a; }
+  .btn-all { background: #2d1a1a; color: white; }
+  .btn-all:hover { background: #1a0f0f; }
+  .counter { font-size: 14px; color: #666; }
+  canvas { display: block; box-shadow: 0 4px 24px rgba(0,0,0,0.15); }
+  .preview-wrap { display: inline-block; }
+</style>
+</head>
+<body>
+<h1>LinkedIn Billedgenerator — We Lead Projects</h1>
+<div class="controls">
+  <button class="btn-prev" onclick="navigate(-1)">← Forrige</button>
+  <span class="counter" id="counter">1 / 14</span>
+  <button class="btn-next" onclick="navigate(1)">Næste →</button>
+  <button class="btn-dl" onclick="download()">Download PNG</button>
+  <button class="btn-all" onclick="downloadAll()">Download alle 14</button>
+</div>
+<div class="preview-wrap">
+  <canvas id="c" width="1080" height="1080" style="width:540px;height:540px;"></canvas>
+</div>
+
+<script>
+const SIZE = 1080;
+const RED = '#cc2222';
+const DARK = '#1a1a1a';
+const OFFWHITE = '#f7f5f5';
+const LIGHT_GRAY = '#e8e0e0';
+const WLP_GRAY = '#999999';
+
+const posts = [
+  { type: 'Observation', hook: 'ChatGPT er et værktøj.\nEn AI-strategi\ner noget andet.' },
+  { type: 'Provokation', hook: 'Hvem er ansvarlig,\nhvis jeres AI-system\ntræffer en forkert beslutning?' },
+  { type: 'Spørgsmål', hook: 'Hvilken AI-funktion i jeres systemer\ner I mindst sikre på\ner lovlig under EU AI Act?' },
+  { type: 'Observation', hook: 'EA er et af de mest undervurderede\nledelsesværktøjer\ni mellemstore virksomheder.' },
+  { type: 'Provokation', hook: 'En AI-pilot der ikke er stresstestet\nmod produktionsvirkelighed\ner ikke et bevis på noget.' },
+  { type: 'Spørgsmål', hook: 'Hvad tror jeres direktion\nAI gør for virksomheden i dag,\nog hvad sker der faktisk?' },
+  { type: 'Observation', hook: 'De fleste virksomheder\nkender ikke omfanget\naf deres AI-eksponering.' },
+  { type: 'Provokation', hook: '\"Vi overholder EU AI Act.\nVi har fået leverandøren\ntil at bekræfte det.\"\n\nDen sætning er et problem.' },
+  { type: 'Spørgsmål', hook: 'Hvem beslutter hvilke\nAI-løsninger I må implementere?\nHvem vurderer risikoen?' },
+  { type: 'Observation', hook: 'Systemlandskabet i de fleste\nmellemstore virksomheder\ner ikke bygget. Det er vokset.' },
+  { type: 'Provokation', hook: '\"AI-transformation\" er ved\nat blive den nye\n\"digital transformation.\"' },
+  { type: 'Spørgsmål', hook: 'Hvem bestemmer\nhvad succes er\ni jeres AI-projekter?' },
+  { type: 'Observation', hook: 'Virksomheder tager fat\npå AI-governance\nfor sent.' },
+  { type: 'Observation', hook: 'Måske er den rigtige titel bare:\nen der har prøvet det.' },
+];
+
+let current = 0;
+
+function draw(ctx, post, index) {
+  const S = SIZE;
+
+  // Background
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, S, S);
+
+  // Subtle off-white content area with slight inset
+  ctx.fillStyle = OFFWHITE;
+  ctx.fillRect(64, 64, S - 128, S - 128);
+
+  // Red top accent bar
+  ctx.fillStyle = RED;
+  ctx.fillRect(64, 64, S - 128, 7);
+
+
+  // Hook text — main quote
+  const lines = post.hook.split('\n');
+  const hasAccentLine = lines.length >= 3;
+
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'alphabetic';
+
+  // Calculate font size based on total text length
+  const totalChars = post.hook.replace(/\n/g, '').length;
+  const fontSize = totalChars > 80 ? 52 : totalChars > 60 ? 58 : totalChars > 40 ? 64 : 72;
+  const lineH = fontSize * 1.25;
+
+  const totalHeight = lines.length * lineH;
+  let startY = (S / 2) - (totalHeight / 2) + fontSize * 0.4;
+
+  lines.forEach((line, i) => {
+    // Last meaningful line gets red accent if there are 3+ lines
+    const isAccent = hasAccentLine && i === lines.length - 1 && line.trim().length > 0;
+    ctx.fillStyle = isAccent ? RED : DARK;
+    ctx.font = `800 ${fontSize}px system-ui, -apple-system, sans-serif`;
+    ctx.fillText(line, 64 + 48, startY + i * lineH);
+  });
+
+  // Bottom divider
+  ctx.strokeStyle = LIGHT_GRAY;
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(64 + 48, S - 64 - 80);
+  ctx.lineTo(S - 64 - 48, S - 64 - 80);
+  ctx.stroke();
+
+  // Branding — rød prik + navn
+  const dotY = S - 64 - 44;
+  const dotR = 9;
+  const textX = 64 + 48 + dotR * 2 + 14;
+  ctx.fillStyle = RED;
+  ctx.beginPath();
+  ctx.arc(64 + 48 + dotR, dotY, dotR, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = DARK;
+  ctx.font = `700 28px system-ui, -apple-system, sans-serif`;
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('We Lead Projects', textX, dotY);
+
+  ctx.fillStyle = WLP_GRAY;
+  ctx.font = `400 24px system-ui, -apple-system, sans-serif`;
+  ctx.fillText('weleadprojects.com', textX, S - 64 - 13);
+
+}
+
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+}
+
+function render() {
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+  draw(ctx, posts[current], current);
+  document.getElementById('counter').textContent = `${current + 1} / ${posts.length}`;
+}
+
+function navigate(dir) {
+  current = (current + dir + posts.length) % posts.length;
+  render();
+}
+
+function download() {
+  const canvas = document.getElementById('c');
+  const a = document.createElement('a');
+  a.download = `linkedin-post-${current + 1}.png`;
+  a.href = canvas.toDataURL('image/png');
+  a.click();
+}
+
+async function downloadAll() {
+  for (let i = 0; i < posts.length; i++) {
+    current = i;
+    render();
+    await new Promise(r => setTimeout(r, 100));
+    download();
+    await new Promise(r => setTimeout(r, 300));
+  }
+  current = 0;
+  render();
+}
+
+render();
+</script>
+</body>
+</html>
