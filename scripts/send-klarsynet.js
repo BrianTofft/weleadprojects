@@ -37,6 +37,11 @@ const html = `
     ${imageHtml}
     <h1 style="font-size:20px;color:#2d1a1a;margin:0 0 20px;">${issue.title}</h1>
     <div style="font-size:14px;line-height:1.8;color:#333;">${paragraphs}</div>
+    ${issue.linkedinPost ? `
+    <div style="margin-top:24px;padding:16px;background:#f7f5f5;border-left:3px solid #cc2222;border-radius:0 6px 6px 0;">
+      <p style="margin:0 0 8px;font-size:11px;font-weight:bold;color:#cc2222;text-transform:uppercase;letter-spacing:0.05em;">LinkedIn-opslag (copy-paste)</p>
+      <p style="margin:0;font-size:13px;line-height:1.7;color:#2d1a1a;white-space:pre-line;">${issue.linkedinPost}</p>
+    </div>` : ''}
     <p style="margin-top:20px;font-size:13px;color:#888;">
       Link til fuld artikel (dansk): <a href="${issue.articleUrlDa}" style="color:#cc2222;">${issue.articleUrlDa}</a><br>
       ${issue.articleUrlEn ? `Link til fuld artikel (engelsk): <a href="${issue.articleUrlEn}" style="color:#cc2222;">${issue.articleUrlEn}</a>` : ''}
