@@ -42,20 +42,30 @@ const LIGHT_GRAY = '#e8e0e0';
 const WLP_GRAY = '#999999';
 
 const posts = [
-  { type: 'Observation', hook: 'ChatGPT er et værktøj.\nEn AI-strategi\ner noget andet.' },
-  { type: 'Provokation', hook: 'Hvem er ansvarlig,\nhvis jeres AI-system\ntræffer en forkert beslutning?' },
-  { type: 'Spørgsmål', hook: 'Hvilken AI-funktion i jeres systemer\ner I mindst sikre på\ner lovlig under EU AI Act?' },
-  { type: 'Observation', hook: 'EA er et af de mest undervurderede\nledelsesværktøjer\ni mellemstore virksomheder.' },
-  { type: 'Provokation', hook: 'En AI-pilot der ikke er stresstestet\nmod produktionsvirkelighed\ner ikke et bevis på noget.' },
-  { type: 'Spørgsmål', hook: 'Hvad tror jeres direktion\nAI gør for virksomheden i dag,\nog hvad sker der faktisk?' },
-  { type: 'Observation', hook: 'De fleste virksomheder\nkender ikke omfanget\naf deres AI-eksponering.' },
-  { type: 'Provokation', hook: '\"Vi overholder EU AI Act.\nVi har fået leverandøren\ntil at bekræfte det.\"\n\nDen sætning er et problem.' },
-  { type: 'Spørgsmål', hook: 'Hvem beslutter hvilke\nAI-løsninger I må implementere?\nHvem vurderer risikoen?' },
-  { type: 'Observation', hook: 'Systemlandskabet i de fleste\nmellemstore virksomheder\ner ikke bygget. Det er vokset.' },
-  { type: 'Provokation', hook: '\"AI-transformation\" er ved\nat blive den nye\n\"digital transformation.\"' },
-  { type: 'Spørgsmål', hook: 'Hvem bestemmer\nhvad succes er\ni jeres AI-projekter?' },
-  { type: 'Observation', hook: 'Virksomheder tager fat\npå AI-governance\nfor sent.' },
-  { type: 'Observation', hook: 'Måske er den rigtige titel bare:\nen der har prøvet det.' },
+  { num: 15, hook: 'En frist er passeret.\nIngen ved præcis\nhvilke systemer der er omfattet.' },
+  { num: 16, hook: 'Compliance\ner enten et fundament\neller en regning.' },
+  { num: 17, hook: 'Hvis AI-udvalget\naldrig har sagt nej,\nhar ingen mandat til det.' },
+  { num: 18, hook: 'Den rådgiver\nder aldrig siger fra\nleverer bekræftelse.' },
+  { num: 19, hook: 'EA er en forsikring,\nikke et bureaukrati.' },
+  { num: 20, hook: 'Den dyreste beslutning\ner at vente for længe\nmed at kortlægge det man har.' },
+  { num: 21, hook: 'En pilot\nder ikke er stresstestet\ner en demo.' },
+  { num: 22, hook: 'Det svære arbejde\ner at finde\ndet man ikke ved man har.' },
+  { num: 23, hook: '\"Vi har styr\npå vores AI-systemer.\"\n\nDen undersøger jeg altid nærmere.' },
+  { num: 24, hook: 'Data governance\ner ikke et dokument.\nDet er forudsætningen.' },
+  { num: 25, hook: 'AI-governance\ner ikke et dokument\nman laver én gang.' },
+  { num: 26, hook: 'Enterprise Architecture\ner værktøjet til at se\nregningen, før den forfalder.' },
+  { num: 27, hook: 'De bedste virksomheder\npeger selv på mønsteret\nfør nogen beder om en redegørelse.' },
+  { num: 28, hook: 'En ekstern rådgiver\ner ikke pengene værd\nnår konklusionen allerede er truffet.' },
+  { num: 29, hook: 'AI-governance\nfejler aldrig\npå teknologien.' },
+  { num: 30, hook: 'Reel ejerskab\ner synligt i om\nnogen nogensinde har sagt nej.' },
+  { num: 31, hook: 'Den bedste AI-governance\njeg har set\nsad hos Enterprise Architecture.' },
+  { num: 32, hook: 'Den billigste beslutning\ni et fejlslagent projekt\ner at stoppe det.' },
+  { num: 33, hook: 'Mandat\nkommer ikke af en titel.\nDet kommer af at have haft ret.' },
+  { num: 34, hook: 'De fejlslagne projekter\ner dem jeg husker\ndetaljerne fra.' },
+  { num: 35, hook: 'Inden den næste AI-politik:\nhvem er det\nder siger nej?' },
+  { num: 36, hook: 'Scope vokser.\nRisikoklassen\nvokser med det.' },
+  { num: 37, hook: 'EU AI Act spørger ikke\nhvad I besluttede.\nDen spørger hvad I bruger.' },
+  { num: 38, hook: 'Det er ikke\net ressourceproblem.\nDet er et ejerskabsproblem.' },
 ];
 
 let current = 0;
@@ -145,7 +155,7 @@ function render() {
   const canvas = document.getElementById('c');
   const ctx = canvas.getContext('2d');
   draw(ctx, posts[current], current);
-  document.getElementById('counter').textContent = `${current + 1} / ${posts.length}`;
+  document.getElementById('counter').textContent = `Post ${posts[current].num} (${current + 1} / ${posts.length})`;
 }
 
 function navigate(dir) {
@@ -156,7 +166,7 @@ function navigate(dir) {
 function download() {
   const canvas = document.getElementById('c');
   const a = document.createElement('a');
-  a.download = `linkedin-post-${current + 1}.png`;
+  a.download = `linkedin-post-${posts[current].num}.png`;
   a.href = canvas.toDataURL('image/png');
   a.click();
 }
