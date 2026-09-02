@@ -28,15 +28,17 @@ const imageHtml = issue.image
   : '';
 
 const html = `
-<div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;">
-  <div style="background:#1C2544;padding:20px 24px;border-radius:8px 8px 0 0;">
-    <h2 style="color:white;margin:0;font-size:16px;">Klarsynet — Ny udgave klar</h2>
-    <p style="color:rgba(255,255,255,0.5);margin:4px 0 0;font-size:12px;">${today} &nbsp;·&nbsp; Klar til at poste på LinkedIn</p>
+<div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;background:#ffffff;">
+  <div style="padding:28px 28px 20px;border-bottom:3px solid #cc2222;">
+    <div style="margin-bottom:6px;">
+      <span style="background:#cc2222;color:white;font-size:10px;font-weight:bold;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px;">Klarsynet</span>
+    </div>
+    <p style="margin:0;font-size:12px;color:#999;">${today} &nbsp;·&nbsp; Klar til at poste på LinkedIn</p>
   </div>
-  <div style="border:1px solid #e8e0e0;border-top:none;padding:24px;border-radius:0 0 8px 8px;">
+  <div style="padding:28px;background:#f7f5f5;">
     ${imageHtml}
     <h1 style="font-size:20px;color:#2d1a1a;margin:0 0 20px;">${issue.title}</h1>
-    <div style="font-size:14px;line-height:1.8;color:#333;">${paragraphs}</div>
+    <div style="font-size:14px;line-height:1.9;color:#2d1a1a;">${paragraphs}</div>
     ${issue.linkedinPost ? `
     <div style="margin-top:24px;padding:16px;background:#f7f5f5;border-left:3px solid #cc2222;border-radius:0 6px 6px 0;">
       <p style="margin:0 0 8px;font-size:11px;font-weight:bold;color:#cc2222;text-transform:uppercase;letter-spacing:0.05em;">LinkedIn-opslag (copy-paste)</p>
@@ -47,7 +49,9 @@ const html = `
       ${issue.articleUrlEn ? `Link til fuld artikel (engelsk): <a href="${issue.articleUrlEn}" style="color:#cc2222;">${issue.articleUrlEn}</a>` : ''}
     </p>
   </div>
-  <p style="text-align:center;margin-top:12px;font-size:11px;color:#aaa;">We Lead Projects · weleadprojects.com</p>
+  <div style="padding:16px 28px;border-top:1px solid #e8e0e0;">
+    <p style="margin:0;font-size:11px;color:#bbb;text-align:center;">We Lead Projects &nbsp;·&nbsp; weleadprojects.com</p>
+  </div>
 </div>`;
 
 const textBody = `${issue.title}\n\n${issue.body}\n\nLink (dansk): ${issue.articleUrlDa}\n${issue.articleUrlEn ? `Link (engelsk): ${issue.articleUrlEn}` : ''}`;
