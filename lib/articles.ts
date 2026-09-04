@@ -106,7 +106,7 @@ export const articles: Article[] = [
     slug: "agile-waterfall-eller-hybrid",
     lang: "da",
     category: "Metoder",
-    title: "Agile, Waterfall eller Hybrid: vælg din model",
+    title: "Agile, Waterfall eller Hybrid. Vælg din model",
     description:
       "Valget af projektmodel er en vigtig beslutning. Vi gennemgår fordele og ulemper ved Agile, Waterfall og Hybrid, og hvornår du bør bruge hvilken.",
     date: "Februar 2025",
@@ -147,7 +147,7 @@ export const articles: Article[] = [
     slug: "ai-i-enterprise-architecture",
     lang: "da",
     category: "Enterprise Architecture",
-    title: "AI i Enterprise Architecture: governance",
+    title: "AI governance i Enterprise Architecture",
     description:
       "AI stiller nye krav til Enterprise Architecture. Lær hvordan du integrerer AI-governance i dit EA-rammeværk og bygger en solid strategi for AI-implementering.",
     date: "Juli 2025",
@@ -326,7 +326,7 @@ export const articles: Article[] = [
     slug: "agile-waterfall-or-hybrid",
     lang: "en",
     category: "Methods",
-    title: "Agile, Waterfall or Hybrid: Choose Your Model",
+    title: "Agile, Waterfall or Hybrid. Choose Your Model",
     description:
       "Choosing the right project model matters. We break down Agile, Waterfall and Hybrid, pros, cons, and when to use each approach.",
     date: "February 2025",
@@ -627,7 +627,7 @@ export const articles: Article[] = [
     slug: "ai-governance-guide",
     lang: "da",
     category: "AI Governance",
-    title: "AI governance: Den komplette guide",
+    title: "Den komplette guide til AI governance",
     description:
       "Lær hvordan AI governance fungerer i praksis: EU AI Act, risikokategorier, Anticipatory Governance og hvordan I integrerer det i jeres Enterprise Architecture.",
     date: "August 2026",
@@ -692,7 +692,7 @@ export const articles: Article[] = [
     slug: "ai-governance-complete-guide",
     lang: "en",
     category: "AI Governance",
-    title: "AI Governance: The Complete Guide",
+    title: "The Complete Guide to AI Governance",
     description:
       "Learn how AI governance works in practice: the EU AI Act, risk categories, anticipatory governance, and how to integrate it into your enterprise architecture.",
     date: "August 2026",
@@ -756,7 +756,7 @@ export const articles: Article[] = [
     slug: "pmo-ea-ai-governance-integration",
     lang: "da",
     category: "Strategi",
-    title: "PMO, EA og AI governance: Tre discipliner",
+    title: "PMO, EA og AI governance. Tre discipliner",
     description:
       "Hvordan Project Management Office, Enterprise Architecture og AI governance hænger sammen, og hvorfor virksomheder der integrerer dem vinder.",
     date: "August 2026",
@@ -817,7 +817,7 @@ export const articles: Article[] = [
     slug: "pmo-ea-ai-governance-integration-guide",
     lang: "en",
     category: "Strategy",
-    title: "PMO, EA and AI Governance: Integration",
+    title: "PMO, EA and AI Governance Integration",
     description:
       "How Project Management Office, Enterprise Architecture, and AI governance connect, and why companies that integrate them deliver better results.",
     date: "August 2026",
@@ -877,7 +877,7 @@ export const articles: Article[] = [
     slug: "eu-ai-act-guide",
     lang: "da",
     category: "AI Governance",
-    title: "EU AI Act: komplet guide til danske virksomheder",
+    title: "Komplet guide til EU AI Act for danske virksomheder",
     description:
       "Forstå EU AI Act: risikoklasser, tidslinje, krav til deployere og providere og hvad I konkret skal gøre for at overholde forordningen.",
     date: "September 2026",
@@ -933,7 +933,7 @@ export const articles: Article[] = [
     slug: "eu-ai-act-complete-guide",
     lang: "en",
     category: "AI Governance",
-    title: "EU AI Act: Complete Guide for Companies",
+    title: "EU AI Act. Complete Guide for Companies",
     description:
       "Understand the EU AI Act: risk classes, timeline, requirements for deployers and providers, and what you need to do to comply with the regulation.",
     date: "September 2026",
