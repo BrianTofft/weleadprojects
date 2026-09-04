@@ -384,6 +384,23 @@ export default function Home() {
               </Link>
             ))}
           </div>
+
+          {/* Kontekstuel CTA efter de tre ydelseskort */}
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <CalendlyButton
+              style={{ background: RED }}
+              className="inline-flex items-center justify-center gap-2 hover:opacity-90 text-white font-semibold px-7 py-3 rounded-full transition-opacity cursor-pointer"
+            >
+              Book en 30-min AI Governance-sparring
+            </CalendlyButton>
+            <a
+              href="/ydelser/enterprise-architecture"
+              className="inline-flex items-center justify-center gap-2 font-semibold px-7 py-3 rounded-full border hover:opacity-70 transition-opacity"
+              style={{ borderColor: DARK, color: DARK }}
+            >
+              Få en EA-assessment af jeres systemlandskab
+            </a>
+          </div>
         </div>
       </section>
 
@@ -511,7 +528,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center">
+          <div className="text-center flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/ydelser"
               style={{ background: RED }}
@@ -519,6 +536,12 @@ export default function Home() {
             >
               Se alle ydelser
             </a>
+            <CalendlyButton
+              className="inline-flex items-center justify-center gap-2 font-semibold px-8 py-3 rounded-full border hover:opacity-70 transition-opacity cursor-pointer"
+              style={{ borderColor: RED, color: RED }}
+            >
+              Book et intromøde direkte
+            </CalendlyButton>
           </div>
         </div>
       </section>
