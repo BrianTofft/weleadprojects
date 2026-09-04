@@ -277,7 +277,7 @@ export default function Home() {
               AI governance-specialister<br />med enterprise-baggrund
             </h2>
             <p className="text-gray-600 mb-10 leading-relaxed">
-              Vi er enterprise arkitekter og transformationsledere der har specialiseret os i AI governance. Ikke AI-teoretikere, folk der har implementeret i enterprise-organisationer i 30 år og kender forskellen på en governance-struktur der holder og en der ikke gør.
+              Vi kortlægger jeres AI-aktiver, strukturerer governance-rammen og driver implementeringen i mål. Med enterprise architecture som fundament og 30 års transformationserfaring i ryggen. Governance der ikke implementeres er bare et dokument.
             </p>
 
             {/* Stats */}
