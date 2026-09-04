@@ -216,7 +216,7 @@ export default function Home() {
                     <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
                   </svg>
                 ),
-                body: <>Tre AI governance-produkter, tilpasset tre faser: kortlægning, compliance-struktur og kontrolleret implementering.</>,
+                body: <>Tre AI governance produkter, tilpasset tre faser: kortlægning, compliance struktur og kontrolleret implementering.</>,
               },
               {
                 icon: (
@@ -224,7 +224,7 @@ export default function Home() {
                     <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M3 17.5h4M5 14v7M6.5 14V10h5"/>
                   </svg>
                 ),
-                body: <>Enterprise Architecture og transformationsledelse som fundament, det der adskiller os fra rene AI-konsulenter.</>,
+                body: <>Enterprise Architecture og transformationsledelse som fundament, det der adskiller os fra rene AI konsulenter.</>,
               },
               {
                 icon: (
@@ -232,7 +232,7 @@ export default function Home() {
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                   </svg>
                 ),
-                body: <>30 års erfaring med enterprise-organisationer. Ikke AI-teoretikere, implementeringsfolk der har leveret siden 2018.</>,
+                body: <>30 års erfaring med enterprise organisationer. Ikke AI teoretikere, men implementeringsfolk der har leveret siden 2018.</>,
               },
             ].map((item, i) => (
               <div
