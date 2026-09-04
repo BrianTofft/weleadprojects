@@ -274,7 +274,7 @@ export default function Home() {
           <div className="px-10 py-20 flex flex-col justify-center">
             <p className="font-semibold uppercase tracking-widest text-sm mb-3" style={{ color: RED }}>Om os</p>
             <h2 className="text-3xl font-bold mb-5 leading-snug" style={{ color: DARK }}>
-              AI governance-specialister<br />med enterprise-baggrund
+              Fra kortlægning til<br />kontrolleret implementering
             </h2>
             <p className="text-gray-600 mb-10 leading-relaxed">
               Vi kortlægger jeres AI-aktiver, strukturerer governance-rammen og driver implementeringen i mål. Med enterprise architecture som fundament og 30 års transformationserfaring i ryggen. Governance der ikke implementeres er bare et dokument.
