@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | We Lead Projects",
   },
   description:
-    "AI governance-specialister med enterprise architecture og 30 års transformationspraksis. AI Systems Audit, EU AI Act compliance og implementeringsledelse.",
+    "AI governance specialister med enterprise architecture og 30 års transformationspraksis. AI Systems Audit, EU AI Act compliance og implementeringsledelse.",
   keywords: [
     "ai governance", "eu ai act", "ai compliance", "enterprise architecture",
     "ai systems audit", "ai governance konsulent", "digital transformation", "Roskilde",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "We Lead Projects",
     title: "We Lead Projects | AI Governance Specialister",
     description:
-      "AI governance-specialister med enterprise architecture-baggrund. AI Systems Audit, EU AI Act compliance og implementeringsledelse fra Roskilde.",
+      "AI governance specialister med enterprise architecture baggrund. AI Systems Audit, EU AI Act compliance og implementeringsledelse fra Roskilde.",
     images: [
       {
         url: "/Graphics/GettyImages-517041045_optimized.webp",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "We Lead Projects | AI Governance Specialister",
     description:
-      "AI governance-specialister med enterprise architecture-baggrund. AI Systems Audit, EU AI Act compliance og implementeringsledelse.",
+      "AI governance specialister med enterprise architecture baggrund. AI Systems Audit, EU AI Act compliance og implementeringsledelse.",
     images: ["/Graphics/GettyImages-517041045_optimized.webp"],
   },
   robots: {

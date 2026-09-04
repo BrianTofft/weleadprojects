@@ -390,7 +390,7 @@ export default function EuAiActPage() {
               </div>
               <div className="flex-1">
                 <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-xs mb-2">Start her</p>
-                <h3 style={{ color: DARK }} className="text-xl font-bold mb-3">AI Systems Audit — 49.000 kr., 1-2 uger</h3>
+                <h3 style={{ color: DARK }} className="text-xl font-bold mb-3">AI Systems Audit: 49.000 kr., 1-2 uger</h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-6">
                   En struktureret kortlægning af jeres AI-systemer med EU AI Act-klassificering og en konkret governance-anbefaling. Det er det første og mest kritiske skridt mod compliance, og det giver jer et overblik I kan handle på.
                 </p>
