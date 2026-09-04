@@ -405,7 +405,7 @@ export default function Home() {
       </section>
 
       {/* AI SYSTEMS AUDIT CALLOUT */}
-      <section className="py-12 px-6 bg-white">
+      <section className="py-12 px-6 bg-white border-b" style={{ borderColor: BORDER }}>
         <div className="max-w-5xl mx-auto">
           <Link
             href="/ydelser/ai-systems-audit"
@@ -437,21 +437,21 @@ export default function Home() {
       </section>
 
       {/* EKSPERTISE */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ background: "#1C2544" }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <p style={{ color: RED }} className="font-semibold uppercase tracking-widest text-sm mb-3">Hvem vi er</p>
-            <h2 style={{ color: DARK }} className="text-3xl font-bold mb-6">AI governance-specialister med enterprise-baggrund</h2>
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#f7f5f5" }}>AI governance-specialister med enterprise-baggrund</h2>
+            <p className="mb-4 leading-relaxed" style={{ color: "rgba(247,245,245,0.75)" }}>
               We Lead Projects er et dansk AI governance-konsulenthus baseret i Roskilde. Vi hjælper virksomheder med at kortlægge AI-aktiver, etablere governance-strukturer og navigere EU AI Act, fra strategisk overblik til kontrolleret implementering.
             </p>
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <p className="mb-4 leading-relaxed" style={{ color: "rgba(247,245,245,0.75)" }}>
               Vi er ikke AI-konsulenter der har lært projektledelse. Vi er enterprise arkitekter og transformationsledere der har specialiseret os i AI governance. Det er en afgørende forskel: governance der holder kræver forståelse for systemlandskab, organisationsstrukturer og reelle implementeringsevner, ikke kun kendskab til EU AI Act.
             </p>
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <p className="mb-4 leading-relaxed" style={{ color: "rgba(247,245,245,0.75)" }}>
               We Lead Projects ledes af Brian P.N. Tofft, enterprise arkitekt med dyb teknisk forståelse og ledende stillinger fra virksomheder som Rambøll, Trifork, DELL, DSB og Microsoft. Mere end 30 års erfaring med enterprise architecture og digital transformation er det fundament der gør vores AI governance-rådgivning troværdig og praktisk anvendelig.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="leading-relaxed" style={{ color: "rgba(247,245,245,0.75)" }}>
               Vi arbejder på tværs af brancher og organisationsstørrelser. Uanset om I er i gang med jeres første AI-kortlægning eller har brug for at konsolidere en governance-struktur på tværs af forretningsenheder, tager vi ansvar for leverancen.
             </p>
           </div>
