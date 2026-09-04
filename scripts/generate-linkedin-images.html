@@ -86,23 +86,33 @@ function draw(ctx, post, index) {
   ctx.fillRect(64, 64, S - 128, 7);
 
 
-  // Hook text — main quote
+  // Hook text — auto-fit font size to keep all lines inside box
   const lines = post.hook.split('\n');
-  const hasAccentLine = lines.length >= 3;
+  const nonEmpty = lines.filter(l => l.trim().length > 0);
+  const hasAccentLine = nonEmpty.length >= 3;
+  const maxW = S - (64 + 48) * 2;           // available width
+  const boxTop = 64 + 7 + 60;               // below red bar + padding
+  const boxBottom = S - 64 - 80 - 32;       // above divider
+  const availH = boxBottom - boxTop;
+
+  // Find largest font size where every line fits within maxW and total height fits
+  let fontSize = 80;
+  while (fontSize > 36) {
+    ctx.font = `800 ${fontSize}px system-ui, -apple-system, sans-serif`;
+    const lineH = fontSize * 1.28;
+    const totalH = lines.length * lineH;
+    const fits = lines.every(l => ctx.measureText(l).width <= maxW) && totalH <= availH;
+    if (fits) break;
+    fontSize -= 2;
+  }
 
   ctx.textAlign = 'left';
   ctx.textBaseline = 'alphabetic';
-
-  // Calculate font size based on total text length
-  const totalChars = post.hook.replace(/\n/g, '').length;
-  const fontSize = totalChars > 80 ? 52 : totalChars > 60 ? 58 : totalChars > 40 ? 64 : 72;
-  const lineH = fontSize * 1.25;
-
+  const lineH = fontSize * 1.28;
   const totalHeight = lines.length * lineH;
   let startY = (S / 2) - (totalHeight / 2) + fontSize * 0.4;
 
   lines.forEach((line, i) => {
-    // Last meaningful line gets red accent if there are 3+ lines
     const isAccent = hasAccentLine && i === lines.length - 1 && line.trim().length > 0;
     ctx.fillStyle = isAccent ? RED : DARK;
     ctx.font = `800 ${fontSize}px system-ui, -apple-system, sans-serif`;

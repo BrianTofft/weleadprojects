@@ -62,7 +62,7 @@ const heroSlides = [
     label: "AI Governance Specialister",
     heading: "Tag kontrol over",
     headingRed: "AI i jeres organisation",
-    body: "Vi kortlægger AI-aktiver, etablerer governance-strukturer og sikrer EU AI Act-compliance. Funderet i enterprise architecture og 30 års transformationspraksis.",
+    body: "Vi kortlægger AI-aktiver, etablerer governance strukturer og sikrer EU AI Act compliance. Funderet i enterprise architecture og 30 års transformationspraksis.",
   },
   {
     image: "/hero.JPEG",
@@ -70,7 +70,7 @@ const heroSlides = [
     label: "Enterprise Architecture",
     heading: "Systemlandskabet",
     headingRed: "som fundament for governance",
-    body: "AI governance uden forståelse for systemlandskabet er regelkendskab uden realitet. Vi bringer enterprise architecture-perspektivet ind, hvor det skaber forskel.",
+    body: "AI governance uden forståelse for systemlandskabet er regelkendskab uden realitet. Vi bringer enterprise architecture perspektivet ind, hvor det skaber forskel.",
   },
   {
     image: "/Hero2.webp",
@@ -79,7 +79,7 @@ const heroSlides = [
     label: "Implementeringsledelse",
     heading: "Governance der",
     headingRed: "virker i praksis",
-    body: "Vi driver AI governance-implementeringer i mål, fra kortlægning og compliance til etablering af strukturer der holder, fordi vi har gjort det med digitale transformationer i 30 år.",
+    body: "Vi driver AI governance implementeringer i mål, fra kortlægning og compliance til etablering af strukturer der holder, fordi vi har gjort det med digitale transformationer i 30 år.",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Home() {
         return (s + 1) % heroSlides.length;
       });
       setAnimKey((k) => k + 1);
-    }, 6000);
+    }, 9000);
     return () => clearInterval(t);
   }, []);
 
