@@ -301,41 +301,33 @@ export default function Home() {
 
         {/* Diagram: EA → AI Governance → PM */}
         <div className="max-w-5xl mx-auto px-6 pb-20">
-          <svg viewBox="0 0 660 390" className="w-full" role="img" aria-label="Cyklisk sammenhæng: Enterprise Architecture kortlægger AI-aktiver, AI Governance definerer governance-rammen, Implementeringsledelse driver leverancen">
+          <svg viewBox="0 0 660 390" className="w-full" role="img" aria-label="Cyklisk sammenhæng: EA, AI Governance og Implementeringsledelse">
             <defs>
-              <marker id="diag-arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+              <marker id="arr-oos" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
                 <polygon points="0 0, 10 3.5, 0 7" fill="#c8b8b8"/>
               </marker>
             </defs>
-            {/* Connecting lines */}
-            <line x1="155" y1="277" x2="296" y2="115" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#diag-arr)"/>
-            <line x1="364" y1="115" x2="506" y2="277" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#diag-arr)"/>
-            <line x1="443" y1="315" x2="218" y2="315" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#diag-arr)"/>
-            {/* Relationship labels */}
+            <line x1="155" y1="277" x2="296" y2="115" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#arr-oos)"/>
+            <line x1="364" y1="115" x2="506" y2="277" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#arr-oos)"/>
+            <line x1="443" y1="315" x2="218" y2="315" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#arr-oos)"/>
             <text fontFamily="system-ui, sans-serif" fontSize="10" fill="#a08888" textAnchor="middle" transform="translate(218, 196) rotate(-48)">Systemkortlægning</text>
             <text fontFamily="system-ui, sans-serif" fontSize="10" fill="#a08888" textAnchor="middle" transform="translate(440, 196) rotate(48)">Governance-krav</text>
             <text x="330" y="304" fontFamily="system-ui, sans-serif" fontSize="10" fill="#a08888" textAnchor="middle">Arkitekturopdatering</text>
-            {/* AI Governance node */}
             <rect x="235" y="45" width="190" height="66" rx="3" fill={RED}/>
             <text x="330" y="73" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">AI GOVERNANCE</text>
             <text x="330" y="93" fontFamily="system-ui, sans-serif" fontSize="10.5" fill="rgba(247,245,245,0.72)" textAnchor="middle">Ramme · EU AI Act · Risiko</text>
-            {/* EA node */}
             <rect x="25" y="277" width="190" height="66" rx="3" fill="#1C2544"/>
             <text x="120" y="305" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">ENTERPRISE</text>
             <text x="120" y="324" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">ARCHITECTURE</text>
-            {/* PM node */}
             <rect x="445" y="277" width="190" height="66" rx="3" fill="#3a2424"/>
             <text x="540" y="305" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">IMPLEMENTERINGS</text>
             <text x="540" y="324" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">LEDELSE</text>
-            {/* Center badge */}
             <circle cx="330" cy="210" r="58" fill="#ffffff" stroke="#e8e0e0" strokeWidth="1"/>
             <image href="/logo.svg" x="270" y="178" width="120" height="64" preserveAspectRatio="xMidYMid meet"/>
           </svg>
-
-          {/* Three-column descriptions */}
           <div className="grid md:grid-cols-3 gap-5 mt-8">
             {[
-              { label: "Enterprise Architecture", accent: "#1C2544", text: "Kortlæg AI aktiver, systemlandskab og afhængigheder. Grundlaget for at vide, hvad der faktisk skal governes." },
+              { label: "Enterprise Architecture", accent: "#1C2544", text: "Kortlæg AI aktiver, systemlandskab og afhængigheder. Grundlaget for at vide, hvad der faktisk behøver governance." },
               { label: "AI Governance", accent: RED, text: "Definer governance rammen, EU AI Act klassificering og risikomodel. Kravspecifikationen der driver implementeringen." },
               { label: "Implementeringsledelse", accent: DARK, text: "Driv governance programmet i mål og opdater EA kortlægningen med nye realiteter. Cyklussen gentager sig." },
             ].map((d) => (
@@ -448,6 +440,34 @@ export default function Home() {
             >
               Få en EA-assessment af jeres systemlandskab
             </a>
+          </div>
+
+          {/* Diagram: EA → AI Governance → PM (kun SVG) */}
+          <div className="max-w-4xl mx-auto pt-10 pb-4">
+            <svg viewBox="0 0 660 390" className="w-full" role="img" aria-label="Cyklisk sammenhæng: EA, AI Governance og Implementeringsledelse">
+              <defs>
+                <marker id="arr-kern" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#c8b8b8"/>
+                </marker>
+              </defs>
+              <line x1="155" y1="277" x2="296" y2="115" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#arr-kern)"/>
+              <line x1="364" y1="115" x2="506" y2="277" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#arr-kern)"/>
+              <line x1="443" y1="315" x2="218" y2="315" stroke="#c8b8b8" strokeWidth="1.5" markerEnd="url(#arr-kern)"/>
+              <text fontFamily="system-ui, sans-serif" fontSize="10" fill="#a08888" textAnchor="middle" transform="translate(218, 196) rotate(-48)">Systemkortlægning</text>
+              <text fontFamily="system-ui, sans-serif" fontSize="10" fill="#a08888" textAnchor="middle" transform="translate(440, 196) rotate(48)">Governance-krav</text>
+              <text x="330" y="304" fontFamily="system-ui, sans-serif" fontSize="10" fill="#a08888" textAnchor="middle">Arkitekturopdatering</text>
+              <rect x="235" y="45" width="190" height="66" rx="3" fill={RED}/>
+              <text x="330" y="73" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">AI GOVERNANCE</text>
+              <text x="330" y="93" fontFamily="system-ui, sans-serif" fontSize="10.5" fill="rgba(247,245,245,0.72)" textAnchor="middle">Ramme · EU AI Act · Risiko</text>
+              <rect x="25" y="277" width="190" height="66" rx="3" fill="#1C2544"/>
+              <text x="120" y="305" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">ENTERPRISE</text>
+              <text x="120" y="324" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">ARCHITECTURE</text>
+              <rect x="445" y="277" width="190" height="66" rx="3" fill="#3a2424"/>
+              <text x="540" y="305" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">IMPLEMENTERINGS</text>
+              <text x="540" y="324" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">LEDELSE</text>
+              <circle cx="330" cy="210" r="58" fill="#ffffff" stroke="#e8e0e0" strokeWidth="1"/>
+              <image href="/logo.svg" x="270" y="178" width="120" height="64" preserveAspectRatio="xMidYMid meet"/>
+            </svg>
           </div>
         </div>
       </section>
