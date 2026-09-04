@@ -192,7 +192,7 @@ export const articles: Article[] = [
     slug: "ai-in-enterprise-architecture",
     lang: "en",
     category: "Enterprise Architecture",
-    title: "AI in Enterprise Architecture: Governance",
+    title: "AI Governance in Enterprise Architecture",
     description:
       "AI places new demands on Enterprise Architecture. Learn how to integrate AI governance into your EA framework and build a solid strategy for AI implementation.",
     date: "July 2025",
