@@ -121,7 +121,7 @@ export default function OmOs() {
             <text x="540" y="305" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">IMPLEMENTERINGS</text>
             <text x="540" y="324" fontFamily="system-ui, sans-serif" fontSize="17" fontWeight="700" fill="#f7f5f5" textAnchor="middle" letterSpacing="1">LEDELSE</text>
             <circle cx="330" cy="210" r="58" fill="#ffffff" stroke="#e8e0e0" strokeWidth="1"/>
-            <image href="/logo.svg" x="270" y="178" width="120" height="64" preserveAspectRatio="xMidYMid meet"/>
+            <image href="/logo-icon.svg" x="290" y="170" width="80" height="80" preserveAspectRatio="xMidYMid meet"/>
           </svg>
           <div className="grid md:grid-cols-3 gap-5 mt-8">
             {[
