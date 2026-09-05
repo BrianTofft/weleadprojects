@@ -10,7 +10,7 @@ const OFFWHITE = "#f7f5f5";
 const BORDER = "#e8e0e0";
 
 const projekttyper = [
-  "AI Systems Audit (49.000 kr. fast pris)",
+  "AI Systems Audit (79.000 kr. fast pris)",
   "AI-strategi og governance",
   "AI-implementering (GenAI / ML)",
   "AI-readiness vurdering",
@@ -228,7 +228,7 @@ export default function FindAIConsultantForm() {
                 Fast pris & defineret output
               </span>
               <h3 className="font-bold text-lg mb-1" style={{ color: DARK }}>
-                AI Systems Audit → 49.000 DKK (ex. moms)
+                AI Systems Audit → 79.000 DKK (ex. moms)
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 Vil du starte konkret og afgrænset? På 2 dage kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.

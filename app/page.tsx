@@ -454,7 +454,7 @@ export default function Home() {
               >
                 Fast pris og defineret output
               </span>
-              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit, 49.000 DKK (ex. moms)</h3>
+              <h3 style={{ color: DARK }} className="text-xl font-bold mb-2">AI Systems Audit, 79.000 DKK (ex. moms)</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 Ved I præcis hvilke AI-systemer I har i produktion? De fleste virksomheder gør det ikke. På 1-2 uger kortlægger vi jeres AI-aktiver, klassificerer dem efter EU AI Act og leverer en governance-anbefaling. Fast pris, ingen åbne regninger.
               </p>
@@ -509,7 +509,7 @@ export default function Home() {
                 ),
                 badge: "Fast pris, defineret output",
                 title: "AI Systems Audit",
-                price: "49.000 DKK",
+                price: "79.000 DKK",
                 body: "Kortlægning af jeres AI-aktiver med EU AI Act-klassificering og governance-anbefaling. Leveret på 1-2 uger.",
                 href: "/ydelser/ai-systems-audit",
               },

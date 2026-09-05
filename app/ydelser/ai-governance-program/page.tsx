@@ -42,7 +42,7 @@ const tiers = [
     num: "01",
     name: "AI Systems Audit",
     tagline: "Få det faktiske billede",
-    price: "49.000 kr.",
+    price: "79.000 kr.",
     duration: "1–2 uger",
     situation: "I ved ikke præcist hvilke AI-systemer I har i produktion, og I har brug for at vide det inden I kan tage stilling til governance eller compliance.",
     deliverables: [
@@ -358,7 +358,7 @@ export default function AiGovernanceProgramPage() {
               style={{ gridTemplateColumns: "1fr 120px 120px 120px", borderTop: `2px solid ${BORDER}` }}
             >
               <div className="p-4 text-sm font-semibold" style={{ color: DARK }}>Pris ekskl. moms</div>
-              <div className="p-4 text-center text-sm font-bold" style={{ color: RED }}>49.000 kr.</div>
+              <div className="p-4 text-center text-sm font-bold" style={{ color: RED }}>79.000 kr.</div>
               <div className="p-4 text-center text-sm font-bold" style={{ color: RED, background: "rgba(28,37,68,0.04)" }}>275.000 kr.</div>
               <div className="p-4 text-center text-sm font-bold" style={{ color: RED }}>125.000 kr./md.</div>
             </div>

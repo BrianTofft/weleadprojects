@@ -26,7 +26,7 @@ const OFFWHITE = "#f7f5f5";
 const faqs = [
   {
     q: "Hvad er et AI Systems Audit, og hvad får vi ud af det?",
-    a: "Et AI Systems Audit er en struktureret kortlægning af alle AI-systemer i jeres organisation, herunder hvilke data de behandler, hvilke beslutninger de understøtter, og hvilken risikoklasse de falder i under EU AI Act. Resultatet er et konkret overblik I kan handle på: hvilke systemer kræver øjeblikkelig opmærksomhed, hvilke er uproblematiske, og hvor skal I investere i governance-struktur. Audittet tager typisk 1-2 uger og koster 49.000 kr.",
+    a: "Et AI Systems Audit er en struktureret kortlægning af alle AI-systemer i jeres organisation, herunder hvilke data de behandler, hvilke beslutninger de understøtter, og hvilken risikoklasse de falder i under EU AI Act. Resultatet er et konkret overblik I kan handle på: hvilke systemer kræver øjeblikkelig opmærksomhed, hvilke er uproblematiske, og hvor skal I investere i governance-struktur. Audittet tager typisk 1-2 uger og koster 79.000 kr.",
   },
   {
     q: "Hvad kræver EU AI Act konkret af vores virksomhed?",
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Hvad koster et AI governance-forløb?",
-    a: "Vores AI Systems Audit koster 49.000 kr. og tager 1-2 uger. Et AI Governance Accelerator-forløb, der bygger den fulde governance-struktur, løber typisk over 8-12 uger. Implementation Partner er et løbende retainer-engagement. Vi tilbyder altid en uforpligtende indledende snak, så I kan vurdere, hvad der giver mening for jeres situation.",
+    a: "Vores AI Systems Audit koster 79.000 kr. og tager 1-2 uger. Et AI Governance Accelerator-forløb, der bygger den fulde governance-struktur, løber typisk over 8-12 uger. Implementation Partner er et løbende retainer-engagement. Vi tilbyder altid en uforpligtende indledende snak, så I kan vurdere, hvad der giver mening for jeres situation.",
   },
   {
     q: "Kan I hjælpe os med AI-systemer vi har købt udefra, ikke kun dem vi har bygget selv?",

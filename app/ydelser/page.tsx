@@ -89,7 +89,7 @@ export default function YdelserPage() {
                 Fast pris og defineret output
               </span>
               <h3 style={{ color: DARK }} className="text-xl font-bold mb-1">AI Systems Audit</h3>
-              <p className="text-xs font-semibold mb-3" style={{ color: RED }}>49.000 DKK (ex. moms)</p>
+              <p className="text-xs font-semibold mb-3" style={{ color: RED }}>79.000 DKK (ex. moms)</p>
               <p className="text-gray-500 text-sm mb-5 leading-relaxed flex-1">Kortlægning af jeres AI-aktiver med EU AI Act-klassificering og governance-anbefaling. Leveret på 1-2 uger. Fast pris, ingen åbne regninger.</p>
               <span style={{ color: RED }} className="text-sm font-semibold inline-flex items-center gap-1">
                 Læs mere <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
